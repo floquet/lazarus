@@ -2183,45 +2183,8 @@
     <bcf:datasource type="file" datatype="bibtex">$TEXBIBS/textbooks.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">latter1955similarity</bcf:citekey>
-    <bcf:citekey order="2">taylor1950formationI</bcf:citekey>
-    <bcf:citekey order="3">taylor1950formationII</bcf:citekey>
-    <bcf:citekey order="4">taylor1950formationI</bcf:citekey>
-    <bcf:citekey order="5">sedov2018similarity</bcf:citekey>
-    <bcf:citekey order="6">bethe1944shock</bcf:citekey>
-    <bcf:citekey order="7">bethe1947blast</bcf:citekey>
-    <bcf:citekey order="8">vonneumann1950method</bcf:citekey>
-    <bcf:citekey order="9">brode1955numerical</bcf:citekey>
-    <bcf:citekey order="10">brode1959blast</bcf:citekey>
-    <bcf:citekey order="11">kamm2000evaluation</bcf:citekey>
-    <bcf:citekey order="12">jackson1993guide</bcf:citekey>
-    <bcf:citekey order="13">majda2003introduction</bcf:citekey>
-    <bcf:citekey order="14">bird2002transport</bcf:citekey>
-    <bcf:citekey order="15">bird2002transport</bcf:citekey>
-    <bcf:citekey order="16">stoker1992water</bcf:citekey>
-    <bcf:citekey order="17">bird2002transport</bcf:citekey>
-    <bcf:citekey order="18">granger1995fluid</bcf:citekey>
-    <bcf:citekey order="19">granger1995fluid</bcf:citekey>
-    <bcf:citekey order="20">bird2002transport</bcf:citekey>
-    <bcf:citekey order="21">landau1959fluid</bcf:citekey>
-    <bcf:citekey order="22">pokorski2000gauge</bcf:citekey>
-    <bcf:citekey order="23">bolster2011dynamic</bcf:citekey>
-    <bcf:citekey order="24">taylor1950formationI</bcf:citekey>
-    <bcf:citekey order="24">taylor1950formationI</bcf:citekey>
-    <bcf:citekey order="25">ostriker1988astrophysical</bcf:citekey>
-    <bcf:citekey order="26">edwards2001investigation</bcf:citekey>
-    <bcf:citekey order="27">moore2005tailored</bcf:citekey>
-    <bcf:citekey order="28">boudet2013unstable</bcf:citekey>
-    <bcf:citekey order="28">boudet2009blast</bcf:citekey>
-    <bcf:citekey order="29">sedov2018similarity</bcf:citekey>
-    <bcf:citekey order="30">cook2021reflection</bcf:citekey>
-    <bcf:citekey order="31">myers2020new</bcf:citekey>
-    <bcf:citekey order="32">baty2021symmetry</bcf:citekey>
-    <bcf:citekey order="33">2022AJBeirutExplosion</bcf:citekey>
-    <bcf:citekey order="34">aouad2021beirut</bcf:citekey>
-    <bcf:citekey order="35">aouad2021beirut</bcf:citekey>
     <bcf:citekey order="0" nocite="1">*</bcf:citekey>
-    <bcf:citekey order="36">zel2002physics</bcf:citekey>
+    <bcf:citekey order="1">zel2002physics</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

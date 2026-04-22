@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  21 APR 2026 18:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  21 APR 2026 20:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1301,7 +1301,7 @@ Package babel Info: \l@newzealand = using hyphenrules for ukenglish
 ))
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 46.
+(hyperref)                removing `\\' on input line 39.
 
 
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
@@ -1314,46 +1314,44 @@ File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count457
 \l__pdf_internal_box=\box84
 )
-(./sentinel.aux
-
-LaTeX Warning: Label `tab:conserved' multiply defined.
-
-
-LaTeX Warning: Label `eq:faux-normal' multiply defined.
-
-
-LaTeX Warning: Label `eq:Avector' multiply defined.
-
-)
+(./sentinel.aux)
+Runaway argument?
+{\headcommand {\beamer@sub 
+./sentinel.tex:47: File ended while scanning use of \@writefile.
+<inserted text> 
+                \par 
+l.47 \begin{document}
+                     
+? 
 \openout1 = `sentinel.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 54.
-LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 5
-4.
- (/usr/local/texlive/2020/texmf-dist/tex/latex/cyrillic/t2acmr.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 47.
+LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 4
+7.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/cyrillic/t2acmr.fd
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
-LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    ... okay on input line 47.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 54.
+(Font)              using `OT1/cmss/bx/n' instead on input line 47.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1421,7 +1419,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box86
-Package hyperref Info: Link coloring OFF on input line 54.
+Package hyperref Info: Link coloring OFF on input line 47.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1435,9 +1433,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count464
 )
-LaTeX Info: Redefining \ref on input line 54.
-LaTeX Info: Redefining \pageref on input line 54.
-LaTeX Info: Redefining \nameref on input line 54.
+LaTeX Info: Redefining \ref on input line 47.
+LaTeX Info: Redefining \pageref on input line 47.
+LaTeX Info: Redefining \nameref on input line 47.
  (./sentinel.out) (./sentinel.out)
 \@outlinefile=\write6
 \openout6 = `sentinel.out'.
@@ -1493,202 +1491,25 @@ LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
 (Font)              using `OT1/cmss/m/n' instead on input line 77.
 
 )
-Package biblatex Info: Reference section=0 on input line 54.
-Package biblatex Info: Reference segment=0 on input line 54.
+Package biblatex Info: Reference section=0 on input line 47.
+Package biblatex Info: Reference segment=0 on input line 47.
  (./sentinel.nav)
-<../../../global/graphics-global/logos/logo-dtriac.png, id=117, 521.5485pt x 52
-1.0667pt>
+<../../../global/graphics-global/logos/logo-dtriac.png, id=22, 521.5485pt x 521
+.0667pt>
 File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 54.
+ used on input line 47.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-<../../../global/graphics-global/logos/logo-dtra-eagle.png, id=120, 1204.5pt x 
-1204.5pt>
+<../../../global/graphics-global/logos/logo-dtra-eagle.png, id=25, 1204.5pt x 1
+204.5pt>
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 54.
+png  used on input line 47.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 59.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 59.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [1{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-
- <../../../global/graphics-global/logos/logo-dtriac.png> <../../../global/graph
-ics-global/logos/logo-dtra-eagle.png>]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 80.
-
-
-(/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 80.
-
-
-(/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-<../local/graphics-local/taylor/taylor-image.png, id=178, 1131.22626pt x 627.34
-375pt>
-File: ../local/graphics-local/taylor/taylor-image.png Graphic file (type png)
-<use ../local/graphics-local/taylor/taylor-image.png>
-Package pdftex.def Info: ../local/graphics-local/taylor/taylor-image.png  used 
-on input line 80.
-(pdftex.def)             Requested size: 282.80586pt x 156.83554pt.
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 80.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 80.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [2
-
- <../local/graphics-local/taylor/taylor-image.png>]
-File: ../local/graphics-local/taylor/taylor-image.png Graphic file (type png)
-<use ../local/graphics-local/taylor/taylor-image.png>
-Package pdftex.def Info: ../local/graphics-local/taylor/taylor-image.png  used 
-on input line 80.
-(pdftex.def)             Requested size: 282.80586pt x 156.83554pt.
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 80.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 80.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [3
-
-] (./sentinel.toc)
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 85.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 85.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [4
-
-]
-(../sections/sec-theory.tex (../sections/ssec-latter.tex
-<../local/graphics-local/latter/Latter-01.pdf, id=295, 712.6625pt x 241.90375pt
->
-File: ../local/graphics-local/latter/Latter-01.pdf Graphic file (type pdf)
-<use ../local/graphics-local/latter/Latter-01.pdf>
-Package pdftex.def Info: ../local/graphics-local/latter/Latter-01.pdf  used on 
-input line 16.
-(pdftex.def)             Requested size: 320.69516pt x 108.85567pt.
-
-
-LaTeX Warning: Citation 'latter1955similarity' on page 5 undefined on input lin
-e 16.
-
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 16.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 16.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
-[5
-
- <../local/graphics-local/latter/Latter-01.pdf>])
-<../local/graphics-local/people/Taylor.jpg, id=345, 180.675pt x 179.2296pt>
-File: ../local/graphics-local/people/Taylor.jpg Graphic file (type jpg)
-<use ../local/graphics-local/people/Taylor.jpg>
-Package pdftex.def Info: ../local/graphics-local/people/Taylor.jpg  used on inp
-ut line 42.
-(pdftex.def)             Requested size: 109.27975pt x 108.405pt.
-<../local/graphics-local/people/vN.jpeg, id=347, 197.73875pt x 256.96pt>
-File: ../local/graphics-local/people/vN.jpeg Graphic file (type jpg)
-<use ../local/graphics-local/people/vN.jpeg>
-Package pdftex.def Info: ../local/graphics-local/people/vN.jpeg  used on input 
-line 42.
-(pdftex.def)             Requested size: 83.42082pt x 108.405pt.
-<../local/graphics-local/people/Sedov.jpg, id=349, 115.1502pt x 158.994pt>
-File: ../local/graphics-local/people/Sedov.jpg Graphic file (type jpg)
-<use ../local/graphics-local/people/Sedov.jpg>
-Package pdftex.def Info: ../local/graphics-local/people/Sedov.jpg  used on inpu
-t line 42.
-(pdftex.def)             Requested size: 78.51193pt x 108.405pt.
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 42.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 42.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [6
-
- <../local/graphics-local/people/Taylor.jpg> <../local/graphics-local/people/vN
-.jpeg> <../local/graphics-local/people/Sedov.jpg>]
-File: ../local/graphics-local/people/Taylor.jpg Graphic file (type jpg)
-<use ../local/graphics-local/people/Taylor.jpg>
-Package pdftex.def Info: ../local/graphics-local/people/Taylor.jpg  used on inp
-ut line 42.
-(pdftex.def)             Requested size: 109.27975pt x 108.405pt.
-File: ../local/graphics-local/people/vN.jpeg Graphic file (type jpg)
-<use ../local/graphics-local/people/vN.jpeg>
-Package pdftex.def Info: ../local/graphics-local/people/vN.jpeg  used on input 
-line 42.
-(pdftex.def)             Requested size: 83.42082pt x 108.405pt.
-File: ../local/graphics-local/people/Sedov.jpg Graphic file (type jpg)
-<use ../local/graphics-local/people/Sedov.jpg>
-Package pdftex.def Info: ../local/graphics-local/people/Sedov.jpg  used on inpu
-t line 42.
-(pdftex.def)             Requested size: 78.51193pt x 108.405pt.
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 42.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 42.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [7
-
-]
 File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
@@ -1701,1095 +1522,114 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 52.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [8
+ [1{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-]
-<../local/graphics-local/ss/taylor-01.pdf, id=482, 1092.08pt x 260.975pt>
-File: ../local/graphics-local/ss/taylor-01.pdf Graphic file (type pdf)
-<use ../local/graphics-local/ss/taylor-01.pdf>
-Package pdftex.def Info: ../local/graphics-local/ss/taylor-01.pdf  used on inpu
-t line 79.
-(pdftex.def)             Requested size: 273.01933pt x 65.24359pt.
-<../local/graphics-local/ss/taylor-02.pdf, id=486, 1078.0275pt x 250.9375pt>
-File: ../local/graphics-local/ss/taylor-02.pdf Graphic file (type pdf)
-<use ../local/graphics-local/ss/taylor-02.pdf>
-Package pdftex.def Info: ../local/graphics-local/ss/taylor-02.pdf  used on inpu
-t line 79.
-(pdftex.def)             Requested size: 269.50621pt x 62.7342pt.
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 79.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 79.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [9
+ <../../../global/graphics-global/logos/logo-dtriac.png> <../../../global/graph
+ics-global/logos/logo-dtra-eagle.png>]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 73.
 
- <../local/graphics-local/ss/taylor-01.pdf> <../local/graphics-local/ss/taylor-
-02.pdf>]
-<../local/graphics-local/Taylor/brook-01.jpg, id=541, 301.125pt x 386.44376pt>
-File: ../local/graphics-local/Taylor/brook-01.jpg Graphic file (type jpg)
-<use ../local/graphics-local/Taylor/brook-01.jpg>
-Package pdftex.def Info: ../local/graphics-local/Taylor/brook-01.jpg  used on i
-nput line 100.
-(pdftex.def)             Requested size: 90.3375pt x 115.93402pt.
-<../local/graphics-local/Taylor/brook-02.jpg, id=542, 79.497pt x 107.14027pt>
-File: ../local/graphics-local/Taylor/brook-02.jpg Graphic file (type jpg)
-<use ../local/graphics-local/Taylor/brook-02.jpg>
-Package pdftex.def Info: ../local/graphics-local/Taylor/brook-02.jpg  used on i
-nput line 100.
-(pdftex.def)             Requested size: 86.00146pt x 115.91248pt.
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 100.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 100.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [10
 
- <../local/graphics-local/Taylor/brook-01.jpg> <../local/graphics-local/Taylor/
-brook-02.jpg>]
-<../local/graphics-local/Taylor/Taylor-01.pdf, id=589, 509.905pt x 145.54375pt>
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 73.
 
-File: ../local/graphics-local/Taylor/Taylor-01.pdf Graphic file (type pdf)
-<use ../local/graphics-local/Taylor/Taylor-01.pdf>
-Package pdftex.def Info: ../local/graphics-local/Taylor/Taylor-01.pdf  used on 
-input line 110.
-(pdftex.def)             Requested size: 254.95187pt x 72.77168pt.
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 110.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 110.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [11
 
- <../local/graphics-local/Taylor/Taylor-01.pdf>]
-<../local/graphics-local/taylor/p-photos-01.png, id=635, 570.13pt x 912.40875pt
->
-File: ../local/graphics-local/taylor/p-photos-01.png Graphic file (type png)
-<use ../local/graphics-local/taylor/p-photos-01.png>
-Package pdftex.def Info: ../local/graphics-local/taylor/p-photos-01.png  used o
-n input line 127.
-(pdftex.def)             Requested size: 99.77425pt x 159.67392pt.
-<../local/graphics-local/taylor/p-table-1.png, id=637, 448.67625pt x 416.55624p
-t>
-File: ../local/graphics-local/taylor/p-table-1.png Graphic file (type png)
-<use ../local/graphics-local/taylor/p-table-1.png>
-Package pdftex.def Info: ../local/graphics-local/taylor/p-table-1.png  used on 
-input line 127.
-(pdftex.def)             Requested size: 172.73746pt x 160.37146pt.
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 127.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 127.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [12
-
- <../local/graphics-local/taylor/p-photos-01.png> <../local/graphics-local/tayl
-or/p-table-1.png>]
-<../local/graphics-local/taylor/fig-01.png, id=681, 373.395pt x 382.42876pt>
-File: ../local/graphics-local/taylor/fig-01.png Graphic file (type png)
-<use ../local/graphics-local/taylor/fig-01.png>
-Package pdftex.def Info: ../local/graphics-local/taylor/fig-01.png  used on inp
-ut line 137.
-(pdftex.def)             Requested size: 158.69362pt x 162.53297pt.
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 137.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 137.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [13
-
- <../local/graphics-local/taylor/fig-01.png>]
-File: ../local/graphics-local/taylor/fig-01.png Graphic file (type png)
-<use ../local/graphics-local/taylor/fig-01.png>
-Package pdftex.def Info: ../local/graphics-local/taylor/fig-01.png  used on inp
-ut line 137.
-(pdftex.def)             Requested size: 158.69362pt x 162.53297pt.
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 137.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 137.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [14
-
-]
-<../local/graphics-local/taylor/taylor-basic.pdf, id=767, 260.975pt x 298.11375
-pt>
-File: ../local/graphics-local/taylor/taylor-basic.pdf Graphic file (type pdf)
-<use ../local/graphics-local/taylor/taylor-basic.pdf>
-Package pdftex.def Info: ../local/graphics-local/taylor/taylor-basic.pdf  used 
-on input line 149.
-(pdftex.def)             Requested size: 130.48718pt x 149.0565pt.
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 149.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 149.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [15
-
- <../local/graphics-local/taylor/taylor-basic.pdf>]
-<../local/graphics-local/taylor/p-table-3.png, id=821, 466.74374pt x 134.5025pt
->
-File: ../local/graphics-local/taylor/p-table-3.png Graphic file (type png)
-<use ../local/graphics-local/taylor/p-table-3.png>
-Package pdftex.def Info: ../local/graphics-local/taylor/p-table-3.png  used on 
-input line 179.
-(pdftex.def)             Requested size: 140.0242pt x 40.35104pt.
-<../local/graphics-local/taylor/p-eq-32.png, id=823, 511.9125pt x 55.20625pt>
-File: ../local/graphics-local/taylor/p-eq-32.png Graphic file (type png)
-<use ../local/graphics-local/taylor/p-eq-32.png>
-Package pdftex.def Info: ../local/graphics-local/taylor/p-eq-32.png  used on in
-put line 179.
-(pdftex.def)             Requested size: 179.17206pt x 19.32246pt.
-
-Overfull \hbox (8.93028pt too wide) in paragraph at lines 179--179
- [] 
- []
-
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 179.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 179.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
-[16
-
- <../local/graphics-local/taylor/p-table-3.png> <../local/graphics-local/taylor
-/p-eq-32.png>]
-File: ../local/graphics-local/taylor/p-table-3.png Graphic file (type png)
-<use ../local/graphics-local/taylor/p-table-3.png>
-Package pdftex.def Info: ../local/graphics-local/taylor/p-table-3.png  used on 
-input line 179.
-(pdftex.def)             Requested size: 140.0242pt x 40.35104pt.
-File: ../local/graphics-local/taylor/p-eq-32.png Graphic file (type png)
-<use ../local/graphics-local/taylor/p-eq-32.png>
-Package pdftex.def Info: ../local/graphics-local/taylor/p-eq-32.png  used on in
-put line 179.
-(pdftex.def)             Requested size: 179.17206pt x 19.32246pt.
-
-Overfull \hbox (8.93028pt too wide) in paragraph at lines 179--179
- [] 
- []
-
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 179.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 179.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
-[17
-
-]
-<../local/graphics-local/ss/sedov.pdf, id=908, 1340.00626pt x 587.19376pt>
-File: ../local/graphics-local/ss/sedov.pdf Graphic file (type pdf)
-<use ../local/graphics-local/ss/sedov.pdf>
-Package pdftex.def Info: ../local/graphics-local/ss/sedov.pdf  used on input li
-ne 190.
-(pdftex.def)             Requested size: 267.9965pt x 117.43666pt.
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 190.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 190.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [18
-
- <../local/graphics-local/ss/sedov.pdf>]
-<../local/graphics-local/ss/bethe-01.pdf, id=956, 388.45125pt x 324.21124pt>
-File: ../local/graphics-local/ss/bethe-01.pdf Graphic file (type pdf)
-<use ../local/graphics-local/ss/bethe-01.pdf>
-Package pdftex.def Info: ../local/graphics-local/ss/bethe-01.pdf  used on input
- line 201.
-(pdftex.def)             Requested size: 174.80144pt x 145.8937pt.
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 201.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 201.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [19
-
- <../local/graphics-local/ss/bethe-01.pdf>]
-<../local/graphics-local/ss/bethe-02.pdf, id=1007, 704.6325pt x 601.24625pt>
-File: ../local/graphics-local/ss/bethe-02.pdf Graphic file (type pdf)
-<use ../local/graphics-local/ss/bethe-02.pdf>
-Package pdftex.def Info: ../local/graphics-local/ss/bethe-02.pdf  used on input
- line 212.
-(pdftex.def)             Requested size: 176.1577pt x 150.31119pt.
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 212.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 212.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [20
-
- <../local/graphics-local/ss/bethe-02.pdf>]
-<../local/graphics-local/ss/princeton-01.pdf, id=1056, 992.70876pt x 285.065pt>
-
-File: ../local/graphics-local/ss/princeton-01.pdf Graphic file (type pdf)
-<use ../local/graphics-local/ss/princeton-01.pdf>
-Package pdftex.def Info: ../local/graphics-local/ss/princeton-01.pdf  used on i
-nput line 223.
-(pdftex.def)             Requested size: 297.81493pt x 85.52016pt.
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 223.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 223.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [21
-
- <../local/graphics-local/ss/princeton-01.pdf>]
-<../local/graphics-local/ss/brode-01.pdf, id=1106, 1221.56375pt x 414.54875pt>
-File: ../local/graphics-local/ss/brode-01.pdf Graphic file (type pdf)
-<use ../local/graphics-local/ss/brode-01.pdf>
-Package pdftex.def Info: ../local/graphics-local/ss/brode-01.pdf  used on input
- line 235.
-(pdftex.def)             Requested size: 305.39018pt x 103.63693pt.
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 235.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 235.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [22
-
- <../local/graphics-local/ss/brode-01.pdf>]
-<../local/graphics-local/ss/brode-fluids.pdf, id=1155, 1208.515pt x 396.48125pt
->
-File: ../local/graphics-local/ss/brode-fluids.pdf Graphic file (type pdf)
-<use ../local/graphics-local/ss/brode-fluids.pdf>
-Package pdftex.def Info: ../local/graphics-local/ss/brode-fluids.pdf  used on i
-nput line 246.
-(pdftex.def)             Requested size: 302.128pt x 99.12006pt.
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 246.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 246.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [23
-
- <../local/graphics-local/ss/brode-fluids.pdf>]
-<../local/graphics-local/kamm/kamm.pdf, id=1205, 432.61626pt x 313.17pt>
-File: ../local/graphics-local/kamm/kamm.pdf Graphic file (type pdf)
-<use ../local/graphics-local/kamm/kamm.pdf>
-Package pdftex.def Info: ../local/graphics-local/kamm/kamm.pdf  used on input l
-ine 269.
-(pdftex.def)             Requested size: 194.6755pt x 140.92519pt.
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 269.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 269.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [24
-
- <../local/graphics-local/kamm/kamm.pdf>]
-<../local/graphics-local/wiki/splash.pdf, id=1252, 906.38625pt x 202.7575pt>
-File: ../local/graphics-local/wiki/splash.pdf Graphic file (type pdf)
-<use ../local/graphics-local/wiki/splash.pdf>
-Package pdftex.def Info: ../local/graphics-local/wiki/splash.pdf  used on input
- line 286.
-(pdftex.def)             Requested size: 226.59601pt x 50.68924pt.
-<../local/graphics-local/plots/TNS_blast_wave.pdf, id=1254, 379.4175pt x 314.17
-375pt>
-File: ../local/graphics-local/plots/TNS_blast_wave.pdf Graphic file (type pdf)
-<use ../local/graphics-local/plots/TNS_blast_wave.pdf>
-Package pdftex.def Info: ../local/graphics-local/plots/TNS_blast_wave.pdf  used
- on input line 286.
-(pdftex.def)             Requested size: 123.30922pt x 102.10526pt.
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 286.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 286.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [25
-
- <../local/graphics-local/wiki/splash.pdf> <../local/graphics-local/plots/TNS_b
-last_wave.pdf>]
-<../local/graphics-local/ss/guide-atmos-test.pdf, id=1314, 689.57625pt x 331.23
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+<../local/graphics-local/taylor/taylor-image.png, id=82, 1131.22626pt x 627.343
 75pt>
-File: ../local/graphics-local/ss/guide-atmos-test.pdf Graphic file (type pdf)
-<use ../local/graphics-local/ss/guide-atmos-test.pdf>
-Package pdftex.def Info: ../local/graphics-local/ss/guide-atmos-test.pdf  used 
-on input line 298.
-(pdftex.def)             Requested size: 275.8256pt x 132.49265pt.
+File: ../local/graphics-local/taylor/taylor-image.png Graphic file (type png)
+<use ../local/graphics-local/taylor/taylor-image.png>
+Package pdftex.def Info: ../local/graphics-local/taylor/taylor-image.png  used 
+on input line 73.
+(pdftex.def)             Requested size: 282.80586pt x 156.83554pt.
 File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 298.
+ used on input line 73.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 298.
+png  used on input line 73.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [26
+ [2
 
- <../local/graphics-local/ss/guide-atmos-test.pdf>]
+ <../local/graphics-local/taylor/taylor-image.png>]
+File: ../local/graphics-local/taylor/taylor-image.png Graphic file (type png)
+<use ../local/graphics-local/taylor/taylor-image.png>
+Package pdftex.def Info: ../local/graphics-local/taylor/taylor-image.png  used 
+on input line 73.
+(pdftex.def)             Requested size: 282.80586pt x 156.83554pt.
 File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 323.
+ used on input line 73.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 323.
+png  used on input line 73.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [27
+ [3
+
+] (./sentinel.toc)
+Overfull \vbox (2.45454pt too high) detected at line 78
+ []
+
+File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
+png)
+<use ../../../global/graphics-global/logos/logo-dtriac.png>
+Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
+ used on input line 78.
+(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
+File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
+ype png)
+<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
+Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
+png  used on input line 78.
+(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
+[4
+
+] (../sections//sec-problem-statement.tex
+../sections//"sec-problem-statement.tex"
+) (../sections//sec-theoryX.tex
+../sections//"sec-theory.tex"
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 7.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 7.
+
+) (../sections//sec-solutions.tex
+../sections//"sec-solutions.tex"
+) (../sections//sec-staging.tex
+../sections//"sec-staging.tex"
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 21.
+File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
+png)
+<use ../../../global/graphics-global/logos/logo-dtriac.png>
+Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
+ used on input line 21.
+(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
+File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
+ype png)
+<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
+Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
+png  used on input line 21.
+(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
+[5
 
 ]
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 346.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 346.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [28
-
-]
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 362.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 362.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [29
-
-]
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 375.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 375.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [30
-
-]
-<../local/graphics-local/taylor/Taylora-tab01.pdf, id=1541, 260.975pt x 161.603
-74pt>
-File: ../local/graphics-local/taylor/Taylora-tab01.pdf Graphic file (type pdf)
-<use ../local/graphics-local/taylor/Taylora-tab01.pdf>
-Package pdftex.def Info: ../local/graphics-local/taylor/Taylora-tab01.pdf  used
- on input line 388.
-(pdftex.def)             Requested size: 195.73077pt x 121.2025pt.
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 388.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 388.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [31
-
- <../local/graphics-local/taylor/Taylora-tab01.pdf>]
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 394.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 394.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [32
-
-]
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 405.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 405.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [33
-
-]
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 416.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 416.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [34
-
-]
-<../local/graphics-local/flow/3173298 Poincare-Bendixson.pdf, id=1718, 578.16pt
- x 583.17876pt>
-File: ../local/graphics-local/flow/3173298 Poincare-Bendixson.pdf Graphic file 
-(type pdf)
-<use ../local/graphics-local/flow/3173298 Poincare-Bendixson.pdf>
-Package pdftex.def Info: ../local/graphics-local/flow/3173298 Poincare-Bendixso
-n.pdf  used on input line 425.
-(pdftex.def)             Requested size: 144.53964pt x 145.79433pt.
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 425.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 425.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [35
-
- <../local/graphics-local/flow/3173298 Poincare-Bendixson.pdf>]
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 467.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 467.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [36
-
-]
-
-Package hyperref Warning: Suppressing link with empty target on input line 479.
-
-
-
-Package hyperref Warning: Suppressing link with empty target on input line 479.
-
-
-
-Package hyperref Warning: Suppressing link with empty target on input line 479.
-
-
-
-Package hyperref Warning: Suppressing link with empty target on input line 479.
-
-
-
-Package hyperref Warning: Suppressing link with empty target on input line 479.
-
-
-
-LaTeX Warning: Citation 'pokorski2000gauge' on page 37 undefined on input line 
-479.
-
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 479.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 479.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
-[37
-
-]
-<../local/graphics-local/pt-dynamic-similarity.png, id=1891, 662.475pt x 303.13
-25pt>
-File: ../local/graphics-local/pt-dynamic-similarity.png Graphic file (type png)
-
-<use ../local/graphics-local/pt-dynamic-similarity.png>
-Package pdftex.def Info: ../local/graphics-local/pt-dynamic-similarity.png  use
-d on input line 495.
-(pdftex.def)             Requested size: 298.111pt x 136.40836pt.
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 495.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 495.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [38
-
- <../local/graphics-local/pt-dynamic-similarity.png>]
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 503.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 503.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [39
-
-]
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 514.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 514.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [40
-
-]
-<../local/graphics-local/sedov-toc.png, id=2028, 473.77pt x 433.62pt>
-File: ../local/graphics-local/sedov-toc.png Graphic file (type png)
-<use ../local/graphics-local/sedov-toc.png>
-Package pdftex.def Info: ../local/graphics-local/sedov-toc.png  used on input l
-ine 524.
-(pdftex.def)             Requested size: 165.82198pt x 151.76927pt.
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 524.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 524.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
-
-[41
-
- <../local/graphics-local/sedov-toc.png>]
-<../local/graphics-local/sedov-148.pdf, id=2072, 705.63625pt x 393.47pt>
-File: ../local/graphics-local/sedov-148.pdf Graphic file (type pdf)
-<use ../local/graphics-local/sedov-148.pdf>
-Package pdftex.def Info: ../local/graphics-local/sedov-148.pdf  used on input l
-ine 540.
-(pdftex.def)             Requested size: 246.97638pt x 137.71655pt.
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 540.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 540.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [42
-
- <../local/graphics-local/sedov-148.pdf>]
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 552.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 552.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [43
-
-]
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 578.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 578.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [44
-
-]
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 586.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 586.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [45
-
-]
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 592.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 592.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [46
-
-]
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 612.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 612.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [47
-
-]
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 612.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 612.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [48
-
-]pdfTeX warning (ext4): destination with the same identifier (name{tab:conserve
-d}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.630 \end{frame}
-                 
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 630.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 630.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [49
-
-]
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 644.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 644.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [50
-
-]
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 659.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 659.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [51
-
-]
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 684.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 684.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [52
-
-]
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 694.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 694.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [53
-
-]
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 704.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 704.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [54
-
-]
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 715.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 715.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [55
-
-])
-(../sections/sec-numerics.tex
-\c@algorithmCounter=\count465
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 13.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 13.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [56
-
-]
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 43.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 43.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [57
-
-]
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 69.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 69.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [58
-
-]
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 84.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 84.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [59
-
-]
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 93.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 93.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [60
-
-]
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 109.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 109.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [61
-
-]
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 121.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 121.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [62
-
-]
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 136.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 136.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [63
-
-]
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 149.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 149.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [64
-
-])
-(../sections/sec-applications.tex
-<../local/graphics-local/ss/spriggs-01.pdf, id=2998, 663.47874pt x 399.4925pt>
-File: ../local/graphics-local/ss/spriggs-01.pdf Graphic file (type pdf)
-<use ../local/graphics-local/ss/spriggs-01.pdf>
-Package pdftex.def Info: ../local/graphics-local/ss/spriggs-01.pdf  used on inp
-ut line 32.
-(pdftex.def)             Requested size: 165.86928pt x 99.87288pt.
-<../local/graphics-local/ss/spriggs-02.pdf, id=3000, 653.44125pt x 583.17876pt>
-
-File: ../local/graphics-local/ss/spriggs-02.pdf Graphic file (type pdf)
-<use ../local/graphics-local/ss/spriggs-02.pdf>
-Package pdftex.def Info: ../local/graphics-local/ss/spriggs-02.pdf  used on inp
-ut line 32.
-(pdftex.def)             Requested size: 130.68593pt x 116.63368pt.
 File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
@@ -2802,463 +1642,11 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 32.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [65
+ [6
 
- <../local/graphics-local/ss/spriggs-01.pdf> <../local/graphics-local/ss/sprigg
-s-02.pdf>]
-<../local/graphics-local/ss/mohawk.pdf, id=3058, 1112.155pt x 645.41125pt>
-File: ../local/graphics-local/ss/mohawk.pdf Graphic file (type pdf)
-<use ../local/graphics-local/ss/mohawk.pdf>
-Package pdftex.def Info: ../local/graphics-local/ss/mohawk.pdf  used on input l
-ine 41.
-(pdftex.def)             Requested size: 278.03807pt x 161.35242pt.
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 41.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 41.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [66
-
- <../local/graphics-local/ss/mohawk.pdf>]
-<../local/graphics-local/ss/llnl-sim.pdf, id=3103, 1111.15125pt x 733.74126pt>
-File: ../local/graphics-local/ss/llnl-sim.pdf Graphic file (type pdf)
-<use ../local/graphics-local/ss/llnl-sim.pdf>
-Package pdftex.def Info: ../local/graphics-local/ss/llnl-sim.pdf  used on input
- line 49.
-(pdftex.def)             Requested size: 250.0152pt x 165.09586pt.
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 49.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 49.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [67
-
- <../local/graphics-local/ss/llnl-sim.pdf>]
-<../local/graphics-local/water-01.png, id=3150, 716.6775pt x 457.71pt>
-File: ../local/graphics-local/water-01.png Graphic file (type png)
-<use ../local/graphics-local/water-01.png>
-Package pdftex.def Info: ../local/graphics-local/water-01.png  used on input li
-ne 60.
-(pdftex.def)             Requested size: 250.84088pt x 160.2009pt.
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 60.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 60.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [68
-
- <../local/graphics-local/water-01.png>]
-<../local/graphics-local/water-02.png, id=3198, 540.0175pt x 506.89375pt>
-File: ../local/graphics-local/water-02.png Graphic file (type png)
-<use ../local/graphics-local/water-02.png>
-Package pdftex.def Info: ../local/graphics-local/water-02.png  used on input li
-ne 73.
-(pdftex.def)             Requested size: 189.00896pt x 177.41547pt.
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 73.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 73.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [69
-
- <../local/graphics-local/water-02.png>]
-File: ../local/graphics-local/water-02.png Graphic file (type png)
-<use ../local/graphics-local/water-02.png>
-Package pdftex.def Info: ../local/graphics-local/water-02.png  used on input li
-ne 73.
-(pdftex.def)             Requested size: 189.00896pt x 177.41547pt.
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 73.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 73.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [70
-
-]
-File: ../local/graphics-local/water-02.png Graphic file (type png)
-<use ../local/graphics-local/water-02.png>
-Package pdftex.def Info: ../local/graphics-local/water-02.png  used on input li
-ne 84.
-(pdftex.def)             Requested size: 189.00896pt x 177.41547pt.
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 84.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 84.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
-
-[71
-
-]
-<../local/graphics-local/water-04.png, id=3327, 591.20876pt x 426.59375pt>
-File: ../local/graphics-local/water-04.png Graphic file (type png)
-<use ../local/graphics-local/water-04.png>
-Package pdftex.def Info: ../local/graphics-local/water-04.png  used on input li
-ne 92.
-(pdftex.def)             Requested size: 236.47931pt x 170.63446pt.
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 92.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 92.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [72
-
- <../local/graphics-local/water-04.png>]
-<../local/graphics-local/baty.png, id=3370, 779.91376pt x 264.99pt>
-File: ../local/graphics-local/baty.png Graphic file (type png)
-<use ../local/graphics-local/baty.png>
-Package pdftex.def Info: ../local/graphics-local/baty.png  used on input line 1
-02.
-(pdftex.def)             Requested size: 272.9739pt x 92.74788pt.
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 102.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 102.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [73
-
- <../local/graphics-local/baty.png>]
-<../local/graphics-local/baty-01.png, id=3417, 382.42876pt x 224.84pt>
-File: ../local/graphics-local/baty-01.png Graphic file (type png)
-<use ../local/graphics-local/baty-01.png>
-Package pdftex.def Info: ../local/graphics-local/baty-01.png  used on input lin
-e 111.
-(pdftex.def)             Requested size: 210.33646pt x 123.66237pt.
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 111.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 111.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [74
-
- <../local/graphics-local/baty-01.png>]
-<../local/graphics-local/beirut/aj.png, id=3462, 772.8875pt x 514.92375pt>
-File: ../local/graphics-local/beirut/aj.png Graphic file (type png)
-<use ../local/graphics-local/beirut/aj.png>
-Package pdftex.def Info: ../local/graphics-local/beirut/aj.png  used on input l
-ine 122.
-(pdftex.def)             Requested size: 231.86803pt x 154.4783pt.
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 122.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 122.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [75
-
- <../local/graphics-local/beirut/aj.png>]
-<../local/graphics-local/marines.png, id=3506, 762.85pt x 143.53625pt>
-File: ../local/graphics-local/marines.png Graphic file (type png)
-<use ../local/graphics-local/marines.png>
-Package pdftex.def Info: ../local/graphics-local/marines.png  used on input lin
-e 132.
-(pdftex.def)             Requested size: 343.27933pt x 64.5907pt.
-
-Overfull \hbox (0.9832pt too wide) in paragraph at lines 132--132
- [][] 
- []
-
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 132.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 132.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
-[76
-
- <../local/graphics-local/marines.png>]
-<../local/graphics-local/beirut/aj-01.png, id=3552, 772.8875pt x 772.8875pt>
-File: ../local/graphics-local/beirut/aj-01.png Graphic file (type png)
-<use ../local/graphics-local/beirut/aj-01.png>
-Package pdftex.def Info: ../local/graphics-local/beirut/aj-01.png  used on inpu
-t line 141.
-(pdftex.def)             Requested size: 154.57475pt x 154.57475pt.
-
-
-LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 141.
-
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 141.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 141.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
-[77
-
- <../local/graphics-local/beirut/aj-01.png>]
-<../local/graphics-local/beirut/title.png, id=3599, 612.2875pt x 274.02374pt>
-File: ../local/graphics-local/beirut/title.png Graphic file (type png)
-<use ../local/graphics-local/beirut/title.png>
-Package pdftex.def Info: ../local/graphics-local/beirut/title.png  used on inpu
-t line 152.
-(pdftex.def)             Requested size: 306.143pt x 137.01154pt.
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 152.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 152.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [78
-
- <../local/graphics-local/beirut/title.png>]
-File: ../local/graphics-local/beirut/title.png Graphic file (type png)
-<use ../local/graphics-local/beirut/title.png>
-Package pdftex.def Info: ../local/graphics-local/beirut/title.png  used on inpu
-t line 163.
-(pdftex.def)             Requested size: 306.143pt x 137.01154pt.
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 163.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 163.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [79
-
-]
-<../local/graphics-local/beirut/fig-1.png, id=3692, 687.56876pt x 561.09625pt>
-File: ../local/graphics-local/beirut/fig-1.png Graphic file (type png)
-<use ../local/graphics-local/beirut/fig-1.png>
-Package pdftex.def Info: ../local/graphics-local/beirut/fig-1.png  used on inpu
-t line 172.
-(pdftex.def)             Requested size: 171.89177pt x 140.27371pt.
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 172.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 172.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [80
-
- <../local/graphics-local/beirut/fig-1.png>]
-<../local/graphics-local/beirut/fig-2.png, id=3735, 687.56876pt x 546.04pt>
-File: ../local/graphics-local/beirut/fig-2.png Graphic file (type png)
-<use ../local/graphics-local/beirut/fig-2.png>
-Package pdftex.def Info: ../local/graphics-local/beirut/fig-2.png  used on inpu
-t line 181.
-(pdftex.def)             Requested size: 206.27222pt x 163.81326pt.
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 181.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 181.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [81
-
- <../local/graphics-local/beirut/fig-2.png>]
-<../local/graphics-local/beirut/fig-4a.png, id=3779, 687.56876pt x 472.76625pt>
-
-File: ../local/graphics-local/beirut/fig-4a.png Graphic file (type png)
-<use ../local/graphics-local/beirut/fig-4a.png>
-Package pdftex.def Info: ../local/graphics-local/beirut/fig-4a.png  used on inp
-ut line 190.
-(pdftex.def)             Requested size: 223.4572pt x 153.6472pt.
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 190.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 190.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [82
-
- <../local/graphics-local/beirut/fig-4a.png>]
-<../local/graphics-local/beirut/fig-10.png, id=3822, 687.56876pt x 348.30125pt>
-
-File: ../local/graphics-local/beirut/fig-10.png Graphic file (type png)
-<use ../local/graphics-local/beirut/fig-10.png>
-Package pdftex.def Info: ../local/graphics-local/beirut/fig-10.png  used on inp
-ut line 199.
-(pdftex.def)             Requested size: 275.02263pt x 139.31802pt.
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 199.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 199.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [83
-
- <../local/graphics-local/beirut/fig-10.png>]
-<../local/graphics-local/diaz.png, id=3866, 616.3025pt x 225.84375pt>
-File: ../local/graphics-local/diaz.png Graphic file (type png)
-<use ../local/graphics-local/diaz.png>
-Package pdftex.def Info: ../local/graphics-local/diaz.png  used on input line 2
-10.
-(pdftex.def)             Requested size: 308.1505pt x 112.92159pt.
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 210.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 210.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [84
-
- <../local/graphics-local/diaz.png>]
-File: ../local/graphics-local/diaz.png Graphic file (type png)
-<use ../local/graphics-local/diaz.png>
-Package pdftex.def Info: ../local/graphics-local/diaz.png  used on input line 2
-10.
-(pdftex.def)             Requested size: 308.1505pt x 112.92159pt.
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 210.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 210.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [85
-
-]
-<../local/graphics-local/diaz-01.png, id=3950, 383.4325pt x 287.0725pt>
-File: ../local/graphics-local/diaz-01.png Graphic file (type png)
-<use ../local/graphics-local/diaz-01.png>
-Package pdftex.def Info: ../local/graphics-local/diaz-01.png  used on input lin
-e 219.
-(pdftex.def)             Requested size: 191.71577pt x 143.53589pt.
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 219.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 219.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [86
-
- <../local/graphics-local/diaz-01.png>])
-(../sections/sec-backup.tex
-<../local/graphics-local/taylor/final-comment.png, id=3993, 512.91624pt x 89.33
-376pt>
+]) (../sections/sec-backup.tex
+<../local/graphics-local/taylor/final-comment.png, id=314, 512.91624pt x 89.333
+76pt>
 File: ../local/graphics-local/taylor/final-comment.png Graphic file (type png)
 <use ../local/graphics-local/taylor/final-comment.png>
 Package pdftex.def Info: ../local/graphics-local/taylor/final-comment.png  used
@@ -3276,7 +1664,7 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 18.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [87
+ [7
 
  <../local/graphics-local/taylor/final-comment.png>]
 File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
@@ -3291,11 +1679,11 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 26.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [88
+ [8
 
 ]
-<../local/graphics-local/taylor/taylor-redux.pdf, id=4078, 260.975pt x 304.1362
-5pt>
+<../local/graphics-local/taylor/taylor-redux.pdf, id=401, 260.975pt x 304.13625
+pt>
 File: ../local/graphics-local/taylor/taylor-redux.pdf Graphic file (type pdf)
 <use ../local/graphics-local/taylor/taylor-redux.pdf>
 Package pdftex.def Info: ../local/graphics-local/taylor/taylor-redux.pdf  used 
@@ -3313,11 +1701,11 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 37.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [89
+ [9
 
  <../local/graphics-local/taylor/taylor-redux.pdf>]
-<../local/graphics-local/Taylor/Taylor-redux-true.pdf, id=4130, 260.975pt x 158
-.5925pt>
+<../local/graphics-local/Taylor/Taylor-redux-true.pdf, id=456, 260.975pt x 158.
+5925pt>
 File: ../local/graphics-local/Taylor/Taylor-redux-true.pdf Graphic file (type p
 df)
 <use ../local/graphics-local/Taylor/Taylor-redux-true.pdf>
@@ -3336,9 +1724,12 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 50.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [90
+ [10
 
  <../local/graphics-local/Taylor/Taylor-redux-true.pdf>]
+
+LaTeX Warning: Reference `eq:one' on page 11 undefined on input line 59.
+
 File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
@@ -3351,7 +1742,7 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 59.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [91
+[11
 
 ]
 File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
@@ -3366,7 +1757,7 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 68.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [92
+ [12
 
 ]
 File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
@@ -3381,7 +1772,7 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 78.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [93
+ [13
 
 ]
 File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
@@ -3396,7 +1787,7 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 92.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [94
+ [14
 
 ]
 File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
@@ -3411,11 +1802,11 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 92.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [95
+ [15
 
 ]
-<../local/graphics-local/Taylor/mm-screen-02.png, id=4377, 762.85pt x 278.03876
-pt>
+<../local/graphics-local/Taylor/mm-screen-02.png, id=715, 762.85pt x 278.03876p
+t>
 File: ../local/graphics-local/Taylor/mm-screen-02.png Graphic file (type png)
 <use ../local/graphics-local/Taylor/mm-screen-02.png>
 Package pdftex.def Info: ../local/graphics-local/Taylor/mm-screen-02.png  used 
@@ -3433,11 +1824,11 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 101.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [96
+ [16
 
  <../local/graphics-local/Taylor/mm-screen-02.png>]
-<../local/graphics-local/Taylor/Taylor-redux-both.pdf, id=4419, 260.975pt x 254
-.9525pt>
+<../local/graphics-local/Taylor/Taylor-redux-both.pdf, id=757, 260.975pt x 254.
+9525pt>
 File: ../local/graphics-local/Taylor/Taylor-redux-both.pdf Graphic file (type p
 df)
 <use ../local/graphics-local/Taylor/Taylor-redux-both.pdf>
@@ -3456,7 +1847,7 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 112.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [97
+[17
 
  <../local/graphics-local/Taylor/Taylor-redux-both.pdf>]
 File: ../local/graphics-local/Taylor/Taylor-redux-both.pdf Graphic file (type p
@@ -3477,11 +1868,11 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 125.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [98
+ [18
 
 ]
-<../local/graphics-local/Taylor/Taylor-residuals-both.pdf, id=4505, 260.975pt x
- 161.60374pt>
+<../local/graphics-local/Taylor/Taylor-residuals-both.pdf, id=844, 260.975pt x 
+161.60374pt>
 File: ../local/graphics-local/Taylor/Taylor-residuals-both.pdf Graphic file (ty
 pe pdf)
 <use ../local/graphics-local/Taylor/Taylor-residuals-both.pdf>
@@ -3500,7 +1891,7 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 134.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [99
+ [19
 
  <../local/graphics-local/Taylor/Taylor-residuals-both.pdf>]
 File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
@@ -3515,7 +1906,7 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 148.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [100
+ [20
 
 ]
 File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
@@ -3530,7 +1921,7 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 169.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [101
+ [21
 
 ]
 File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
@@ -3545,7 +1936,7 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 169.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [102
+ [22
 
 ]
 File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
@@ -3560,7 +1951,7 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 184.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [103
+ [23
 
 ]
 File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
@@ -3575,7 +1966,7 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 204.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [104
+ [24
 
 pdfTeX warning (ext4): destination with the same identifier (name{eq:faux-norma
 l}) has been already used, duplicate ignored
@@ -3596,7 +1987,7 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 212.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [105
+ [25
 
 ]
 File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
@@ -3611,10 +2002,10 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 227.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [106
+ [26
 
 ]
-<../local/graphics-local/taylor/fit-result.png, id=4836, 514.92375pt x 158.5925
+<../local/graphics-local/taylor/fit-result.png, id=1188, 514.92375pt x 158.5925
 pt>
 File: ../local/graphics-local/taylor/fit-result.png Graphic file (type png)
 <use ../local/graphics-local/taylor/fit-result.png>
@@ -3633,7 +2024,7 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 240.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [107
+ [27
 
  <../local/graphics-local/taylor/fit-result.png>]
 File: ../local/graphics-local/taylor/fit-result.png Graphic file (type png)
@@ -3653,7 +2044,7 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 240.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [108
+ [28
 
 ]
 File: ../local/graphics-local/taylor/fit-result.png Graphic file (type png)
@@ -3673,10 +2064,10 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 240.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [109
+ [29
 
 ]
-<../local/graphics-local/mse.png, id=4960, 762.85pt x 521.95pt>
+<../local/graphics-local/mse.png, id=1313, 762.85pt x 521.95pt>
 File: ../local/graphics-local/mse.png Graphic file (type png)
 <use ../local/graphics-local/mse.png>
 Package pdftex.def Info: ../local/graphics-local/mse.png  used on input line 25
@@ -3694,7 +2085,7 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 253.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [110
+ [30
 
  <../local/graphics-local/mse.png>]
 File: ../local/graphics-local/mse.png Graphic file (type png)
@@ -3714,7 +2105,7 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 253.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [111
+ [31
 
 ]
 File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
@@ -3729,10 +2120,10 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 263.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [112
+ [32
 
 ]
-<../local/graphics-local/water-05.png, id=5084, 573.14125pt x 553.06625pt>
+<../local/graphics-local/water-05.png, id=1441, 573.14125pt x 553.06625pt>
 File: ../local/graphics-local/water-05.png Graphic file (type png)
 <use ../local/graphics-local/water-05.png>
 Package pdftex.def Info: ../local/graphics-local/water-05.png  used on input li
@@ -3750,7 +2141,7 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 272.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [113
+ [33
 
  <../local/graphics-local/water-05.png>]
 File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
@@ -3765,11 +2156,9 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 280.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [114
+ [34
 
 ]
-LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 293.
 File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
@@ -3782,7 +2171,7 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 293.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [115
+ [35
 
 ]
 File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
@@ -3797,10 +2186,10 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 304.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [116
+ [36
 
 ]
-<../local/graphics-local/kamm/kamm-01.pdf, id=5262, 469.755pt x 309.155pt>
+<../local/graphics-local/kamm/kamm-01.pdf, id=1621, 469.755pt x 309.155pt>
 File: ../local/graphics-local/kamm/kamm-01.pdf Graphic file (type pdf)
 <use ../local/graphics-local/kamm/kamm-01.pdf>
 Package pdftex.def Info: ../local/graphics-local/kamm/kamm-01.pdf  used on inpu
@@ -3818,10 +2207,10 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 318.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [117
+ [37
 
  <../local/graphics-local/kamm/kamm-01.pdf>]
-<../local/graphics-local/kamm/kamm-2-a.pdf, id=5307, 470.75874pt x 316.18124pt>
+<../local/graphics-local/kamm/kamm-2-a.pdf, id=1669, 470.75874pt x 316.18124pt>
 
 File: ../local/graphics-local/kamm/kamm-2-a.pdf Graphic file (type pdf)
 <use ../local/graphics-local/kamm/kamm-2-a.pdf>
@@ -3840,10 +2229,10 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 329.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [118
+ [38
 
  <../local/graphics-local/kamm/kamm-2-a.pdf>]
-<../local/graphics-local/kamm/kamm-2-b.pdf, id=5352, 474.77374pt x 282.05376pt>
+<../local/graphics-local/kamm/kamm-2-b.pdf, id=1714, 474.77374pt x 282.05376pt>
 
 File: ../local/graphics-local/kamm/kamm-2-b.pdf Graphic file (type pdf)
 <use ../local/graphics-local/kamm/kamm-2-b.pdf>
@@ -3862,11 +2251,10 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 340.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
-
-[119
+ [39
 
  <../local/graphics-local/kamm/kamm-2-b.pdf>]
-<../local/graphics-local/kamm/kamm-2-c.pdf, id=5396, 471.7625pt x 256.96pt>
+<../local/graphics-local/kamm/kamm-2-c.pdf, id=1760, 471.7625pt x 256.96pt>
 File: ../local/graphics-local/kamm/kamm-2-c.pdf Graphic file (type pdf)
 <use ../local/graphics-local/kamm/kamm-2-c.pdf>
 Package pdftex.def Info: ../local/graphics-local/kamm/kamm-2-c.pdf  used on inp
@@ -3884,10 +2272,10 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 351.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [120
+ [40
 
  <../local/graphics-local/kamm/kamm-2-c.pdf>]
-<../local/graphics-local/kamm/kamm-2-d.pdf, id=5440, 483.8075pt x 161.60374pt>
+<../local/graphics-local/kamm/kamm-2-d.pdf, id=1805, 483.8075pt x 161.60374pt>
 File: ../local/graphics-local/kamm/kamm-2-d.pdf Graphic file (type pdf)
 <use ../local/graphics-local/kamm/kamm-2-d.pdf>
 Package pdftex.def Info: ../local/graphics-local/kamm/kamm-2-d.pdf  used on inp
@@ -3905,10 +2293,11 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 362.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [121
+
+[41
 
  <../local/graphics-local/kamm/kamm-2-d.pdf>]
-<../local/graphics-local/kamm/kamm-2-e.pdf, id=5486, 497.86pt x 125.46875pt>
+<../local/graphics-local/kamm/kamm-2-e.pdf, id=1850, 497.86pt x 125.46875pt>
 File: ../local/graphics-local/kamm/kamm-2-e.pdf Graphic file (type pdf)
 <use ../local/graphics-local/kamm/kamm-2-e.pdf>
 Package pdftex.def Info: ../local/graphics-local/kamm/kamm-2-e.pdf  used on inp
@@ -3926,10 +2315,10 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 373.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [122
+ [42
 
  <../local/graphics-local/kamm/kamm-2-e.pdf>]
-<../local/graphics-local/kamm/kamm-2-f.pdf, id=5530, 486.81876pt x 220.825pt>
+<../local/graphics-local/kamm/kamm-2-f.pdf, id=1896, 486.81876pt x 220.825pt>
 File: ../local/graphics-local/kamm/kamm-2-f.pdf Graphic file (type pdf)
 <use ../local/graphics-local/kamm/kamm-2-f.pdf>
 Package pdftex.def Info: ../local/graphics-local/kamm/kamm-2-f.pdf  used on inp
@@ -3947,10 +2336,10 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 384.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [123
+ [43
 
  <../local/graphics-local/kamm/kamm-2-f.pdf>]
-<../local/graphics-local/kamm/kamm-2-g.pdf, id=5575, 477.785pt x 219.82124pt>
+<../local/graphics-local/kamm/kamm-2-g.pdf, id=1942, 477.785pt x 219.82124pt>
 File: ../local/graphics-local/kamm/kamm-2-g.pdf Graphic file (type pdf)
 <use ../local/graphics-local/kamm/kamm-2-g.pdf>
 Package pdftex.def Info: ../local/graphics-local/kamm/kamm-2-g.pdf  used on inp
@@ -3968,10 +2357,10 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 395.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [124
+ [44
 
  <../local/graphics-local/kamm/kamm-2-g.pdf>]
-<../local/graphics-local/kamm/kamm-2-h.pdf, id=5619, 499.8675pt x 156.585pt>
+<../local/graphics-local/kamm/kamm-2-h.pdf, id=1988, 499.8675pt x 156.585pt>
 File: ../local/graphics-local/kamm/kamm-2-h.pdf Graphic file (type pdf)
 <use ../local/graphics-local/kamm/kamm-2-h.pdf>
 Package pdftex.def Info: ../local/graphics-local/kamm/kamm-2-h.pdf  used on inp
@@ -3989,10 +2378,10 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 406.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [125
+ [45
 
  <../local/graphics-local/kamm/kamm-2-h.pdf>]
-<../local/graphics-local/kamm/kamm-2-i.pdf, id=5663, 478.78876pt x 224.84pt>
+<../local/graphics-local/kamm/kamm-2-i.pdf, id=2033, 478.78876pt x 224.84pt>
 File: ../local/graphics-local/kamm/kamm-2-i.pdf Graphic file (type pdf)
 <use ../local/graphics-local/kamm/kamm-2-i.pdf>
 Package pdftex.def Info: ../local/graphics-local/kamm/kamm-2-i.pdf  used on inp
@@ -4010,10 +2399,10 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 417.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [126
+ [46
 
  <../local/graphics-local/kamm/kamm-2-i.pdf>]
-<../local/graphics-local/kamm/kamm-2-j.pdf, id=5708, 480.79625pt x 178.6675pt>
+<../local/graphics-local/kamm/kamm-2-j.pdf, id=2078, 480.79625pt x 178.6675pt>
 File: ../local/graphics-local/kamm/kamm-2-j.pdf Graphic file (type pdf)
 <use ../local/graphics-local/kamm/kamm-2-j.pdf>
 Package pdftex.def Info: ../local/graphics-local/kamm/kamm-2-j.pdf  used on inp
@@ -4031,10 +2420,10 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 428.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [127
+ [47
 
  <../local/graphics-local/kamm/kamm-2-j.pdf>]
-<../local/graphics-local/kamm/kamm-2-k.pdf, id=5753, 474.77374pt x 313.17pt>
+<../local/graphics-local/kamm/kamm-2-k.pdf, id=2124, 474.77374pt x 313.17pt>
 File: ../local/graphics-local/kamm/kamm-2-k.pdf Graphic file (type pdf)
 <use ../local/graphics-local/kamm/kamm-2-k.pdf>
 Package pdftex.def Info: ../local/graphics-local/kamm/kamm-2-k.pdf  used on inp
@@ -4052,10 +2441,10 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 439.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [128
+ [48
 
  <../local/graphics-local/kamm/kamm-2-k.pdf>]
-<../local/graphics-local/kamm/kamm-02.pdf, id=5798, 471.7625pt x 347.2975pt>
+<../local/graphics-local/kamm/kamm-02.pdf, id=2169, 471.7625pt x 347.2975pt>
 File: ../local/graphics-local/kamm/kamm-02.pdf Graphic file (type pdf)
 <use ../local/graphics-local/kamm/kamm-02.pdf>
 Package pdftex.def Info: ../local/graphics-local/kamm/kamm-02.pdf  used on inpu
@@ -4073,10 +2462,11 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 450.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [129
+
+[49
 
  <../local/graphics-local/kamm/kamm-02.pdf>]
-<../local/graphics-local/kamm/kamm-03.pdf, id=5842, 456.70625pt x 264.99pt>
+<../local/graphics-local/kamm/kamm-03.pdf, id=2216, 456.70625pt x 264.99pt>
 File: ../local/graphics-local/kamm/kamm-03.pdf Graphic file (type pdf)
 <use ../local/graphics-local/kamm/kamm-03.pdf>
 Package pdftex.def Info: ../local/graphics-local/kamm/kamm-03.pdf  used on inpu
@@ -4094,11 +2484,10 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 461.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
-
-[130
+ [50
 
  <../local/graphics-local/kamm/kamm-03.pdf>]
-<../local/graphics-local/kamm/kamm-04.pdf, id=5886, 459.7175pt x 298.11375pt>
+<../local/graphics-local/kamm/kamm-04.pdf, id=2261, 459.7175pt x 298.11375pt>
 File: ../local/graphics-local/kamm/kamm-04.pdf Graphic file (type pdf)
 <use ../local/graphics-local/kamm/kamm-04.pdf>
 Package pdftex.def Info: ../local/graphics-local/kamm/kamm-04.pdf  used on inpu
@@ -4116,10 +2505,10 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 472.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [131
+ [51
 
  <../local/graphics-local/kamm/kamm-04.pdf>]
-<../local/graphics-local/kamm/kamm-05.pdf, id=5931, 464.73625pt x 174.6525pt>
+<../local/graphics-local/kamm/kamm-05.pdf, id=2307, 464.73625pt x 174.6525pt>
 File: ../local/graphics-local/kamm/kamm-05.pdf Graphic file (type pdf)
 <use ../local/graphics-local/kamm/kamm-05.pdf>
 Package pdftex.def Info: ../local/graphics-local/kamm/kamm-05.pdf  used on inpu
@@ -4137,10 +2526,10 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 483.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [132
+ [52
 
  <../local/graphics-local/kamm/kamm-05.pdf>]
-<../local/graphics-local/kamm/kamm-06.pdf, id=5975, 471.7625pt x 134.5025pt>
+<../local/graphics-local/kamm/kamm-06.pdf, id=2352, 471.7625pt x 134.5025pt>
 File: ../local/graphics-local/kamm/kamm-06.pdf Graphic file (type pdf)
 <use ../local/graphics-local/kamm/kamm-06.pdf>
 Package pdftex.def Info: ../local/graphics-local/kamm/kamm-06.pdf  used on inpu
@@ -4158,10 +2547,10 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 494.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [133
+ [53
 
  <../local/graphics-local/kamm/kamm-06.pdf>]
-<../local/graphics-local/Taylor/Taylor-02.pdf, id=6021, 513.92pt x 200.75pt>
+<../local/graphics-local/Taylor/Taylor-02.pdf, id=2397, 513.92pt x 200.75pt>
 File: ../local/graphics-local/Taylor/Taylor-02.pdf Graphic file (type pdf)
 <use ../local/graphics-local/Taylor/Taylor-02.pdf>
 Package pdftex.def Info: ../local/graphics-local/Taylor/Taylor-02.pdf  used on 
@@ -4179,7 +2568,7 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 506.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [134
+ [54
 
  <../local/graphics-local/Taylor/Taylor-02.pdf>]
 File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
@@ -4194,10 +2583,10 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 512.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [135
+ [55
 
 ]
-<../local/graphics-local/ss/brode-02.pdf, id=6103, 597.23125pt x 362.35374pt>
+<../local/graphics-local/ss/brode-02.pdf, id=2483, 597.23125pt x 362.35374pt>
 File: ../local/graphics-local/ss/brode-02.pdf Graphic file (type pdf)
 <use ../local/graphics-local/ss/brode-02.pdf>
 Package pdftex.def Info: ../local/graphics-local/ss/brode-02.pdf  used on input
@@ -4215,10 +2604,10 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 523.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [136
+ [56
 
  <../local/graphics-local/ss/brode-02.pdf>]
-<../local/graphics-local/wiki/math.pdf, id=6148, 1025.8325pt x 495.8525pt>
+<../local/graphics-local/wiki/math.pdf, id=2529, 1025.8325pt x 495.8525pt>
 File: ../local/graphics-local/wiki/math.pdf Graphic file (type pdf)
 <use ../local/graphics-local/wiki/math.pdf>
 Package pdftex.def Info: ../local/graphics-local/wiki/math.pdf  used on input l
@@ -4236,10 +2625,10 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 534.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [137
+ [57
 
  <../local/graphics-local/wiki/math.pdf>]
-<../local/graphics-local/wiki/edit-01.pdf, id=6193, 789.95125pt x 400.49625pt>
+<../local/graphics-local/wiki/edit-01.pdf, id=2575, 789.95125pt x 400.49625pt>
 File: ../local/graphics-local/wiki/edit-01.pdf Graphic file (type pdf)
 <use ../local/graphics-local/wiki/edit-01.pdf>
 Package pdftex.def Info: ../local/graphics-local/wiki/edit-01.pdf  used on inpu
@@ -4257,10 +2646,11 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 545.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [138
+
+[58
 
  <../local/graphics-local/wiki/edit-01.pdf>]
-<../local/graphics-local/wiki/edit-02.pdf, id=6239, 816.04875pt x 257.96375pt>
+<../local/graphics-local/wiki/edit-02.pdf, id=2621, 816.04875pt x 257.96375pt>
 File: ../local/graphics-local/wiki/edit-02.pdf Graphic file (type pdf)
 <use ../local/graphics-local/wiki/edit-02.pdf>
 Package pdftex.def Info: ../local/graphics-local/wiki/edit-02.pdf  used on inpu
@@ -4278,10 +2668,10 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 556.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [139
+ [59
 
  <../local/graphics-local/wiki/edit-02.pdf>]
-<../local/graphics-local/wiki/self-similar.pdf, id=6285, 1028.84375pt x 564.107
+<../local/graphics-local/wiki/self-similar.pdf, id=2667, 1028.84375pt x 564.107
 5pt>
 File: ../local/graphics-local/wiki/self-similar.pdf Graphic file (type pdf)
 <use ../local/graphics-local/wiki/self-similar.pdf>
@@ -4300,10 +2690,10 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 565.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [140
+ [60
 
  <../local/graphics-local/wiki/self-similar.pdf>]
-<../local/graphics-local/wiki/edit-03.pdf, id=6329, 816.04875pt x 296.10625pt>
+<../local/graphics-local/wiki/edit-03.pdf, id=2712, 816.04875pt x 296.10625pt>
 File: ../local/graphics-local/wiki/edit-03.pdf Graphic file (type pdf)
 <use ../local/graphics-local/wiki/edit-03.pdf>
 Package pdftex.def Info: ../local/graphics-local/wiki/edit-03.pdf  used on inpu
@@ -4321,9 +2711,13 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 574.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [141
+ [61
 
  <../local/graphics-local/wiki/edit-03.pdf>]
+
+LaTeX Warning: Reference `eq:Michelson–Rayleigh' on page 62 undefined on inpu
+t line 600.
+
 File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
@@ -4336,10 +2730,12 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 600.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
-
-[142
+[62
 
 ]
+
+LaTeX Warning: Reference `eq:enthalpy' on page 63 undefined on input line 623.
+
 File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
@@ -4352,7 +2748,7 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 623.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [143
+[63
 
 ]
 File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
@@ -4367,7 +2763,7 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 633.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [144
+ [64
 
 ]
 Missing character: There is no d in font msbm10!
@@ -4383,7 +2779,7 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 653.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [145
+ [65
 
 pdfTeX warning (ext4): destination with the same identifier (name{eq:Avector}) 
 has been already used, duplicate ignored
@@ -4404,61 +2800,45 @@ ype png)
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
 png  used on input line 664.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [146
+ [66
 
 ])
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/it' undefined
-(Font)              using `OT1/cmss/b/n' instead on input line 104.
+(Font)              using `OT1/cmss/b/n' instead on input line 93.
 
 
 Package biblatex Warning: No driver for entry type ''.
-(biblatex)                Using fallback driver on input line 104.
+(biblatex)                Using fallback driver on input line 93.
 
 File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 104.
+ used on input line 93.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 104.
+png  used on input line 93.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
-[147
+[67
 
 ]
 File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 104.
+ used on input line 93.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 104.
+png  used on input line 93.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [148
-
-
-]
-File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
-png)
-<use ../../../global/graphics-global/logos/logo-dtriac.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 104.
-(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
-File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
-ype png)
-<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
-Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 104.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [149
+ [68
 
 
 ]
@@ -4466,15 +2846,15 @@ File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 104.
+ used on input line 93.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 104.
+png  used on input line 93.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [150
+ [69
 
 
 ]
@@ -4482,15 +2862,15 @@ File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 104.
+ used on input line 93.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 104.
+png  used on input line 93.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [151
+ [70
 
 
 ]
@@ -4498,15 +2878,15 @@ File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 104.
+ used on input line 93.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 104.
+png  used on input line 93.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [152
+ [71
 
 
 ]
@@ -4514,15 +2894,15 @@ File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 104.
+ used on input line 93.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 104.
+png  used on input line 93.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [153
+ [72
 
 
 ]
@@ -4530,15 +2910,15 @@ File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 104.
+ used on input line 93.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 104.
+png  used on input line 93.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [154
+ [73
 
 
 ]
@@ -4546,15 +2926,15 @@ File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 104.
+ used on input line 93.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 104.
+png  used on input line 93.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [155
+ [74
 
 
 ]
@@ -4562,15 +2942,15 @@ File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 104.
+ used on input line 93.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 104.
+png  used on input line 93.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [156
+ [75
 
 
 ]
@@ -4578,15 +2958,15 @@ File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 104.
+ used on input line 93.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 104.
+png  used on input line 93.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [157
+ [76
 
 
 ]
@@ -4594,15 +2974,15 @@ File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 104.
+ used on input line 93.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 104.
+png  used on input line 93.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [158
+ [77
 
 
 ]
@@ -4610,16 +2990,15 @@ File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 104.
+ used on input line 93.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 104.
+png  used on input line 93.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
-
-[159
+ [78
 
 
 ]
@@ -4627,15 +3006,15 @@ File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 104.
+ used on input line 93.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 104.
+png  used on input line 93.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [160
+ [79
 
 
 ]
@@ -4643,15 +3022,15 @@ File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 104.
+ used on input line 93.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 104.
+png  used on input line 93.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [161
+ [80
 
 
 ]
@@ -4659,15 +3038,15 @@ File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 104.
+ used on input line 93.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 104.
+png  used on input line 93.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [162
+ [81
 
 
 ]
@@ -4675,15 +3054,16 @@ File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 104.
+ used on input line 93.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 104.
+png  used on input line 93.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [163
+
+[82
 
 
 ]
@@ -4691,15 +3071,15 @@ File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 104.
+ used on input line 93.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 104.
+png  used on input line 93.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [164
+ [83
 
 
 ]
@@ -4707,15 +3087,15 @@ File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 104.
+ used on input line 93.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 104.
+png  used on input line 93.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [165
+ [84
 
 
 ]
@@ -4723,15 +3103,15 @@ File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 104.
+ used on input line 93.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 104.
+png  used on input line 93.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [166
+ [85
 
 
 ]
@@ -4739,15 +3119,15 @@ File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 104.
+ used on input line 93.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 104.
+png  used on input line 93.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [167
+ [86
 
 
 ]
@@ -4755,15 +3135,15 @@ File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 104.
+ used on input line 93.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 104.
+png  used on input line 93.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [168
+ [87
 
 
 ]
@@ -4771,15 +3151,15 @@ File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 104.
+ used on input line 93.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 104.
+png  used on input line 93.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [169
+ [88
 
 
 ]
@@ -4787,15 +3167,15 @@ File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 104.
+ used on input line 93.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 104.
+png  used on input line 93.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [170
+ [89
 
 
 ]
@@ -4803,16 +3183,15 @@ File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 104.
+ used on input line 93.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 104.
+png  used on input line 93.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
-
-[171
+ [90
 
 
 ]
@@ -4820,15 +3199,15 @@ File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 104.
+ used on input line 93.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 104.
+png  used on input line 93.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [172
+ [91
 
 
 ]
@@ -4836,15 +3215,15 @@ File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 104.
+ used on input line 93.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 104.
+png  used on input line 93.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [173
+ [92
 
 
 ]
@@ -4852,15 +3231,15 @@ File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 104.
+ used on input line 93.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 104.
+png  used on input line 93.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [174
+ [93
 
 
 ]
@@ -4868,15 +3247,15 @@ File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 104.
+ used on input line 93.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 104.
+png  used on input line 93.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [175
+ [94
 
 
 ]
@@ -4884,15 +3263,15 @@ File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 104.
+ used on input line 93.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 104.
+png  used on input line 93.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [176
+ [95
 
 
 ]
@@ -4900,15 +3279,15 @@ File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 104.
+ used on input line 93.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 104.
+png  used on input line 93.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [177
+ [96
 
 
 ]
@@ -4916,15 +3295,16 @@ File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 104.
+ used on input line 93.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 104.
+png  used on input line 93.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [178
+
+[97
 
 
 ]
@@ -4932,15 +3312,15 @@ File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 104.
+ used on input line 93.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 104.
+png  used on input line 93.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [179
+ [98
 
 
 ]
@@ -4948,15 +3328,15 @@ File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 104.
+ used on input line 93.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 104.
+png  used on input line 93.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [180
+ [99
 
 
 ]
@@ -4964,15 +3344,15 @@ File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 104.
+ used on input line 93.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 104.
+png  used on input line 93.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [181
+ [100
 
 
 ]
@@ -4980,15 +3360,15 @@ File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 104.
+ used on input line 93.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 104.
+png  used on input line 93.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [182
+ [101
 
 
 ]
@@ -4996,16 +3376,15 @@ File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 104.
+ used on input line 93.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 104.
+png  used on input line 93.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
-
-[183
+ [102
 
 
 ]
@@ -5013,15 +3392,15 @@ File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 104.
+ used on input line 93.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 104.
+png  used on input line 93.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [184
+ [103
 
 
 ]
@@ -5029,15 +3408,15 @@ File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 104.
+ used on input line 93.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 104.
+png  used on input line 93.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [185
+ [104
 
 
 ]
@@ -5045,15 +3424,15 @@ File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 104.
+ used on input line 93.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 104.
+png  used on input line 93.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [186
+ [105
 
 
 ]
@@ -5061,15 +3440,15 @@ File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 104.
+ used on input line 93.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 104.
+png  used on input line 93.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [187
+ [106
 
 
 ]
@@ -5077,15 +3456,15 @@ File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 104.
+ used on input line 93.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 104.
+png  used on input line 93.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [188
+ [107
 
 
 ]
@@ -5093,15 +3472,15 @@ File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 104.
+ used on input line 93.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 104.
+png  used on input line 93.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [189
+ [108
 
 
 ]
@@ -5109,63 +3488,83 @@ File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 104.
+ used on input line 93.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 104.
+png  used on input line 93.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [190
+ [109
 
 
 ]
-<../local/graphics-local/help.png, id=8418, 1022.82124pt x 125.46875pt>
+File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
+png)
+<use ../../../global/graphics-global/logos/logo-dtriac.png>
+Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
+ used on input line 93.
+(pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
+File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
+ype png)
+<use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
+Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
+png  used on input line 93.
+(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
+
+[110
+
+
+]
+<../local/graphics-local/help.png, id=4885, 1022.82124pt x 125.46875pt>
 File: ../local/graphics-local/help.png Graphic file (type png)
 <use ../local/graphics-local/help.png>
 Package pdftex.def Info: ../local/graphics-local/help.png  used on input line 1
-16.
+05.
 (pdftex.def)             Requested size: 306.84874pt x 37.6409pt.
 File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 116.
+ used on input line 105.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 116.
+png  used on input line 105.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [191
+ [111
 
  <../local/graphics-local/help.png>]
-<../local/graphics-local/seshat.jpg, id=8460, 426.59375pt x 702.625pt>
+<../local/graphics-local/seshat.jpg, id=4928, 426.59375pt x 702.625pt>
 File: ../local/graphics-local/seshat.jpg Graphic file (type jpg)
 <use ../local/graphics-local/seshat.jpg>
 Package pdftex.def Info: ../local/graphics-local/seshat.jpg  used on input line
- 125.
+ 114.
 (pdftex.def)             Requested size: 95.98595pt x 158.09451pt.
 File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 125.
+ used on input line 114.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 125.
+png  used on input line 114.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [192
+ [112
 
  <../local/graphics-local/seshat.jpg>]
-LaTeX Font Info:    Trying to load font information for T2A+cmss on input line 
-137.
 
+LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
+(Font)              using `OT1/cmss/bx/n' instead on input line 126.
+
+LaTeX Font Info:    Trying to load font information for T2A+cmss on input line 
+126.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/cyrillic/t2acmss.fd
 File: t2acmss.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
@@ -5173,92 +3572,92 @@ File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 137.
+ used on input line 126.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 137.
+png  used on input line 126.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [193
+ [113
 
 ]
 File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 145.
+ used on input line 134.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 145.
+png  used on input line 134.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
 
-[194
+[114
 
 ]
-<../local/graphics-local/JMM 1946 request.png, id=8577, 900.36375pt x 688.07062
+<../local/graphics-local/JMM 1946 request.png, id=5047, 900.36375pt x 688.07062
 pt>
 File: ../local/graphics-local/JMM 1946 request.png Graphic file (type png)
 <use ../local/graphics-local/JMM 1946 request.png>
 Package pdftex.def Info: ../local/graphics-local/JMM 1946 request.png  used on 
-input line 155.
+input line 144.
 (pdftex.def)             Requested size: 202.58684pt x 154.8197pt.
 File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 155.
+ used on input line 144.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 155.
+png  used on input line 144.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [195
+ [115
 
  <../local/graphics-local/JMM 1946 request.png>]
 File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 164.
+ used on input line 153.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 164.
+png  used on input line 153.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [196
+ [116
 
 ]
 <../local/graphics-local/physics-of-shock-waves-and-high-temperature-hydrodynam
-ic-phenomena-18.jpeg, id=8652, 669.50125pt x 1003.75pt>
+ic-phenomena-18.jpeg, id=5124, 669.50125pt x 1003.75pt>
 File: ../local/graphics-local/physics-of-shock-waves-and-high-temperature-hydro
 dynamic-phenomena-18.jpeg Graphic file (type jpg)
 <use ../local/graphics-local/physics-of-shock-waves-and-high-temperature-hydrod
 ynamic-phenomena-18.jpeg>
 Package pdftex.def Info: ../local/graphics-local/physics-of-shock-waves-and-hig
-h-temperature-hydrodynamic-phenomena-18.jpeg  used on input line 190.
+h-temperature-hydrodynamic-phenomena-18.jpeg  used on input line 179.
 (pdftex.def)             Requested size: 111.24492pt x 166.77562pt.
 File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type 
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 190.
+ used on input line 179.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 190.
+png  used on input line 179.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [197
+ [117
 
  <../local/graphics-local/physics-of-shock-waves-and-high-temperature-hydrodyna
 mic-phenomena-18.jpeg>]
@@ -5266,15 +3665,15 @@ File: ../../../global/graphics-global/logos/logo-dtriac.png Graphic file (type
 png)
 <use ../../../global/graphics-global/logos/logo-dtriac.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtriac.png 
- used on input line 195.
+ used on input line 184.
 (pdftex.def)             Requested size: 28.47435pt x 28.45274pt.
 File: ../../../global/graphics-global/logos/logo-dtra-eagle.png Graphic file (t
 ype png)
 <use ../../../global/graphics-global/logos/logo-dtra-eagle.png>
 Package pdftex.def Info: ../../../global/graphics-global/logos/logo-dtra-eagle.
-png  used on input line 195.
+png  used on input line 184.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
- [198
+ [118
 
 ]
 \tf@nav=\write7
@@ -5286,14 +3685,20 @@ png  used on input line 195.
 \tf@snm=\write9
 \openout9 = `sentinel.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 197.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 197.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 186.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 186.
  (./sentinel.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 197.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 197.
-Package rerunfilecheck Info: File `sentinel.out' has not changed.
-(rerunfilecheck)             Checksum: 5E3CA46D8D75DFAC68F5A5DDB6AC6F92;1533.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 186.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 186.
 
+
+Package rerunfilecheck Warning: File `sentinel.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `sentinel.out':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  FAC100DED95267EBA2A25530D53CC17D;1209.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -5301,57 +3706,55 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                sentinel
-(biblatex)                and rerun LaTeX afterwards.
+Package biblatex Warning: Please rerun LaTeX.
 
 Package logreq Info: Writing requests to 'sentinel.run.xml'.
 \openout1 = `sentinel.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33128 strings out of 480608
- 673430 string characters out of 5903631
- 1411920 words of memory out of 5000000
- 47571 multiletter control sequences out of 15000+600000
- 555547 words of font info for 109 fonts, out of 8000000 for 9000
+ 32008 strings out of 480608
+ 645914 string characters out of 5903631
+ 1389789 words of memory out of 5000000
+ 46693 multiletter control sequences out of 15000+600000
+ 546796 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 58i,19n,86p,2583b,2190s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{eq:Michelson\\OT1\\textendash\040Rayleigh} has be
-en referenced but does not exist, replaced by a fixed one
+ 58i,19n,71p,2583b,2190s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{eq:enthalpy} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{eq:Michelson\\OT1\\textendash\040Rayleigh} has been
+ referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{eq:one} has been referenced but does not exist, rep
+laced by a fixed one
 
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}<
 /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></
 usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
 sr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
 r/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr
-/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/l
-ocal/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/loc
-al/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local
-/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/t
-exlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/tex
-live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texli
-ve/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/
-2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/202
-0/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2020/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2020/texmf
--dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/local/texlive/2020/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2020/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/texlive/2020/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2020/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2020/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2020/texmf-dist/fo
-nts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dis
-t/fonts/type1/public/cm-super/sfsx1000.pfb>
-Output written on sentinel.pdf (198 pages, 23006830 bytes).
+/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/l
+ocal/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
+al/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local
+/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/t
+exlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texl
+ive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
+/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/
+2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/local/texlive/2
+020/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/
+2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2
+020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/202
+0/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2020
+/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/
+2020/texmf-dist/fonts/type1/public/cm-super/sfsx1000.pfb>
+Output written on sentinel.pdf (118 pages, 9206393 bytes).
 PDF statistics:
- 8950 PDF objects out of 10688 (max. 8388607)
- 8400 compressed objects within 84 object streams
- 631 named destinations out of 1000 (max. 500000)
- 710 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 5370 PDF objects out of 6186 (max. 8388607)
+ 5054 compressed objects within 51 object streams
+ 453 named destinations out of 1000 (max. 500000)
+ 273 words of extra memory for PDF output out of 10000 (max. 10000000)
 

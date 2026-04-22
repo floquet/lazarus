@@ -15,841 +15,535 @@
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@subsectionpages {1}{4}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\sectionentry {1}{Theory}{5}{Theory}{0}}
+\headcommand {\sectionentry {1}{Problem Statement}{5}{Problem Statement}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@subsectionpages {5}{4}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{1}{1}{5}{Latter}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{5}{Taylor Fit Redux}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{1}{1}{5/5}{Latter}{0}}
+\headcommand {\beamer@sectionpages {5}{4}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {5}{4}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\sectionentry {2}{Theory}{5}{Theory}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {5}{4}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{2}{1}{5}{Why $2-$Norm?}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@sectionpages {5}{4}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {5}{4}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\sectionentry {3}{Solutions}{5}{Solutions}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {5}{4}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{3}{1}{5}{Geometric Solution}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {5}{4}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{3}{2}{5}{Cauchy-Schwarz}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {5}{4}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{3}{3}{5}{Calculus}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {5}{4}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{3}{4}{5}{SVD}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@sectionpages {5}{4}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {5}{4}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\sectionentry {4}{Staging}{5}{Staging}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {5}{4}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{4}{1}{5}{Images}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {5}{4}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{4}{2}{5}{Topics}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {4}{2}{1}{5/5}{Topics}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {5}{5}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {5}{5}}
+\headcommand {\slideentry {4}{2}{2}{6/6}{Topics}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{1}{2}{6}{Big Picture}}
+\headcommand {\beamer@framepages {6}{6}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{2}{1}{6/7}{Big Picture}{0}}
+\headcommand {\beamer@sectionpages {5}{6}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {6}{7}}
+\headcommand {\beamer@subsectionpages {5}{6}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{2}{2}{8/8}{Big Picture}{0}}
+\headcommand {\sectionentry {5}{Backup}{7}{Backup}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {7}{6}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{5}{1}{7}{Taylor Fit Redux}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {5}{1}{1}{7/7}{Taylor Fit Redux}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {7}{7}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {5}{1}{2}{8/8}{Taylor Fit Redux}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {8}{8}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{2}{3}{9/9}{Big Picture}{0}}
+\headcommand {\slideentry {5}{1}{3}{9/9}{Taylor Fit Redux}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {9}{9}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{2}{4}{10/10}{Big Picture}{0}}
+\headcommand {\slideentry {5}{1}{4}{10/10}{Taylor Fit Redux}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {10}{10}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{2}{5}{11/11}{Big Picture}{0}}
+\headcommand {\slideentry {5}{1}{5}{11/11}{Taylor Fit Redux}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {11}{11}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{2}{6}{12/12}{Big Picture}{0}}
+\headcommand {\slideentry {5}{1}{6}{12/12}{Taylor Fit Redux}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {12}{12}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{2}{7}{13/14}{Big Picture}{0}}
+\headcommand {\slideentry {5}{1}{7}{13/13}{Taylor Fit Redux}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {13}{14}}
+\headcommand {\beamer@framepages {13}{13}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{2}{8}{15/15}{Big Picture}{0}}
+\headcommand {\slideentry {5}{1}{8}{14/15}{Taylor Fit Redux}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {15}{15}}
+\headcommand {\beamer@framepages {14}{15}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{2}{9}{16/17}{Big Picture}{0}}
+\headcommand {\slideentry {5}{1}{9}{16/16}{Taylor Fit Redux}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {16}{17}}
+\headcommand {\beamer@framepages {16}{16}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{2}{10}{18/18}{Big Picture}{0}}
+\headcommand {\slideentry {5}{1}{10}{17/17}{Taylor Fit Redux}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {17}{17}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {5}{1}{11}{18/18}{Taylor Fit Redux}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {18}{18}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{2}{11}{19/19}{Big Picture}{0}}
+\headcommand {\slideentry {5}{1}{12}{19/19}{Taylor Fit Redux}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {19}{19}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{2}{12}{20/20}{Big Picture}{0}}
+\headcommand {\slideentry {5}{1}{13}{20/20}{Taylor Fit Redux}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {20}{20}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{2}{13}{21/21}{Big Picture}{0}}
+\headcommand {\slideentry {5}{1}{14}{21/22}{Taylor Fit Redux}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {21}{21}}
+\headcommand {\beamer@framepages {21}{22}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{2}{14}{22/22}{Big Picture}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {22}{22}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{2}{15}{23/23}{Big Picture}{0}}
+\headcommand {\slideentry {5}{1}{15}{23/23}{Taylor Fit Redux}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {23}{23}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{2}{16}{24/24}{Big Picture}{0}}
+\headcommand {\slideentry {5}{1}{16}{24/24}{Taylor Fit Redux}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {24}{24}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{2}{17}{25/25}{Big Picture}{0}}
+\headcommand {\slideentry {5}{1}{17}{25/25}{Taylor Fit Redux}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {25}{25}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{2}{18}{26/26}{Big Picture}{0}}
+\headcommand {\slideentry {5}{1}{18}{26/26}{Taylor Fit Redux}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {26}{26}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {6}{26}}
+\headcommand {\slideentry {5}{1}{19}{27/29}{Taylor Fit Redux}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{1}{3}{27}{Similarity}}
+\headcommand {\beamer@framepages {27}{29}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{3}{1}{27/27}{Similarity}{0}}
+\headcommand {\slideentry {5}{1}{20}{30/31}{Taylor Fit Redux}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {27}{27}}
+\headcommand {\beamer@framepages {30}{31}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {27}{27}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{1}{4}{28}{Navier-Stokes Equations}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{4}{1}{28/28}{Navier-Stokes Equations}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {28}{28}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{4}{2}{29/29}{Navier-Stokes Equations}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {29}{29}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{4}{3}{30/30}{Navier-Stokes Equations}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {30}{30}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{4}{4}{31/31}{Navier-Stokes Equations}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {31}{31}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{4}{5}{32/32}{Navier-Stokes Equations}{0}}
+\headcommand {\slideentry {5}{1}{21}{32/32}{Taylor Fit Redux}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {32}{32}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{4}{6}{33/33}{Navier-Stokes Equations}{0}}
+\headcommand {\slideentry {5}{1}{22}{33/33}{Taylor Fit Redux}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {33}{33}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{4}{7}{34/34}{Navier-Stokes Equations}{0}}
+\headcommand {\slideentry {5}{1}{23}{34/34}{Taylor Fit Redux}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {34}{34}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{4}{8}{35/35}{Navier-Stokes Equations}{0}}
+\headcommand {\slideentry {5}{1}{24}{35/35}{Taylor Fit Redux}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {35}{35}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{4}{9}{36/36}{Navier-Stokes Equations}{0}}
+\headcommand {\slideentry {5}{1}{25}{36/36}{Taylor Fit Redux}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {36}{36}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{4}{10}{37/37}{Navier-Stokes Equations}{0}}
+\headcommand {\beamer@subsectionpages {7}{36}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{5}{2}{37}{Kamm}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {5}{2}{1}{37/37}{Kamm}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {37}{37}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {28}{37}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{1}{5}{38}{Similarity and dimensional methods}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{5}{1}{38/38}{Similarity and dimensional methods}{0}}
+\headcommand {\slideentry {5}{2}{2}{38/38}{Kamm}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {38}{38}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{5}{2}{39/39}{Similarity and dimensional methods}{0}}
+\headcommand {\slideentry {5}{2}{3}{39/39}{Kamm}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {39}{39}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{5}{3}{40/40}{Similarity and dimensional methods}{0}}
+\headcommand {\slideentry {5}{2}{4}{40/40}{Kamm}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {40}{40}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{5}{4}{41/41}{Similarity and dimensional methods}{0}}
+\headcommand {\slideentry {5}{2}{5}{41/41}{Kamm}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {41}{41}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{5}{5}{42/42}{Similarity and dimensional methods}{0}}
+\headcommand {\slideentry {5}{2}{6}{42/42}{Kamm}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {42}{42}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{5}{6}{43/43}{Similarity and dimensional methods}{0}}
+\headcommand {\slideentry {5}{2}{7}{43/43}{Kamm}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {43}{43}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{5}{7}{44/44}{Similarity and dimensional methods}{0}}
+\headcommand {\slideentry {5}{2}{8}{44/44}{Kamm}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {44}{44}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{5}{8}{45/45}{Similarity and dimensional methods}{0}}
+\headcommand {\slideentry {5}{2}{9}{45/45}{Kamm}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {45}{45}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{5}{9}{46/46}{Similarity and dimensional methods}{0}}
+\headcommand {\slideentry {5}{2}{10}{46/46}{Kamm}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {46}{46}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{5}{10}{47/48}{Similarity and dimensional methods}{0}}
+\headcommand {\slideentry {5}{2}{11}{47/47}{Kamm}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {47}{48}}
+\headcommand {\beamer@framepages {47}{47}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{5}{11}{49/49}{Similarity and dimensional methods}{0}}
+\headcommand {\slideentry {5}{2}{12}{48/48}{Kamm}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {48}{48}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {5}{2}{13}{49/49}{Kamm}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {49}{49}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{5}{12}{50/50}{Similarity and dimensional methods}{0}}
+\headcommand {\slideentry {5}{2}{14}{50/50}{Kamm}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {50}{50}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{5}{13}{51/51}{Similarity and dimensional methods}{0}}
+\headcommand {\slideentry {5}{2}{15}{51/51}{Kamm}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {51}{51}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{5}{14}{52/52}{Similarity and dimensional methods}{0}}
+\headcommand {\slideentry {5}{2}{16}{52/52}{Kamm}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {52}{52}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{5}{15}{53/53}{Similarity and dimensional methods}{0}}
+\headcommand {\slideentry {5}{2}{17}{53/53}{Kamm}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {53}{53}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{5}{16}{54/54}{Similarity and dimensional methods}{0}}
+\headcommand {\slideentry {5}{2}{18}{54/54}{Kamm}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {54}{54}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{5}{17}{55/55}{Similarity and dimensional methods}{0}}
+\headcommand {\slideentry {5}{2}{19}{55/55}{Kamm}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {55}{55}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@sectionpages {5}{55}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {38}{55}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\sectionentry {2}{Numerics}{56}{Numerics}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {56}{55}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{2}{1}{56}{Taylor Process}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {2}{1}{1}{56/56}{Taylor Process}{0}}
+\headcommand {\slideentry {5}{2}{20}{56/56}{Kamm}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {56}{56}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {56}{56}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{2}{2}{57}{Sedov Process}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {2}{2}{1}{57/57}{Sedov Process}{0}}
+\headcommand {\slideentry {5}{2}{21}{57/57}{Kamm}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {57}{57}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {2}{2}{2}{58/58}{Sedov Process}{0}}
+\headcommand {\slideentry {5}{2}{22}{58/58}{Kamm}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {58}{58}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {57}{58}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{2}{3}{59}{Development of Sedov Solution}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {2}{3}{1}{59/59}{Development of Sedov Solution}{0}}
+\headcommand {\slideentry {5}{2}{23}{59/59}{Kamm}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {59}{59}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {2}{3}{2}{60/60}{Development of Sedov Solution}{0}}
+\headcommand {\slideentry {5}{2}{24}{60/60}{Kamm}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {60}{60}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {2}{3}{3}{61/61}{Development of Sedov Solution}{0}}
+\headcommand {\slideentry {5}{2}{25}{61/61}{Kamm}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {61}{61}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {2}{3}{4}{62/62}{Development of Sedov Solution}{0}}
+\headcommand {\beamer@subsectionpages {37}{61}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{5}{3}{62}{Navier-Stokes Equations}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {5}{3}{1}{62/62}{Navier-Stokes Equations}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {62}{62}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {2}{3}{5}{63/63}{Development of Sedov Solution}{0}}
+\headcommand {\slideentry {5}{3}{2}{63/63}{Navier-Stokes Equations}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {63}{63}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {2}{3}{6}{64/64}{Development of Sedov Solution}{0}}
+\headcommand {\slideentry {5}{3}{3}{64/64}{Navier-Stokes Equations}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {64}{64}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@sectionpages {56}{64}}
+\headcommand {\beamer@subsectionpages {62}{64}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {59}{64}}
+\headcommand {\beamer@subsectionentry {0}{5}{4}{65}{Vector Calculus}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\sectionentry {3}{Applications}{65}{Applications}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {65}{64}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{3}{1}{65}{\href {https://royalsocietypublishing.org/doi/10.1098/rspa.2021.0154}{Reflection of an Ideal Blast}}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{1}{1}{65/65}{\href {https://royalsocietypublishing.org/doi/10.1098/rspa.2021.0154}{Reflection of an Ideal Blast}}{0}}
+\headcommand {\slideentry {5}{4}{1}{65/65}{Vector Calculus}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {65}{65}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{1}{2}{66/66}{\href {https://royalsocietypublishing.org/doi/10.1098/rspa.2021.0154}{Reflection of an Ideal Blast}}{0}}
+\headcommand {\slideentry {5}{4}{2}{66/66}{Vector Calculus}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {66}{66}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{1}{3}{67/67}{\href {https://royalsocietypublishing.org/doi/10.1098/rspa.2021.0154}{Reflection of an Ideal Blast}}{0}}
+\headcommand {\beamer@sectionpages {7}{66}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {65}{66}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\sectionentry {6}{Bibliography}{67}{Bibliography}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {67}{66}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{6}{1}{67}{References}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{1}{1}{67/67}{References}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {67}{67}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {65}{67}}
+\headcommand {\slideentry {6}{1}{1}{67/68}{References}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{3}{2}{68}{Blast Reflections Over Water}}
+\headcommand {\beamer@framepages {67}{68}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{2}{1}{68/68}{Blast Reflections Over Water}{0}}
+\headcommand {\slideentry {6}{1}{1}{67/69}{References}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {68}{68}}
+\headcommand {\beamer@framepages {67}{69}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{2}{2}{69/70}{Blast Reflections Over Water}{0}}
+\headcommand {\slideentry {6}{1}{1}{67/70}{References}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {69}{70}}
+\headcommand {\beamer@framepages {67}{70}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{2}{3}{71/71}{Blast Reflections Over Water}{0}}
+\headcommand {\slideentry {6}{1}{1}{67/71}{References}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {71}{71}}
+\headcommand {\beamer@framepages {67}{71}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{2}{4}{72/72}{Blast Reflections Over Water}{0}}
+\headcommand {\slideentry {6}{1}{1}{67/72}{References}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {72}{72}}
+\headcommand {\beamer@framepages {67}{72}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {68}{72}}
+\headcommand {\slideentry {6}{1}{1}{67/73}{References}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{3}{3}{73}{\href {https://www.osti.gov/servlets/purl/1836992}{Symmetry of Blast Waves}}}
+\headcommand {\beamer@framepages {67}{73}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{3}{1}{73/73}{\href {https://www.osti.gov/servlets/purl/1836992}{Symmetry of Blast Waves}}{0}}
+\headcommand {\slideentry {6}{1}{1}{67/74}{References}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {73}{73}}
+\headcommand {\beamer@framepages {67}{74}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{3}{2}{74/74}{\href {https://www.osti.gov/servlets/purl/1836992}{Symmetry of Blast Waves}}{0}}
+\headcommand {\slideentry {6}{1}{1}{67/75}{References}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {74}{74}}
+\headcommand {\beamer@framepages {67}{75}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {73}{74}}
+\headcommand {\slideentry {6}{1}{1}{67/76}{References}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{3}{4}{75}{Beirut Port Explosion}}
+\headcommand {\beamer@framepages {67}{76}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{4}{1}{75/75}{Beirut Port Explosion}{0}}
+\headcommand {\slideentry {6}{1}{1}{67/77}{References}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {75}{75}}
+\headcommand {\beamer@framepages {67}{77}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{4}{2}{76/76}{Beirut Port Explosion}{0}}
+\headcommand {\slideentry {6}{1}{1}{67/78}{References}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {76}{76}}
+\headcommand {\beamer@framepages {67}{78}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{4}{3}{77/77}{Beirut Port Explosion}{0}}
+\headcommand {\slideentry {6}{1}{1}{67/79}{References}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {77}{77}}
+\headcommand {\beamer@framepages {67}{79}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{4}{4}{78/78}{Beirut Port Explosion}{0}}
+\headcommand {\slideentry {6}{1}{1}{67/80}{References}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {78}{78}}
+\headcommand {\beamer@framepages {67}{80}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{4}{5}{79/79}{Beirut Port Explosion}{0}}
+\headcommand {\slideentry {6}{1}{1}{67/81}{References}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {79}{79}}
+\headcommand {\beamer@framepages {67}{81}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{4}{6}{80/80}{Beirut Port Explosion}{0}}
+\headcommand {\slideentry {6}{1}{1}{67/82}{References}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {80}{80}}
+\headcommand {\beamer@framepages {67}{82}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{4}{7}{81/81}{Beirut Port Explosion}{0}}
+\headcommand {\slideentry {6}{1}{1}{67/83}{References}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {81}{81}}
+\headcommand {\beamer@framepages {67}{83}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{4}{8}{82/82}{Beirut Port Explosion}{0}}
+\headcommand {\slideentry {6}{1}{1}{67/84}{References}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {82}{82}}
+\headcommand {\beamer@framepages {67}{84}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{4}{9}{83/83}{Beirut Port Explosion}{0}}
+\headcommand {\slideentry {6}{1}{1}{67/85}{References}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {83}{83}}
+\headcommand {\beamer@framepages {67}{85}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{4}{10}{84/85}{Beirut Port Explosion}{0}}
+\headcommand {\slideentry {6}{1}{1}{67/86}{References}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {84}{85}}
+\headcommand {\beamer@framepages {67}{86}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{4}{11}{86/86}{Beirut Port Explosion}{0}}
+\headcommand {\slideentry {6}{1}{1}{67/87}{References}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {86}{86}}
+\headcommand {\beamer@framepages {67}{87}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@sectionpages {65}{86}}
+\headcommand {\slideentry {6}{1}{1}{67/88}{References}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {75}{86}}
+\headcommand {\beamer@framepages {67}{88}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\sectionentry {4}{Backup}{87}{Backup}{0}}
+\headcommand {\slideentry {6}{1}{1}{67/89}{References}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {87}{86}}
+\headcommand {\beamer@framepages {67}{89}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{4}{1}{87}{Taylor Fit Redux}}
+\headcommand {\slideentry {6}{1}{1}{67/90}{References}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{1}{1}{87/87}{Taylor Fit Redux}{0}}
+\headcommand {\beamer@framepages {67}{90}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {87}{87}}
+\headcommand {\slideentry {6}{1}{1}{67/91}{References}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{1}{2}{88/88}{Taylor Fit Redux}{0}}
+\headcommand {\beamer@framepages {67}{91}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {88}{88}}
+\headcommand {\slideentry {6}{1}{1}{67/92}{References}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{1}{3}{89/89}{Taylor Fit Redux}{0}}
+\headcommand {\beamer@framepages {67}{92}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {89}{89}}
+\headcommand {\slideentry {6}{1}{1}{67/93}{References}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{1}{4}{90/90}{Taylor Fit Redux}{0}}
+\headcommand {\beamer@framepages {67}{93}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {90}{90}}
+\headcommand {\slideentry {6}{1}{1}{67/94}{References}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{1}{5}{91/91}{Taylor Fit Redux}{0}}
+\headcommand {\beamer@framepages {67}{94}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {91}{91}}
+\headcommand {\slideentry {6}{1}{1}{67/95}{References}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{1}{6}{92/92}{Taylor Fit Redux}{0}}
+\headcommand {\beamer@framepages {67}{95}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {92}{92}}
+\headcommand {\slideentry {6}{1}{1}{67/96}{References}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{1}{7}{93/93}{Taylor Fit Redux}{0}}
+\headcommand {\beamer@framepages {67}{96}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {93}{93}}
+\headcommand {\slideentry {6}{1}{1}{67/97}{References}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{1}{8}{94/95}{Taylor Fit Redux}{0}}
+\headcommand {\beamer@framepages {67}{97}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {94}{95}}
+\headcommand {\slideentry {6}{1}{1}{67/98}{References}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{1}{9}{96/96}{Taylor Fit Redux}{0}}
+\headcommand {\beamer@framepages {67}{98}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {96}{96}}
+\headcommand {\slideentry {6}{1}{1}{67/99}{References}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{1}{10}{97/97}{Taylor Fit Redux}{0}}
+\headcommand {\beamer@framepages {67}{99}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {97}{97}}
+\headcommand {\slideentry {6}{1}{1}{67/100}{References}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{1}{11}{98/98}{Taylor Fit Redux}{0}}
+\headcommand {\beamer@framepages {67}{100}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {98}{98}}
+\headcommand {\slideentry {6}{1}{1}{67/101}{References}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{1}{12}{99/99}{Taylor Fit Redux}{0}}
+\headcommand {\beamer@framepages {67}{101}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {99}{99}}
+\headcommand {\slideentry {6}{1}{1}{67/102}{References}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{1}{13}{100/100}{Taylor Fit Redux}{0}}
+\headcommand {\beamer@framepages {67}{102}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {100}{100}}
+\headcommand {\slideentry {6}{1}{1}{67/103}{References}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{1}{14}{101/102}{Taylor Fit Redux}{0}}
+\headcommand {\beamer@framepages {67}{103}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {101}{102}}
+\headcommand {\slideentry {6}{1}{1}{67/104}{References}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{1}{15}{103/103}{Taylor Fit Redux}{0}}
+\headcommand {\beamer@framepages {67}{104}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {103}{103}}
+\headcommand {\slideentry {6}{1}{1}{67/105}{References}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{1}{16}{104/104}{Taylor Fit Redux}{0}}
+\headcommand {\beamer@framepages {67}{105}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {104}{104}}
+\headcommand {\slideentry {6}{1}{1}{67/106}{References}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{1}{17}{105/105}{Taylor Fit Redux}{0}}
+\headcommand {\beamer@framepages {67}{106}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {105}{105}}
+\headcommand {\slideentry {6}{1}{1}{67/107}{References}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{1}{18}{106/106}{Taylor Fit Redux}{0}}
+\headcommand {\beamer@framepages {67}{107}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {106}{106}}
+\headcommand {\slideentry {6}{1}{1}{67/108}{References}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{1}{19}{107/109}{Taylor Fit Redux}{0}}
+\headcommand {\beamer@framepages {67}{108}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {107}{109}}
+\headcommand {\slideentry {6}{1}{1}{67/109}{References}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{1}{20}{110/111}{Taylor Fit Redux}{0}}
+\headcommand {\beamer@framepages {67}{109}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {110}{111}}
+\headcommand {\slideentry {6}{1}{1}{67/110}{References}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{1}{21}{112/112}{Taylor Fit Redux}{0}}
+\headcommand {\beamer@framepages {67}{110}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {67}{110}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{6}{2}{111}{Librarian Magic}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{2}{1}{111/111}{Librarian Magic}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {111}{111}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{2}{2}{112/112}{Librarian Magic}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {112}{112}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{1}{22}{113/113}{Taylor Fit Redux}{0}}
+\headcommand {\slideentry {6}{2}{3}{113/113}{Librarian Magic}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {113}{113}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{1}{23}{114/114}{Taylor Fit Redux}{0}}
+\headcommand {\slideentry {6}{2}{4}{114/114}{Librarian Magic}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {114}{114}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{1}{24}{115/115}{Taylor Fit Redux}{0}}
+\headcommand {\slideentry {6}{2}{5}{115/115}{Librarian Magic}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {115}{115}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{1}{25}{116/116}{Taylor Fit Redux}{0}}
+\headcommand {\slideentry {6}{2}{6}{116/116}{Librarian Magic}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {116}{116}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {87}{116}}
+\headcommand {\beamer@subsectionpages {111}{116}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{4}{2}{117}{Kamm}}
+\headcommand {\beamer@subsectionentry {0}{6}{3}{117}{Physics of Shock Waves}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{2}{1}{117/117}{Kamm}{0}}
+\headcommand {\slideentry {6}{3}{1}{117/117}{Physics of Shock Waves}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {117}{117}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{2}{2}{118/118}{Kamm}{0}}
+\headcommand {\slideentry {6}{3}{2}{118/118}{Physics of Shock Waves}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {118}{118}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{2}{3}{119/119}{Kamm}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {119}{119}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{2}{4}{120/120}{Kamm}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {120}{120}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{2}{5}{121/121}{Kamm}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {121}{121}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{2}{6}{122/122}{Kamm}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {122}{122}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{2}{7}{123/123}{Kamm}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {123}{123}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{2}{8}{124/124}{Kamm}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {124}{124}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{2}{9}{125/125}{Kamm}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {125}{125}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{2}{10}{126/126}{Kamm}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {126}{126}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{2}{11}{127/127}{Kamm}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {127}{127}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{2}{12}{128/128}{Kamm}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {128}{128}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{2}{13}{129/129}{Kamm}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {129}{129}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{2}{14}{130/130}{Kamm}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {130}{130}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{2}{15}{131/131}{Kamm}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {131}{131}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{2}{16}{132/132}{Kamm}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {132}{132}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{2}{17}{133/133}{Kamm}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {133}{133}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{2}{18}{134/134}{Kamm}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {134}{134}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{2}{19}{135/135}{Kamm}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {135}{135}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{2}{20}{136/136}{Kamm}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {136}{136}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{2}{21}{137/137}{Kamm}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {137}{137}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{2}{22}{138/138}{Kamm}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {138}{138}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{2}{23}{139/139}{Kamm}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {139}{139}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{2}{24}{140/140}{Kamm}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {140}{140}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{2}{25}{141/141}{Kamm}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {141}{141}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {117}{141}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{4}{3}{142}{Navier-Stokes Equations}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{3}{1}{142/142}{Navier-Stokes Equations}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {142}{142}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{3}{2}{143/143}{Navier-Stokes Equations}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {143}{143}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{3}{3}{144/144}{Navier-Stokes Equations}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {144}{144}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {142}{144}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{4}{4}{145}{Vector Calculus}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{4}{1}{145/145}{Vector Calculus}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {145}{145}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{4}{2}{146/146}{Vector Calculus}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {146}{146}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@sectionpages {87}{146}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {145}{146}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\sectionentry {5}{Bibliography}{147}{Bibliography}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {147}{146}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{5}{1}{147}{References}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{1}{147/147}{References}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {147}{147}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{1}{147/148}{References}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {147}{148}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{1}{147/149}{References}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {147}{149}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{1}{147/150}{References}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {147}{150}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{1}{147/151}{References}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {147}{151}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{1}{147/152}{References}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {147}{152}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{1}{147/153}{References}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {147}{153}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{1}{147/154}{References}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {147}{154}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{1}{147/155}{References}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {147}{155}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{1}{147/156}{References}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {147}{156}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{1}{147/157}{References}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {147}{157}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{1}{147/158}{References}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {147}{158}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{1}{147/159}{References}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {147}{159}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{1}{147/160}{References}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {147}{160}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{1}{147/161}{References}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {147}{161}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{1}{147/162}{References}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {147}{162}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{1}{147/163}{References}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {147}{163}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{1}{147/164}{References}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {147}{164}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{1}{147/165}{References}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {147}{165}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{1}{147/166}{References}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {147}{166}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{1}{147/167}{References}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {147}{167}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{1}{147/168}{References}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {147}{168}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{1}{147/169}{References}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {147}{169}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{1}{147/170}{References}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {147}{170}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{1}{147/171}{References}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {147}{171}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{1}{147/172}{References}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {147}{172}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{1}{147/173}{References}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {147}{173}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{1}{147/174}{References}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {147}{174}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{1}{147/175}{References}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {147}{175}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{1}{147/176}{References}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {147}{176}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{1}{147/177}{References}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {147}{177}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{1}{147/178}{References}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {147}{178}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{1}{147/179}{References}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {147}{179}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{1}{147/180}{References}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {147}{180}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{1}{147/181}{References}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {147}{181}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{1}{147/182}{References}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {147}{182}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{1}{147/183}{References}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {147}{183}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{1}{147/184}{References}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {147}{184}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{1}{147/185}{References}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {147}{185}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{1}{147/186}{References}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {147}{186}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{1}{147/187}{References}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {147}{187}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{1}{147/188}{References}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {147}{188}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{1}{147/189}{References}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {147}{189}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{1}{147/190}{References}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {147}{190}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {147}{190}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{5}{2}{191}{Librarian Magic}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{2}{1}{191/191}{Librarian Magic}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {191}{191}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{2}{2}{192/192}{Librarian Magic}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {192}{192}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{2}{3}{193/193}{Librarian Magic}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {193}{193}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{2}{4}{194/194}{Librarian Magic}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {194}{194}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{2}{5}{195/195}{Librarian Magic}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {195}{195}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{2}{6}{196/196}{Librarian Magic}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {196}{196}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {191}{196}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{5}{3}{197}{Physics of Shock Waves}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{3}{1}{197/197}{Physics of Shock Waves}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {197}{197}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{3}{2}{198/198}{Physics of Shock Waves}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {198}{198}}
-\headcommand {\beamer@partpages {1}{198}}
-\headcommand {\beamer@subsectionpages {197}{198}}
-\headcommand {\beamer@sectionpages {147}{198}}
-\headcommand {\beamer@documentpages {198}}
-\headcommand {\gdef \inserttotalframenumber {186}}
+\headcommand {\beamer@partpages {1}{118}}
+\headcommand {\beamer@subsectionpages {117}{118}}
+\headcommand {\beamer@sectionpages {67}{118}}
+\headcommand {\beamer@documentpages {118}}
+\headcommand {\gdef \inserttotalframenumber {112}}
