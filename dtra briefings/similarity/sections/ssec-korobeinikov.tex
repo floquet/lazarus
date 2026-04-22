@@ -1,0 +1,146 @@
+% \input{\pSections "ssec-korobeinikov"}
+
+%%    %%    %%    %%    %%    %%    %%    %%    %%    %%
+\subsection{Korobe\u{i}nikov}
+
+\begin{frame}\frametitle{Problems in the Theory of Point Explosion in Gases}
+\center
+	\href{https://bookstore.ams.org/steklo-119}{
+	\begin{overpic}[ scale = 0.2 ]
+		{\pLocalGraphics cvr-korobinikov}
+		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+	\end{overpic}}
+	\\[10pt]
+	\cite{korobeuinikov1976problems}
+\end{frame}
+
+%\begin{frame}\frametitle{Invariant Solutions}
+%	%
+%\small{
+%\begin{equation}
+%\begin{array}{rcl crc lcr clc rcl}
+%		%
+%	v &=& r 				&& \rho &=& e^{\beta t}R(r) 			&& p &=& e^{\beta t}P(r) \\[5pt]
+%		%
+%	v &=& r + e^{t}u(\lambda) 	&& \rho &=& e^{(\beta-2) t}R(\lambda) 	&& p &=& e^{\beta t}P(r)	&& \lambda &=&r e^{-t}\\[5pt]
+%		%
+%	v &=& \frac{1}{t}u(r) 	&& \rho &=& e^{2(\beta+1)}R(\lambda) 		&& p &=& e^{2^{t}}P(r) \\[5pt]
+%		%
+%	v &=& r + e^{t}u(\lambda) 	&& \rho &=& e^{(\beta-2) t}R(\lambda) 	&& p &=& e^{\beta t}P(r)	&& \lambda &=&r e^{-t}\\
+%		%
+%\end{array}
+%\label{eq:invariant solutions}
+%\end{equation}
+%}
+%	%
+%\cite[p. 51, 1.134-137]{korobeuinikov1976problems}\\
+%\cite{ovsjannikov1962group}
+%\end{frame}
+
+\begin{frame}\frametitle{Invariant Solutions: Cataloged}
+	%
+One-dimensional motions with \bl{spherical} or \bl{cylindrical} symmetry have \rd{only} the \bl{invariant solutions}:
+\small{
+\begin{equation}
+\begin{array}{clclclcl}
+		%
+	&v = r 				&& \rho = e^{\beta t}R(r) 					&& p = e^{\beta t}P(r) \\[8pt]
+		%
+	&v = r + e^{t}u(\lambda) 	&& \rho = e^{(\beta-2) t}R(\lambda) 			&& p = e^{\beta t}P(\lambda)	&& \lambda = r e^{-t}\\[8pt]
+		%
+	&v = \frac{1}{t}u(r) 		&& \rho = e^{2(\beta+1)}R(\lambda) 			&& p = t^{2^{\beta}}P(r) \\[8pt]
+		%
+	&v =\frac{r}{t}u(\lambda) 	&& \rho = e^{(\beta+2\alpha-2) t}R(\lambda) 	&& p = r^{\beta}P(\lambda)	&& \lambda = tr^{-\alpha}\\
+		%
+\end{array}
+\label{eq:invariant solutions}
+\end{equation}
+}
+	%
+\\[20pt]
+\cite[p. 51, 1.134-137]{korobeuinikov1976problems} \\
+\cite{ovsjannikov1962group}
+\end{frame}
+%
+\begin{frame}\frametitle{Sedov Solutions}
+Sedov's class of \bl{self-similar solutions} of 1D gas dynamics
+		%
+\begin{equation}
+\begin{split}
+	v &= \frac{r}{t}		V(\lambda), \\
+	\rho &= \frac{a}{r^{k+3}t^{s}}	R(\lambda), \\
+	p &= \frac{a}{r^{k+1}t^{s+2}}	P(\lambda), \\
+	\lambda &= \frac{r}{b t^{d}}
+\end{split}
+\label{eq:sedov}
+\end{equation}
+		%
+\ \\
+Dimensional constants: $a$, $b$, \\
+Numbers: $k$, $s$, $\delta$
+\end{frame}
+%
+% https://tex.stackexchange.com/questions/144967/dividing-a-proof-into-several-frames
+\begin{frame}\frametitle{Invariant Solutions of Gas Dynamics}
+% Theorem 1, p. 52
+	%
+	\input{\pLocalTheorems "thm-invariant-solns-gasdynamics"}	%
+\end{frame}
+%
+\begin{frame}\frametitle{Invariant Solutions of Gas Dynamics: Proof Outline}
+% Theorem 1, p. 52
+Let $t\to t + t_{0}$ where
+	%
+\begin{equation}
+\begin{split}
+	b &= \delta \tau \\
+	V &= \delta \tilde{V} \\
+	R &= \delta^{s} \tilde{R} \\
+	P &= \delta^{s+2} \tilde{P}
+\end{split}
+\label{eq:proof-subs}
+\end{equation}
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Invariant Solutions of Gas Dynamics: Proof Outline}
+% Theorem 1, p. 52
+\begin{equation}
+\begin{split}
+	v &= \frac{r}{t}		\tilde{V}(\lambda), \\
+	\rho &= \frac{a}{r^{k+3}t^{s}}	\tilde{R}(\lambda), \\
+	p &= \frac{a}{r^{k+1}t^{s+2}}	\tilde{P}(\lambda), \\
+	\lambda &= \frac{r}{r_{0}}e^{-t/\tau}
+\end{split}
+\label{eq:sedov-like}
+\end{equation}
+\ \\
+Very much like \eqref{eq:sedov}
+\end{frame}
+
+%
+\begin{frame}\frametitle{Invariant Solutions of Gas Dynamics: Comparison}
+	%
+\begin{table}[htp]
+%\caption{default}
+\begin{center}
+\begin{tabular}{rll}
+		%
+	& Sedov \eqref{eq:sedov} & Proof \eqref{eq:sedov-like} \\\hline
+	\\[-9pt]
+		%
+	$v$ 			& $\frac{r}{t} V (\lambda)$ 				&  $\frac{r}{t} \bl{\tilde{V}} (\lambda)$ \\[5pt]
+	$\rho$ 		& $\frac{a}{r^{k+3}t^{s}} R (\lambda)$	& $\frac{a}{r^{k+3}t^{s}} \bl{\tilde{R}} (\lambda)$ \\[5pt]
+	$p$ 			& $\frac{a}{r^{k+1}t^{s+2}} P(\lambda)$	& $\frac{a}{r^{k+1}t^{s+2}} \bl{\tilde{P}}(\lambda)$ \\[5pt]
+	$\lambda$ 	& $\frac{r}{b t^{d}}$					& $\frac{r}{\bl{r_{0}}}\bl{e^{-t/\tau}}$
+		%
+\end{tabular}
+\end{center}
+\label{tab:proof-compare}
+\end{table}%
+	%
+\end{frame}
+%
+
+
+\endinput  %  ==  ==  ==  ==  ==  ==  ==  ==  ==

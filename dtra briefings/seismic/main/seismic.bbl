@@ -1,0 +1,1824 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{adushkin2007underground}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=edece4241f24ee240bc0bc15b80cd1bb}{%
+           family={Adushkin},
+           familyi={A\bibinitperiod},
+           given={Vitaly\bibnamedelima V},
+           giveni={V\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=806141946caa0bcfa682c3b14360dcf6}{%
+           family={Spivak},
+           familyi={S\bibinitperiod},
+           given={AA},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e06431ae18b0195e70a4eaf9d91456f4}
+      \strng{fullhash}{e06431ae18b0195e70a4eaf9d91456f4}
+      \strng{bibnamehash}{e06431ae18b0195e70a4eaf9d91456f4}
+      \strng{authorbibnamehash}{e06431ae18b0195e70a4eaf9d91456f4}
+      \strng{authornamehash}{e06431ae18b0195e70a4eaf9d91456f4}
+      \strng{authorfullhash}{e06431ae18b0195e70a4eaf9d91456f4}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Science-Publishing house}
+      \field{title}{Underground explosions}
+      \field{year}{2007}
+      \field{pages}{545}
+      \range{pages}{1}
+      \verb{urlraw}
+      \verb https://apps.dtic.mil/sti/pdfs/ADA627744.pdf
+      \endverb
+      \verb{url}
+      \verb https://apps.dtic.mil/sti/pdfs/ADA627744.pdf
+      \endverb
+    \endentry
+    \entry{agranovich2020inverse}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=fc0e7ae4794f0c82f4549709820cccef}{%
+           family={Agranovich},
+           familyi={A\bibinitperiod},
+           given={ZS},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=34b0f444e2cbd9e03b123f327d0e53f0}{%
+           family={Marchenko},
+           familyi={M\bibinitperiod},
+           given={Vladimir\bibnamedelima Aleksandrovich},
+           giveni={V\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Courier Dover Publications}%
+      }
+      \strng{namehash}{c9f9f57d394716cd83c3763edab0f646}
+      \strng{fullhash}{c9f9f57d394716cd83c3763edab0f646}
+      \strng{bibnamehash}{c9f9f57d394716cd83c3763edab0f646}
+      \strng{authorbibnamehash}{c9f9f57d394716cd83c3763edab0f646}
+      \strng{authornamehash}{c9f9f57d394716cd83c3763edab0f646}
+      \strng{authorfullhash}{c9f9f57d394716cd83c3763edab0f646}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The inverse problem of scattering theory}
+      \field{year}{2020}
+      \true{nocite}
+    \endentry
+    \entry{barama2022gtune}{article}{}
+      \name{author}{4}{ul=2}{%
+        {{un=0,uniquepart=base,hash=5f2ef67118a4d327d8fcdf773589a0e3}{%
+           family={Barama},
+           familyi={B\bibinitperiod},
+           given={Louisa},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8634c1d13d9ca94d3f9014c7c8b9afc0}{%
+           family={Peng},
+           familyi={P\bibinitperiod},
+           given={Zhigang},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dc4b67eefe17a0b85ba03b46447965f8}{%
+           family={Newman},
+           familyi={N\bibinitperiod},
+           given={Andrew\bibnamedelima V},
+           giveni={A\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7224ad7489539fadea53abbfa0ecabc6}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Jesse},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a2ec44884a029740d9a7944b0a1e8ada}
+      \strng{fullhash}{938e17b86b71b5a549f4e90fef7c5b74}
+      \strng{bibnamehash}{a2ec44884a029740d9a7944b0a1e8ada}
+      \strng{authorbibnamehash}{a2ec44884a029740d9a7944b0a1e8ada}
+      \strng{authornamehash}{a2ec44884a029740d9a7944b0a1e8ada}
+      \strng{authorfullhash}{938e17b86b71b5a549f4e90fef7c5b74}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Seismological Society of America}
+      \field{number}{6}
+      \field{title}{GTUNE: An Assembled Global Seismic Dataset of Underground Nuclear Test Blasts}
+      \field{volume}{93}
+      \field{year}{2022}
+      \field{pages}{3514\bibrangedash 3523}
+      \range{pages}{10}
+    \endentry
+    \entry{barama2023global}{article}{}
+      \name{author}{4}{ul=3}{%
+        {{un=0,uniquepart=base,hash=5f2ef67118a4d327d8fcdf773589a0e3}{%
+           family={Barama},
+           familyi={B\bibinitperiod},
+           given={Louisa},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7224ad7489539fadea53abbfa0ecabc6}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Jesse},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=2,uniquepart=given,hash=dc4b67eefe17a0b85ba03b46447965f8}{%
+           family={Newman},
+           familyi={N\bibinitperiod},
+           given={Andrew\bibnamedelima V},
+           giveni={A\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=2}}%
+        {{un=0,uniquepart=base,hash=8634c1d13d9ca94d3f9014c7c8b9afc0}{%
+           family={Peng},
+           familyi={P\bibinitperiod},
+           given={Zhigang},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{0ef201e5e6dfebf0d5e4e542590a699a}
+      \strng{fullhash}{762b101555a81ab3865dfac4610ce292}
+      \strng{bibnamehash}{0ef201e5e6dfebf0d5e4e542590a699a}
+      \strng{authorbibnamehash}{0ef201e5e6dfebf0d5e4e542590a699a}
+      \strng{authornamehash}{0ef201e5e6dfebf0d5e4e542590a699a}
+      \strng{authorfullhash}{762b101555a81ab3865dfac4610ce292}
+      \field{extraname}{1}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Geophysical Research Letters}
+      \field{number}{17}
+      \field{title}{Global nuclear explosion discrimination using a convolutional neural network}
+      \field{volume}{50}
+      \field{year}{2023}
+      \true{nocite}
+      \field{pages}{e2022GL101528}
+      \range{pages}{-1}
+    \endentry
+    \entry{osti_2019549}{article}{}
+      \name{author}{4}{ul=3}{%
+        {{un=0,uniquepart=base,hash=5f2ef67118a4d327d8fcdf773589a0e3}{%
+           family={Barama},
+           familyi={B\bibinitperiod},
+           given={Louisa},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7224ad7489539fadea53abbfa0ecabc6}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Jesse},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=2,uniquepart=given,hash=dc4b67eefe17a0b85ba03b46447965f8}{%
+           family={Newman},
+           familyi={N\bibinitperiod},
+           given={Andrew\bibnamedelima V.},
+           giveni={A\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=2}}%
+        {{un=0,uniquepart=base,hash=8634c1d13d9ca94d3f9014c7c8b9afc0}{%
+           family={Peng},
+           familyi={P\bibinitperiod},
+           given={Zhigang},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0ef201e5e6dfebf0d5e4e542590a699a}
+      \strng{fullhash}{762b101555a81ab3865dfac4610ce292}
+      \strng{bibnamehash}{0ef201e5e6dfebf0d5e4e542590a699a}
+      \strng{authorbibnamehash}{0ef201e5e6dfebf0d5e4e542590a699a}
+      \strng{authornamehash}{0ef201e5e6dfebf0d5e4e542590a699a}
+      \strng{authorfullhash}{762b101555a81ab3865dfac4610ce292}
+      \field{extraname}{2}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0094-8276}
+      \field{journaltitle}{Geophysical Research Letters}
+      \field{month}{9}
+      \field{number}{17}
+      \field{title}{Global Nuclear Explosion Discrimination Using a Convolutional Neural Network}
+      \field{volume}{50}
+      \field{year}{2023}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.1029/2022gl101528
+      \endverb
+      \verb{urlraw}
+      \verb https://www.osti.gov/biblio/2019549
+      \endverb
+      \verb{url}
+      \verb https://www.osti.gov/biblio/2019549
+      \endverb
+    \endentry
+    \entry{BennetNEDB2010}{article}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=625f248430621776695ff8c0215b49f6}{%
+           family={Bennett},
+           familyi={B\bibinitperiod},
+           given={TJ},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c87d5c3dcfc9a9b4c70ee60a41653771}{%
+           family={Oancea},
+           familyi={O\bibinitperiod},
+           given={V},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=48c626fd2bd2312013869455d20d9e7c}{%
+           family={Barker},
+           familyi={B\bibinitperiod},
+           given={BW},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6a4a6e2f85484700694600cd1cb233cc}{%
+           family={Kung},
+           familyi={K\bibinitperiod},
+           given={Y-L},
+           giveni={Y\bibinithyphendelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=03f5cac5c7dd6bfb368befb325cd046d}{%
+           family={Bahavar},
+           familyi={B\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0f22a02814d9f540f119df913dc7e851}{%
+           family={Kohl},
+           familyi={K\bibinitperiod},
+           given={BC},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3574634dc75079e7959362f8c2b9dce9}{%
+           family={Murphy},
+           familyi={M\bibinitperiod},
+           given={JR},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2746ff102b95a1479d74c4768d674ecd}{%
+           family={Bond{á}r},
+           familyi={B\bibinitperiod},
+           given={IK},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Seismological Society of America}%
+      }
+      \strng{namehash}{114ee2b12169b5fa6f0ba0c871249a99}
+      \strng{fullhash}{51f6fb1a249a13826a066365752989ad}
+      \strng{bibnamehash}{114ee2b12169b5fa6f0ba0c871249a99}
+      \strng{authorbibnamehash}{114ee2b12169b5fa6f0ba0c871249a99}
+      \strng{authornamehash}{114ee2b12169b5fa6f0ba0c871249a99}
+      \strng{authorfullhash}{51f6fb1a249a13826a066365752989ad}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Seismological Research Letters}
+      \field{number}{1}
+      \field{title}{The Nuclear Explosion Database (NEDB): A new database and web site for accessing nuclear explosion source information and waveforms}
+      \field{volume}{81}
+      \field{year}{2010}
+      \field{pages}{12\bibrangedash 25}
+      \range{pages}{14}
+    \endentry
+    \entry{boatwright1980spectral}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=de2f2f0f47d9f4d437ef38f50fc5cd4b}{%
+           family={Boatwright},
+           familyi={B\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {The Seismological Society of America}%
+      }
+      \strng{namehash}{de2f2f0f47d9f4d437ef38f50fc5cd4b}
+      \strng{fullhash}{de2f2f0f47d9f4d437ef38f50fc5cd4b}
+      \strng{bibnamehash}{de2f2f0f47d9f4d437ef38f50fc5cd4b}
+      \strng{authorbibnamehash}{de2f2f0f47d9f4d437ef38f50fc5cd4b}
+      \strng{authornamehash}{de2f2f0f47d9f4d437ef38f50fc5cd4b}
+      \strng{authorfullhash}{de2f2f0f47d9f4d437ef38f50fc5cd4b}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Bulletin of the Seismological Society of America}
+      \field{number}{1}
+      \field{title}{A spectral theory for circular seismic sources; simple estimates of source dimension, dynamic stress drop, and radiated seismic energy}
+      \field{volume}{70}
+      \field{year}{1980}
+      \field{pages}{1\bibrangedash 27}
+      \range{pages}{27}
+    \endentry
+    \entry{bocharov1989characteristics}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=fc0d2ffe0d55dc0023887c02d792e030}{%
+           family={Bocharov},
+           familyi={B\bibinitperiod},
+           given={VS},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8b25044bfe1fd6c079073c761812c2cb}{%
+           family={Zelentsov},
+           familyi={Z\bibinitperiod},
+           given={SA},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=af3a2b3621ffd40532f4fe57a998474a}{%
+           family={Mikhailov},
+           familyi={M\bibinitperiod},
+           given={VN},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{a5e7ea2da08d1b6385cdfa0da8f4b101}
+      \strng{fullhash}{a5e7ea2da08d1b6385cdfa0da8f4b101}
+      \strng{bibnamehash}{a5e7ea2da08d1b6385cdfa0da8f4b101}
+      \strng{authorbibnamehash}{a5e7ea2da08d1b6385cdfa0da8f4b101}
+      \strng{authornamehash}{a5e7ea2da08d1b6385cdfa0da8f4b101}
+      \strng{authorfullhash}{a5e7ea2da08d1b6385cdfa0da8f4b101}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Soviet Atomic Energy}
+      \field{number}{3}
+      \field{title}{Characteristics of 96 underground nuclear explosions at the Semipalatinsk proving ground}
+      \field{volume}{67}
+      \field{year}{1989}
+      \true{nocite}
+      \field{pages}{691\bibrangedash 695}
+      \range{pages}{5}
+    \endentry
+    \entry{brune1970tectonic}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=25bca13fe107f8666fb17c7d723aefff}{%
+           family={Brune},
+           familyi={B\bibinitperiod},
+           given={James\bibnamedelima N},
+           giveni={J\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{25bca13fe107f8666fb17c7d723aefff}
+      \strng{fullhash}{25bca13fe107f8666fb17c7d723aefff}
+      \strng{bibnamehash}{25bca13fe107f8666fb17c7d723aefff}
+      \strng{authorbibnamehash}{25bca13fe107f8666fb17c7d723aefff}
+      \strng{authornamehash}{25bca13fe107f8666fb17c7d723aefff}
+      \strng{authorfullhash}{25bca13fe107f8666fb17c7d723aefff}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of geophysical research}
+      \field{number}{26}
+      \field{title}{Tectonic stress and the spectra of seismic shear waves from earthquakes}
+      \field{volume}{75}
+      \field{year}{1970}
+      \true{nocite}
+      \field{pages}{4997\bibrangedash 5009}
+      \range{pages}{13}
+    \endentry
+    \entry{burdick1995complete}{report}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4c8803ec18f5c42c7627f69e6b056642}{%
+           family={Burdick},
+           familyi={B\bibinitperiod},
+           given={Lawrence},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{2}{%
+        {CALIFORNIA UNIV SAN DIEGO LA JOLLA INST OF GEOPHYSICS}%
+        {PLANETARY PHYSICS}%
+      }
+      \strng{namehash}{4c8803ec18f5c42c7627f69e6b056642}
+      \strng{fullhash}{4c8803ec18f5c42c7627f69e6b056642}
+      \strng{bibnamehash}{4c8803ec18f5c42c7627f69e6b056642}
+      \strng{authorbibnamehash}{4c8803ec18f5c42c7627f69e6b056642}
+      \strng{authornamehash}{4c8803ec18f5c42c7627f69e6b056642}
+      \strng{authorfullhash}{4c8803ec18f5c42c7627f69e6b056642}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A Complete Model for Seismic Source Behavior of Peaceful Nuclear Explosions.}
+      \field{type}{techreport}
+      \field{year}{1995}
+    \endentry
+    \entry{osti_1833803}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=be378f9c28dbe414a833ef93e4170fdf}{%
+           family={Che},
+           familyi={C\bibinitperiod},
+           given={Il-Young},
+           giveni={I\bibinithyphendelim Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=42e7e5690b1e728a49578815760becf0}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Keehoon},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0410ba28495ed8610d933f41a79db8a7}{%
+           family={Le\bibnamedelima Pichon},
+           familyi={L\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={Alexis},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0ffe793bb3f3d2a1c57292dece03ba67}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Junghyun},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e5b4940cdbc07ca7886fcf1299730760}{%
+           family={Arrowsmith},
+           familyi={A\bibinitperiod},
+           given={Stephen},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=be2f28f4b26adfa7c3dd856b8f2245fa}{%
+           family={Stump},
+           familyi={S\bibinitperiod},
+           given={Brian},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f9877a6d3653ffa98f8ba8ff58f9216f}
+      \strng{fullhash}{0c56e69046af889d7ca1ecb0c6fee0f8}
+      \strng{bibnamehash}{f9877a6d3653ffa98f8ba8ff58f9216f}
+      \strng{authorbibnamehash}{f9877a6d3653ffa98f8ba8ff58f9216f}
+      \strng{authornamehash}{f9877a6d3653ffa98f8ba8ff58f9216f}
+      \strng{authorfullhash}{0c56e69046af889d7ca1ecb0c6fee0f8}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0956-540X}
+      \field{journaltitle}{Geophysical Journal International}
+      \field{month}{8}
+      \field{number}{1}
+      \field{title}{Illuminating the North Korean nuclear explosion test in 2017 using remote infrasound observations}
+      \field{volume}{228}
+      \field{year}{2021}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.1093/gji/ggab338
+      \endverb
+      \verb{urlraw}
+      \verb https://www.osti.gov/biblio/1833803
+      \endverb
+      \verb{url}
+      \verb https://www.osti.gov/biblio/1833803
+      \endverb
+    \endentry
+    \entry{claerbout1986fundamentals}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7c978dd5a80672b14e8acf0b99cd75b7}{%
+           family={Claerbout},
+           familyi={C\bibinitperiod},
+           given={JF},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{7c978dd5a80672b14e8acf0b99cd75b7}
+      \strng{fullhash}{7c978dd5a80672b14e8acf0b99cd75b7}
+      \strng{bibnamehash}{7c978dd5a80672b14e8acf0b99cd75b7}
+      \strng{authorbibnamehash}{7c978dd5a80672b14e8acf0b99cd75b7}
+      \strng{authornamehash}{7c978dd5a80672b14e8acf0b99cd75b7}
+      \strng{authorfullhash}{7c978dd5a80672b14e8acf0b99cd75b7}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Geophysical Journal of the Royal Astronomical Society}
+      \field{number}{1}
+      \field{title}{Fundamentals of geophysical data processing, 2nd edn}
+      \field{volume}{86}
+      \field{year}{1986}
+      \field{pages}{217\bibrangedash 219}
+      \range{pages}{3}
+    \endentry
+    \entry{osti_1961721}{article}{}
+      \name{author}{6}{}{%
+        {{un=2,uniquepart=given,hash=105548c3c65667f512ed9af74698bffd}{%
+           family={Delbridge},
+           familyi={D\bibinitperiod},
+           given={B.\bibnamedelimi G.},
+           giveni={B\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=2}}%
+        {{un=0,uniquepart=base,hash=c6cd84111011d6bac69e2af2d87fed0b}{%
+           family={Carmichael},
+           familyi={C\bibinitperiod},
+           given={J.\bibnamedelimi D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=68370f6f530d9750af946358e24c6630}{%
+           family={Phillips},
+           familyi={P\bibinitperiod},
+           given={W.\bibnamedelimi S.},
+           giveni={W\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=514ca5dbb1b513c8df1463fb9616da7e}{%
+           family={Cleveland},
+           familyi={C\bibinitperiod},
+           given={K.\bibnamedelimi M.},
+           giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6fe21fe5bd103e5b8ef674770855c151}{%
+           family={Begnaud},
+           familyi={B\bibinitperiod},
+           given={M.\bibnamedelimi L.},
+           giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=27d953e57ae7aebc18b24b069e037545}{%
+           family={Gammans},
+           familyi={G\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c7616b5c3f537b45220491fbc6bbe400}
+      \strng{fullhash}{c05168d6cbba0f36ec33af0d3253b1b5}
+      \strng{bibnamehash}{c7616b5c3f537b45220491fbc6bbe400}
+      \strng{authorbibnamehash}{c7616b5c3f537b45220491fbc6bbe400}
+      \strng{authornamehash}{c7616b5c3f537b45220491fbc6bbe400}
+      \strng{authorfullhash}{c05168d6cbba0f36ec33af0d3253b1b5}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2169-9313}
+      \field{journaltitle}{Journal of Geophysical Research. Solid Earth}
+      \field{month}{3}
+      \field{number}{3}
+      \field{title}{Source Characterization of the Declared North Korean Nuclear Tests From Regional Distance Coda Wave Spectral Ratios}
+      \field{volume}{128}
+      \field{year}{2023}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.1029/2022JB024728
+      \endverb
+      \verb{urlraw}
+      \verb https://www.osti.gov/biblio/1961721
+      \endverb
+      \verb{url}
+      \verb https://www.osti.gov/biblio/1961721
+      \endverb
+    \endentry
+    \entry{osti_1876764}{article}{}
+      \name{author}{4}{}{%
+        {{un=2,uniquepart=given,hash=b7db1320fe0b6073c74a4e23be0433cd}{%
+           family={Delbridge},
+           familyi={D\bibinitperiod},
+           given={Brent\bibnamedelima Gregory},
+           giveni={B\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=2}}%
+        {{un=0,uniquepart=base,hash=215785b7d795d7259f753d644baeb877}{%
+           family={Phillips},
+           familyi={P\bibinitperiod},
+           given={William\bibnamedelima Scott},
+           giveni={W\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ce541d6d484e09a36b7b3feff0414ef4}{%
+           family={Kintner},
+           familyi={K\bibinitperiod},
+           given={Jonas\bibnamedelima Andreas},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=df0e05f15f058fda1069b591ca40bb97}{%
+           family={Carmichael},
+           familyi={C\bibinitperiod},
+           given={Joshua\bibnamedelima Daniel},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{615666225ba1884604bd77960bf3a126}
+      \strng{fullhash}{2d4b2aadb8334d3bd448325d82acebb0}
+      \strng{bibnamehash}{615666225ba1884604bd77960bf3a126}
+      \strng{authorbibnamehash}{615666225ba1884604bd77960bf3a126}
+      \strng{authornamehash}{615666225ba1884604bd77960bf3a126}
+      \strng{authorfullhash}{2d4b2aadb8334d3bd448325d82acebb0}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{7}
+      \field{number}{0}
+      \field{title}{Transportable absolute yields of underground nuclear explosions. Application to the North Korean nuclear tests}
+      \field{volume}{0}
+      \field{year}{2022}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.2172/1876764
+      \endverb
+      \verb{urlraw}
+      \verb https://www.osti.gov/biblio/1876764
+      \endverb
+      \verb{url}
+      \verb https://www.osti.gov/biblio/1876764
+      \endverb
+    \endentry
+    \entry{united2000united}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=28bf468b1e3b3956bfa4d691906eab68}{%
+           family={Energy.\bibnamedelimi Nevada\bibnamedelimb Operations\bibnamedelima Office},
+           familyi={E\bibinitperiod\bibinitdelim N\bibinitperiod\bibinitdelim O\bibinitperiod\bibinitdelim O\bibinitperiod},
+           given={United\bibnamedelimb States.\bibnamedelimi Department},
+           giveni={U\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0,
+           prefix={of},
+           prefixi={o\bibinitperiod},
+           prefixun=0}}%
+      }
+      \list{publisher}{2}{%
+        {Office of Scientific}%
+        {Technical Information}%
+      }
+      \strng{namehash}{28bf468b1e3b3956bfa4d691906eab68}
+      \strng{fullhash}{28bf468b1e3b3956bfa4d691906eab68}
+      \strng{bibnamehash}{28bf468b1e3b3956bfa4d691906eab68}
+      \strng{authorbibnamehash}{28bf468b1e3b3956bfa4d691906eab68}
+      \strng{authornamehash}{28bf468b1e3b3956bfa4d691906eab68}
+      \strng{authorfullhash}{28bf468b1e3b3956bfa4d691906eab68}
+      \field{sortinit}{E}
+      \field{sortinithash}{c554bd1a0b76ea92b9f105fe36d9c7b0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{United States Nuclear Tests: July 1945 Through September 1992}
+      \field{year}{2000}
+    \endentry
+    \entry{franzina2022electromagnetic}{incollection}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1ffa8524452a241a20f1bf647c434c1d}{%
+           family={Franzina},
+           familyi={F\bibinitperiod},
+           given={Giovanni},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{1ffa8524452a241a20f1bf647c434c1d}
+      \strng{fullhash}{1ffa8524452a241a20f1bf647c434c1d}
+      \strng{bibnamehash}{1ffa8524452a241a20f1bf647c434c1d}
+      \strng{authorbibnamehash}{1ffa8524452a241a20f1bf647c434c1d}
+      \strng{authornamehash}{1ffa8524452a241a20f1bf647c434c1d}
+      \strng{authorfullhash}{1ffa8524452a241a20f1bf647c434c1d}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Applied Mathematical Problems in Geophysics: Cetraro, Italy 2019}
+      \field{title}{Electromagnetic Hypogene Co-seismic Sources}
+      \field{year}{2022}
+      \true{nocite}
+      \field{pages}{125\bibrangedash 156}
+      \range{pages}{32}
+    \endentry
+    \entry{gubbins2004time}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e49bc18ec0b4cb009598e9590cdf7433}{%
+           family={Gubbins},
+           familyi={G\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge university press}%
+      }
+      \strng{namehash}{e49bc18ec0b4cb009598e9590cdf7433}
+      \strng{fullhash}{e49bc18ec0b4cb009598e9590cdf7433}
+      \strng{bibnamehash}{e49bc18ec0b4cb009598e9590cdf7433}
+      \strng{authorbibnamehash}{e49bc18ec0b4cb009598e9590cdf7433}
+      \strng{authornamehash}{e49bc18ec0b4cb009598e9590cdf7433}
+      \strng{authorfullhash}{e49bc18ec0b4cb009598e9590cdf7433}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Time series analysis and inverse theory for geophysicists}
+      \field{year}{2004}
+    \endentry
+    \entry{hanke2017taste}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fa9b3b27bfabb55910b70e93671b1dd2}{%
+           family={Hanke},
+           familyi={H\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {SIAM}%
+      }
+      \strng{namehash}{fa9b3b27bfabb55910b70e93671b1dd2}
+      \strng{fullhash}{fa9b3b27bfabb55910b70e93671b1dd2}
+      \strng{bibnamehash}{fa9b3b27bfabb55910b70e93671b1dd2}
+      \strng{authorbibnamehash}{fa9b3b27bfabb55910b70e93671b1dd2}
+      \strng{authornamehash}{fa9b3b27bfabb55910b70e93671b1dd2}
+      \strng{authorfullhash}{fa9b3b27bfabb55910b70e93671b1dd2}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A taste of inverse problems: basic theory and examples}
+      \field{year}{2017}
+      \true{nocite}
+    \endentry
+    \entry{osti_1996468}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=ca8cea32c08c67f1de87de5c3682347e}{%
+           family={Ichinose},
+           familyi={I\bibinitperiod},
+           given={Gene\bibnamedelima A.},
+           giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=42e7e5690b1e728a49578815760becf0}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Keehoon},
+           giveni={K\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=3abb05c3b32f0b0d61d38b6f107c8a48}{%
+           family={Lazarz},
+           familyi={L\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{53562627c9e097360c61bf28cff5667f}
+      \strng{fullhash}{53562627c9e097360c61bf28cff5667f}
+      \strng{bibnamehash}{53562627c9e097360c61bf28cff5667f}
+      \strng{authorbibnamehash}{53562627c9e097360c61bf28cff5667f}
+      \strng{authornamehash}{53562627c9e097360c61bf28cff5667f}
+      \strng{authorfullhash}{53562627c9e097360c61bf28cff5667f}
+      \field{sortinit}{I}
+      \field{sortinithash}{9417e9a1288a9371e2691d999083ed39}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{DNN Sentinel}
+      \field{month}{8}
+      \field{number}{1}
+      \field{title}{The 2022 Hunga eruption exercises the nuclear explosion monitoring community}
+      \field{volume}{10}
+      \field{year}{2023}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.osti.gov/biblio/1996468
+      \endverb
+      \verb{url}
+      \verb https://www.osti.gov/biblio/1996468
+      \endverb
+    \endentry
+    \entry{kamm2000evaluation}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=20edc466569c74732d9ee75abebe1c9d}{%
+           family={Kamm},
+           familyi={K\bibinitperiod},
+           given={James\bibnamedelima R},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{20edc466569c74732d9ee75abebe1c9d}
+      \strng{fullhash}{20edc466569c74732d9ee75abebe1c9d}
+      \strng{bibnamehash}{20edc466569c74732d9ee75abebe1c9d}
+      \strng{authorbibnamehash}{20edc466569c74732d9ee75abebe1c9d}
+      \strng{authornamehash}{20edc466569c74732d9ee75abebe1c9d}
+      \strng{authorfullhash}{20edc466569c74732d9ee75abebe1c9d}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Astrophys. J. Suppl.(submitted)}
+      \field{title}{Evaluation of the Sedov-von Neumann-Taylor blast wave solution}
+      \field{year}{2000}
+      \true{nocite}
+      \field{pages}{46}
+      \range{pages}{1}
+    \endentry
+    \entry{kim2007north}{article}{}
+      \name{author}{2}{}{%
+        {{un=1,uniquepart=given,hash=ce96e0805643c45d0dd49729303d26ef}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Won-Young},
+           giveni={W\bibinithyphendelim Y\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=599918319bad7a13fafdfcf37a556485}{%
+           family={Richards},
+           familyi={R\bibinitperiod},
+           given={Paul\bibnamedelima G},
+           giveni={P\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{acc81ed0a3215aa50cca8cbba05a5049}
+      \strng{fullhash}{acc81ed0a3215aa50cca8cbba05a5049}
+      \strng{bibnamehash}{acc81ed0a3215aa50cca8cbba05a5049}
+      \strng{authorbibnamehash}{acc81ed0a3215aa50cca8cbba05a5049}
+      \strng{authornamehash}{acc81ed0a3215aa50cca8cbba05a5049}
+      \strng{authorfullhash}{acc81ed0a3215aa50cca8cbba05a5049}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Eos, Transactions American Geophysical Union}
+      \field{number}{14}
+      \field{title}{North Korean nuclear test: Seismic discrimination low yield}
+      \field{volume}{88}
+      \field{year}{2007}
+      \field{pages}{158\bibrangedash 161}
+      \range{pages}{4}
+    \endentry
+    \entry{li2023numerical}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=1da70c9184f70856715528e06630503e}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Jingzhi},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7135a2c35bf03306d6346621a8c28a10}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Hongyu},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Nature}%
+      }
+      \strng{namehash}{864a0c32d5bbd62e593cd283cf09e182}
+      \strng{fullhash}{864a0c32d5bbd62e593cd283cf09e182}
+      \strng{bibnamehash}{864a0c32d5bbd62e593cd283cf09e182}
+      \strng{authorbibnamehash}{864a0c32d5bbd62e593cd283cf09e182}
+      \strng{authornamehash}{864a0c32d5bbd62e593cd283cf09e182}
+      \strng{authorfullhash}{864a0c32d5bbd62e593cd283cf09e182}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Numerical Methods for Inverse Scattering Problems}
+      \field{year}{2023}
+      \true{nocite}
+    \endentry
+    \entry{marshall1985body}{book}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=cc69ccc0faf8135c1a74cca21887f2db}{%
+           family={Marshall},
+           familyi={M\bibinitperiod},
+           given={PD},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=14ad533fa02cade35bba4a19ee8d3dc3}{%
+           family={Lilwall},
+           familyi={L\bibinitperiod},
+           given={RC},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ce8155ccd8f72bff1429edce25200f73}{%
+           family={Warburton},
+           familyi={W\bibinitperiod},
+           given={Penelope\bibnamedelima J},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {United Kingdom Atomic Energy Authority}%
+      }
+      \strng{namehash}{49e998cbaf1701d7665ae578d3ef6914}
+      \strng{fullhash}{49e998cbaf1701d7665ae578d3ef6914}
+      \strng{bibnamehash}{49e998cbaf1701d7665ae578d3ef6914}
+      \strng{authorbibnamehash}{49e998cbaf1701d7665ae578d3ef6914}
+      \strng{authornamehash}{49e998cbaf1701d7665ae578d3ef6914}
+      \strng{authorfullhash}{49e998cbaf1701d7665ae578d3ef6914}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Body wave magnitudes and locations of French underground explosions at the Mururoa test site}
+      \field{year}{1985}
+    \endentry
+    \entry{osti_1673170}{article}{}
+      \name{author}{9}{}{%
+        {{un=0,uniquepart=base,hash=066b0c882cb6f9657b58cbb7bb3cff36}{%
+           family={Matzen},
+           familyi={M\bibinitperiod},
+           given={Laura\bibnamedelima E.},
+           giveni={L\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=17fc1da43b8c11eed4dc22bfc322c221}{%
+           family={Ting},
+           familyi={T\bibinitperiod},
+           given={Christina},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b9b547433b8729caf67a07d1a160dc02}{%
+           family={Field},
+           familyi={F\bibinitperiod},
+           given={Richard\bibnamedelima V.},
+           giveni={R\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=75b5a930e5ab5eeb2d58942159d34a49}{%
+           family={Morrow},
+           familyi={M\bibinitperiod},
+           given={J.\bibnamedelimi Daniel},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b54c6a4d2e1a01278c45e7e56d6480b2}{%
+           family={Brogan},
+           familyi={B\bibinitperiod},
+           given={Ronald},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=475eb91ce8682eaf1d7dab597e0d8c1a}{%
+           family={Young},
+           familyi={Y\bibinitperiod},
+           given={Christopher\bibnamedelima J.},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b9e1d7c17694696833a7f501d67143a4}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Angela},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=72182bfe5e53f70a442759231aea2a6c}{%
+           family={Trumbo},
+           familyi={T\bibinitperiod},
+           given={Michael\bibnamedelimb Christopher\bibnamedelima Stefan},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4fe9aa9389ba1a9f8ddd8fe342b19c5e}{%
+           family={Coram},
+           familyi={C\bibinitperiod},
+           given={Jamie\bibnamedelima L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ad97d78cc44512caec9c3d48361a1938}
+      \strng{fullhash}{899e147c7d230fc1a110d8b564fb43fe}
+      \strng{bibnamehash}{ad97d78cc44512caec9c3d48361a1938}
+      \strng{authorbibnamehash}{ad97d78cc44512caec9c3d48361a1938}
+      \strng{authornamehash}{ad97d78cc44512caec9c3d48361a1938}
+      \strng{authorfullhash}{899e147c7d230fc1a110d8b564fb43fe}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{9}
+      \field{number}{0}
+      \field{title}{Applying Compression-Based Metrics to Seismic Data in Support of Global Nuclear Explosion Monitoring}
+      \field{volume}{0}
+      \field{year}{2020}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.2172/1673170
+      \endverb
+      \verb{urlraw}
+      \verb https://www.osti.gov/biblio/1673170
+      \endverb
+      \verb{url}
+      \verb https://www.osti.gov/biblio/1673170
+      \endverb
+    \endentry
+    \entry{miller2022methodological}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=1e917dea09efef8e79409c101e2dd974}{%
+           family={Miller},
+           familyi={M\bibinitperiod},
+           given={Elizabeth\bibnamedelima D},
+           giveni={E\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1cca6446e532382fa88496f025904f0a}{%
+           family={Schultz-Fellenz},
+           familyi={S\bibinithyphendelim F\bibinitperiod},
+           given={Emily\bibnamedelima S},
+           giveni={E\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Los Alamos National Lab.(LANL), Los Alamos, NM (United States)}%
+      }
+      \strng{namehash}{7773c106c724bf836172332e0582ab66}
+      \strng{fullhash}{7773c106c724bf836172332e0582ab66}
+      \strng{bibnamehash}{7773c106c724bf836172332e0582ab66}
+      \strng{authorbibnamehash}{7773c106c724bf836172332e0582ab66}
+      \strng{authornamehash}{7773c106c724bf836172332e0582ab66}
+      \strng{authorfullhash}{7773c106c724bf836172332e0582ab66}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A Methodological Overview of Seismic Analysis for Nuclear Event Detection}
+      \field{year}{2022}
+    \endentry
+    \entry{mosegaard1995monte}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=be65800f367f06b01216d31cdf4faae2}{%
+           family={Mosegaard},
+           familyi={M\bibinitperiod},
+           given={Klaus},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7f5b2d6262ddc71c1e6f1cbe3ecc5fbe}{%
+           family={Tarantola},
+           familyi={T\bibinitperiod},
+           given={Albert},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{8530bd0383c9cbf83846f66126d6d2b0}
+      \strng{fullhash}{8530bd0383c9cbf83846f66126d6d2b0}
+      \strng{bibnamehash}{8530bd0383c9cbf83846f66126d6d2b0}
+      \strng{authorbibnamehash}{8530bd0383c9cbf83846f66126d6d2b0}
+      \strng{authornamehash}{8530bd0383c9cbf83846f66126d6d2b0}
+      \strng{authorfullhash}{8530bd0383c9cbf83846f66126d6d2b0}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Geophysical Research: Solid Earth}
+      \field{number}{B7}
+      \field{title}{Monte Carlo sampling of solutions to inverse problems}
+      \field{volume}{100}
+      \field{year}{1995}
+      \true{nocite}
+      \field{pages}{12431\bibrangedash 12447}
+      \range{pages}{17}
+    \endentry
+    \entry{mousavi2023machine}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=74313f02ee2a7b14dee753101d9e4e4b}{%
+           family={Mousavi},
+           familyi={M\bibinitperiod},
+           given={S\bibnamedelima Mostafa},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=07a32099eef6927fda3905bb5800b621}{%
+           family={Beroza},
+           familyi={B\bibinitperiod},
+           given={Gregory\bibnamedelima C},
+           giveni={G\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Annual Reviews}%
+      }
+      \strng{namehash}{2c79a92a834946aed02ac9bce021e5ab}
+      \strng{fullhash}{2c79a92a834946aed02ac9bce021e5ab}
+      \strng{bibnamehash}{2c79a92a834946aed02ac9bce021e5ab}
+      \strng{authorbibnamehash}{2c79a92a834946aed02ac9bce021e5ab}
+      \strng{authornamehash}{2c79a92a834946aed02ac9bce021e5ab}
+      \strng{authorfullhash}{2c79a92a834946aed02ac9bce021e5ab}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Annual Review of Earth and Planetary Sciences}
+      \field{title}{Machine Learning in Earthquake Seismology}
+      \field{volume}{51}
+      \field{year}{2023}
+      \true{nocite}
+      \field{pages}{105\bibrangedash 129}
+      \range{pages}{25}
+    \endentry
+    \entry{nepeina2019refined}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=8ee100759aacc2df69ca568d084997b3}{%
+           family={Nepeina},
+           familyi={N\bibinitperiod},
+           given={Kseniia},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8605d3d4af111fb07c49db71a2bc5056}{%
+           family={An},
+           familyi={A\bibinitperiod},
+           given={Vadim},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {MDPI}%
+      }
+      \strng{namehash}{0531aea01a3c0d44aa43d018ab3b0228}
+      \strng{fullhash}{0531aea01a3c0d44aa43d018ab3b0228}
+      \strng{bibnamehash}{0531aea01a3c0d44aa43d018ab3b0228}
+      \strng{authorbibnamehash}{0531aea01a3c0d44aa43d018ab3b0228}
+      \strng{authornamehash}{0531aea01a3c0d44aa43d018ab3b0228}
+      \strng{authorfullhash}{0531aea01a3c0d44aa43d018ab3b0228}
+      \field{sortinit}{N}
+      \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Data}
+      \field{number}{2}
+      \field{title}{The Refined USSR Peaceful Nuclear Explosions Database for Borovoye Geophysical Observatory}
+      \field{volume}{4}
+      \field{year}{2019}
+      \field{pages}{56}
+      \range{pages}{1}
+    \endentry
+    \entry{neto2012introduction}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=7b970f2a8680a8792863f6fa5102c1ba}{%
+           family={Neto},
+           familyi={N\bibinitperiod},
+           given={Francisco\bibnamedelimb Duarte\bibnamedelima Moura},
+           giveni={F\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=645598a98702c035e786169411b9c9d0}{%
+           family={Silva\bibnamedelima Neto},
+           familyi={S\bibinitperiod\bibinitdelim N\bibinitperiod},
+           given={Ant{ô}nio\bibnamedelima Jos{é}},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0,
+           prefix={da},
+           prefixi={d\bibinitperiod},
+           prefixun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Science \& Business Media}%
+      }
+      \strng{namehash}{e98848efc27475619dfb451c3923bd8b}
+      \strng{fullhash}{e98848efc27475619dfb451c3923bd8b}
+      \strng{bibnamehash}{e98848efc27475619dfb451c3923bd8b}
+      \strng{authorbibnamehash}{e98848efc27475619dfb451c3923bd8b}
+      \strng{authornamehash}{e98848efc27475619dfb451c3923bd8b}
+      \strng{authorfullhash}{e98848efc27475619dfb451c3923bd8b}
+      \field{sortinit}{N}
+      \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{An introduction to inverse problems with applications}
+      \field{year}{2012}
+      \true{nocite}
+    \endentry
+    \entry{randall1973spectral}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4c3d4fcbb7531b67a794cf53a6609dbf}{%
+           family={Randall},
+           familyi={R\bibinitperiod},
+           given={Michael\bibnamedelima John},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {The Seismological Society of America}%
+      }
+      \strng{namehash}{4c3d4fcbb7531b67a794cf53a6609dbf}
+      \strng{fullhash}{4c3d4fcbb7531b67a794cf53a6609dbf}
+      \strng{bibnamehash}{4c3d4fcbb7531b67a794cf53a6609dbf}
+      \strng{authorbibnamehash}{4c3d4fcbb7531b67a794cf53a6609dbf}
+      \strng{authornamehash}{4c3d4fcbb7531b67a794cf53a6609dbf}
+      \strng{authorfullhash}{4c3d4fcbb7531b67a794cf53a6609dbf}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Bulletin of the Seismological Society of America}
+      \field{number}{3}
+      \field{title}{The spectral theory of seismic sources}
+      \field{volume}{63}
+      \field{year}{1973}
+      \true{nocite}
+      \field{pages}{1133\bibrangedash 1144}
+      \range{pages}{12}
+    \endentry
+    \entry{richards1990seismic}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=599918319bad7a13fafdfcf37a556485}{%
+           family={Richards},
+           familyi={R\bibinitperiod},
+           given={Paul\bibnamedelima G},
+           giveni={P\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a2ca40debe61e17e9c3708a2996408c4}{%
+           family={Zavales},
+           familyi={Z\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Annual Reviews 4139 El Camino Way, PO Box 10139, Palo Alto, CA 94303-0139, USA}%
+      }
+      \strng{namehash}{c5377a5838d9e42dbb7355aa21de909d}
+      \strng{fullhash}{c5377a5838d9e42dbb7355aa21de909d}
+      \strng{bibnamehash}{c5377a5838d9e42dbb7355aa21de909d}
+      \strng{authorbibnamehash}{c5377a5838d9e42dbb7355aa21de909d}
+      \strng{authornamehash}{c5377a5838d9e42dbb7355aa21de909d}
+      \strng{authorfullhash}{c5377a5838d9e42dbb7355aa21de909d}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Annual Review of Earth and Planetary Sciences}
+      \field{number}{1}
+      \field{title}{Seismic discrimination of nuclear explosions}
+      \field{volume}{18}
+      \field{year}{1990}
+      \true{nocite}
+      \field{pages}{257\bibrangedash 286}
+      \range{pages}{30}
+    \endentry
+    \entry{osti_1992578}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=5ab936171186743abb20f0f127ad11da}{%
+           family={Rodd},
+           familyi={R\bibinitperiod},
+           given={Rebecca\bibnamedelima L.},
+           giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=382d5466ac8dd66953b6f7e427a7d7e7}{%
+           family={Price},
+           familyi={P\bibinitperiod},
+           given={Amanda\bibnamedelima C.},
+           giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{327dc1f5b2b010bbf24338bb1f88359f}
+      \strng{fullhash}{327dc1f5b2b010bbf24338bb1f88359f}
+      \strng{bibnamehash}{327dc1f5b2b010bbf24338bb1f88359f}
+      \strng{authorbibnamehash}{327dc1f5b2b010bbf24338bb1f88359f}
+      \strng{authornamehash}{327dc1f5b2b010bbf24338bb1f88359f}
+      \strng{authorfullhash}{327dc1f5b2b010bbf24338bb1f88359f}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{4}
+      \field{number}{0}
+      \field{title}{DATASET RELEASE AND QUALITY CONTROL REVIEW OF LIVERMORE NEVADA NETWORK (LNN) RECORDINGS OF A SUBSET OF NEVADA NUCLEAR SECURITY SITE NUCLEAR EXPLOSIONS FROM 1979 TO 1992.}
+      \field{volume}{0}
+      \field{year}{2023}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.2172/1992578
+      \endverb
+      \verb{urlraw}
+      \verb https://www.osti.gov/biblio/1992578
+      \endverb
+      \verb{url}
+      \verb https://www.osti.gov/biblio/1992578
+      \endverb
+    \endentry
+    \entry{sambridge2002monte}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=d45bdec2002a712428b386d5ac42e41e}{%
+           family={Sambridge},
+           familyi={S\bibinitperiod},
+           given={Malcolm},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=be65800f367f06b01216d31cdf4faae2}{%
+           family={Mosegaard},
+           familyi={M\bibinitperiod},
+           given={Klaus},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{eaec5670da7433819dfc1e38be2f5af9}
+      \strng{fullhash}{eaec5670da7433819dfc1e38be2f5af9}
+      \strng{bibnamehash}{eaec5670da7433819dfc1e38be2f5af9}
+      \strng{authorbibnamehash}{eaec5670da7433819dfc1e38be2f5af9}
+      \strng{authornamehash}{eaec5670da7433819dfc1e38be2f5af9}
+      \strng{authorfullhash}{eaec5670da7433819dfc1e38be2f5af9}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Reviews of Geophysics}
+      \field{number}{3}
+      \field{title}{Monte Carlo methods in geophysical inverse problems}
+      \field{volume}{40}
+      \field{year}{2002}
+      \true{nocite}
+      \field{pages}{3\bibrangedash 1}
+      \range{pages}{-1}
+    \endentry
+    \entry{springer2002seismic}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=33df119d077f4ea0bf6cadcdc7bdee12}{%
+           family={Springer},
+           familyi={S\bibinitperiod},
+           given={Donald\bibnamedelima L},
+           giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=815a5fcf3d7ebea5756a38b428c55e31}{%
+           family={Pawloski},
+           familyi={P\bibinitperiod},
+           given={Gayle\bibnamedelima A},
+           giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=428eadcd362984f8fe6a538c4daac129}{%
+           family={Ricca},
+           familyi={R\bibinitperiod},
+           given={Janet\bibnamedelima L},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a24e67ee6eea51ff86dc11ace5984014}{%
+           family={Rohrer},
+           familyi={R\bibinitperiod},
+           given={Robert\bibnamedelima F},
+           giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=432b2e0660c5020b0dbdc7b84c9faba3}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={David\bibnamedelima K},
+           giveni={D\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Seismological Society of America}%
+      }
+      \strng{namehash}{317195581239035e4c181c6d3f428f81}
+      \strng{fullhash}{54ee2a2b5a10d4708ad331e1358385f2}
+      \strng{bibnamehash}{317195581239035e4c181c6d3f428f81}
+      \strng{authorbibnamehash}{317195581239035e4c181c6d3f428f81}
+      \strng{authornamehash}{317195581239035e4c181c6d3f428f81}
+      \strng{authorfullhash}{54ee2a2b5a10d4708ad331e1358385f2}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Bulletin of the Seismological Society of America}
+      \field{number}{5}
+      \field{title}{Seismic source summary for all US below-surface nuclear explosions}
+      \field{volume}{92}
+      \field{year}{2002}
+      \field{pages}{1806\bibrangedash 1840}
+      \range{pages}{35}
+    \endentry
+    \entry{osti_1645043}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=489e834ae6964473976c5725359a0e05}{%
+           family={Stead},
+           familyi={S\bibinitperiod},
+           given={Richard\bibnamedelima J.},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{489e834ae6964473976c5725359a0e05}
+      \strng{fullhash}{489e834ae6964473976c5725359a0e05}
+      \strng{bibnamehash}{489e834ae6964473976c5725359a0e05}
+      \strng{authorbibnamehash}{489e834ae6964473976c5725359a0e05}
+      \strng{authornamehash}{489e834ae6964473976c5725359a0e05}
+      \strng{authorfullhash}{489e834ae6964473976c5725359a0e05}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{7}
+      \field{number}{0}
+      \field{title}{Report on the recovery of legacy 1997-1998 Depth-of-Burial / Tunnel-and-Hole-Closure explosion data from the Kazakhstan former Soviet nuclear test site, Semipalatinsk.}
+      \field{volume}{0}
+      \field{year}{2020}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.2172/1645043
+      \endverb
+      \verb{urlraw}
+      \verb https://www.osti.gov/biblio/1645043
+      \endverb
+      \verb{url}
+      \verb https://www.osti.gov/biblio/1645043
+      \endverb
+    \endentry
+    \entry{stuart2010inverse}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ede60db687249a971389c3f251a065da}{%
+           family={Stuart},
+           familyi={S\bibinitperiod},
+           given={Andrew\bibnamedelima M},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{ede60db687249a971389c3f251a065da}
+      \strng{fullhash}{ede60db687249a971389c3f251a065da}
+      \strng{bibnamehash}{ede60db687249a971389c3f251a065da}
+      \strng{authorbibnamehash}{ede60db687249a971389c3f251a065da}
+      \strng{authornamehash}{ede60db687249a971389c3f251a065da}
+      \strng{authorfullhash}{ede60db687249a971389c3f251a065da}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Acta numerica}
+      \field{title}{Inverse problems: a Bayesian perspective}
+      \field{volume}{19}
+      \field{year}{2010}
+      \true{nocite}
+      \field{pages}{451\bibrangedash 559}
+      \range{pages}{109}
+    \endentry
+    \entry{tarantola1986strategy}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7f5b2d6262ddc71c1e6f1cbe3ecc5fbe}{%
+           family={Tarantola},
+           familyi={T\bibinitperiod},
+           given={Albert},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Society of Exploration Geophysicists}%
+      }
+      \strng{namehash}{7f5b2d6262ddc71c1e6f1cbe3ecc5fbe}
+      \strng{fullhash}{7f5b2d6262ddc71c1e6f1cbe3ecc5fbe}
+      \strng{bibnamehash}{7f5b2d6262ddc71c1e6f1cbe3ecc5fbe}
+      \strng{authorbibnamehash}{7f5b2d6262ddc71c1e6f1cbe3ecc5fbe}
+      \strng{authornamehash}{7f5b2d6262ddc71c1e6f1cbe3ecc5fbe}
+      \strng{authorfullhash}{7f5b2d6262ddc71c1e6f1cbe3ecc5fbe}
+      \field{extraname}{1}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Geophysics}
+      \field{number}{10}
+      \field{title}{A strategy for nonlinear elastic inversion of seismic reflection data}
+      \field{volume}{51}
+      \field{year}{1986}
+      \field{pages}{1893\bibrangedash 1903}
+      \range{pages}{11}
+    \endentry
+    \entry{tarantola2005inverse}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7f5b2d6262ddc71c1e6f1cbe3ecc5fbe}{%
+           family={Tarantola},
+           familyi={T\bibinitperiod},
+           given={Albert},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {SIAM}%
+      }
+      \strng{namehash}{7f5b2d6262ddc71c1e6f1cbe3ecc5fbe}
+      \strng{fullhash}{7f5b2d6262ddc71c1e6f1cbe3ecc5fbe}
+      \strng{bibnamehash}{7f5b2d6262ddc71c1e6f1cbe3ecc5fbe}
+      \strng{authorbibnamehash}{7f5b2d6262ddc71c1e6f1cbe3ecc5fbe}
+      \strng{authornamehash}{7f5b2d6262ddc71c1e6f1cbe3ecc5fbe}
+      \strng{authorfullhash}{7f5b2d6262ddc71c1e6f1cbe3ecc5fbe}
+      \field{extraname}{2}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Inverse problem theory and methods for model parameter estimation}
+      \field{year}{2005}
+    \endentry
+    \entry{tarantola1984linearized}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7f5b2d6262ddc71c1e6f1cbe3ecc5fbe}{%
+           family={Tarantola},
+           familyi={T\bibinitperiod},
+           given={Albert},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{7f5b2d6262ddc71c1e6f1cbe3ecc5fbe}
+      \strng{fullhash}{7f5b2d6262ddc71c1e6f1cbe3ecc5fbe}
+      \strng{bibnamehash}{7f5b2d6262ddc71c1e6f1cbe3ecc5fbe}
+      \strng{authorbibnamehash}{7f5b2d6262ddc71c1e6f1cbe3ecc5fbe}
+      \strng{authornamehash}{7f5b2d6262ddc71c1e6f1cbe3ecc5fbe}
+      \strng{authorfullhash}{7f5b2d6262ddc71c1e6f1cbe3ecc5fbe}
+      \field{extraname}{3}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Geophysical prospecting}
+      \field{number}{6}
+      \field{title}{Linearized inversion of seismic reflection data}
+      \field{volume}{32}
+      \field{year}{1984}
+      \true{nocite}
+      \field{pages}{998\bibrangedash 1015}
+      \range{pages}{18}
+    \endentry
+    \entry{tarantola1982generalized}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=7f5b2d6262ddc71c1e6f1cbe3ecc5fbe}{%
+           family={Tarantola},
+           familyi={T\bibinitperiod},
+           given={Albert},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a696581631c6c53d570318d0a6438e0c}{%
+           family={Valette},
+           familyi={V\bibinitperiod},
+           given={Bernard},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{2bca4d5c9ed10d431bae590063df1758}
+      \strng{fullhash}{2bca4d5c9ed10d431bae590063df1758}
+      \strng{bibnamehash}{2bca4d5c9ed10d431bae590063df1758}
+      \strng{authorbibnamehash}{2bca4d5c9ed10d431bae590063df1758}
+      \strng{authornamehash}{2bca4d5c9ed10d431bae590063df1758}
+      \strng{authorfullhash}{2bca4d5c9ed10d431bae590063df1758}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Reviews of Geophysics}
+      \field{number}{2}
+      \field{title}{Generalized nonlinear inverse problems solved using the least squares criterion}
+      \field{volume}{20}
+      \field{year}{1982}
+      \true{nocite}
+      \field{pages}{219\bibrangedash 232}
+      \range{pages}{14}
+    \endentry
+    \entry{tarantola1982inverse}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=7f5b2d6262ddc71c1e6f1cbe3ecc5fbe}{%
+           family={Tarantola},
+           familyi={T\bibinitperiod},
+           given={Albert},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a696581631c6c53d570318d0a6438e0c}{%
+           family={Valette},
+           familyi={V\bibinitperiod},
+           given={Bernard},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{da10542829a0be38acfa9696f4833608}
+      \strng{fullhash}{da10542829a0be38acfa9696f4833608}
+      \strng{bibnamehash}{da10542829a0be38acfa9696f4833608}
+      \strng{authorbibnamehash}{da10542829a0be38acfa9696f4833608}
+      \strng{authornamehash}{da10542829a0be38acfa9696f4833608}
+      \strng{authorfullhash}{da10542829a0be38acfa9696f4833608}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of geophysics}
+      \field{number}{1}
+      \field{title}{Inverse problems= quest for information}
+      \field{volume}{50}
+      \field{year}{1982}
+      \true{nocite}
+      \field{pages}{159\bibrangedash 170}
+      \range{pages}{12}
+    \endentry
+    \entry{osti_1983733}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=91b007e0c09079c43a261f7c750764a8}{%
+           family={Walter},
+           familyi={W\bibinitperiod},
+           given={William\bibnamedelima R.},
+           giveni={W\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bb2bc13357bd7f70462011b14177c6fc}{%
+           family={Begnaud},
+           familyi={B\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c7903fa99de8c0fdeb1fa0ad8d54d59d}{%
+           family={Seifert},
+           familyi={S\bibinitperiod},
+           given={Carolyn\bibnamedelima E.},
+           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8d7e9b65588cd2c35ca226be230197e5}{%
+           family={Teich-McGoldrick},
+           familyi={T\bibinithyphendelim M\bibinitperiod},
+           given={Stephanie},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{25da6a453b04c5907df4694d4e5e67f7}
+      \strng{fullhash}{4eac89f993ac8311245c914eab6e05a2}
+      \strng{bibnamehash}{25da6a453b04c5907df4694d4e5e67f7}
+      \strng{authorbibnamehash}{25da6a453b04c5907df4694d4e5e67f7}
+      \strng{authornamehash}{25da6a453b04c5907df4694d4e5e67f7}
+      \strng{authorfullhash}{4eac89f993ac8311245c914eab6e05a2}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{6}
+      \field{number}{0}
+      \field{title}{The Low-Yield Nuclear Monitoring (LYNM) Experimental Science Plan}
+      \field{volume}{0}
+      \field{year}{2023}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.2172/1983733
+      \endverb
+      \verb{urlraw}
+      \verb https://www.osti.gov/biblio/1983733
+      \endverb
+      \verb{url}
+      \verb https://www.osti.gov/biblio/1983733
+      \endverb
+    \endentry
+    \entry{yang2003worldwide}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=6e12932fc7b339b5b18c3d7ae97ad303}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Xiaoping},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=584a3bf084727019d9d568522f9dcc39}{%
+           family={North},
+           familyi={N\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8a8bab80184923c72a31009411173af8}{%
+           family={Romney},
+           familyi={R\bibinitperiod},
+           given={Carl},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=599918319bad7a13fafdfcf37a556485}{%
+           family={Richards},
+           familyi={R\bibinitperiod},
+           given={Paul\bibnamedelima G},
+           giveni={P\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {ACADEMIC PRESS LTD}%
+      }
+      \strng{namehash}{b271c6d1006128263f5e12cf36a4b08b}
+      \strng{fullhash}{053ab18115cd89861c2f54881c6870e2}
+      \strng{bibnamehash}{b271c6d1006128263f5e12cf36a4b08b}
+      \strng{authorbibnamehash}{b271c6d1006128263f5e12cf36a4b08b}
+      \strng{authornamehash}{b271c6d1006128263f5e12cf36a4b08b}
+      \strng{authorfullhash}{053ab18115cd89861c2f54881c6870e2}
+      \field{sortinit}{Y}
+      \field{sortinithash}{6ae2ff5458ff901249c2745238c951b7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International geophysics series}
+      \field{number}{B}
+      \field{title}{Worldwide nuclear explosions}
+      \field{volume}{81}
+      \field{year}{2003}
+      \field{pages}{1595\bibrangedash 1600}
+      \range{pages}{6}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

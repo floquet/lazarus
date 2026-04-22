@@ -1,0 +1,97 @@
+% \input{\pSections "ssec-repro-mcaninch"}
+
+%%  %%  %%  %%  %%
+\subsection{McAninch Challenge}
+%
+\begin{frame}\frametitle{McAninch Challenge}
+	%
+Can we tell if this experiment was done in \bl{Albuquerque}?
+	%
+\end{frame}
+%
+%
+\begin{frame}\frametitle{McAninch Challenge}
+	%
+\begin{enumerate}
+	\item Albuquerque average \bl{elevation}: \href{https://en.wikipedia.org/wiki/Albuquerque,_New_Mexico}{1619 m}
+	\item \bl{Boiling point} of water at 1600 m: $94.4^{\circ}$C
+\end{enumerate}
+%
+\center
+\ \\
+How can we use this apparatus to determine if the \\ water is boiling at $94.4^{\circ}$C?
+	%
+\end{frame}
+%
+%
+\begin{frame}\frametitle{McAninch Challenge}
+	%
+\center
+Without refining the apparatus, how do we \bl{refine the solution}?
+	%
+\end{frame}
+%
+%
+\begin{frame}\frametitle{McAninch Challenge}
+\center
+Let's insist that $100^{\circ}$ and $94.4^{\circ}$C be \bl{3 standard deviations} apart.\\[20pt]
+	%
+\pause
+	%
+	Eqn. \eqref{eq:bevington interpolation error numeric}: $\sigma_{x=10} = \paren{100-94.4}/3 = 5.6 / 3 = 1.9$
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Solve for $\sigma_{0}$ and $\sigma_{1}$}
+	%
+Let's call the position error $\bl{0.01}$ cm.
+%
+\begin{equation}
+\begin{array}{ccccc ccccc c}
+	\sigma_{x=10}^{2} &=& \sigma_{0}^{2} &+& x^{2} & \sigma_{1}^{2} &+& a_{1}^{2} & \sigma_{x}^{2}, \\
+	\sigma_{x=10}^{2} &=& \rd{\sigma_{0}}^{2} &+& 10^{2} & \rd{\sigma_{1}}^{2} &+& 10^{2} & \bl{0.01}^{2} &=& 1.9^{2}. \\
+\end{array}
+\label{eq:bevington interpolation error numeric}
+\end{equation}
+	%
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Device Characterization}
+	%
+\begin{figure}[t]
+	\begin{center}
+			%
+		\begin{overpic}[ scale = 0.9 ]
+			{\pLocalGraphics bev/extrap-error}
+			\put(30, -4)	{$measurements, m$}
+			\put(-6, 18)	{\rotatebox{90}{$error\ at\ x=10$}}
+		\end{overpic}
+			%
+	\end{center}
+\end{figure}
+	%
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Measurement Goal $1.9$}
+\begin{figure}[t]
+	\begin{center}
+			%
+		\begin{overpic}[ scale = 0.9 ]
+			{\pLocalGraphics bev/extrap-error-marked}
+			\put(30, -4)	{$measurements, m$}
+			\put(-6, 18)	{\rotatebox{90}{$error\ at\ x=10$}}
+		\end{overpic}
+			%
+			%
+	\end{center}
+\end{figure}
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Result}
+	To use our code to \bl{distinguish altitude}, we must make a \bl{200 measurements}.
+\end{frame}
+
+\endinput  %  ==  ==  ==  ==  ==  ==  ==  ==  ==

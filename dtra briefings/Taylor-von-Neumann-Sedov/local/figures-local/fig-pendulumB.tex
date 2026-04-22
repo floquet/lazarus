@@ -1,0 +1,33 @@
+% https://tex.stackexchange.com/questions/305028/graph-of-pendulum
+
+% PENDULUM
+\def\L{2.8}  % string length
+\def\ang{28} % angle string
+\def\R{0.25} % ball radius
+\def\F{1.0}  % force magnitude
+\begin{tikzpicture}
+  \message{^^JPendulum}
+  \coordinate (M) at (\ang-90:\L);
+  \coordinate (M') at (0,-\L);
+  \coordinate (O) at (0,0);
+  \coordinate (B) at (0,-\L-2.2*\R);
+  \coordinate (FT) at ($(M)+(90+\ang:{\F*cos(\ang)+\R})$);
+  \coordinate (FG) at ($(M)+(-90:{\F+\R})$);
+  \coordinate (FGx) at ($(M)+(-90+\ang:{0.55*\F+\R})$);
+  \coordinate (MA) at ($(M)+(180+\ang:{\F*sin(\ang)+\R})$);
+  %\draw[faded mass] (M') circle(\R);
+  \draw[<->] (M)++(\ang-32:0.2*\L) node[below right=-1,scale=0.9] {$x$}
+    --++ (\ang:0.17*\L) --++ (90+\ang:0.17*\L) node[above right=-1,scale=0.9] {$y$};
+  \draw[dashed] (O) -- (B);
+  %\draw[dashed,myred!60!black] (MA) -- (FG);
+  \draw[dashed,myred!60!black] (M) -- (FGx);
+  \draw[dashed] (-90+\ang+10:\L) arc(-90+\ang+10:-110:\L) (B);
+  \rope{(O) -- (M)} \path (O) -- (M) node[midway,above right=-1] {$L$};
+  \fill[black] (O) circle(0.04);
+  \draw[force] (M) -- (FT) node[midway,left=0] {$\vb{T}$};
+  \draw[force] (M) -- (FG) node[right=0] {$m\vb{g}$};
+  \draw[force,acol] (M) -- (MA) node[right=2,below=0] {$m\vb{a}$}; %{\contour{white}{$m\vb{a}$}};
+  \draw[mass] (M) circle(\R) node {$m$};
+  \draw pic[myarr,"$\theta$",xcol,draw=xcol,angle radius=22,angle eccentricity=1.30] {angle=B--O--M}; %_\text{max}
+  \draw pic[myarr,"$\theta$",xcol,draw=xcol,angle radius=14,angle eccentricity=1.45] {angle=FG--M--FGx};
+\end{tikzpicture}

@@ -1,0 +1,975 @@
+% https://www.ms.uky.edu/~perry/213-f19-perry/_assets/sources/lec_41_16_9.tex
+
+\documentclass[notes=show,10pt]{beamer}
+\usepackage{mathpazo}			%% Beamer stuff
+\usepackage{amsmath}			%% AMS math packages
+\usepackage{amsfonts}			%%	-	special fonts
+\usepackage{amssymb}			%%	-	special symbols
+\usepackage{graphicx}			%% graphics
+\usepackage{tcolorbox}			%% color boxes
+
+\usepackage{hyperref}			%% for web links
+\hypersetup{
+%    bookmarks=true,         		% show bookmarks bar?
+    unicode=false,          		% non-Latin characters in Acrobatâ€™s bookmarks
+    pdftoolbar=true,        		% show Acrobatâ€™s toolbar?
+    pdfmenubar=true,        	% show Acrobatâ€™s menu?
+    pdffitwindow=false,     		% window fit to page when opened
+    pdfstartview={FitH},    		% fits the width of the page to the window
+    pdfnewwindow=true,      	% links in new PDF window
+    colorlinks=true,       			% false: boxed links; true: colored links
+    linkcolor=blue,          		% color of internal links (change box color with linkbordercolor)
+    citecolor=PineGreen,    		% color of links to bibliography
+    filecolor=magenta,      		% color of file links
+    urlcolor=cyan           		% color of external links
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%		TiKZ Ploting Stuff
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{tikz}				%% TikZ -graphics
+
+\usetikzlibrary{arrows, positioning, calc, intersections}
+\usetikzlibrary{decorations.pathreplacing, decorations.markings}
+
+\usepackage{pgfplots}			%% fancy plotting
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%	For 3d plotting, using the tikz-3dplot package so
+%	that (x,y,z) coordinates are specified in normal order
+%	and one can change the perspective for 3-d plots
+%
+%	To invoke, use
+%
+%	\begin{tikzpicture}[tdplot_main_coords,{other options}]
+%		...
+%	\end{tikzpicture}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{tikz-3dplot}		%% Enhanced 3d plotting
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%		Package forest to draw tree diagrams for chain rule
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{forest}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%	adjustbox package to force minipage alignment
+%
+%	Two-column structure is
+%
+%	\adjustbox{valign=t}
+%		{
+%			\begin{minipage}{0.45\textwidth}
+%			...
+%			\end{minipage}
+%		}
+%	\adjustbox{valign=t}
+%		{
+%		
+%			\begin{minipage}{0.45\textwidth}
+%			...
+%			\end{minipage}
+%		}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{adjustbox}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%		Set Beamer theme
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usetheme{Dresden}
+\usecolortheme{dolphin}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%		Hack to remove subsection bar from our
+%		friends at Tex.StackExchange.Com
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeatletter
+\beamer@theme@subsectionfalse
+
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%		
+%		Hack to make the nice little circles appear
+%		from Tex.stackexchange.com
+%
+%		Reference: 
+%
+%		https://tex.stackexchange.com/questions/2072/beamer-navigation-circles-without-subsections
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{remreset}
+\makeatletter
+\@removefromreset{subsection}{section}
+\makeatother
+\setcounter{subsection}{1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%		Get rid of triangles, put in circles for 
+%		itemize items
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setbeamertemplate{items}[circle]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%		Clean up fonts
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usefonttheme{professionalfonts}
+\usefonttheme{serif}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%		tikz plotting options
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pgfplotsset{my style/.append style={axis x line=middle, axis y line=
+           middle, xlabel={}, ylabel={}, axis equal }}
+           
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%		Math Operators
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\DeclareMathOperator{\comp}{comp}
+\DeclareMathOperator{\proj}{proj}
+\DeclareMathOperator{\Hess}{Hess}
+
+\DeclareMathOperator{\curl}{curl}
+\DeclareMathOperator{\diver}{div}
+\DeclareMathOperator{\grad}{grad}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%	Document begins here...
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+           
+\begin{document}
+
+\input{213-Lecture-Macros}		%% 	macros, settings, et.c
+
+
+\title{Math 213 - The Gauss Divergence Theorem}			%%	title page
+\author{Peter A. Perry}
+\institute{University of Kentucky}
+\date{December 6, 2019}
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	
+%	Due Date Reminders
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Reminders}
+
+\begin{itemize}
+
+
+\item	Homework D4 (Surface integrals, Stokes' Theorem) is due tonight
+
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%	Unit Outline
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Unit IV: Vector Calculus}
+\begin{center}
+\begin{itemize}
+\item[{}]			Fundamental Theorem for Line Integrals
+\item[{}]			Green's Theorem
+\item[{}]			Curl and Divergence
+\item[{}]			Parametric Surfaces and their Areas
+\item[{}]			Surface Integrals
+\item[{}]			Stokes' Theorem, I
+\item[{}]			Stokes' Theorem, II 
+\begingroup
+\color{red}
+\item[{}]			The Divergence Theorem
+\endgroup
+\item[{}]			
+\item[{}]			Review
+\item[{}]			Review
+\item[{}]			Review
+\end{itemize}
+\end{center}
+\end{frame}
+
+\section{Learning Goals}
+
+\begin{frame}
+\frametitle{Goals of the Day}
+This lecture is about the Gauss Divergence Theorem,  which illuminates the meaning of the divergence of a vector field. You will learn:
+
+\bigskip
+
+\begin{itemize}
+\item	How the flux of a vector field over a surface bounding a \emph{simple volume} to the divergence of 
+the vector field in the enclosed volume
+\item	How to compute the flux of a vector field by integrating its divergence 
+\end{itemize}
+\end{frame}
+
+\section{Review}
+
+\begin{frame}
+\frametitle{Vector (Differential) Calculus: The Story So Far}
+\footnotesize
+We have defined two `derivatives' of a vector field $\bfF$. One is a scalar and the other is a vector.
+
+\medskip
+
+The \emph{divergence} of a vector field 
+$$\bfF = P(x,y,z) \ii + Q(x,y,z) \jj + R(x,y,z) \kk$$ 
+is the scalar
+$$ \mathrm{div} \, \bfF = \nabla \cdot \bfF = \frac{\dee P}{\dee x} + \frac{\dee Q}{\dee y} + \frac{\dee R}{\dee z}
+$$
+
+\vfill
+
+The \emph{curl} of a vector field $\bfF$ is 
+$$ 
+\mathrm{curl} \, \bfF = \nabla \times \bfF =
+\begin{vmatrix}
+\ii							&		\jj							&		\kk		\\[5pt]
+\dfrac{\dee}{\dee x}	&	 	\dfrac{\dee}{\dee y}	&	\dfrac{\dee}{\dee z}	\\[10pt]
+P							&		Q							&	R
+\end{vmatrix}
+$$
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Vector (Integral) Calculus: The Story So Far}
+\footnotesize
+The \emph{circulation} of a vector field $\bfF$ around a closed curve $C$ is the line integral 
+$$ \oint_C \bfF \cdot \, d\bfr $$
+\emph{Stokes' Theorem} relates the circulation of a vector field $\bfF$ over a curve $C$ to the surface integral of its curl over any surface that bounds $C$:
+$$ \iint_S \left( \nabla \times \bfF\right)  \cdot \bfn \, dS = \oint_C \bfF \cdot \, d\bfr $$
+
+\vfill
+The \emph{flux} of a vector field through a surface $S$ bounding a volume $E$is the 
+surface integral
+$$ \iint_S \bfF \cdot \bfn \, dS $$
+where $\bfn$ is the \emph{outward} normal.  The \emph{divergence theorem}, which we'll study today, relates the flux of $\bfF$ to the integral of its divergence. 
+\end{frame}
+
+\section{The Divergence Theorem}
+
+\begin{frame}
+\frametitle{What's A \emph{Simple Volume}?}
+\footnotesize
+If volume $E$ is a simple volume if it has no holes and its boundary separates $\R^3$ into an ``inside'' and an ``outside.''
+
+\medskip
+
+\adjustbox{valign=t}
+{
+\begin{minipage}{0.45\textwidth}
+\footnotesize
+The sphere of radius $a$ centered at $(0,0,0)$
+
+\vfill
+
+\vfill
+
+
+\begin{center}
+\tdplotsetmaincoords{65}{110}
+	\begin{tikzpicture}[scale=0.5,tdplot_main_coords]
+	
+	%%
+	%%	1. 	Draw sphere
+	%%
+	
+	\foreach \u in {7,17,...,367}
+		{
+			\draw[gray]
+				plot[domain=0:180,variable=\v]
+					(
+						{3*sin(\v)*cos(\u)},
+						{3*sin(\v)*sin(\u)},
+						{3*cos(\v)}
+					);
+		}
+	\foreach \v in {0,10,...,180}
+		{	
+			\draw[gray]
+				plot[domain=0:360,variable=\u]
+					(
+						{3*sin(\v)*cos(\u)},
+						{3*sin(\v)*sin(\u)},
+						{3*cos(\v)}
+					);
+		}
+		
+		%% add red dot at $(\pi/4,\pi/4)$
+		
+		\draw[red,fill=red]	(
+										{3*sin(45)*cos(45)},
+										{3*sin(45)*sin(45)},
+										{3*cos(45)}
+									)
+					circle(0.10cm);	
+					
+		%%
+		%%	2. Show curve of constant v 
+		%%
+		
+		%\uncover<2->
+		{
+			\draw[red,dashed]
+				plot[domain=0:360,variable=\theta]
+					(
+						{3*sin(45)*cos(\theta)},
+						{3*sin(45)*sin(\theta)},
+						{3*cos(45)}
+					);
+		}
+					
+		%%
+		%%	3. Show curve of constant u and redraw dot
+		%%		so that it doesn't have an ugly cyan line
+		%%		through it
+		%%
+		
+		%\uncover<3->
+		{
+			\draw[cyan,dashed]
+				plot[domain=0:180,variable=\phi]
+					(
+						{3*sin(\phi)*cos(45)},
+						{3*sin(\phi)*sin(45)},
+						{3*cos(\phi)}
+					);
+					
+			\draw[red,fill=red]	(
+										{3*sin(45)*cos(45)},
+										{3*sin(45)*sin(45)},
+										{3*cos(45)}
+									)
+					circle(0.10cm);	
+		}
+					
+		%%
+		%%	4. Add tangent vectors
+		%%
+		
+		%\uncover<4->
+		%% tangent vectors
+		{
+			\draw[red,very thick,->,>=stealth]
+				 	(
+				 			{3*sin(45)*cos(45)},
+				 			{3*sin(45)*sin(45)},
+				 			{3*cos(45)}
+				 	)	--
+				 ++(-1,1,0);
+			\draw[cyan,very thick,->,>=stealth]
+				 	(
+				 		{3*sin(45)*cos(45)},
+				 		{3*sin(45)*sin(45)},
+				 		{3*cos(45)}
+				 	)	--
+				 ++(1,1,-{sqrt(2)});
+		}
+		
+		
+		%%
+		%%	5. Add outward normal, but scale down
+		%%
+		
+		%\uncover<6->
+		{
+			\draw[ultra thick,black,->,>=stealth]
+					(
+				 		{3*sin(45)*cos(45)},
+				 		{3*sin(45)*sin(45)},
+				 		{3*cos(45)}
+				 	)	--	++(2,2,{2*sqrt(2)});
+		}
+	\end{tikzpicture}
+	
+	\smallskip
+	
+	\tiny{$\sin v \cos u \ii + \sin v \sin u \jj + \cos v \kk$}
+	\end{center}
+\end{minipage}
+}
+\quad
+\adjustbox{valign=t}
+{
+\begin{minipage}{0.45\textwidth}
+\footnotesize
+The box of side $a$ in the first octant
+
+\medskip
+\tdplotsetmaincoords{70}{130}
+\begin{tikzpicture}[scale=0.5,tdplot_main_coords]
+	\draw[thick,->,>=stealth]	(0,0,0)	--	(5,0,0)	
+		node[anchor=north east]		{\scriptsize{$x$}};
+	\draw[thick,->,>=stealth]	(0,0,0)	--	(0,5,0)	
+		node[anchor=west]				{\scriptsize{$y$}};
+	\draw[thick,->,>=stealth]	(0,0,0)	--	(0,0,5)	
+		node[anchor=south]			{\scriptsize{$z$}};
+	%% xy plane face
+	\draw[thick,blue]	
+		(0,0,0)	--	++(3,0,0)	--	++(0,3,0)	--	++(0,-3,0)
+			--	cycle;
+	%%	face parallel to xz plane face but in plane
+	%%	x=3
+	\draw[thick,blue,fill=blue!40,opacity=0.75]
+		(3,0,0)	--	++(0,3,0)	--	++(0,0,3)	--	++(0,-3,0)	
+			--	cycle;
+	%%  top
+	\draw[thick,blue,fill=blue!20,opacity=0.75]
+		(0,0,3)	--	++(3,0,0)	--	++(0,3,0)	--  ++(-3,0,0)	
+			--	cycle;
+	%% front side
+	\draw[thick,blue,fill=blue!10,opacity=0.75]
+		(3,3,0)	--	++(0,0,3)	--	++(-3,0,0)	--	++(0,0,-3)
+			--	cycle;
+	%% normals
+	\draw[ultra thick,->,>=stealth]
+		(1.5,1.5,3)	--	++(0,0,1.5);
+	\draw[ultra thick,->,>=stealth]
+		(1.5,3,1.5)	--	++(0,1.5,0);
+	\draw[ultra thick,->,>=stealth]	
+		(3,1.5,1.5)	--	++(1.5,0,0);
+\end{tikzpicture}
+\end{minipage}
+}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{The Flux of a Vector Field out of a Box}
+
+\footnotesize
+What is the flux of a vector field
+$$ \bfF(x,y,z) = P(x,y,z) \ii  + Q(x,y,z) \jj + R(x,y,z) \kk $$
+out of a box of side $a$?
+
+\medskip
+There are \emph{six} surfaces, which come in pairs!
+
+\adjustbox{valign=t}
+{
+	\begin{minipage}{0.45\textwidth}
+	
+		\scriptsize
+
+		\medskip
+		\begin{itemize}
+		
+		
+		\bigskip
+
+		\uncover<2->
+		{
+		\item[$S_1$]  $x=0$, $0 \leq y \leq a$, $0 \leq z \leq a$
+		\item[$S_2$]	$x=a$, $0 \leq y \leq a$, $0 \leq z \leq a$
+		}
+
+		\bigskip
+		\uncover<3->
+		{
+		\item[$S_3$]	$y=0$, $0 \leq x \leq a$, $0 \leq z \leq a$
+		\item[$S_4$]	$y=a$,  $0 \leq x \leq a$, $0 \leq z \leq a$
+		}
+		
+		\bigskip
+		\uncover<4->
+		{
+		\item[$S_5$]	$z=0$, $0 \leq x \leq a$, $0 \leq y \leq a$
+		\item[$S_6$]	$z=a$, $0 \leq x \leq a$, $0 \leq y \leq a$
+		}
+
+		\end{itemize}
+
+	\end{minipage}
+}
+\quad
+\adjustbox{valign=t}
+{
+	\begin{minipage}{0.45\textwidth}
+	
+		\tdplotsetmaincoords{60}{120}
+		\begin{tikzpicture}[scale=0.6,tdplot_main_coords]
+		%%
+		%%	Coordinate axes
+		%%
+		\draw[very thick,->,>=stealth]		
+				(0,0,0)	--	(5,0,0)	node[anchor=north east]	{$x$};
+		\draw[very thick,->,>=stealth]		
+				(0,0,0)	--	(0,5,0)	node[anchor=west]			{$y$};
+		\draw[very thick,->,>=stealth]		
+				(0,0,0)	--	(0,0,5)	node[anchor=south]		{$z$};
+		%%
+		%%	Box outline
+		%%
+	
+		\draw[dashed,gray,opacity=0.5]
+			(4,0,0)	--	
+			++(0,0,4)	--	++(-4,0,0)	--	++(0,4,0)	--	
+			++(0,0,-4)	--	++(4,0,0)	--	++(0,-4,0);
+		\draw[dashed,gray,opacity=0.5]
+			(4,0,4)	--
+			++(0,4,0)	--	++	(-4,0,0);
+		\draw[dashed,gray,opacity=0.5]
+			(4,4,4)	--	++(0,0,-4);
+		
+		\only<4>
+		{
+		\draw[very thick,fill=blue!40,opacity=0.5]
+			(0,0,0)	--	++(4,0,0)	--	++	(0,4,0)	--	++(-4,0,0)	--	++(0,-4,0);
+		\draw[very thick,fill=blue!40,opacity=0.5]
+			(0,0,4)	--	++(4,0,0)	--	++	(0,4,0)	--	++(-4,0,0)	--	++(0,-4,0);
+		\draw[ultra thick,->,>=stealth]								(2,2,4)	--	++(0,0,1);
+		\draw[ultra thick,gray,->,>=stealth,opacity=0.5]		(2,2,0)	--	++(0,0,-1);	
+		\node[above] at	(2,2,0)			{$S_5$};
+		\node[below]	at	(2.5,2.5,4)		{$S_6$};
+		}
+		
+		
+		\only<2>
+		{
+		\draw[very thick,fill=red!40,opacity=0.5]
+			(0,0,0)	--	++(0,4,0)	--	++(0,0,4)	--	++(0,-4,0)	--	++(0,0,-4);
+		\draw[very thick,fill=red!40,opacity=0.5]
+			(4,0,0)	--	++(0,4,0)	--	++(0,0,4)	--	++(0,-4,0)	--	++(0,0,-4);
+		\draw[ultra thick,->,>=stealth]
+			(4,2,2)	--	++(1,0,0);
+		\draw[ultra thick,gray,->,>=stealth,opacity=0.5]	
+			(0,2,2)	--	++(-1,0,0);	
+		\node at		(0,3,1)	{$S_1$};
+		\node at		(4,3,1)	{$S_2$};
+		}
+		
+		\only<3>
+		{
+		\draw[very thick,fill=purple!40,opacity=0.5]
+			(0,0,0)	--	++(4,0,0)	--	++(0,0,4)	--	++(-4,0,0)	--	++(0,0,-4);
+		\draw[very thick,fill=purple!40,opacity=0.5]
+			(0,4,0)	--	++(4,0,0)	--	++(0,0,4)	--	++(-4,0,0)	--	++(0,0,-4);
+		\draw[ultra thick,->,>=stealth]
+			(2,4,2)	--	++(0,1,0);
+		\draw[ultra thick,gray,->,>=stealth,opacity=0.5]
+			(2,0,2)	--	++(0,-1,0);
+		\node at		(2,0,1)	{$S_3$};
+		\node at		(2,4,1)	{$S_4$};
+		}
+		
+		\end{tikzpicture}
+	\end{minipage}
+}
+
+
+\end{frame}
+
+\begin{frame}
+\frametitle{The Flux of a Vector Field out of a Box}
+\footnotesize
+The flux of a vector field out of a box is a sum of six terms, one for each cube face.
+
+%\adjustbox{valign=t}
+{
+	\begin{minipage}{0.45\textwidth}
+	
+		\scriptsize
+		
+		\uncover<2->
+		{
+		\color{red}
+		\begin{align*}
+		&\int_0^a \int_0^a P(a,y,z) \, dy \, dz-\\
+		&\int_0^a \int_0^a P(0,y,z) \, dy \, dz+
+		\end{align*}
+		}
+		\uncover<3->
+		{
+		\color{purple}
+		\begin{align*}
+		&\int_0^a \int_0^a Q(x,a,z) \, dx \, dz-\\
+		&\int_0^a \int_0^a Q(x,0,z) \, dx \, dz
+		\end{align*}
+		}
+		\uncover<4->
+		{
+		\color{blue}
+		\begin{align*}
+		&\int_0^a \int_0^a R(x,y,a) \, dx \, dy-\\
+		&\int_0^a \int_0^a R(x,y,0) \, dx \, dy+
+		\end{align*}
+		}
+		
+	\end{minipage}
+}
+\quad
+%\adjustbox{valign=t}
+{
+	\begin{minipage}{0.45\textwidth}
+	
+		\tdplotsetmaincoords{60}{120}
+		\begin{tikzpicture}[scale=0.7,tdplot_main_coords]
+		%%
+		%%	Coordinate axes
+		%%
+		\draw[very thick,->,>=stealth]		
+				(0,0,0)	--	(5,0,0)	node[anchor=north east]	{$x$};
+		\draw[very thick,->,>=stealth]		
+				(0,0,0)	--	(0,5,0)	node[anchor=west]			{$y$};
+		\draw[very thick,->,>=stealth]		
+				(0,0,0)	--	(0,0,5)	node[anchor=south]		{$z$};
+				
+		%%
+		%%	Box outline
+		%%
+	
+		\draw[dashed,gray,opacity=0.5]
+			(4,0,0)	--	
+			++(0,0,4)	--	++(-4,0,0)	--	++(0,4,0)	--	
+			++(0,0,-4)	--	++(4,0,0)	--	++(0,-4,0);
+		\draw[dashed,gray,opacity=0.5]
+			(4,0,4)	--
+			++(0,4,0)	--	++	(-4,0,0);
+		\draw[dashed,gray,opacity=0.5]
+			(4,4,4)	--	++(0,0,-4);
+		
+		\only<4>
+		{
+		\draw[very thick,fill=blue!40,opacity=0.5]
+			(0,0,0)	--	++(4,0,0)	--	++	(0,4,0)	--	++(-4,0,0)	--	++(0,-4,0);
+		\draw[very thick,fill=blue!40,opacity=0.5]
+			(0,0,4)	--	++(4,0,0)	--	++	(0,4,0)	--	++(-4,0,0)	--	++(0,-4,0);
+		\draw[ultra thick,->,>=stealth]								(2,2,4)	--	++(0,0,1);
+		\draw[ultra thick,gray,->,>=stealth,opacity=0.5]		(2,2,0)	--	++(0,0,-1);	
+		\node[above] at	(2,2,0)			{$S_5$};
+		\node[below]	at	(2.5,2.5,4)		{$S_6$};
+		}
+		
+		
+		\only<2>
+		{
+		\draw[very thick,fill=red!40,opacity=0.5]
+			(0,0,0)	--	++(0,4,0)	--	++(0,0,4)	--	++(0,-4,0)	--	++(0,0,-4);
+		\draw[very thick,fill=red!40,opacity=0.5]
+			(4,0,0)	--	++(0,4,0)	--	++(0,0,4)	--	++(0,-4,0)	--	++(0,0,-4);
+		\draw[ultra thick,->,>=stealth]
+			(4,2,2)	--	++(1,0,0);
+		\draw[ultra thick,gray,->,>=stealth,opacity=0.5]	
+			(0,2,2)	--	++(-1,0,0);	
+		\node at		(0,3,1)	{$S_1$};
+		\node at		(4,3,1)	{$S_2$};
+		}
+		
+		\only<3>
+		{
+		\draw[very thick,fill=purple!40,opacity=0.5]
+			(0,0,0)	--	++(4,0,0)	--	++(0,0,4)	--	++(-4,0,0)	--	++(0,0,-4);
+		\draw[very thick,fill=purple!40,opacity=0.5]
+			(0,4,0)	--	++(4,0,0)	--	++(0,0,4)	--	++(-4,0,0)	--	++(0,0,-4);
+		\draw[ultra thick,->,>=stealth]
+			(2,4,2)	--	++(0,1,0);
+		\draw[ultra thick,gray,->,>=stealth,opacity=0.5]
+			(2,0,2)	--	++(0,-1,0);
+		\node at		(2,0,1)	{$S_3$};
+		\node at		(2,4,1)	{$S_4$};
+		}
+		
+		\end{tikzpicture}
+	\end{minipage}
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{The Gauss Divergence Theorem}
+\adjustbox{valign=t}
+{
+\begin{minipage}{0.3\textwidth}
+\footnotesize
+\begin{center}
+\includegraphics[width=0.9\textwidth]{Images/Gauss_1828.jpg}
+
+\smallskip
+\scriptsize{Carl Friedrich Gauss, 1777-1855}
+\end{center}
+\end{minipage}
+}
+\quad
+\adjustbox{valign=t}
+{
+\begin{minipage}{0.6\textwidth}
+\footnotesize
+{\color{cyan} \textbf{Theorem}} $\,$ Let $E$ be a simple solid region and let $S$ be a boundary surface of $E$, given with positive (outward) orientation. Let $\bfF$ be a vector field whose component functions have continuous partial derivatives on an open region that contains $E$. Then
+Then
+$$ 
+\iiint_E \nabla \cdot \bfF \, dV = 
+\iint_S \bfF \cdot \bfn \, dS 
+$$
+where $\bfn$ is the outward unit normal to $S$. 
+\end{minipage}
+}
+
+\vfill
+
+\footnotesize
+Important Note: the notations 
+$\bfF \cdot \bfn \, dS$ (here) and $\bfF \cdot \, d\bfS$ (the book) mean the same thing.
+\end{frame}
+
+\begin{frame}
+\frametitle{The Divergence Theorem for a Cube}
+\scriptsize
+We can compute
+$$ \iiint_V 
+		\left(
+			{\color{red} \frac{\dee P}{\dee x}}  	+ 
+			{\color{purple} \frac{\dee Q}{\dee y}} 	+ 
+			{\color{blue} \frac{\dee R}{\dee z}}
+		\right)  \, dV 
+$$
+on a cube of side $a$ using the Fundamental Theorem of Calculus.
+
+	\begin{minipage}{0.45\textwidth}
+		\scriptsize
+		\uncover<2->
+		{
+			\begin{align*}
+			&\int_0^a \, \int_0^a \int_0^a {\color{red} \frac{\dee P}{\dee x} \, dx} \, dy \, dz\\
+			&=\int_0^a \int_0^a {\color{red} \left(P(a,y,z) - P(0,y,z)\right)} \, dy \, dz 
+			\end{align*}
+		}
+		\uncover<3->
+		{
+			\begin{align*}
+			&\int_0^a \, \int_0^a \int_0^a {\color{purple} \frac{\dee Q}{\dee y} \,  dy} \, dx \, dz\\
+			&=\int_0^a \int_0^a {\color{purple} \left(Q(x,a,z)  - Q(x,0,z)\right)} \, dx \, dz
+			\end{align*}
+		}
+		\uncover<4->
+		{
+			\begin{align*}
+			&\int_0^a \, \int_0^a \int_0^a {\color{blue}  \frac{\dee R}{\dee z} \, dz} \, dx \, dy\\
+			&=\int_0^a \int_0^a {\color{blue} \left(R(x,y,a) - R(x,y,0)\right)} \, dx \, dy
+			\end{align*}
+		}
+	\end{minipage}
+\quad
+	\begin{minipage}{0.45\textwidth}
+	
+		\tdplotsetmaincoords{60}{120}
+		\begin{tikzpicture}[scale=0.7,tdplot_main_coords]
+		%%
+		%%	Coordinate axes
+		%%
+		\draw[very thick,->,>=stealth]		
+				(0,0,0)	--	(5,0,0)	node[anchor=north east]	{$x$};
+		\draw[very thick,->,>=stealth]		
+				(0,0,0)	--	(0,5,0)	node[anchor=west]			{$y$};
+		\draw[very thick,->,>=stealth]		
+				(0,0,0)	--	(0,0,5)	node[anchor=south]		{$z$};
+				
+		%%
+		%%	Box outline
+		%%
+	
+		\draw[dashed,gray,opacity=0.5]
+			(4,0,0)	--	
+			++(0,0,4)	--	++(-4,0,0)	--	++(0,4,0)	--	
+			++(0,0,-4)	--	++(4,0,0)	--	++(0,-4,0);
+		\draw[dashed,gray,opacity=0.5]
+			(4,0,4)	--
+			++(0,4,0)	--	++	(-4,0,0);
+		\draw[dashed,gray,opacity=0.5]
+			(4,4,4)	--	++(0,0,-4);
+		
+		\only<4>
+		{
+		\draw[very thick,fill=blue!40,opacity=0.5]
+			(0,0,0)	--	++(4,0,0)	--	++	(0,4,0)	--	++(-4,0,0)	--	++(0,-4,0);
+		\draw[very thick,fill=blue!40,opacity=0.5]
+			(0,0,4)	--	++(4,0,0)	--	++	(0,4,0)	--	++(-4,0,0)	--	++(0,-4,0);
+		\draw[ultra thick,->,>=stealth]								(2,2,4)	--	++(0,0,1);
+		\draw[ultra thick,gray,->,>=stealth,opacity=0.5]		(2,2,0)	--	++(0,0,-1);	
+		\node[above] at	(2,2,0)			{$S_5$};
+		\node[below]	at	(2.5,2.5,4)		{$S_6$};
+		}
+		
+		
+		\only<2>
+		{
+		\draw[very thick,fill=red!40,opacity=0.5]
+			(0,0,0)	--	++(0,4,0)	--	++(0,0,4)	--	++(0,-4,0)	--	++(0,0,-4);
+		\draw[very thick,fill=red!40,opacity=0.5]
+			(4,0,0)	--	++(0,4,0)	--	++(0,0,4)	--	++(0,-4,0)	--	++(0,0,-4);
+		\draw[ultra thick,->,>=stealth]
+			(4,2,2)	--	++(1,0,0);
+		\draw[ultra thick,gray,->,>=stealth,opacity=0.5]	
+			(0,2,2)	--	++(-1,0,0);	
+		\node at		(0,3,1)	{$S_1$};
+		\node at		(4,3,1)	{$S_2$};
+		}
+		
+		\only<3>
+		{
+		\draw[very thick,fill=purple!40,opacity=0.5]
+			(0,0,0)	--	++(4,0,0)	--	++(0,0,4)	--	++(-4,0,0)	--	++(0,0,-4);
+		\draw[very thick,fill=purple!40,opacity=0.5]
+			(0,4,0)	--	++(4,0,0)	--	++(0,0,4)	--	++(-4,0,0)	--	++(0,0,-4);
+		\draw[ultra thick,->,>=stealth]
+			(2,4,2)	--	++(0,1,0);
+		\draw[ultra thick,gray,->,>=stealth,opacity=0.5]
+			(2,0,2)	--	++(0,-1,0);
+		\node at		(2,0,1)	{$S_3$};
+		\node at		(2,4,1)	{$S_4$};
+		}
+		
+		\end{tikzpicture}
+	\end{minipage}
+
+\end{frame}
+
+\section{Using the Divergence Theorem}
+\begin{frame}
+\frametitle{Using the Divergence Theorem}
+\footnotesize
+Compute $\int_S \bfF \cdot d \bfS$ if $$\bfF(x,y,z) = xye^z \ii + xy^2 z^3 \jj - ye^x \kk$$
+and $S$ is the surface bounded by the coordinate planes and the planes $x=3$, $y=2$, and $z=1$
+
+\medskip
+\begin{minipage}{0.45\textwidth}
+Using the divergence theorem we can simply integrate
+${\mathrm{div}} \, \bfF$ over the region
+$$\{ 0 \leq x \leq 3, \, 0 \leq y \leq 2, \, 0 \leq z \leq 1 \} $$
+
+Set up and compute this volume integral. 
+
+\end{minipage}
+\quad
+\begin{minipage}{0.45\textwidth}
+
+\tdplotsetmaincoords{60}{120}
+		\begin{tikzpicture}[scale=0.7,tdplot_main_coords]
+		
+		%%
+		%%	Coordinate axes
+		%%
+		
+			\draw[very thick,->,>=stealth]		
+					(0,0,0)	--	(5,0,0)	node[anchor=north east]	{$x$};
+			\draw[very thick,->,>=stealth]		
+					(0,0,0)	--	(0,4,0)	node[anchor=west]			{$y$};
+			\draw[very thick,->,>=stealth]		
+					(0,0,0)	--	(0,0,3)	node[anchor=south]		{$z$};
+					
+		%%
+		%%	The surface S
+		%%
+		
+			\draw[very thick,fill=blue!60,opacity=0.5]
+				(0,0,1)	--	++(3,0,0)	--	++(0,2,0)	--	++(-3,0,0)	--	++(0,-2,0);
+			\draw[very thick,fill=blue!30,opacity=0.5]
+				(3,0,0)	--	++(0,0,1)	--	++(0,2,0)	--	++(0,0,-1)	--	++(0,-2,0);
+			\draw[very thick,fill=blue!30,opacity=0.5]
+				(3,2,0)	--	++(0,0,1)	--	++(-3,0,0)	--	++(0,0,-1)	--	++(3,0,0);
+				
+		%%
+		%%	Coordinates
+		%%
+		
+			\node[below] at 	(3,0,0)						{\scriptsize{$3$}};
+			\node[below] at	(0,2,0)						{\scriptsize{$2$}};
+			\node[anchor=south west]	at	(0,0,1)	{\scriptsize{$1$}};
+				
+		\end{tikzpicture}
+\end{minipage}
+\end{frame}
+
+\begin{frame}
+\frametitle{Using the Divergence Theorem}
+\footnotesize
+\textbf{Divergence Theorem}: If $E$ is a simple closed surface and $S$ is the oriented boundary of $E$, then
+$$ \iiint_E {\mathrm{div}} \,\bfF \, dV = \iint_S \bfF \cdot \, d \bfS $$
+
+\vfill
+
+Find $\iint_S \bfF \cdot \, d\bfS$ if 
+$$ \bfF = (x^3+y^3) \ii + (y^3 + z^3) \jj + (z^3 + x^3) \kk $$
+and $S$ is the sphere of radius $2$ with center at the origin.
+
+\vfill
+
+\begin{enumerate}
+\item	Calculate ${\mathrm{div}}\, \bfF$
+\medskip
+
+\item	What's the easiest way to compute the volume integral of ${\mathrm{div}}\, \bfF$ over the sphere of radius $2$?
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+\frametitle{Vector Calculus Identities}
+\footnotesize
+\textbf{Divergence Theorem}: If $E$ is a simple closed surface and $S$ is the oriented boundary of $E$, then
+$$ \iiint_E {\mathrm{div}} \,\bfF \, dV = \iint_S \bfF \cdot \, d \bfS $$
+
+\vfill
+
+Prove that if $\bfa$ is a constant, then
+$\iint_S \bfa \cdot \, d\bfS = 0$
+
+\vfill
+Prove that $\iint_S {\mathrm{curl}}\, \bfF \cdot \, d\bfS = 0$ for a closed surface. 
+(Hint: You can check that ${\mathrm{div}} \, {\mathrm{curl}}\,  \bfF = 0$).
+
+
+\end{frame}
+
+\begin{frame}
+\frametitle{What We Learned About the Divergence}
+\footnotesize
+What does the divergence measure?  From the divergence theorem we learn
+that ${\mathrm{div}}\, \bfF$ measures \emph{net outward flow per unit volume}, If 
+$E$ is a very small volume surrounded by a surface $S$, then
+\begin{align*}
+\iiint_E {\mathrm{div}} \, \bfF \, dV 	&=	\iint_S \bfF \cdot \, d\bfS	\\[5pt]
+{\mathrm{div}} \, \bfF \, \Delta V		&\simeq \iint_S \bfF \cdot d \bfS 
+\end{align*}
+So, for example if ${\mathrm{div}} \, \bfF = 0$, this means that the net flux is zero, i.e., $\text{inflow}  = \text{outflow}$
+\end{frame}
+
+
+\end{document}

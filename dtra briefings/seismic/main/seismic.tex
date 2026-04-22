@@ -1,0 +1,160 @@
+% typeset: Pdftex
+% Afterwards compile with pdflatex > bibtex > pdflatex > pdflatex.
+% in TeXShop preferences, changed edit from bibtex to biber
+% beamer likes biber
+% latex likes bibtex
+
+% https://tex.stackexchange.com/questions/270633/beamer-and-the-pause-command
+% https://tex.stackexchange.com/questions/1423/is-there-a-nice-way-to-compile-a-beamer-presentation-without-the-pauses
+%\documentclass[handout]{beamer}
+%
+\documentclass[]{beamer}
+
+% point to content libraries
+\newcommand{\pGlobal}			{../../../global/}
+\newcommand{\pGlobalSetup}		{\pGlobal setup-global/}	
+% \usepackage[]{xwatermark} option clash with hyperref
+% \newwatermark[allpages,color=red!50,angle=45,scale=3,xpos=0,ypos=0]{DRAFT}
+%\usepackage[printwatermark]		{xwatermark}
+%	\newwatermark*[ firstpage, color = red!80, angle = 45, scale = 2.5, xpos = 0, ypos = 0 ]{\transparent{0.2}{DRAFT}}
+
+\setbeamercovered{ transparent = 10 }
+\usepackage{background}
+%\newwatermark[firstpage,color=red!30, angle=45, scale=3, xpos=0, ypos=0]{\transparent{0.2}{DRAFT}}
+\usepackage{transparent}
+%\usepackage{multimedia} https://tex.stackexchange.com/questions/485385/playing-mp4-file-inside-beamer
+
+% load LaTeX packages and personal macros
+\input{\pGlobalSetup setup-global}
+\input{\pLocalSetup setup-local}
+%\usepackage[backend=biber, bibstyle=numeric, citestyle=numeric, sorting=none]{biblatex}
+\usepackage[ backend = biber ]{biblatex}
+\bibliography{\pSections seismic.bib}
+
+\DeclareMathOperator*{\argmin}{arg\,min}
+\newcommand{\normt}[1]			{\left\lVert #1 \right\rVert_{2}}
+\newcommand{\normts}[1]			{\left\lVert #1 \right\rVert_{2}^{2}}
+
+\title
+[Seismic Data: Measurements and Analysis]
+{Seismic Data\\Measurements and Analysis}
+
+\author[DTRIAC Tutorial]{\Topa \\ \TopaEmail}
+\institute{\dtriac} 
+\medskip
+
+\date{\today}
+%\date{2018-08-31}
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+	\distA
+\end{frame}
+
+%\input{\pSections "sec splash"}
+
+\begin{frame}\frametitle{Underground Explosion A}
+\center
+	\href{https://apps.dtic.mil/sti/pdfs/ADA627744.pdf\#page=40}{
+	\begin{overpic}[ scale = 0.30 ]
+		{\pLocalGraphics ug-shot-01}
+		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+	\end{overpic}}
+\end{frame}
+
+\begin{frame}\frametitle{Overview}
+	\tableofcontents[hideallsubsections]
+\end{frame}
+
+%
+% main sections
+\input{\pSections "sec-seismology"}
+\input{\pSections "sec-gtune"}
+\input{\pSections "sec-inverse"}
+
+{\tiny{
+%\begin{frame}[allowframebreaks,shrink=10]\frametitle{Bibliography}
+\begin{frame}[allowframebreaks]\frametitle{Bibliography}
+	\nocite{*}
+	\printbibliography
+\end{frame}}}
+%
+%\begin{frame}\frametitle{Physics of Shock Waves and High-Temperature Hydrodynamic Phenomena}
+%\begin{enumerate}
+%	\item \href{https://books.google.co.ck/books?id=PULCAgAAQBAJ&printsec=frontcover\#v=onepage&q&f=false}{Google Books}
+%	\item \href{https://apps.dtic.mil/sti/citations/AD0622356}{DTIC}
+%	\item \href{https://store.doverpublications.com/0486420027.html}{Dover Publishing}
+%	\item \href{https://archive.org/details/physicsofshoakwa0000zeld}{Internet Archive}
+%\end{enumerate}
+%\end{frame}
+% physics-of-shock-waves-and-high-temperature-hydrodynamic-phenomena-18.jpeg
+
+%
+
+% info slide during questions
+\begin{frame}
+	\titlepage
+\end{frame}
+%
+
+\end{document}
+
+%\tiny
+%\scriptsize
+%\footnotesize
+%\small
+%\normalsize
+%\large
+%\Large
+%\LARGE
+%\huge
+%\Huge
+
+%\, thin space (normally 1/6 of a quad);
+%\> medium space (normally 2/9 of a quad);
+%\; thick space (normally 5/18 of a quad);
+
+\begin{frame}\frametitle{Frame Title}
+\begin{enumerate}
+	\item 
+	\item 
+	\item 
+\end{enumerate}
+\end{frame}
+
+\begin{frame}\frametitle{Frame Title}
+\begin{equation}
+	\begin{array}{ccc} 
+			%
+			%
+			%
+	\end{array}
+%\label{eq:}
+\end{equation}
+\end{frame}
+
+\begin{frame}\frametitle{ }
+\center
+	\href{url}{
+	\begin{overpic}[ scale = 1.0 ]
+	{\pLocalGraphics graphic-file}
+		%\put(-7,-10){Auxiliary text.}
+	\end{overpic}}
+\end{frame}
+
+\begin{frame}\frametitle{Frame Title}
+\begin{table}[htp]
+%\caption{default}
+\begin{center}
+	\begin{tabular}{cc}
+		%
+		%
+		%
+	\end{tabular}
+\end{center}
+%\label{tab:label}
+\end{table}%
+\end{frame}
+

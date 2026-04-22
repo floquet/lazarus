@@ -1,0 +1,284 @@
+% \input{\pSections "sec-otsu"}
+
+\section{Otsu Overview}
+\begin{frame}\frametitle{\href{https://en.wikipedia.org/wiki/Otsu\%27s_method}{Wikipedia Example}}
+\begin{table}[htp]
+%\caption{default}
+\begin{center}
+	\begin{tabular}{cc}
+		%
+	\href{https://en.wikipedia.org/wiki/Otsu\%27s_method}{
+	\begin{overpic}[ scale = 0.15]
+		{\pLocalGraphics wiki/otsu-in}
+		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+	\end{overpic}} &
+		%
+	\href{https://en.wikipedia.org/wiki/Otsu\%27s_method}{
+	\begin{overpic}[ scale = 0.15 ]
+		{\pLocalGraphics wiki/otsu-out}
+		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+	\end{overpic}} \\[10pt]
+		%
+		\color{gray}{input} & \color{gray}{output} \\
+		%
+	\end{tabular}
+\end{center}
+%\label{tab:label}
+\end{table}
+\end{frame}
+%
+\begin{frame}\frametitle{\href{https://en.wikipedia.org/wiki/Otsu\%27s_method}{Image as Array}}
+	\center
+	\href{https://en.wikipedia.org/wiki/Otsu\%27s_method}{
+	\begin{overpic}[ scale = 0.20]
+		{\pLocalGraphics wiki/otsu-in}
+		\put(38, 78)		{\colorbox{white}{$\mathbb{Z}^{1024 \times 768}_{+}$}}
+		\put(33, -7)		{\colorbox{white}{$1024$ pixels}}
+		\put(-10, 20)	{\rotatebox{90}{\colorbox{white}{$768$ pixels}}}
+	\end{overpic}} \\
+\end{frame}
+%
+%
+\begin{frame}\frametitle{\href{https://en.wikipedia.org/wiki/Otsu\%27s_method}{Image as Probability Distribution}}
+	%
+	\center
+	\href{https://en.wikipedia.org/wiki/Otsu\%27s_method}{
+	\begin{overpic}[ scale = 0.70]
+		{\pLocalGraphics mm/wiki-matrix-plot}
+		\put(105, 50)		{\colorbox{white}{$\mathbb{Z}^{1024 \times 768}_{+}$}}
+		\put(105, 42)		{\colorbox{white}{$v\in \left[ 0, 255 \right]$}}
+		\put(105, 34)		{\colorbox{white}{$786,432 \ pixels$}}
+	\end{overpic}} \\
+	%
+\end{frame}
+%
+\begin{frame}\frametitle{\href{https://en.wikipedia.org/wiki/Otsu\%27s_method}{Image as Probability Distribution}}
+	%
+	\center
+	\href{https://en.wikipedia.org/wiki/Otsu\%27s_method}{
+	\begin{overpic}[ scale = 0.9 ]
+		{\pLocalGraphics mm/wiki-probability-plot}
+		\put(50, 50)		{\colorbox{white}{$\mathbb{R}^{1024 \times 768}$}}
+	\end{overpic}} \\
+	%
+\end{frame}
+%
+\begin{frame}\frametitle{\href{https://en.wikipedia.org/wiki/Otsu\%27s_method}{Image as Probability Distribution}}
+	%
+	\center
+	\href{https://en.wikipedia.org/wiki/Otsu\%27s_method}{
+	\begin{overpic}[ scale = 0.9 ]
+		{\pLocalGraphics mm/wiki-fancy}
+		\put(50, 50)		{\colorbox{white}{$\mathbb{R}^{1024 \times 768}$}}
+	\end{overpic}} \\
+	%
+\end{frame}
+%
+\begin{frame}\frametitle{\href{https://en.wikipedia.org/wiki/Otsu\%27s_method}{Image as Probability Distribution}}
+	%
+	\center
+	\href{https://en.wikipedia.org/wiki/Otsu\%27s_method}{
+	\begin{overpic}[ scale = 0.9 ]
+		{\pLocalGraphics mm/wiki-shaded}
+		\put(50, 50)		{\colorbox{white}{$\mathbb{R}^{1024 \times 768}$}}
+	\end{overpic}} \\
+	%
+\end{frame}
+%
+\begin{frame}\frametitle{\href{https://en.wikipedia.org/wiki/Otsu\%27s_method}{Image as Probability Distribution}}
+	%
+	\center
+	\href{https://en.wikipedia.org/wiki/Otsu\%27s_method}{
+	\begin{overpic}[ scale = 0.9 ]
+		{\pLocalGraphics mm/wiki-inverted}
+		\put(50, 50)		{\colorbox{white}{$\mathbb{R}^{1024 \times 768}$}}
+	\end{overpic}} \\
+	%
+\end{frame}
+%
+\begin{frame}\frametitle{Wikipedia Example}
+	\href{https://en.wikipedia.org/wiki/Otsu\%27s_method}{
+	\begin{overpic}[ scale = 0.25 ]
+		{\pLocalGraphics wiki/otsu-in.jpg}
+		\put(80, 10)	{\colorbox{white}{\includegraphics[ scale = 0.5 ]{\pLocalGraphics mm/wiki-fancy}}}
+	\end{overpic}} \\
+\end{frame}
+%
+\begin{frame}\frametitle{Wikipedia Example}
+	\href{https://en.wikipedia.org/wiki/Otsu\%27s_method}{
+	\begin{overpic}[ scale = 0.25 ]
+		{\pLocalGraphics wiki/otsu-in.jpg}
+		\put(80, 10)	{\colorbox{white}{\includegraphics[ scale = 0.5 ]{\pLocalGraphics mm/wiki-shade}}}
+	\end{overpic}} \\
+\end{frame}
+%
+\begin{frame}\frametitle{\href{https://en.wikipedia.org/wiki/Linear_discriminant_analysis\#Fisher's_linear_discriminant}{Fisher's Linear Discriminant}}
+	%
+	\center
+	\href{https://en.wikipedia.org/wiki/Linear_discriminant_analysis\#Fisher's_linear_discriminant}{
+	\begin{overpic}[ scale = 0.5 ]
+		{\pLocalGraphics wiki/Fisher2classes}
+		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+	\end{overpic}} \\
+	%
+\end{frame}
+%
+\begin{frame}\frametitle{Sample Linear Regression}
+	%
+	\input{\pLocalComponents figures/"bev-soln"}
+	%
+\end{frame}
+%
+
+\begin{frame}\frametitle{Solution Space View}
+\center
+	%\href{}{
+	\begin{overpic}[ scale = 0.55 ]
+		{\pLocalGraphics bev/bevington-merit-bullseye-02}
+		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+	\end{overpic}
+\end{frame}
+
+%
+\begin{frame}\frametitle{\href{https://ieeexplore.ieee.org/document/4310076}{Threshold Selection Method}}
+	%
+	\center
+	\href{https://ieeexplore.ieee.org/document/4310076}{
+	\begin{overpic}[ scale = 0.65 ]
+		{\pLocalGraphics ss/otsu-paper}
+		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+	\end{overpic}} 
+	\\
+	\fullcite{otsu1979threshold}
+	%
+\end{frame}
+%
+\begin{frame}\frametitle{\href{https://ieeexplore.ieee.org/document/4310076}{Otsu Results}}
+	%
+	\center
+	\href{https://ieeexplore.ieee.org/document/4310076}{
+	\begin{overpic}[ scale = 0.6 ]
+		{\pLocalGraphics ss/otsu-results}
+		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+	\end{overpic}} 
+	%
+\end{frame}
+%
+%
+\begin{frame}\frametitle{\href{https://iopscience.iop.org/article/10.1088/1361-6501/ab228d/meta}{Original Paper}}
+	%
+	\center
+	\href{https://iopscience.iop.org/article/10.1088/1361-6501/ab228d/meta}{
+	\begin{overpic}[ scale = 0.25 ]
+		{\pLocalGraphics ss/lazzaro-paper}
+		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+	\end{overpic}} 
+	\\
+	\fullcite{lazzaro2019characterization}
+	%
+\end{frame}
+%
+\begin{frame}\frametitle{\href{https://iopscience.iop.org/article/10.1088/1361-6501/ab228d/meta}{Lazzaro Results}}
+	%
+	\center
+	\href{https://iopscience.iop.org/article/10.1088/1361-6501/ab228d/meta}{
+	\begin{overpic}[ scale = 0.25 ]
+		{\pLocalGraphics ss/lazzaro-results}
+		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+	\end{overpic}} 
+	%
+\end{frame}
+
+%
+%\begin{frame}\frametitle{Buster Jangle Baker}
+%\begin{table}[htp]
+%%\caption{default}
+%\begin{center}
+%	\begin{tabular}{cc}
+%		%
+%	\href{https://en.wikipedia.org/wiki/Otsu\%27s_method}{
+%	\begin{overpic}[ scale = 0.5]
+%		{\pLocalGraphics mm/buster-jangle-baker-img}
+%		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+%	\end{overpic}} &
+%		%
+%	\href{https://en.wikipedia.org/wiki/Otsu\%27s_method}{
+%	\begin{overpic}[ scale = 0.5 ]
+%		{\pLocalGraphics mm/buster-jangle-baker-hist}
+%		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+%	\end{overpic}} \\
+%		%
+%	\end{tabular}
+%\end{center}
+%%\label{tab:label}
+%\end{table}
+%\end{frame}
+%
+\newcommand{\operation}[0]	{buster-jangle}
+\newcommand{\shot}[0]		{baker}
+%
+\begin{frame}\frametitle{Baker (Buster Jangle)}
+	\href{https://www.atomicarchive.com/media/photographs/testing/us/buster-jangle/buster-1.html}{
+	\begin{overpic}[ scale = 0.5 ]
+		{\pLocalGraphics mm/\operation-\shot-img}
+		\put(80, 10)	{\colorbox{white}{\includegraphics[ scale = 0.45 ]{\pLocalGraphics mm/\operation-\shot-hist}}}
+	\end{overpic}} \\
+\end{frame}
+%
+%
+\renewcommand{\shot}[0]	{charlie}
+\begin{frame}\frametitle{Charlie (Buster Jangle)}
+	\href{https://www.atomicarchive.com/media/photographs/testing/us/buster-jangle/buster-2.html}{
+	\begin{overpic}[ scale = 0.5 ]
+		{\pLocalGraphics mm/\operation-\shot-img}
+		\put(80, 10)	{\colorbox{white}{\includegraphics[ scale = 0.45 ]{\pLocalGraphics mm/\operation-\shot-hist}}}
+	\end{overpic}} \\
+\end{frame}
+%
+\renewcommand{\shot}[0]	{dog}
+\begin{frame}\frametitle{Dog (Buster Jangle)}
+	\href{https://www.atomicarchive.com/media/photographs/testing/us/buster-jangle/buster-4.html}{
+	\begin{overpic}[ scale = 0.5 ]
+		{\pLocalGraphics mm/\operation-\shot-img}
+		\put(80, 10)	{\colorbox{white}{\includegraphics[ scale = 0.45 ]{\pLocalGraphics mm/\operation-\shot-hist}}}
+	\end{overpic}} \\
+\end{frame}
+%
+\renewcommand{\shot}[0]	{easy}
+\begin{frame}\frametitle{Easy (Buster Jangle)}
+	\href{https://www.atomicarchive.com/media/photographs/testing/us/buster-jangle/buster-4.html}{
+	\begin{overpic}[ scale = 0.3 ]
+		{\pLocalGraphics mm/\operation-\shot-img}
+		\put(80, 10)	{\colorbox{white}{\includegraphics[ scale = 0.55 ]{\pLocalGraphics mm/\operation-\shot-hist}}}
+	\end{overpic}} \\
+\end{frame}
+%
+\begin{frame}\frametitle{Trinity}
+	\href{https://www.atomicarchive.com/resources/documents/los-alamos/los_alamos_part_10.html}{
+	\begin{overpic}[ scale = 0.3 ]
+		{\pLocalGraphics mm/\operation-\shot-img}
+		\put(80, 10)	{\colorbox{white}{\includegraphics[ scale = 0.55 ]{\pLocalGraphics mm/\operation-\shot-hist}}}
+	\end{overpic}} \\
+\end{frame}
+%
+%\begin{frame}\frametitle{Buster Jangle Baker}
+%	\center
+%	\includegraphics[ scale = 0.45 ]{\pLocalGraphics mm/buster-jangle-baker-img}
+%	\put(30, -10){\includegraphics[ scale = 0.5 ]{\pLocalGraphics mm/buster-jangle-baker-hist}}
+%\end{frame}
+%
+\endinput  %  ==  ==  ==  ==  ==  ==  ==  ==  ==
+https://ieeexplore-ieee-org.libproxy.unm.edu/stamp/stamp.jsp?tp=&arnumber=7835193
+\includegraphics[height=3cm]{img1}\pause
+
+\Put(10,50){\color{blue}\includegraphics[height=3cm]{img2}}\pause
+
+
+%\begin{frame}
+%\frametitle{Splash Page}
+%\center
+%	\href{https://en.wikipedia.org/wiki/Newtonian\_potential}{
+%	\begin{overpic}[ scale = 0.175]
+%		{\pLocalGraphics splash/Dipole_anim.gif}
+%	\end{overpic}}
+%\end{frame}

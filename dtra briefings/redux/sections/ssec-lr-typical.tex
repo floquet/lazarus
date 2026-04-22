@@ -1,0 +1,267 @@
+% \input{\pSections "ssec-lr-intercept-only"}
+
+%%    %%    %%    %%    %%    %%    %%    %%    %%    %%
+\subsection{Typical Linear Regression}
+%
+\begin{frame}
+\frametitle{What we \yl{have} and what we \yl{want}}
+\begin{table}[htbp]
+%\caption{Use data to find best fit to a linear function.}
+	\begin{center}
+		\begin{tabular}{ccc}
+			%
+			input & $\Rightarrow$ & output \\\hline
+			%
+			\includegraphics[ width = 2.0in ]{\pLocalGraphics bev/bev-have} & \raisebox{1.8 cm}{$\Rightarrow$} &
+			%
+			\includegraphics[ width = 2.0in ]{\pLocalGraphics bev/bev-want} \\
+			%
+			\{position, temperature\}$_{k=1}^{m}$ & $\Rightarrow$ & intercept and slope \\
+			%
+			$\lst{x_{k},y_{k}}_{k=1}^{m}$ 
+			& $\Rightarrow$ & $\bl{\mat{c}{ a_{0} \\ a_{1} }} \pm \bl{\mat{c}{ \sigma_{0} \\ \sigma_{1}} }$\\
+			%
+		\end{tabular}
+	\end{center}
+\label{tab:bevington input-output}
+\end{table}%
+\end{frame}
+%
+
+\begin{frame}\frametitle{Model of Heat Flow}
+\center
+Temperature as a \bl{linear function} of position
+	%
+\begin{equation}
+		%
+	y(x) = \bazero + \baone x
+		%
+\label{eq:model}
+\end{equation}
+%
+Solution parameters: \\
+$\bazero$ intercept \\
+$\baone$ slope
+	%
+\end{frame}
+
+\begin{frame}\frametitle{Least Squares Inputs and Outputs}
+	%
+Inputs: \\
+%
+\begin{enumerate}
+	\item Model function, $y(x) = \bazero + \baone x$
+	\item Sequence of measurements, $\seqinputs{x}{y}$
+\end{enumerate}
+	\ \\[10pt]
+	%
+	\pause
+	%
+Outputs: Model parameters\\
+\begin{enumerate}
+	\item $\bazero \pm \bl{\sigma_{0}}$, intercept with error
+	\item $\baone \pm \bl{\sigma_{1}}$, slope with error
+\end{enumerate}
+\end{frame}
+%
+\begin{frame}\frametitle{Linear System}
+\begin{equation}
+	\begin{array}{ccccc cccc}
+			%
+		\A{} & a & = & y \\
+			%
+		\mat{cc}{\one & x} & \littlea & = & \mat{c}{y}\\
+			%
+		\pause
+			%
+		\bevA{} & \littlea & = & \bevy 
+			%
+	\end{array}
+\label{eq:bevington normal equations problem and solution}
+\end{equation}
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Linear System: Dramatis Personae}
+\begin{equation}
+	\begin{array}{cccc}
+			%
+		\A{} & a & = & y \\
+			%
+		\mat{cc}{\one & x} & \littlea & = & \mat{c}{y}\\
+			%
+	\end{array}
+\label{eq:Dramatis Personae}
+\end{equation}
+\begin{enumerate}
+	\item $\A{}\in\real{\by{m}{2}}_{2}$: design matrix -- \mg{mesh}
+	\item $y\in\real{m}$: data vector -- \mg{measurements}
+	\item $a\in\real{m}$: solution vector
+\end{enumerate}
+\end{frame}
+%
+\begin{frame}\frametitle{Notation: Inner Product}
+Given $x, y \in \cmplx{m}$
+	%
+\begin{equation}
+\begin{split}
+	\inner{x, y} = x^{*}y = x \cdot y 
+		&= \sum \bar{x}_{k}y_{k} \\
+		&= \int_{\Omega} \bar{x} y d\Omega
+\end{split}
+\end{equation}
+\end{frame}
+%
+\begin{frame}\frametitle{System of Linear Equations}
+Model Function: \\
+\begin{equation}
+	y(x) = \bazero + \baone x
+%\label{eq:}
+\end{equation}
+\ \\
+A sequence of $m$ measurements:\\
+\begin{equation}
+\begin{array}{ccc ccc}
+	\bazero &+& \baone & x_{1} &=& y_{1} \\
+		 &&& \vdots && \vdots \\
+	\bazero &+& \baone & x_{m} &=& y_{m} \\
+\end{array}
+\label{eq:system}
+\end{equation}
+\end{frame}
+
+\begin{frame}\frametitle{What Are We Minimizing?}
+\rd{Residual error} vector:
+\begin{equation}
+		%
+	\rd{r(\bk{a})} = \A{}a - y
+		%
+%\label{eq:}
+\end{equation}
+	%
+	\pause
+	%
+Minimize length of \rd{residual error} vector:
+\begin{equation}
+\begin{split}
+		%
+	M(a) &= \innerecho{\rd{r(\bk{a})}} \\
+		%
+		& = \normt{\A{}a - y} \\
+		%
+		& = \normt{a_{0} \one + a_{1} x - y} \\
+		%
+\end{split}
+%\label{eq:}
+\end{equation}
+	%
+	\pause
+	%
+\mg{Archaic (scalar) notation:
+\begin{equation*}
+		%
+	M(a) = \sum_{k=1}^{m} \paren{a_{0} + a_{1} x_{k} - y_{k}}^{2}
+		%
+%\label{eq:}
+\end{equation*}}
+\end{frame}
+%
+\begin{frame}
+\frametitle{Minimization Target: Merit Function}
+\begin{figure}[t]
+	\centering
+	\begin{overpic}[ scale = 0.70 ]
+		{\pLocalGraphics bev/bev-merit-3D-arrows-alt}
+			% 
+		\footnotesize{
+		\put(25,95){\colorbox{white}{$M(a) =  \bevMeritMx{}$}}
+		\put(-12,40){\colorbox{white}{$M(a)$}}
+		\put(10,5){\colorbox{white}{$a_{0}$, \textnormal{intercept}}}
+		\put(75,15){\colorbox{white}{$a_{1}$, \textnormal{slope}}}
+		%\put(75,15){$a_{1}$, slope}
+		\put(45,51){\footnotesize{\colorbox{white}{\tiny{$500$}}}}
+		\put(63,28){\footnotesize{\colorbox{white}{\tiny{$1000$}}}}
+		\put(52,55){\footnotesize{\colorbox{white}{\tiny{$1500$}}}}
+		}
+			%
+	\end{overpic}
+\label{fig:bevington-merit-gull}
+\end{figure}
+\end{frame}
+
+\begin{frame}\frametitle{Solution Space $\mathcal{R}\paren{\A{*}}$: Bullseye}
+\centering
+	\begin{overpic}[ scale = 0.55 ]{\pLocalGraphics bev/bevington-merit-bullseye-A-simple}
+		%\put(25,102){$M(a) = \sum_{k=1}^{m}\paren{T_{k} - a_{0} - a_{1} x}^{2}$}
+		\put(6, 104){\colorbox{white}{$\merit$ }}
+		\put(71, 89){\colorbox{white}{$\brnga{*}$}}
+			%
+		%\bevingtonLabels{}
+		\put(49, -5) {$a_{0}$} 
+		\put(-9, 50.5) {$a_{1}$}
+			%
+		\put(11, 80) {\colorbox{white}{\tiny{{$M(a) = 500$}}}}
+		\put(7, 62) {\colorbox{white}{\tiny{{$ 1000 $}}}}
+		\put(5, 53) {\colorbox{white}{\tiny{{$ 1500 $}}}}
+			%
+	\end{overpic}
+\end{frame}
+%
+\begin{frame}\frametitle{Solution Space $\mathcal{R}\paren{\A{*}}$: Bullseye}
+\centering
+	\begin{overpic}[ scale = 0.55 ]{\pLocalGraphics bev/bevington-merit-bullseye-02}
+		%\put(25,102){$M(a) = \sum_{k=1}^{m}\paren{T_{k} - a_{0} - a_{1} x}^{2}$}
+		\put(6, 104){\colorbox{white}{$\merit$ }}
+			%
+		\put(49, -5) {$a_{0}$} 
+		\put(-9, 50.5) {$a_{1}$}
+			%
+		\put(61, 42) {\colorbox{white}{$1\sigma$}}
+		\put(72, 31) {\colorbox{white}{$2\sigma$}}
+		\put(83, 21) {\colorbox{white}{$3\sigma$}}
+			%
+	\end{overpic}
+\end{frame}
+\begin{frame}\frametitle{Numeric Solution: Options}
+	%
+Either
+\begin{equation}
+		%
+	\bap = \bl{\mat{c}{ a_{0} \\ a_{1} }_{p}} \pm \bl{\mat{c}{ \sigma_{0} \\ \sigma_{1} }} = \bevSolnNumeric \pm \bevErrorNumeric 
+		%
+%\label{eq:}
+\end{equation}
+	%
+\ \\
+\pause
+Or
+\begin{equation}
+		%
+	\bap = \bl{\mat{c}{ a_{0} \pm \sigma_{0} \\ a_{1} \pm \sigma_{1} }_{p}} = \bevErrorCombo
+		%
+%\label{eq:}
+\end{equation}
+	%
+\end{frame}
+%
+\subsection{Seeing the Result}
+\begin{frame}
+\frametitle{Data, Fit, Result, Residuals}
+\begin{center}
+		\begin{overpic}[ scale = 1.0 ]
+			{\pLocalGraphics bev/bev-error-good-red}
+			\put(10, 55){$T_{LS}(x) = (4.8 \pm 4.9 ) + (9.41 \pm 0.87 )x $}
+			%\put(10, 50)	{\colorbox{white}{$\littleap = \bevSolnNumeric \pm \bevErrorNumeric$}}
+			%\put(10, 40)	{\colorbox{white}{$t^{2} \approx 317 $}}
+			\labelx
+			\labelT 
+		\end{overpic}  \\[20pt]
+\end{center}
+\end{frame}
+%
+\begin{frame}
+\frametitle{Data, Fit, 1 $\sigma$ Error}
+	\input{\pLocalFigures "pgf-bevington-sigma"}
+\end{frame}
+%
+\endinput  %  ==  ==  ==  ==  ==  ==  ==  ==  ==

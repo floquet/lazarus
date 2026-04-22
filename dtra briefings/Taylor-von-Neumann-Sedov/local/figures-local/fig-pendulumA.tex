@@ -1,0 +1,23 @@
+% https://tex.stackexchange.com/questions/305028/graph-of-pendulum
+\begin{pspicture}
+\everypsbox{\scriptsize}
+    \psset{unit = 1.5, dotsize=6pt, dash=2pt 1.5pt, shortput=nab, arrowinset=0.15,PointName=none,  PointSymbol=none}
+    \pstGeonode(0,0){O}(2;-60){P}(0,-1.2){g}%(1; -70){T}
+    \pstTranslation{O}{g}{P}[G]
+    \pstProjection{O}{P}{G}[C]
+    \pstSymO{P}{C}[T]
+    \pstRotation[RotAngle=90]{P}{O}[s]
+    \pstProjection{P}{s}{G}[S]
+    {\psset{linestyle=dashed, linewidth=0.5pt}
+    \psline[](C)(G)(S)
+    \pstLineAB[nodesepA=-0.5, nodesepB=-2]{O}{g}}
+{\psset{MarkAngleRadius=0.25, linecolor=LightSteelBlue3, linewidth=0.5pt, LabelSep=0.35}
+ \pstMarkAngle{g}{O}{P}{$ \vartheta $}
+ \pstMarkAngle{G}{P}{C}{$ \vartheta $}}
+ \psset{labelsep=2pt, linecolor=SteelBlue3}
+ \ncline[ linecolor=LightSteelBlue3,]{O}{P}
+ \psset{linewidth=1pt, linecolor=SteelBlue3, arrows =*->}
+ \ncline{P}{G}_{$ g $} \ncline{P}{T}
+ \ncline[nrot=:U]{P}{C}\naput[nrot=:U]{$a\cos θ$}
+ \ncline[nrot=:U,  arrows=<-]{S}{P}\naput[nrot=:U]{$a\sin θ$}
+\end{pspicture}

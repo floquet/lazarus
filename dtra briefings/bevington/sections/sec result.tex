@@ -1,0 +1,825 @@
+% \input{\pathsections "sec result"}
+
+\section{Result}
+
+%%  %%  %%  %%  %%
+\subsection{Seeing the Result}
+\begin{frame}
+\frametitle{Data, Fit, Result, Residuals}
+\begin{center}
+		\begin{overpic}[ scale = 1.0 ]
+			{\pLocalGraphics bev-error-good-red}
+			\put(10, 55){$T_{LS}(x) = (4.8 \pm 4.9 ) + (9.41 \pm 0.87 )x $}
+			%\put(10, 50)	{\colorbox{white}{$\littleap = \bevSolnNumeric \pm \bevErrorNumeric$}}
+			%\put(10, 40)	{\colorbox{white}{$t^{2} \approx 317 $}}
+			\labelx
+			\labelT 
+		\end{overpic}  \\[20pt]
+\end{center}
+\end{frame}
+%
+\begin{frame}
+\frametitle{Data, Fit, 1 $\sigma$ Error}
+\begin{center}
+	\begin{overpic}[ scale = 1.0 ]
+		{\pLocalGraphics bevington-data-soln-bands}
+		%\put(10, 50){$T_{LS}(x) = (4.8 \pm 4.9 ) + (9.41 \pm 0.87 )x $}
+		\put(7,45){\colorbox{white}{$T_{\bl{+}}(x)= \paren{a_{0} \bl{+} \sigma_{0}} + \paren{a_{1} \bl{+} \sigma_{1}} x$}}
+		\put(38,15){\colorbox{white}{$T_{\rd{-}}(x)= \paren{a_{0} \rd{-} \sigma_{0}} + \paren{a_{1} \rd{-} \sigma_{1}} x$}}
+		\labelx
+		\labelT
+	\end{overpic}  \\[20pt]
+\end{center}
+\end{frame}
+%
+\begin{frame}
+\frametitle{Data, Fit, 1 $\sigma$ Error}
+	\input{\pLocalFigures "pgf-bevington-sigma"}
+\end{frame}
+%
+\begin{frame}\frametitle{Residual Errors: Correlation?}
+	%
+	\centering
+	\begin{overpic}[ scale = 0.75 ]
+		{\pLocalGraphics residuals-mean-sd}
+		% 
+		\put(50,-3){$x,$ cm}
+		\put(-5,20){\rotatebox{90}{$T_{k}-T(x_{k}), ^{\circ}$C}}
+		%
+	\end{overpic}
+	%
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Normal Distribution}
+	%
+\begin{equation}
+	\href{https://mathworld.wolfram.com/NormalDistribution.html}{f\paren{x;\mu,\sigma} = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{(x-\mu)^{2}}{2\sigma^{2}}}}
+\end{equation}
+	%
+\end{frame}
+%
+
+%
+\begin{frame}\frametitle{Solution parameters as normal distributions}
+	%
+\begin{table}[htbp]
+	\begin{center}
+		\begin{tabular}{cc}
+			%
+		intercept & slope \\\hline
+			%
+		\begin{overpic}[ scale = 0.40 ]
+			{\pLocalGraphics bevington-needle-intercept}
+			\put (9,55) {$a_{0} = 4.8$}
+			\put (9,47) {$\sigma_{0} = 4.9$}
+		\end{overpic} 
+		
+		&
+			%
+		\begin{overpic}[ scale = 0.40 ]
+			{\pLocalGraphics bevington-needle-slope}
+			\put (9,55) {$a_{1} = 9.41$}
+			\put (9,47) {$\sigma_{1} = 0.87$}
+		\end{overpic} \\
+			%
+		less accurate & more accurate \\
+		less precise & more precise
+			%
+		\end{tabular}
+	\end{center}
+\label{tab:bevington normal distributions}
+\end{table}
+	%
+\end{frame}
+%
+\begin{frame}
+\frametitle{Data, Whiskers: 250 Random Samples.}
+\begin{center}
+	\begin{overpic}[ scale = 1.0 ]
+		{\pLocalGraphics bevington-data-soln-bands-whiskers}
+		\labelx
+		\labelT
+	\end{overpic}  \\[20pt]
+\end{center}
+\end{frame}
+%
+%%  %%  %%  %%  %%
+%\subsection{Verification}
+%%
+%\begin{frame}\frametitle{\href{https://netlib.org/lapack/}{LAPACK} \href{https://netlib.org/lapack/explore-html/d7/d3b/group__double_g_esolve_ga225c8efde208eaf246882df48e590eac.html}{\texttt{dgels}}}
+%	%
+%\texttt{\textrm{\tiny{
+%A - B: Comparing complete solutions\\
+%A: Mathematica solution for Bevington data, arbitrary precision\\
+%B: normal equations solution for Bevington example\\
+% 
+% Comparing solution vectors\\
+%     1. x ( 1, 1 ) difference (     20.00 epsilons )  -0.444E-14: A = 4.8138888888888891, B = 4.8138888888888935\\
+%     2. x ( 2, 1 ) difference (      8.00 epsilons )   0.178E-14: A = 9.4083333333333332, B = 9.4083333333333314\\
+%   Total squared error for x, rhs 1 of 1 = 0.22876966251409342E-28; norm = 0.47829871682254532E-14\\ \\
+% Comparing error terms
+%     1. sigma ( 1, 1 ) difference (      8.00 epsilons )   0.178E-14: A = 4.8862063121833543, B = 4.8862063121833526\\
+%     2. sigma ( 2, 1 ) difference (      2.00 epsilons )   0.444E-15: A = 0.86830164765636109, B = 0.86830164765636064\\
+%   Total squared error for sigma, rhs 1 of 1 = 0.33526588471893002E-29; norm = 0.18310267194088950E-14
+%}}}
+%	%
+%\end{frame}
+%
+%%%  %%  %%  %%  %%
+\subsection{Interpolation}
+%
+%
+\begin{frame}\frametitle{Prediction Error}
+	%
+We know the temperature of the boiling water. What is the \bl{uncertainty in the extrapolation} to $x=10$ cm?
+	%
+\begin{equation}
+	\sigma_{T}^{2}(x) = \sigma_{0}^{2} + x^{2} \sigma_{1}^{2} + a_{1}^{2} \sigma_{x}^{2} 
+\end{equation}
+	%
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Prediction With Error}
+	%
+\begin{equation}
+\begin{array}{ccccc c}
+	T(x) \pm \sigma_{T}&=& \paren{ a_{0} \pm \sigma_{0} } &+&  \paren{ a_{1} \pm \sigma_{1} } & \paren{ x \pm \sigma_{x} } \\
+	T\paren{10} \pm \sigma_{T} &=& \paren{ 4.8 \pm 4.9 } &+&  \paren{ 9.41 \pm 0.87 } & \paren{ 10 \pm \sigma_{x} }
+\end{array}
+\label{eq:bevington interpolation template}
+\end{equation}
+%
+\pause
+%
+\begin{equation}
+\begin{array}{ccccc ccc}
+	T(x) &=& a_{0} &+&  a_{1} & x,\\
+	T(10) &=&4.8 &+& 9.41 & 10 & = & 98.9.\\
+\end{array}
+\label{eq:bevington interpolation value}
+\end{equation}
+%
+\pause
+%
+\begin{equation}
+\begin{array}{ccccc ccccc c}
+	\sigma_{T}^{2} &=& \sigma_{0}^{2} &+& x^{2} & \sigma_{1}^{2} &+& a_{1}^{2} & \sigma_{x}^{2}, \\
+	\sigma_{T}^{2} &=& 4.886^{2} &+& 10^{2} & 0.8683^{2} &+& 9.41^{2} & 0^{2} &=& 99.268. \\
+\end{array}
+\label{eq:bevington interpolation error numeric}
+\end{equation}
+	%
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Final Prediction}
+	%
+\begin{equation}
+		\sigma_{T} = \sqrt{ 99.268 } = 9.9631.
+%\label{eq:}
+\end{equation}
+	%
+\begin{equation}
+	%T(10) = \paren{ 98.9 \pm 9.9 }\degC
+	T(10) = \paren{ 99. \pm 10. }^{\circ}C
+\label{eq:bev 1 t(10)}
+\end{equation}
+	%
+\end{frame}
+%
+
+%
+\begin{frame}\frametitle{Prediction Errors}
+	%
+\begin{figure}[htp]
+\begin{center}
+			%
+	\begin{overpic}[ scale = 1.0 ]
+		{\pLocalGraphics bevington-error-shade}
+			% 
+		\put(10,55){\colorbox{white}{$\sigma_{T}\paren{ a_{0}, a_{1}, x, \sigma_{x} = 0 }$}}
+		\put(44,-5){$x,$ cm}
+		%\put(-10,31.5){$\sigma_{T}, ^{\circ}$C}
+			%
+	\end{overpic}
+			%
+\end{center}
+%
+\end{figure}
+	%
+\end{frame}
+%
+
+%
+\begin{frame}\frametitle{Making Predictions}
+	%
+\footnotesize{
+\begin{table}[]
+\begin{center}
+	\begin{tabular}{cc}
+			%
+		Interpolation error, absolute & Interpolation error, relative \\\hline
+			%
+	\begin{overpic}[ scale = 0.65 ]
+		{\pLocalGraphics bevington-error-interpolation}
+			% 
+		\put(10,55){\colorbox{white}{$\sigma_{T}\paren{ a_{0}, a_{1}, x, \sigma_{x} = 0 }$}}
+		\put(44,-5){$x,$ cm}
+		%\put(-10,31.5){$\sigma_{T}, ^{\circ}$C}
+			%
+	\end{overpic}
+			%
+		&
+			%
+	\begin{overpic}[ scale = 0.65 ]
+		{\pLocalGraphics bevington-error-interpolation-relative}
+			% 
+		\put(30,50){\colorbox{white}{$\displaystyle\frac{\sigma_{T}\paren{ a_{0}, a_{1}, x, \sigma_{x} = 0 }}{x}$}}
+		\put(44,-5){$x,$ cm}
+		%\put(-10,31.5){$T\frac{\sigma_{T}}{x}, ^{\circ}$C}
+			%
+	\end{overpic}
+			%
+	\end{tabular}
+\end{center}
+\end{table}}
+	%
+\end{frame}
+
+%%%  %%  %%  %%  %%
+\subsection{Convergence}
+%
+%
+\begin{frame}\frametitle{Refine The Mesh}
+	%
+\footnotesize{
+\begin{table}[htp]
+%\caption{More measurements = better answer}
+	\begin{center}
+		\begin{tabular}{lr r@{\,$\pm$\,}l r@{\,$\pm$\,}l}
+				%
+				%
+			\multicolumn{1}{c}{mesh size}    & \multicolumn{1}{c}{measurements} & 
+			\multicolumn{2}{c}{$a_{0}$} & \multicolumn{2}{c}{$a_{1}$}\\\hline
+				%
+$1.$ & $9$ & $3.1$ & $1.5$ & $9.53$ & $0.27$ \\
+$0.1$ & $81$ & $-0.4$ & $1.0$ & $10.03$ & $0.18$ \\
+$0.01$ & $801$ & $-0.12$ & $0.34$ & $10.011$ & $0.061$ \\
+$0.001$ & $8\,001$ & $0.01$ & $0.11$ & $9.990$ & $0.019$ \\
+$0.000\,1$ & $80\,001$ & $-0.029$ & $0.034$ & $10.004$ & $0.006\,1$ \\
+$0.000\,01$ & $800\,001$ & $-0.001$ & $0.011$ & $9.999\,4$ & $0.001\,9$ \\
+$0.000\,001$ & $8\,000\,001$ & $-0.0034$ & $0.0034$ & $10.000\,54$ & $0.000\,61$ \\
+$0.000\,000\,1$ & $80\,000\,001$ & $0.001\,160\,8$ & $0.000\,002\,9$ & $9.999\,891$ & $0.000\,094$ \\			%			0.001     & 8\,001     				%
+		\end{tabular}
+	\end{center}
+\label{tab:bevington more convergence numbers}
+\end{table}
+	}
+	%
+\end{frame}
+%
+\newcommand{\xplacem}[0]			{\put(11,54)}
+\newcommand{\xplacet}[0]			{\put(5,35)}
+\newcommand{\xplacex}[0]			{\put(50,0)}
+%
+\begin{frame}\frametitle{Mesh Refinement: Steps 1--2}
+	%
+\footnotesize{
+\begin{table}[htbp]
+	\begin{center}
+		\begin{tabular}{ccc}
+				%
+			%$\littleap=\mat{r@{\ \pm \ }l}{ 3.1 & 1.5  \\ 9.53 & 0.27 }$ &&
+			%$\littleap=\mat{r@{\ \pm \ }l}{-0.4 & 1.0 \\ 10.03 & 0.18 }$ \\
+			$\littleap=\mat{r@{.}l}{ 3 & 1 \\ 9 & 53} \pm  \mat{r@{.}l}{ 1 & 5 \\ 0 & 27 }$ &&
+			$\littleap=\mat{r@{.}l}{ -0 & 4 \\ 10 & 03} \pm  \mat{r@{.}l}{ 1 & 0 \\ 0 & 18 }$ \\
+				%
+				\ \\
+				%
+			$\qquad \Delta x = 1$ && $\qquad \Delta x = 0.1$ \\
+				%
+			\begin{overpic}[ scale = 0.8 ]
+				{\pLocalGraphics bev-plus-values-00000000009}
+				%\placem	{$m = 9$}
+				\xplacex	{$x, cm$}
+				\xplacet	{\rotatebox{90}{$T, \degc$}}
+			\end{overpic}  &&
+				%
+			\begin{overpic}[ scale = 0.8 ]
+				{\pLocalGraphics bev-plus-values-00000000081}
+				%\placem	{$m = 81$}
+				\xplacex	{$x, cm$}
+				\xplacet	{\rotatebox{90}{$T, \degc$}}
+			\end{overpic}
+		\end{tabular}
+	\end{center}
+\label{tab:bevington data plots}
+\end{table}}
+	%
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Mesh Refinement: Steps 3--4}
+	%
+\footnotesize{
+\begin{table}[htbp]
+	\begin{center}
+		\begin{tabular}{ccc}
+				%
+			%$\littleap=\mat{r@{\ \pm \ }l}{ 3.1 & 1.5  \\ 9.53 & 0.27 }$ &&
+			%$\littleap=\mat{r@{\ \pm \ }l}{-0.4 & 1.0 \\ 10.03 & 0.18 }$ \\
+			$\littleap=\mat{r@{\ \pm \ }l}{-0.12 & 0.34 \\ 10.011 & 0.061}$ &&
+			$\littleap=\mat{r@{\ \pm \ }l}{ 0.01 & 0.11 \\  9.990 & 0.019}$ \\
+				%
+				\ \\
+				%
+			$\qquad \Delta x = 0.01$ && $\qquad \Delta x = 0.001$ \\
+				%
+			\begin{overpic}[ scale = 0.8 ]
+				{\pLocalGraphics bev-plus-values-00000000081}
+				%\placem	{$m = 9$}
+				\xplacex	{$x, cm$}
+				\xplacet	{\rotatebox{90}{$T, \degc$}}
+			\end{overpic}  &&
+				%
+			\begin{overpic}[ scale = 0.8 ]
+				{\pLocalGraphics bev-plus-values-00000000801}
+				%\placem	{$m = 81$}
+				\xplacex	{$x, cm$}
+				\xplacet	{\rotatebox{90}{$T, \degc$}}
+			\end{overpic}
+		\end{tabular}
+	\end{center}
+\label{tab:bevington more data plots}
+\end{table}}
+	%
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Mesh Refinement: Steps 5--6}
+	%
+\footnotesize{
+\begin{table}[htbp]
+	\begin{center}
+		\begin{tabular}{ccc}
+				%
+			%$\littleap=\mat{r@{\ \pm \ }l}{ 3.1 & 1.5  \\ 9.53 & 0.27 }$ &&
+			%$\littleap=\mat{r@{\ \pm \ }l}{-0.4 & 1.0 \\ 10.03 & 0.18 }$ \\
+			$\littleap=\mat{r@{\ \pm \ }l}{-0.029 & 0.034 \\ 10.004 & 0.0061}$ &&
+			$\littleap=\mat{r@{\ \pm \ }l}{ -0.001 & 0.011 \\  9.9994 & 0.0019}$ \\
+				%
+				\ \\
+				%
+			$\qquad \Delta x = 0.0001$ && $\qquad \Delta x = 0.00001$ \\
+				%
+			\begin{overpic}[ scale = 0.8 ]
+				{\pLocalGraphics bev-plus-values-00000008001}
+				%\placem	{$m = 9$}
+				\xplacex	{$x, cm$}
+				\xplacet	{\rotatebox{90}{$T, \degc$}}
+			\end{overpic}  &&
+				%
+			\begin{overpic}[ scale = 0.8 ]
+				{\pLocalGraphics bev-plus-values-00000080001}
+				%\placem	{$m = 81$}
+				\xplacex	{$x, cm$}
+				\xplacet	{\rotatebox{90}{$T, \degc$}}
+			\end{overpic}
+		\end{tabular}
+	\end{center}
+\label{tab:bevington even more data plots}
+\end{table}}
+	%
+\end{frame}
+%
+\begin{frame}\frametitle{Mesh Refinement: Precision}
+	%
+\begin{figure}[t]
+	\begin{center}
+			%
+		\begin{overpic}[ scale = 0.8 ]
+			%{\patheps bevington-more-precision-8}
+			{\pLocalGraphics bevington-convergence-precision}
+			\put(68, 35)	{ $9.634 m^{-0.5021}$}
+			\put(38, 20)	{ $1.748 m^{-0.5020}$}
+			\placexx		{$measurements, m$}
+			\placett		{\rotatebox{90}{$precision$}}
+			\put(62,55) {$\triangledown$  $a_{0}$, \textrm{intercept}}
+			\put(62,50) {$\blacktriangle$ $a_{1}$, \textrm{slope}}
+		\end{overpic} 
+			%
+			%
+	\end{center}
+\label{fig:bevington more convergence}
+\end{figure}
+	%
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Mesh Refinement: Accuracy}
+	%
+\begin{figure}[t]
+	\begin{center}
+			%
+		\begin{overpic}[ scale = 0.8 ]
+			%{\patheps bevington-more-precision-8}
+			{\pLocalGraphics bevington-convergence-accuracy}
+			\placexx	{$measurements, m$}
+			\placett	{\rotatebox{90}{$precision$}}
+			\put(62,55) {$\triangledown$  $a_{0}$, \textrm{intercept}}
+			\put(62,50) {$\blacktriangle$ $a_{1}$, \textrm{slope}}
+		\end{overpic} 
+			%
+			%
+	\end{center}
+\label{fig:bevington more convergence}
+\end{figure}
+	%
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Mesh Refinement: Error}
+	%
+\begin{figure}[t]
+	\begin{center}
+			%
+		\begin{overpic}[ scale = 0.8 ]
+			%{\patheps bevington-more-precision-8}
+			{\pLocalGraphics bev-conv-t2-linear}
+			\put(29, 43)	{ $t^{2} \approx 16.0218 m^{0.9999}$}
+			\placexx		{\textrm{measurements, }$m$}
+			\put(-6, 5)	{\rotatebox{90}{\textrm{least total squared error}}}
+		\end{overpic} 
+			%
+			%
+	\end{center}
+\label{fig:bevington more convergence}
+\end{figure}
+	%
+\end{frame}
+%
+\begin{frame}\frametitle{Mesh Refinement: Error}
+	%
+\begin{figure}[t]
+	\begin{center}
+			%
+		\begin{overpic}[ scale = 0.8 ]
+			%{\patheps bevington-more-precision-8}
+			{\pLocalGraphics bev-conv-error-rms}
+			\put(49, 43)	{ $\displaystyle\frac{\sqrt{t^{2}}}{m} \approx 4.0370 m^{-0.5020}$}
+			\placexx		{\textrm{measurements, }$m$}
+			\put(-6, 5)		{\rotatebox{90}{\textrm{root mean square error}}}
+		\end{overpic} 
+			%
+			%
+	\end{center}
+\label{fig:bevington more convergence}
+\end{figure}
+	%
+\end{frame}
+%
+\begin{frame}\frametitle{Area within 1 $\sigma$}
+	%
+\href{https://en.wikipedia.org/wiki/68\%E2\%80\%9395\%E2\%80\%9399.7_rule}{68–95–99.7 rule}
+	%
+\begin{equation*}
+		%
+	\int\limits_{-\sigma}^{\sigma} f\paren{x;0,\sigma} dx =  \gzero. 68\mg{2689492}
+		%
+%\label{eq:}
+\end{equation*}
+
+	%
+\end{frame}
+%
+
+%
+\begin{frame}\frametitle{Mesh Refinement: Convergence Rate}
+	%
+\begin{figure}[t]
+	\begin{center}
+			%
+		\begin{overpic}[ scale = 0.75 ]
+			{\pLocalGraphics bev-conv-one-sigma}
+			%{\patheps bevington/bev-convergence-t2-loglog}
+			%\put(29, 43)	{ $t^{2} \approx 16.0218 m^{0.9999}$}
+			\placexx		{\text{measurements, }$m$}
+			\put(-6, 15)	{\rotatebox{90}{\text{Percent within 1 $\sigma$}}}
+		\end{overpic}  \\[40pt]
+			%
+			%
+	\end{center}
+\label{fig:bevington more convergence}
+\end{figure}
+	%
+\end{frame}
+%
+%%
+%
+\begin{frame}\frametitle{Mesh Refinement: Measuring Standard Deviation}
+	%
+\begin{figure}[t]
+	\begin{center}
+	\ \\
+			%
+		\begin{overpic}[ scale = 0.75 ]
+			{\pLocalGraphics bev-conv-one-sigma-log}
+			%{\patheps bevington/bev-convergence-t2-loglog}
+			%\put(29, 43)	{ $t^{2} \approx 16.0218 m^{0.9999}$}
+			\placexx		{\text{Measurements, }$m$}
+			\put(-6, 15)	{\rotatebox{90}{\text{Percent within 1 $\sigma$}}}
+		\end{overpic}  \\[40pt]
+			%
+			%
+	\end{center}
+\label{fig:bevington more convergence}
+\end{figure}
+	%
+\end{frame}
+%
+%%  %%  %%  %%  %%
+\subsection{McAninch Challenge}
+%
+\begin{frame}\frametitle{McAninch Challenge}
+	%
+Can we tell if this experiment was done in \bl{Albuquerque}?
+	%
+\end{frame}
+%
+%
+\begin{frame}\frametitle{McAninch Challenge}
+	%
+\begin{enumerate}
+	\item Albuquerque average \bl{elevation}: \href{https://en.wikipedia.org/wiki/Albuquerque,_New_Mexico}{1619 m}
+	\item \bl{Boiling point} of water at 1600 m: $94.4^{\circ}$C
+\end{enumerate}
+%
+\center
+\ \\
+How can we use this apparatus to determine if the \\ water is boiling at $94.4^{\circ}$C?
+	%
+\end{frame}
+%
+%
+\begin{frame}\frametitle{McAninch Challenge}
+	%
+\center
+Without refining the apparatus, how do we \bl{refine the solution}?
+	%
+\end{frame}
+%
+%
+\begin{frame}\frametitle{McAninch Challenge}
+	%
+\center
+Let's insist that $100^{\circ}$ and $94.4^{\circ}$C be \bl{3 standard deviations} apart.\\[20pt]
+	%
+\pause
+	%
+	Eqn. \eqref{eq:bevington interpolation error numeric}: $\sigma_{x=10} = \paren{100-94.4}/3 = 5.6 / 3 = 1.9$
+	%
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Solve for $\sigma_{0}$ and $\sigma_{1}$}
+	%
+Let's call the position error $\bl{0.01}$ cm.
+%
+\begin{equation}
+\begin{array}{ccccc ccccc c}
+	\sigma_{x=10}^{2} &=& \sigma_{0}^{2} &+& x^{2} & \sigma_{1}^{2} &+& a_{1}^{2} & \sigma_{x}^{2}, \\
+	\sigma_{x=10}^{2} &=& \rd{\sigma_{0}}^{2} &+& 10^{2} & \rd{\sigma_{1}}^{2} &+& 10^{2} & \bl{0.01}^{2} &=& 1.9^{2}. \\
+\end{array}
+\label{eq:bevington interpolation error numeric}
+\end{equation}
+	%
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Device Characterization}
+	%
+\begin{figure}[t]
+	\begin{center}
+			%
+		\begin{overpic}[ scale = 0.9 ]
+			{\pLocalGraphics extrap-error}
+			\put(30, -4)	{$measurements, m$}
+			\put(-6, 18)	{\rotatebox{90}{$error\ at\ x=10$}}
+		\end{overpic}
+			%
+			%
+	\end{center}
+\end{figure}
+	%
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Measurement Goal $1.9$}
+\begin{figure}[t]
+	\begin{center}
+			%
+		\begin{overpic}[ scale = 0.9 ]
+			{\pLocalGraphics extrap-error-marked}
+			\put(30, -4)	{$measurements, m$}
+			\put(-6, 18)	{\rotatebox{90}{$error\ at\ x=10$}}
+		\end{overpic}
+			%
+			%
+	\end{center}
+\end{figure}
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Result}
+	%
+To use our code to \bl{distinguish altitude}, we must make a \bl{200 measurements}.
+	%
+\end{frame}
+%
+
+
+%%  %%  %%  %%  %%
+%\subsection{Verification}
+
+%%  %%  %%  %%  %%
+\subsection{Perturbation Analysis}
+%
+%
+\begin{frame}\frametitle{Perturbation Analysis Overview}
+	%
+	We explore two forms of perturbation analysis: 
+\begin{enumerate}
+	\item Perturb Solution: Explore a $\delta-$neighborhood of $M(\bap)$
+	\item Perturb Data: perturb a point in an ideal solution
+\end{enumerate}
+	%
+\end{frame}
+%
+\begin{frame}\frametitle{Perturbation Analysis: Solution}
+	%
+	\center
+	How does the merit function change as \\ the least squares solution is perturbed?
+	\ \\ 
+	\begin{equation}
+	 	M\paren{\bap+\delta} - M\paren{\bap} \ge 0.
+	\end{equation}
+	%
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Perturbation Analysis: Solution}
+	%
+\begin{equation}
+	\begin{split}
+		\bazero \to \bazero + \delta, \\
+		\baone  \to \baone  + \delta.
+	\end{split}
+%\label{eq:}
+\end{equation}
+	%
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Sotto Voce}
+	%
+Tedious algebra follows; \bl{no magic} here.
+	%
+\end{frame}
+%
+
+%
+\begin{frame}\frametitle{Perturbation Analysis: Solution}
+	%
+\begin{equation}
+	\begin{split}
+		M(a)
+			 = \myssum{ T\paren{x_{k}} - T_{k} } 
+			&= \myssum{ a_{0} + a_{1} x_{k} - T_{k} } \\
+			&= \tpose{\paren{a_{0} \one + a_{1}x -T}} \paren{a_{0} \one + a_{1}x -T} \\
+			&= \innerecho{a_{0} \one + a_{1}x -T}
+	\end{split}
+\label{eq:perturb difference}
+\end{equation}
+	%
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Perturbation Analysis: Solution}
+	%
+\begin{equation}
+	\begin{split}
+	M(a)
+		& = \innerecho{r(a)} = \innerecho{a_{0} \one + a_{1}x -T}  \\[5pt]
+		& = \underset{\gone}{a_{0}^{2} \innoo}
+			+ \underset{\gtwo}{a_{1}^{2} \innxx}
+			+ \underset{\gthree}{\inntt}
+			+ \underset{\gfour}{2 a_{0}a_{1} \innox} \\
+		&	- \underset{\gfive}{2a_{0}\innot}
+			- \underset{\gsix}{2a_{1}\innxt} \\
+	\end{split}
+%\label{eq:}
+\end{equation}
+	%
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Perturbation Analysis: Solution}
+	%
+\footnotesize{
+\begin{table}[!t]
+	\begin{center}
+		\begin{tabular}{rrcrc r}
+				%
+			& $M(\bap + \delta)$ & $-$ & $M(\bap)$  & $=$ & $\zeta$ \\
+			& perturbed && unperturbed && difference \\\hline
+				%
+			$1$ & $(\bazero + \delta)^{2}\innoo$ & $-$ & $\bazero^{2} \innoo$ & $=$ & $\paren{ 2\bazero \delta + \delta^{2}} \innoo$\\
+				%
+			$2$ & $(\baone + \delta)^{2}\innxx$ & $-$ & $\baone^{2} \innxx$ & $=$ & $\paren{ 2\baone \delta + \delta^{2}} \innxx$\\
+				%
+			$3$ & $\inntt$ & $-$ & $\inntt$ & $=$ & $0$\\
+				%
+%			$4$ & $2 (\bazero + \delta) (\baone + \delta) \innox$ & $-$ & $2 \bazero \baone \innox$ & $=$ & $2 \delta^{2} \innox$ \\
+%				&&&&& $+ 2 \delta (\bazero+ \baone) \innox $\\
+				%
+			$4$ & $2 (\bazero + \delta) (\baone + \delta) \innox$ & $-$ & $2 \bazero \baone \innox$ & $=$ & $2 \paren{ (\bazero+ \baone)\delta  +  \delta^{2}} \innox $ \\
+				%
+			$5$ & $-2 (\bazero + \delta) \inntt $ & $-$ & $-2 \bazero  \inntt $ & $=$ & $ -2 \delta \inntt $\\
+				%
+			$6$ & $ -2 (\baone + \delta) \innxt $ & $-$ & $ -2 \baone  \innxt $ & $=$ & $ -2 \delta \innxt $\\ \hline
+				%
+			$\Sigma$ & \multicolumn{1}{c}{$t^{2} + \zeta$} &$-$ & \multicolumn{1}{c}{$t^{2}$} &$=$& $\zeta$
+		\end{tabular}
+	\end{center}
+\label{tab:perturbations}
+\end{table}}
+	%
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Perturbation Analysis: Solution}
+	%
+\begin{equation}
+\begin{split}
+	\zeta 
+		&= \delta^{2} \paren{ \innxx + 2\innox + \innoo} \\
+		&= \delta^{2} \innerecho{x+\one} \ \rd{ \ge } \ 0
+\end{split}
+\label{eq:complex linear function}
+\end{equation}
+	%
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Perturbation Analysis: Solution Verification}
+	%
+\begin{itemize}
+	\item Compute $a_{0}$, $a_{1}$
+	\item Compute $t^{2}$
+	\item Input $\delta$
+	\item Compute $t^{2} + \zeta$
+	\item Demonstrate $\zeta=\delta^{2} \innerecho{x+\one} $
+\end{itemize}
+	%
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Perturbation Analysis: Data}
+	%
+Next, take a data sequence with an \bl{ideal solution} $\paren{t^{2} = 0}$ and \bl{perturb a single point}.
+	%
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Perturbation Analysis: Data}
+Perturbation:
+\begin{equation}
+		T_{k} \to T_{k} + \delta
+%\label{eq:}
+\end{equation}
+Implies
+\begin{equation}
+\begin{split}
+	\innxt &\to \innxt + x_{k} \delta , \\
+	\innot &\to \innot + \delta. 
+\end{split}
+%\label{eq:}
+\end{equation}
+\end{frame}
+%
+\begin{frame}\frametitle{Perturbation Analysis: Data}
+With modest effort equation \ref{eq:bevSolnC} becomes
+\begin{equation}
+\begin{split}
+	a_{0} &\to a_{0} + \frac{\delta}{\Delta} \paren{\innxx - \innox x_{k}} , \\
+	a_{1} &\to a_{1} + \frac{\delta}{\Delta} \paren{-\innox + \innoo x_{k}}. 
+\end{split}
+%\label{eq:}
+\end{equation}
+\end{frame}
+%
+
+%
+\endinput  %  ==  ==  ==  ==  ==  ==  ==  ==  ==

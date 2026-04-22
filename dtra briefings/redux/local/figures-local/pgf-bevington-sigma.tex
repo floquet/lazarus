@@ -1,0 +1,70 @@
+% \input{\pLocalFigures "pgf-bevington-sigma"}
+
+%\usepackage{pgfplots}
+%\usepackage{pgfplotstable}
+%\usepgfplotslibrary{fillbetween}
+
+	\pgfplotstableset{
+		create on use/x_k/.style={create col/set list={1,2,3,4,5,6,7,8,9}},
+		create on use/T_k/.style={create col/set list={15.6,17.5,36.6,43.8,58.2,61.6,64.2,70.4,98.8}},
+		create on use/line/.style={create col/expr=4.8+9.41*\thisrow{x_k}}
+	}
+
+	\pgfplotstablenew[columns={x_k,T_k,line}]{9}\loadedtable
+
+	\center
+	\pgfplotsset{
+		% compat = 1.18,
+		compat = 1.17,
+		residuals/.style={
+			only marks,
+			mark options={ blue, scale=0.5 },
+ 			point meta=explicit,
+			error bars/y dir=minus,
+			error bars/y explicit,
+			error bars/draw error bar/.code 2 args={
+            			\pgfkeys{/pgf/fpu=true}
+            			\pgfmathtruncatemacro\positiveresidual{\pgfplotspointmeta<0}
+            			\pgfkeys{/pgf/fpu=false}
+            			\ifnum\positiveresidual=0
+                				\draw [ thick, red!20 ] ##1 -- ##2;
+            			\else
+                				\draw [ thick, red!20 ] ##1 -- ##2;
+            			\fi
+       			},
+        			/pgfplots/table/.cd,
+            			meta expr=(\thisrow{T_k}-\thisrow{line})/abs(\thisrow{T_k}-\thisrow{line}),
+            			y error expr=\thisrow{T_k}-\thisrow{line}
+		}
+	}
+	\begin{tikzpicture}[scale=0.9]
+		\begin{axis}[
+			width=10cm,
+			height=7.5cm,
+			enlarge x limits=0.05,
+			enlarge y limits=0.05,
+			xlabel = {$x$, \textbf{cm}},
+			ylabel = {$T$, $^\circ$\textbf{C}},
+			xmin = -0.25,
+			xmax = 10.25,
+			ymin = -5,
+			ymax = 120,
+			xtick = { 0, 2, 4, 6, 8, 10 },
+			minor x tick num=3,
+			minor y tick num=3,
+			label style={font=\scriptsize},
+			tick label style={font=\scriptsize}  
+		]
+			\addplot[residuals] table {\loadedtable};
+			\addplot[ no markers, thick, black ] table [x=x_k,y=line] {\loadedtable};
+			\addplot[ blue, domain = -0.25:10.25, name path = a ]{ 9.7001 + 10.2766*x };
+			\addplot[ red, domain = -0.25:10.25, name path = b ]{ -0.0723174 + 8.54003*x };
+			\addplot[ gray!10] fill between [of = a and b];
+			\addplot[ dotted, domain =-0.25:10.25, gray!50]{100};
+			\addplot[ densely dashed, domain =-0.25:10.25, gray!50]{0};
+			\node at (3.5,90){\small $T_{\color{blue}+}(x)=(a_0\,{\color{blue}+}\,\sigma_0)+(a_1\,{\color{blue}+}\,\sigma_1)x$};
+			\node at (6.5,15){\small $T_{\color{red}-}(x)=(a_0\,{\color{red}-}\,\sigma_0)+(a_1\,{\color{red}-}\,\sigma_1)x$};
+			\filldraw[ draw = white, thick, fill = black ] ( axis cs:0,0 ) circle (2pt);
+			\filldraw[ draw = white, thick, fill = black ] ( axis cs:10,100 ) circle (2pt);
+		\end{axis}
+	\end{tikzpicture}

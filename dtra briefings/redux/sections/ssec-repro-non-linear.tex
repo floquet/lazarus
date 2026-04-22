@@ -1,0 +1,120 @@
+% \input{\pSections "ssec-repro-non-linear"}
+
+%%  %%  %%  %%  %%
+\subsection{Nonlinear Formulation}
+%
+\begin{frame}\frametitle{From the Beginning...}
+	{\huge{
+	\begin{equation}
+		(\bl{a}, \bl{b})_{LS}\equiv \argmin\limits_{(\bl{a},\bl{b})\in\mathbb{R}^{2}} \normt{\bl{a} t^{\bl{b}} - R}
+	\tag{\ref{eq:solution definition}}
+	\end{equation}
+	}}
+	\ \\
+	$b$ is \bl{nonlinear}, but $a$ is \bl{linear}:\\
+	no need for \href{https://en.wikipedia.org/wiki/Levenberg\%E2\%80\%93Marquardt_algorithm}{Levenberg-Marquardt}
+\end{frame}
+%
+
+\begin{frame}\frametitle{Minimization Surface: 3D}
+\center
+	%\href{}{
+	\begin{overpic}[ scale = 0.35 ]
+		{\pLocalGraphics mathematica/3d}
+		\put(25,102)	{\colorbox{white}{$\tilde{\phi}(\bl{a}, \bl{b}) = \normt{\bl{a} t^{\bl{b}} - R}$}}
+		\put(-30,53) 	{\colorbox{white}{$\tilde{\phi}(\bl{a}, \bl{b})$}}
+		\put(90,15) 	{\colorbox{white}{$\bl{b}$}}
+		\put(30,8) 	{\colorbox{white}{$\bl{a}$}}
+	\end{overpic}
+\end{frame}
+
+\begin{frame}\frametitle{Minimization Surface: Topographic Map}
+\center
+	%\href{}{
+	\begin{overpic}[ scale = 0.6 ]
+		{\pLocalGraphics mathematica/nonlinear-contour}
+		\put(8, 88)			{\colorbox{white}{$\tilde{\phi}(\bl{a}, \bl{b}) = \normt{\bl{a} t^{\bl{b}} - R}$}}
+		\put(-8,49) 		{\colorbox{white}{$\bl{b}$}}
+		\put(50,-4) 		{\colorbox{white}{$\bl{a}$}}
+	\end{overpic}
+\end{frame}
+
+\begin{frame}\frametitle{Minimization Surface: Topographic Map}
+\center
+	%\href{}{
+	\begin{overpic}[ scale = 0.6 ]
+		{\pLocalGraphics mathematica/nonlinear-contour-ideal}
+		\put(8, 88)			{\colorbox{white}{$\tilde{\phi}(\bl{a}, \bl{b}) = \normt{\bl{a} t^{\bl{b}} - R}$}}
+		\put(-8, 49) 		{\colorbox{white}{$\bl{b}$}}
+		\put(50, -4) 		{\colorbox{white}{$\bl{a}$}}
+	\end{overpic}
+\end{frame}
+
+\begin{frame}\frametitle{Minimization Problem}
+Residual error function: \\
+\begin{equation}
+\begin{split}
+	\tilde{\phi}(a,b) &= \innerecho{a t^{b}-R} \\
+		&= a^{2} \innerecho{t^{b}} + \innerecho{R} - 2a \inner{t^{b},R}
+\end{split}
+\label{eq:phi-hat}
+\end{equation}
+\ \\
+Solve
+\begin{equation}
+\nabla \tilde{\phi} = \mathbf{0}
+%\label{eq:}
+\end{equation}
+\end{frame}
+%
+\begin{frame}\frametitle{Dimensional Reduction}
+\begin{equation}
+\begin{split}
+	\partial_{a} \tilde{\phi}(a,b) &=	0 \\
+	2 a \innerecho{t^{b}} - 2\inner{t^{b},R} &=	0
+\end{split}
+\label{eq:partiala}
+\end{equation}
+\ \\[20pt]
+\pause
+\begin{equation}
+	a_{*} = \frac{ \inner{t^{b},R} } { \innerecho{t^{b}} }
+\label{eq:aopt}
+\end{equation}
+\end{frame}
+%
+\begin{frame}\frametitle{Minimization Surface: Topographic Map}
+\center
+	%\href{}{
+	\begin{overpic}[ scale = 0.6 ]
+		{\pLocalGraphics mathematica/nonlinear-contour-aopt}
+		\put(8, 88)			{\colorbox{white}{$\tilde{\phi}(\bl{a}, \bl{b}) = \normt{\bl{a} t^{\bl{b}} - R}$}}
+		\put(-8, 49) 		{\colorbox{white}{$\bl{b}$}}
+		\put(50, -4) 		{\colorbox{white}{$\bl{a}$}}
+	\end{overpic}
+\end{frame}
+
+
+\begin{frame}\frametitle{Dimensional Reduction: Asymptotics}
+\center
+	%\href{}{
+	\begin{overpic}[ scale = 0.9 ]
+		{\pLocalGraphics mathematica/phi-b-wide}
+		\put(54, 53)		{\colorbox{white}{$\phi(\bl{b}) = \normt{a_{*} t^{\bl{b}} - R}$}}
+		\put(-12, 32) 		{\colorbox{white}{$\phi(\bl{b})$}}
+		\put(50, -5) 		{\colorbox{white}{$\bl{b}$}}
+	\end{overpic}
+\end{frame}
+
+\begin{frame}\frametitle{Dimensional Reduction: Minimum}
+\center
+	%\href{}{
+	\begin{overpic}[ scale = 0.9 ]
+		{\pLocalGraphics mathematica/phi-b-zoom}
+		\put(54, 53)		{\colorbox{white}{$\phi(\bl{b}) = \normt{a_{*} t^{\bl{b}} - R}$}}
+		\put(-12, 32) 		{\colorbox{white}{$\phi(\bl{b})$}}
+		\put(50, -5) 		{\colorbox{white}{$\bl{b}$}}
+	\end{overpic}
+\end{frame}
+
+\endinput  %  ==  ==  ==  ==  ==  ==  ==  ==  ==

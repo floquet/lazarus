@@ -1,0 +1,176 @@
+% \input{\pathsections "sec model"}
+
+%%  %%  %%  %%  %%
+\section{Model}
+%
+\begin{frame}\frametitle{The Model}
+	%
+\center
+The \bl{model} is an \bl{input} to the least squares problem\\ along with the data.
+	%
+\end{frame}
+%
+\begin{frame}\frametitle{The Model}
+	%
+Let's \bl{derive the model} from first principles.
+	%
+\end{frame}
+%
+
+%
+%%  %%  %%  %%  %%
+\subsection{Heat Flow in 1 Dimension}
+%
+\begin{frame}\frametitle{\href{https://mathworld.wolfram.com/HeatConductionEquation.html}{Heat Conduction Equation}}
+	%
+Partial Differential Equation \\
+\begin{equation}
+	T_{t}(x,t) = \alpha \Delta T(x,t)
+\label{eq:pde heat}
+\end{equation}
+\ \\[10pt]
+Dirichlet Boundary Conditions\\
+\begin{equation}
+\begin{split}
+	T(x=0,t) &= 0, \\
+	T(x=100,t) &= 100,\\
+%\label{eq:}
+\end{split}
+\end{equation}
+	%
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Stationary Solution for \eqnHeat}
+\begin{equation}
+	\lim\limits_{t\to\infty} T_{t}(x,t) = 0
+\end{equation}
+\end{frame}
+%
+%
+\begin{frame}\frametitle{\eqnLaplace}
+	%
+The stationary solution for the \bl{\eqnHeat}...
+\begin{equation}
+	T_{t}(x,t) = \alpha \Delta T(x,t)
+\label{eq:pde heat}
+\end{equation}
+	%
+\begin{equation*}
+	T_{t} = 0,
+%\label{eq:}
+\end{equation*}
+\ \\
+	%
+	\pause
+	%
+...is given by \bl{\eqnLaplace}
+\begin{equation}
+	0 = \alpha \Delta T(x,t)
+\label{eq:pde heat}
+\end{equation}
+	%
+\end{frame}
+%
+%%  %%  %%  %%  %%
+\subsection{\eqnLaplace}
+%
+\begin{frame}\frametitle{Solve Using Integration}
+	%
+\begin{equation}
+	0 = \alpha \Delta T(x,t) , \qquad 0 \le x \le 10
+\label{eq:pde heat}
+\end{equation}
+	%
+\begin{equation}
+	T(x) = 0 + 100 x
+\label{eq:exact}
+\end{equation}
+%
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Linear Model with Free Variables}
+	%
+Let's generalize the solution
+\begin{equation}
+\begin{split}
+		%
+	T(x) &= \bzero + \bl{100} x\\
+		& \Downarrow \\
+	T(x) &= \bl{a_{0}} + \bl{a_{1}} x
+		%
+\end{split}
+%\label{eq:}
+\end{equation}
+\end{frame}
+
+
+%%  %%  %%  %%  %%
+\subsection{Linear Model}
+
+\begin{frame}\frametitle{Model of Heat Flow}
+\center
+Temperature as a \bl{linear function} of position
+	%
+\begin{equation}
+		%
+	T(x) = \bazero + \baone x
+		%
+\label{eq:model}
+\end{equation}
+%
+Solution parameters: \\
+$\bazero$ intercept \\
+$\baone$ slope
+	%
+\end{frame}
+
+\begin{frame}\frametitle{Least Squares Inputs and Outputs}
+	%
+\begin{table}[htbp]
+%\caption{Best fit to a linear function.}
+	\begin{center}
+		\begin{tabular}{ccc}
+			%
+			input & $\Rightarrow$ & output \\\hline
+			%
+			\includegraphics[ width = 2.0in ]{\pLocalGraphics bev-have} & \raisebox{1.8 cm}{$\Rightarrow$} &
+			%
+			\includegraphics[ width = 2.0in ]{\pLocalGraphics bev-want} \\
+			%
+			\{position, temperature\}$_{k=1}^{m}$ & $\Rightarrow$ & intercept and slope \\
+			%
+			$\lst{x_{k},T_{k}}_{k=1}^{m}$ 
+			& $\Rightarrow$ & $\bl{\mat{c}{ a_{0} \\ a_{1} }} \pm \bl{\mat{c}{ \sigma_{0} \\ \sigma_{1}} }$\\
+			%
+		\end{tabular}
+	\end{center}
+\label{tab:bevington input-output}
+\end{table}%
+	%
+\end{frame}
+
+\begin{frame}\frametitle{Least Squares Inputs and Outputs}
+	%
+Inputs: \\
+%
+\begin{enumerate}
+	\item Model function, $T(x) = \bazero + \baone x$
+	\item Sequence of measurements, $\seqinputs{x}{T}$
+\end{enumerate}
+	\ \\[10pt]
+	%
+	\pause
+	%
+Outputs: Model parameters\\
+%
+\begin{enumerate}
+	\item $\bazero \pm \bl{\sigma_{0}}$, intercept with error
+	\item $\baone \pm \bl{\sigma_{1}}$, slope with error
+\end{enumerate}
+	%
+\end{frame}
+
+
+\endinput  %  ==  ==  ==  ==  ==  ==  ==  ==  ==

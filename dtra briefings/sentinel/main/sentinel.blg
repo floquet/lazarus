@@ -1,0 +1,27 @@
+[0] Config.pm:304> INFO - This is Biber 2.14
+[0] Config.pm:307> INFO - Logfile is 'sentinel.blg'
+[67] biber-darwin:322> INFO - === Tue Apr 21, 2026, 18:13:39
+[78] Biber.pm:415> INFO - Reading 'sentinel.bcf'
+[147] Biber.pm:940> INFO - Using all citekeys in bib section 0
+[159] Biber.pm:4256> INFO - Processing section 0
+[159] Utils.pm:75> INFO - Globbing data source '$TEXBIBS/tvns.bib'
+[160] Utils.pm:91> INFO - Globbed data source '$TEXBIBS/tvns.bib' to $TEXBIBS/tvns.bib
+[160] Utils.pm:75> INFO - Globbing data source '$TEXBIBS/textbooks.bib'
+[160] Utils.pm:91> INFO - Globbed data source '$TEXBIBS/textbooks.bib' to $TEXBIBS/textbooks.bib
+[168] Biber.pm:4455> INFO - Looking for bibtex format file '$TEXBIBS/tvns.bib' for section 0
+[297] bibtex.pm:1653> INFO - LaTeX decoding ...
+[359] bibtex.pm:1471> INFO - Found BibTeX data source '/Users/dantopa/Github/latex-2025/bibs/tvns.bib'
+[445] Utils.pm:304> WARN - month field 'Aug' in entry '2022AJBeirutExplosion' is not an integer - this will probably not sort properly.
+[559] Biber.pm:4455> INFO - Looking for bibtex format file '$TEXBIBS/textbooks.bib' for section 0
+[716] bibtex.pm:1653> INFO - LaTeX decoding ...
+[951] bibtex.pm:1471> INFO - Found BibTeX data source '/Users/dantopa/Github/latex-2025/bibs/textbooks.bib'
+[1120] Utils.pm:304> WARN - ISBN '978-0-393-09970-3' in entry 'french1971newtonian' is invalid - run biber with '--validate_datamodel' for details.
+[1386] Utils.pm:304> WARN - ISBN '0-306-60650-7' in entry 'Miller1982ChargedParticleBeams' is invalid - run biber with '--validate_datamodel' for details.
+[1394] Utils.pm:304> WARN - ISBN '9780201073927' in entry 'symon1971mechanics' is invalid - run biber with '--validate_datamodel' for details.
+[1649] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1649] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1649] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[1649] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[1805] bbl.pm:652> INFO - Writing 'sentinel.bbl' with encoding 'UTF-8'
+[1891] bbl.pm:755> INFO - Output to sentinel.bbl
+[1892] Biber.pm:128> INFO - WARNINGS: 4

@@ -1,0 +1,125 @@
+% typeset: Pdftex
+% Afterwards compile with pdflatex > bibtex > pdflatex > pdflatex.
+% in TeXShop preferences, change edit from bibtex to biber
+% https://tex.stackexchange.com/questions/144407/no-items-shown-bibliography-beamer?rq=1
+
+% https://tex.stackexchange.com/questions/1423/is-there-a-nice-way-to-compile-a-beamer-presentation-without-the-pauses
+%\documentclass[handout]{beamer}
+
+%! LaTeX Error: File `/Volumes/repos/bitbucket/strange/shared/collection/lib-colors.tex' not found.
+% edit 
+% nursery-slide-decks/beamer/dtra/global/setup-global
+
+\documentclass[]{beamer}
+% point to content libraries
+\newcommand{\pGlobal}			{../../../global/}
+\newcommand{\pGlobalSetup}		{\pGlobal setup-global/}	
+
+% load LaTeX packages and personal macros
+\input{\pGlobalSetup setup-global-beamer}
+\input{\pLocalSetup setup-local}
+
+\newtheorem{thm}{Theorem}[section]
+\numberwithin{equation}{subsection}
+\numberwithin{theorem}{subsection}
+
+\setbeamertemplate{bibliography item}{\insertbiblabel}
+\usepackage[style = numeric]{biblatex}
+\bibliography{\pSections similarity.bib}
+
+\title
+[Similarity Methods in Navier-Stokes Problems]
+{Similarity Methods in Navier-Stokes Problems}
+
+\author[DTRIAC Tutorial]{\Topa \\ \TopaEmail}
+\institute{\dtriac} 
+\medskip
+
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+	%\distA
+\end{frame}
+
+\begin{frame}\frametitle{Similarity Methods}
+\begin{table}[htp]
+%\caption{default}
+\begin{center}
+	\begin{tabular}{cc}
+	\href{https://pubs.aip.org/physicstoday/article-abstract/64/9/42/413713/Dynamic-similarity-the-dimensionless}{
+	\begin{overpic}[ scale = 0.45 ]
+		{\pLocalGraphics pt-dynamic-similarity}
+	\end{overpic}}
+	\end{tabular}
+\end{center}
+%\label{tab:label}
+\end{table}%
+\end{frame}
+
+\begin{frame}\frametitle{Overview}
+	\tableofcontents[hideallsubsections]
+\end{frame}
+
+% main sections
+	\input{\pSections "sec-genesis"}
+	\input{\pSections "sec-books"}
+
+\section{Bibliography}
+\subsection{References}
+\begin{frame}[t,allowframebreaks]
+\frametitle{Bibliography}
+%\nocite{*}
+\printbibliography[heading=none]
+\end{frame}
+
+\end{document}
+
+%\tiny
+%\scriptsize
+%\footnotesize
+%\small
+%\normalsize
+%\large
+%\Large
+%\LARGE
+%\huge
+%\Huge
+
+%\, thin space (normally 1/6 of a quad);
+%\> medium space (normally 2/9 of a quad);
+%\; thick space (normally 5/18 of a quad);
+%\! negative thin space (normally 1/6 of a quad).
+
+\begin{frame}\frametitle{Frame Title}
+\begin{enumerate}
+	\item 
+	\item 
+	\item 
+\end{enumerate}
+\end{frame}
+
+\begin{frame}\frametitle{Frame Title}
+\center
+	\href{url}{
+	\begin{overpic}[ scale = 1.0 ]
+	{\pLocalGraphics graphic-file}
+		%\put(-7,-10){Auxiliary text.}
+	\end{overpic}}
+\end{frame}
+
+\begin{frame}\frametitle{Frame Title}
+\begin{table}[htp]
+%\caption{default}
+\begin{center}
+	\begin{tabular}{cc}
+		 %
+		 %
+		 %
+	\end{tabular}
+\end{center}
+%\label{tab:label}
+\end{table}%
+\end{frame}

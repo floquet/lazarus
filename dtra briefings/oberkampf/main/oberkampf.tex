@@ -1,0 +1,90 @@
+% typeset: Pdftex
+
+% https://tex.stackexchange.com/questions/1423/is-there-a-nice-way-to-compile-a-beamer-presentation-without-the-pauses
+%\documentclass[handout]{beamer}
+\documentclass[]{beamer}
+% point to content libraries
+\newcommand{\pGlobal}			{../../../global/}
+\newcommand{\pGlobalSetup}		{\pGlobal setup-global/}	
+
+% load LaTeX packages and personal macros
+% https://tex.stackexchange.com/questions/7602/how-to-add-a-gif-file-to-my-latex-file
+\input{\pGlobalSetup setup-global}
+\input{\pLocalSetup setup-local}
+
+\title
+[Verification and Validation in Scientific Computing]
+{Verification and Validation\\
+in Scientific Computing}
+
+% \author[DISTRIBUTION STATEMENT B. Distribution authorized to \\U.S. Government agencies only: critical technology]\autho{\Topa}
+\author[\dtriacAlpha Tutorial]{\Topa \\ \TopaEmail}
+\institute{\dtriac} 
+\medskip
+
+\date{\today}
+%\date{2018-08-31}
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+	\distA
+	%\href{https://discover.dtic.mil/wp-content/uploads/2018/09/distribution_statements_and_reasonsSept2018.pdf}{{\tiny{DISTRIBUTION STATEMENT A. Approved for public release: distribution unlimited.} }}
+\end{frame}
+
+\begin{frame}\frametitle{Verification and Validation in Scientific Computing}
+\center
+	\href{\vvbookURL}{
+	\begin{overpic}[ scale = 0.35 ]
+	{\pLocalGraphics oberkampf}
+		%\put(0,0){Text}
+	\end{overpic}}
+\end{frame}
+
+\begin{frame}\frametitle{McAninch Validation Hierarchy}
+	\input{\pGlobalLibs figure-hierarchy}
+\end{frame}
+
+\begin{frame}\frametitle{Phases of Modeling and Simulation}
+\center
+	\href{https://scs.org}{
+	\begin{overpic}[ scale = 0.5 ]
+	{\pLocalGraphics phases-1}
+	\end{overpic}}
+\end{frame}
+
+\begin{frame}\frametitle{Overview}
+	\tableofcontents[hideallsubsections]
+\end{frame}
+
+% main sections
+\input{\pSections "sec-part-1"}
+\input{\pSections "sec-part-2"}
+\input{\pSections "sec-part-3"}
+\input{\pSections "sec-part-4"}
+\input{\pSections "sec-part-5"}
+
+
+
+\begin{frame}
+	\titlepage
+\end{frame}
+
+\end{document}
+
+%\tiny
+%\scriptsize
+%\footnotesize
+%\small
+%\normalsize
+%\large
+%\Large
+%\LARGE
+%\huge
+%\Huge
+
+%\, thin space (normally 1/6 of a quad);
+%\> medium space (normally 2/9 of a quad);
+%\; thick space (normally 5/18 of a quad);
+%\! negative thin space (normally 1/6 of a quad).

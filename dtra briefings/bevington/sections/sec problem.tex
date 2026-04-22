@@ -1,0 +1,410 @@
+% \input{\pathsections "sec problem"}
+
+\section{Problem}
+\begin{frame}
+\frametitle{Demonstration Problem}
+\begin{center}
+	Let's pose and solve a classic \bl{least squares} problem
+\end{center}
+\end{frame}
+
+\begin{frame}\frametitle{Validation Tiers of a System Hierarchy}
+	\input{\pGlobalLibs figure-hierarchy}
+\end{frame}
+%
+%%  %%  %%  %%  %%
+\subsection{Bevington Archetype}
+%
+\begin{frame}\frametitle{Canonical Reference: Bevington, \rd{2e}}
+\center
+	Data Reduction and Error Analysis for the Physical Sciences, \rd{2e} \\
+	Philip Bevington \\
+	\href{https://isbnsearch.org/isbn/9780070051355}{\tiny{ISBN 10: 0070051356  ISBN 13: 9780070051355}} \\[5pt]
+	\includegraphics[ width = 1.25in ]{\pLocalGraphics/bev-cover-zoom} \\
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Bevington Table 6.1}
+\center
+		\includegraphics[ width = 2.0in ]{\pLocalGraphics/bev-data.pdf} \\
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Bevington Table 6.1}
+\center
+	\includegraphics[ width = 2.0in ]{\pLocalGraphics/bev-data-mark-2} \\
+\end{frame}
+%
+\begin{frame}
+\frametitle{What we have and what we want}
+\begin{table}[htbp]
+%\caption{Use data to find best fit to a linear function.}
+	\begin{center}
+		\begin{tabular}{ccc}
+			%
+			input & $\Rightarrow$ & output \\\hline
+			%
+			\includegraphics[ width = 2.0in ]{\pLocalGraphics bev-have} & \raisebox{1.8 cm}{$\Rightarrow$} &
+			%
+			\includegraphics[ width = 2.0in ]{\pLocalGraphics bev-want} \\
+			%
+			\{position, temperature\}$_{k=1}^{m}$ & $\Rightarrow$ & intercept and slope \\
+			%
+			$\lst{x_{k},T_{k}}_{k=1}^{m}$ 
+			& $\Rightarrow$ & $\bl{\mat{c}{ a_{0} \\ a_{1} }} \pm \bl{\mat{c}{ \sigma_{0} \\ \sigma_{1}} }$\\
+			%
+		\end{tabular}
+	\end{center}
+\label{tab:bevington input-output}
+\end{table}%
+\end{frame}
+%
+\begin{frame}\frametitle{The Method of Least Squares.}
+	%
+\Tmls
+\begin{itemize}
+	\item \bl{extends toolkit} of linear algebra to inconsistent systems
+	\item provides \bl{quantification of the error} in the fit parameters
+\end{itemize}
+	%
+\end{frame}
+%
+
+%%  %%  %%  %%  %%
+\subsection{Least Squares Exemplar Problem}
+%
+\begin{frame}\frametitle{\lsq \ Exemplar Problem}
+	%
+\begin{equation}
+		%
+	\exemplartall \littlea = \mat{c}{y_{1} \\ y_{2} \\ y_{3}}
+		%
+\label{eq:exemplar}
+\end{equation}
+	%
+\end{frame}
+%
+\begin{frame}\frametitle{\lsq \ Exemplar Problem}
+	%
+Problem:
+\begin{equation}
+		%
+	\mat{cc}{1 & 0 \\ 0 & 1 \\ \rzero & \rzero} \littlea = \mat{c}{y_{1} \\ y_{2} \\ \rd{y_{3}}}
+		%
+\tag{\ref{eq:exemplar}}
+\end{equation}
+	%
+\end{frame}
+%
+\begin{frame}\frametitle{\lsq \ Exemplar Solution}
+	%
+Problem:
+\begin{equation}
+		%
+	\mat{cc}{1 & 0 \\ 0 & 1 \\ \rzero & \rzero} \littlea = \mat{c}{y_{1} \\ y_{2} \\ \rd{y_{3}}}
+		%
+\tag{\ref{eq:exemplar}}
+\end{equation}
+	%
+Solution:
+	%
+\begin{equation}
+		%
+	\bl{\littlea} = \bl{\mat{c}{y_{1} \\ y_{2}}}
+		%
+\label{eq:solution}
+\end{equation}
+\end{frame}
+
+\begin{frame}\frametitle{\lsq \ Exemplar Error}
+	%
+Problem:
+\begin{equation}
+		%
+	\mat{cc}{1 & 0 \\ 0 & 1 \\ \rzero & \rzero} \littlea = \mat{c}{y_{1} \\ y_{2} \\ 0}
+		%
+\tag{\ref{eq:exemplar}}
+\end{equation}
+	%
+Solution:
+	%
+\begin{equation}
+		%
+	\bl{\littlea} = \bl{\mat{c}{y_{1} \\ y_{2}}}
+		%
+\tag{\ref{eq:solution}}
+\end{equation}
+%
+Residual error:
+	%
+\begin{equation}
+		%
+	\rd{r^{2}} = \normts{\bl{\mat{c}{y_{1} \\ y_{2} \\ 0}} - \mat{c}{y_{1} \\ y_{2} \\ \rd{y_{3}}}} = \abs{y_{3}}^{2}
+		%
+\label{eq:error}
+\end{equation}
+%
+\end{frame}
+%
+%%  %%  %%  %%  %%
+\subsection{\ftola}
+
+\begin{frame}\frametitle{\ftolathm}
+	%
+\def\mylambda{3.75}
+\def\mymid{\mylambda / 2}
+\def\vertspace{0.6}
+\def\pttop{(0, \mylambda)}
+\def\ptright{(\mylambda, 0)}
+%
+\newcommand{ \axisblueRow }[0]	{\draw[line width=1.25pt,blue,->,>=stealth]	(-0.1,0) -- \ptright	node[above left=0cm and 0cm of \ptright]{$\bornga{*}$};}
+\newcommand{ \axisredRow }[0]	{\draw[line width=1.25pt,red, ->,>=stealth]	(0,-0.1) -- \pttop	node[below right=0cm and 0cm of \pttop]{$\rnlla{}$};}
+%
+\newcommand{ \axisblueCol }[0]	{\draw[line width=1.25pt,blue,->,>=stealth]	(-0.1,0) -- \ptright	node[above left=0cm and 0cm of \ptright]{$\bornga{}$};}
+\newcommand{ \axisredCol }[0]	{\draw[line width=1.25pt,red, ->,>=stealth]	(0,-0.1) -- \pttop	node[below right=0cm and 0cm of \pttop]{$\rnlla{*}$};}
+%
+\begin{table}[htp]
+{\scriptsize{
+	\begin{center}
+		\begin{tabular}{cccc}
+				%
+			\multicolumn{4}{c}{\bf{The \ftolathm\ }} \\[5pt]
+				%
+			& $\A{} \in \mathbb{C}^{^{m \times n}}$ \\%\cline{2-2}
+				%
+			% ROW SPACE
+			\begin{tikzpicture}
+				\perps{1/4}
+				\node[] at ( \mymid,  \mymid + \vertspace )	{\dg{$ \mat{ccc}{a_{11} & \cdots & a_{1n} }$} };
+				\node[] at ( \mymid,  \mymid )				{\dg{$ \vdots$}} ;
+				\node[] at ( \mymid,  \mymid - \vertspace )		{\dg{$ \mat{ccc}{a_{m1} & \cdots & a_{mn} }$}} ;
+				\axisredRow{}
+				\axisblueRow{}
+			\end{tikzpicture} &
+				%
+			% MAPPINGS
+			\raisebox{1.5cm}{
+			\begin{tikzpicture}
+				\node () at (\mymid, \mymid + \vertspace) {$\A{} \colon \mathbb{C}^{^{n}} \mapsto \bornga{}$};
+				\node () at (\mymid, \mymid - \vertspace) {$ \bornga{*} \mapsfrom \mathbb{C}^{^{m}} \hspace{-1.5mm} \cocolon \A{*} $};
+			\end{tikzpicture} } &&
+				%
+			% COLUMN SPACE
+			\begin{tikzpicture}
+				\perps{1/4}
+				\node[] at ( \mymid,  \mymid )	{ \dg{ $\mat{c}{a_{11} \\ \vdots \\ a_{m1} } \ \cdots \ \mat{c}{a_{1n} \\ \vdots \\ a_{mn} }$ } };
+				\axisredCol{}
+				\axisblueCol{}
+			\end{tikzpicture} \\[1pt]
+				%
+				%
+			Solution Space & && Data Space \\[1pt]
+				%
+			$\mathbb{C}^{^{n}} = \codecomprow{*}$ &&& $\mathbb{C}^{^{m}} = \codecompcol{*} $ \\
+				%
+		\end{tabular}
+	\end{center}
+	}}
+%\caption{A geometric view of the \ftola \ showing the four fundamental subspaces induced by a matrix and the mappings between those subspaces.}
+\label{tab:ftola-master}
+\end{table}
+	%
+\end{frame}
+%
+%
+\begin{frame}\frametitle{\lsq \ Untangles The Null Spaces}
+	%
+\begin{figure}[t]
+\centering
+	\begin{overpic}[ scale = 0.75 ]{\pLocalGraphics colored-masks-02}
+			%
+	\end{overpic}
+\label{fig:Seeing the subspace decomposition}
+\caption{Vectors in \href{https://mathworld.wolfram.com/ColumnSpace.html}{\bl{range spaces} $\left( \brnga{} \right.$ or $\left. \brnga{*}\right)$} are colored in blue. Vectors in \href{https://mathworld.wolfram.com/NullSpace.html}{\rd{null spaces} $\paren{\rnlla{*} \text{ or } \rnlla{}}$} are colored in red. Amalgam vectors with components in both spaces are the traditional black.}
+\end{figure}
+	%
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Null Space Nomenclature.}
+%
+\begin{table}[htp]
+%\caption{Confusion with left- and right-handed null spaces.}
+\begin{center}
+\begin{tabular}{cc}
+		%
+	\Nsu & \Nsv \\\hline
+		%
+		%
+	%$\rnlla{*}$ & $\rnlla{}$ \\
+		%
+	\input{\pLocalComponents left-hand.tex} &
+	\input{\pLocalComponents right-hand.tex} \\
+			% 
+		%
+	$\brnga{}^{\perp}$ & $\brnga{*}^{\perp}$  \\
+		%
+	null($\A{*}$) & null($\A{}$) \\
+		%
+	ker($\A{*}$) & ker($\A{}$) \\
+		%
+	cokernel & kernel \\
+			% 
+\end{tabular}
+\end{center}
+\label{tab:left-and-right}
+\end{table}
+	%
+\end{frame}
+
+%%  %%  %%  %%  %%
+\subsection{Least Squares Problem and Solution}
+
+\begin{frame}\frametitle{Problem Statement}
+Consider the linear equation
+$$\axeb$$
+\begin{enumerate}
+	\item $\aicmnr$: design matrix
+	\item $b\in\cmplxm$: data vector
+	\item $\xicn$: solution vector
+\end{enumerate}
+\end{frame}
+%
+\begin{frame}\frametitle{\lsq \ Solution}
+The \bl{\lsq \ Solution} is defined as
+$$\xlsdefault$$
+\end{frame}
+
+
+\begin{frame}\frametitle{\lsq \ Solution}
+The \bl{\lsq \ Solution} is expressed as
+\begin{equation}
+		\begin{array}{cccccl}
+			\xls 
+			%& = & \xblue{}} & + & \xred \\
+			& = & \bsolnlsbl{b}{y}  \\
+			& = & \Apb & + & \pna{}y \\%\myline
+			& = & \xp & + & \xh \\
+%			& = & \bl{x_{\mathcal{R}}} \\
+%			& = & \bl{x_{\scriptstyle\rnga{*}}} \\
+			& = & \xblue{} & + & \xred
+		\end{array}
+\label{eq:definition:general lsq solution}
+\end{equation}
+\end{frame}
+
+\begin{frame}\frametitle{Dramatis Personae}
+%
+\lsq \ Residual Error Vector
+%
+\begin{equation}
+	\rd{r(x)} = \Ax - b
+\end{equation}
+%
+\lsq \ Merit Function
+%
+\begin{equation}
+		%
+	M(x) = \innerecho{\rd{r(\bk{x})}} = \innerecho{\axmb}
+		%
+%\label{eq:}
+\end{equation}
+%
+Least Total Squared Error
+%
+\begin{equation}
+		%
+	t^{2} = \innerecho{\rd{r(\bl{\xls})}}
+		%
+%\label{eq:}
+\end{equation}
+%
+\lsq \ Uncertainty \mg{(Standard Deviation)}
+%
+\begin{equation}
+		%
+	\sigma^{2}_{k} =  \frac{t^{2}} {m-n} \wxi{*}_{k,k}, \quad \kto{n}
+		%
+%\label{eq:}
+\end{equation}
+%
+\end{frame}
+
+%%  %%  %%  %%  %%
+\subsection{The Fredholm Alternative}
+%
+\begin{frame}\frametitle{A Vital Theorem}
+	%
+\input{\pGlobalTheorems "thm Fredholm"}
+\pause
+	%
+	\ \\
+Colloquially, \bl{either} $\axmb = 0$ \bl{or} $\axmb > 0$
+	%
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Fredholm Alternative: Colloquially}
+	%
+Fredholm's Alternatives are \\
+	\bl{either} $\axmb = 0$ \\
+	\bl{or} \phantom{mj}\, $\axmb > 0$
+	%
+\end{frame}
+
+\def\mylambda{2.75}
+\def\data{\mylambda * 0.85}
+\begin{frame}\frametitle{Fredholm Alternative in Pictures}
+%
+\begin{table}[t]
+%\caption
+%[The Fredholm Alternative in pictures]
+%{The Fredholm Alternative in pictures. The theorem is statement about the residency of the data vector.}
+	\begin{center}
+		\begin{tabular}{ccc}
+			%
+			either && or \\
+			%
+			$b=\datarange$ && $b=\dataresolved$ \\\hline
+			%
+			\input{\pLocalComponents "tikz app fredholm-I"} && \input{\pLocalComponents "tikz app fredholm-II"} \\
+			%
+			$\axeb$ has solution && $\A{*}\rd{y}=0$ and $\rd{y}^{*}b\ne 0$\\
+			%
+		\end{tabular}
+	\end{center}
+\label{tab:fredholm-alternatives}
+\end{table}%
+	%
+\end{frame}
+%
+\begin{frame}\frametitle{Fredholm's Duplex: Residency of the Data Vector}
+	%
+\begin{figure}[]
+\center
+\begin{overpic}[ scale = 0.35 ]{\pLocalGraphics fredholm-duplex.png}
+\end{overpic}
+%\caption
+%{The Fredholm duplex. The Fredholm Alternative is statement about the \bl{residency of the data vector}. Data vectors residing entirely in the range space live in apartment I. Data vectors with components in the null space live in apartment II.}
+\label{fig:fredholm-duplex}
+\end{figure}
+	%
+\end{frame}
+%
+\begin{frame}\frametitle{Fredholm's Duplex: Residency of the Data Vector}
+	%
+\begin{figure}[]
+\center
+\begin{overpic}[ scale = 0.35 ]{\pLocalGraphics fredholm-duplex.png}
+\put(21, -2){\colorbox{white}{$b=\datarange{}$ }}
+\put(61, -3){\colorbox{white}{$b=\dataresolved{}$ }}
+\end{overpic}
+%\caption
+%{The Fredholm duplex. The Fredholm Alternative is statement about the \bl{residency of the data vector}. Data vectors residing entirely in the range space live in apartment I. Data vectors with components in the null space live in apartment II.}
+\label{fig:fredholm-duplex}
+\end{figure}
+	%
+\end{frame}
+
+
+\endinput  %  ==  ==  ==  ==  ==  ==  ==  ==  ==

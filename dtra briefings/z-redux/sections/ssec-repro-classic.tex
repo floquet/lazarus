@@ -1,0 +1,139 @@
+% \input{\pSections "ssec-repro-classic"}
+
+%%    %%    %%    %%    %%    %%    %%    %%    %%    %%
+\subsection{Classic Example}
+%
+\begin{frame}
+\frametitle{Linear Regression: Heat Flow}
+\begin{center}
+		\begin{overpic}[ scale = 0.75 ]
+			{\pLocalGraphics bev/beving-temperature-bar-color}
+			%\put(45,-5){$x,$ \textnormal{cm}}
+			\put(3,37){\textbf{ice}}
+			\put(88,37){\textbf{steam}}
+			\put(-7,-10){Compute the temperature of the bar as a function of position.}
+		\end{overpic}
+\end{center}
+\end{frame}
+%
+\begin{frame}\frametitle{Assumptions}
+\begin{enumerate}
+	\item boiling point: $100^{\circ}$ C
+	\item freezing point: $0^{\circ}$ C
+	\item dimension = $1$
+	\item heat equation 
+	\item equilibrium
+	\item \textcite[Table 6-1, p. 93]{bevington2e}
+\end{enumerate}
+\end{frame}
+%
+\begin{frame}
+\frametitle{What we have and what we want}
+\begin{table}[htbp]
+%\caption{Use data to find best fit to a linear function.}
+	\begin{center}
+		\begin{tabular}{ccc}
+			%
+			input & $\Rightarrow$ & output \\\hline
+			%
+			\includegraphics[ width = 2.0in ]{\pLocalGraphics bev/bev-have} & \raisebox{1.8 cm}{$\Rightarrow$} &
+			%
+			\includegraphics[ width = 2.0in ]{\pLocalGraphics bev/bev-want} \\
+			%
+			\{position, temperature\}$_{k=1}^{m}$ & $\Rightarrow$ & intercept and slope \\
+			%
+			$\lst{x_{k},T_{k}}_{k=1}^{m}$ 
+			& $\Rightarrow$ & $\bl{\mat{c}{ a_{0} \\ a_{1} }} \pm \bl{\mat{c}{ \sigma_{0} \\ \sigma_{1}} }$\\
+			%
+		\end{tabular}
+	\end{center}
+\label{tab:bevington input-output}
+\end{table}%
+\end{frame}
+
+\begin{frame}\frametitle{Inputs to Linear \lsq}
+\begin{enumerate}
+	\item Model: \bl{$y(x) = a_{0} + a_{1}x$}
+	\item Measurements: \bl{$\seqinputs{x}{y}$}
+	\item Topology: flat, \bl{linear space}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}\frametitle{\bevington \  Table 6.1: \yl{Input}}
+\center
+	\includegraphics[ width = 2.0in ]{\pLocalGraphics bev/bev-data-mark-2} \\
+\end{frame}
+%
+\begin{frame}\frametitle{\bevington \  Table 6.1: \yl{Output}}
+\center
+	\includegraphics[ width = 2.0in ]{\pLocalGraphics bev/bev-data-soln-x.png} \\
+\end{frame}
+%
+\begin{frame}
+\frametitle{Minimization Target: Merit Function}
+\begin{figure}[t]
+	\centering
+	\begin{overpic}[ scale = 0.70 ]
+		{\pLocalGraphics bev/bev-merit-3D-arrows-alt}
+			% 
+		\footnotesize{
+		\put(25,95){\colorbox{white}{$M(a) =  \bevMeritM{}$}}
+		\put(-12,40){\colorbox{white}{$M(a)$}}
+		\put(10,5){\colorbox{white}{$a_{0}$, \textnormal{intercept}}}
+		\put(75,15){\colorbox{white}{$a_{1}$, \textnormal{slope}}}
+		%\put(75,15){$a_{1}$, slope}
+		\put(45,51){\footnotesize{\colorbox{white}{\tiny{$500$}}}}
+		\put(63,28){\footnotesize{\colorbox{white}{\tiny{$1000$}}}}
+		\put(52,55){\footnotesize{\colorbox{white}{\tiny{$1500$}}}}
+		}
+			%
+	\end{overpic}
+\label{fig:bevington-merit-gull}
+\end{figure}
+\end{frame}
+%
+\begin{frame}\frametitle{Solution Space $\mathcal{R}\paren{\A{*}}$: Bullseye}
+	%
+\centering
+	\begin{overpic}[ scale = 0.55 ]{\pLocalGraphics bev/bevington-merit-bullseye-A-simple}
+		%\put(25,102){$M(a) = \sum_{k=1}^{m}\paren{T_{k} - a_{0} - a_{1} x}^{2}$}
+		\put(6, 104){\colorbox{white}{$M(a) = \normts{a_{0}\one + a_{1} x - T}$ }}
+		\put(1000,90){\colorbox{white}{$\brnga{*}$}}
+			%
+		\bevingtonLabels{}
+		%\put(83, 7){\colorbox{white}{$\brnga{*}$ }}
+%			%
+		\put(17, 73.25) {\colorbox{white}{\footnotesize{{$r^{2} = 500$}}}}
+		\put(7, 62) {\colorbox{white}{\footnotesize{{$ 1000 $}}}}
+		\put(5, 52) {\colorbox{white}{\footnotesize{{$ 1500 $}}}}
+			%
+			%
+	\end{overpic}
+	%
+\end{frame}
+
+\begin{frame}\frametitle{Least Squares With Logarithms}
+% https://tex.stackexchange.com/questions/98952/easy-creation-of-logarithmic-grid-with-tikz
+\begin{tikzpicture}
+\begin{axis}
+	xmode=log, ymode=log,
+	xmin=1e-1, xmax=1e4,
+	ymin=1e-1, ymax=1e4,
+	grid=both,
+	major grid style={black!50}
+]
+\end{axis}
+\end{tikzpicture}
+\end{frame}
+
+\begin{frame}\frametitle{Least Squares With Logarithms}
+\begin{center}
+	\href{https://www.edvardmunch.org/the-scream.jsp}{
+	\begin{overpic}[ scale = 0.70 ]
+		{\pLocalGraphics bev/scream-02}
+		\put(15, 85)	{\colorbox{white}{Noooooooo!}}
+	\end{overpic}}
+\end{center}
+\end{frame}
+
+\endinput  %  ==  ==  ==  ==  ==  ==  ==  ==  ==

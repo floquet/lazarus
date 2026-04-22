@@ -1,0 +1,488 @@
+% \input{\pSections "sec-inverse"}
+
+\newcommand{\urlTarantola}[0]		{https://epubs.siam.org/doi/book/10.1137/1.9780898717921}
+
+\section{The Inverse Problem}
+
+\subsection{Epicentral Coordinates of a Seismic Event}
+\begin{frame}\frametitle{\href{https://mathworld.wolfram.com/InverseProblem.html}{Inverse Problem Theory}}
+\center
+	\href{\urlTarantola}{
+	\begin{overpic}[ scale = 0.4 ]
+		{\pLocalGraphics scrape/tarantola}
+		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+	\end{overpic}}
+	\ \\
+	\cite{tarantola2005inverse}
+\end{frame}
+%
+\begin{frame}\frametitle{\href{\urlTarantola}{Problem $7.1$ Inputs}}
+\begin{enumerate}
+	\item $(x,y)$ coordinates of size recording stations $(7.1)$
+	\item Ground wave times of arrival $(7.2)$
+	\item Wave speed = 5
+	\item Time measurement $\sigma=0.1$
+	\item Flat Earth
+	\item Homogeneous medium
+\end{enumerate}
+\end{frame}
+%
+%%   %%   %%   %%   %%   %%   %%   %%   %%
+\subsection{Measurement Sequence}
+\begin{frame}\frametitle{Event Occurs at $t_{0}$}
+\center
+	\href{https://www.usgs.gov/programs/earthquake-hazards/earthquakes}{
+	\begin{overpic}[ scale = 0.65 ]
+		{\pLocalGraphics measurements/sequence/sequence-01}
+		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+	\end{overpic}}
+\end{frame}
+
+\begin{frame}\frametitle{Station 5 Registers}
+\center
+	\href{https://en.wikipedia.org/wiki/Earthquake}{
+	\begin{overpic}[ scale = 0.65 ]
+		{\pLocalGraphics measurements/sequence/sequence-02}
+		\put(71, 87)	{\colorbox{white}{$t=2.84$}}
+	\end{overpic}}
+\end{frame}
+
+\begin{frame}\frametitle{Stations 3 \& 6 Register}
+\center
+	\href{https://en.wikipedia.org/wiki/Earthquake}{
+	\begin{overpic}[ scale = 0.65 ]
+		{\pLocalGraphics measurements/sequence/sequence-03}
+		\put(71, 87)	{\colorbox{white}{$t=2.98$}}
+	\end{overpic}}
+\end{frame}
+
+\begin{frame}\frametitle{Stations 1 \& 4 Register}
+\center
+	\href{https://www.ctbto.org/our-work/monitoring-technologies/seismic-monitoring}{
+	\begin{overpic}[ scale = 0.65 ]
+		{\pLocalGraphics measurements/sequence/sequence-04}
+		\put(71, 87)	{\colorbox{white}{$t=3.12$}}
+	\end{overpic}}
+\end{frame}
+
+\begin{frame}\frametitle{Station 2 Registers}
+\center
+	\href{https://earthquake.usgs.gov/earthquakes/map/}{
+	\begin{overpic}[ scale = 0.65 ]
+		{\pLocalGraphics measurements/sequence/sequence-05}
+		\put(71, 87)	{\colorbox{white}{$t=3.26$}}
+	\end{overpic}}
+\end{frame}
+
+\begin{frame}\frametitle{All Stations Registered: Ranging Circles}
+\center
+	\href{https://www.weather.gov/ctwp/seismicstationsmap}{
+	\begin{overpic}[ scale = 0.65 ]
+		{\pLocalGraphics measurements/sequence/sequence-06}
+		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+	\end{overpic}}
+\end{frame}
+
+\begin{frame}\frametitle{\href{\urlTarantola}{Time Uncertainties Smear Solution}}
+\center
+	\href{https://www.weather.gov/ctwp/seismicstationsmap}{
+	\begin{overpic}[ scale = 0.65 ]
+		{\pLocalGraphics inverse/basics/basics-annulus-0-1}
+		%\put(50, 50)	{\colorbox{white}{$\sigma_{t}=0.1$}}
+	\end{overpic}}
+\end{frame}
+%
+%%   %%   %%   %%   %%   %%   %%   %%   %%
+\subsection{$10^{6}$ Simulations: Analysis}
+\begin{frame}\frametitle{Fine Print}
+\begin{enumerate}
+	\item Events: $10^{6}$
+	\item Noise: $\sigma = \paren{0.05,0.1,0.2}$
+	\item Stations: $6$
+	\item Vary geometry
+\end{enumerate}
+\end{frame}
+
+%
+\begin{frame}\frametitle{Least Squares Problem}
+Input measurements: $\seqinputs{\bl{p}}{\bl{t}}, \quad (d = v t)$ \\[10pt]
+Output event location: $\rd{q}$ \\[10pt]
+%
+\begin{equation}
+	q_{LS} = \argmin\limits_{q\in\mathbb{R}^{2}} \normt{\normts{\rd{q} - \bl{p_{k}}} - \bl{d_{k}}^{2}}
+\label{eq:linear-soln}
+\end{equation}
+	\pause
+Residual error vector:
+\begin{equation}
+	r(\bl{q}) = \normt{ \normts{\bl{q} - p_{k}} - d_{k}^{2} }
+\label{eq:residual-vector}
+\end{equation}
+
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Minimization Function}
+\center
+	\href{\urlTarantola}{
+	\begin{overpic}[ scale = 0.75 ]
+		% {\pLocalGraphics measurements/7-1-3d}
+		{\pLocalGraphics inverse/basics/basics-3d}
+		\put(20, 83)	{\colorbox{white}{$\normt{r(\bl{q})} = \normt{\normts{\bl{q} - p_{k}} - d_{k}^{2}}$}}
+		\put(32, 7)		{\colorbox{white}{$\bl{q_{x}}$}}
+		\put(88, 20)	{\colorbox{white}{$\bl{q_{y}}$}}
+	\end{overpic}}
+\end{frame}
+
+\begin{frame}\frametitle{Separating Signal and Noise}
+\center
+	\href{\urlTarantola}{
+	\begin{overpic}[ scale = 0.5 ]
+		% {\pLocalGraphics measurements/7-1-contour-wide}
+		{\pLocalGraphics inverse/basics/basics-level-set-solution}
+		\put(80, 25)	{\colorbox{white}{\rd{min$ =1.5$}}}
+		\put(-5, 110)	{\colorbox{white}{$\normt{r(\bl{q})} = \normt{\normts{\bl{q} - p_{k}} - d_{k}^{2}}$}}
+		\put(47, -6)	{\colorbox{white}{$q_{x}$}}
+		\put(-13, 50)	{\colorbox{white}{$q_{y}$}}
+	\end{overpic}}
+\end{frame}
+%
+
+\begin{frame}\frametitle{Probability Density for Epicentral Coordinates}
+\center
+	\href{\urlTarantola}{
+	\begin{overpic}[ scale = 0.5 ]
+		{\pLocalGraphics inverse/basics/basics-contours}
+		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+	\end{overpic}}
+\end{frame}
+%
+\begin{frame}\frametitle{Comparison with Ranging Circles}
+\center
+	\href{\urlTarantola}{
+	\begin{overpic}[ scale = 0.5 ]
+		{\pLocalGraphics inverse/basics/basics-contours-rings}
+		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+	\end{overpic}}
+\end{frame}
+%
+\begin{frame}\frametitle{Distribution of Total Squared Errors}
+\center
+	\href{\urlTarantola}{
+	\begin{overpic}[ scale = 0.75 ]
+		{\pLocalGraphics measurements/errors-ω=1000000}
+		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+	\end{overpic}}
+\end{frame}
+
+\begin{frame}\frametitle{Density Histogram of $10^{6}$ Simulations}
+\center
+	\href{\urlTarantola}{
+	\begin{overpic}[ scale = 0.5 ]
+		{\pLocalGraphics measurements/density-ω=1000000}
+		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+	\end{overpic}}
+\end{frame}
+%
+\begin{frame}\frametitle{How Circular is the Spread?}
+% nb: /Users/dantopa/Mathematica_files/nb/topics/books/tarantola/07/seismic/bounding-box-01.nb
+\center
+	\href{\urlTarantola}{
+	\begin{overpic}[ scale = 0.5 ]
+		{\pLocalGraphics measurements/results+circle}
+		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+	\end{overpic}}
+\end{frame}
+%
+%\begin{frame}\frametitle{Polar Rectangle}
+%% nb: /Users/dantopa/Mathematica_files/nb/topics/books/tarantola/07/seismic/bounding-box-01.nb
+%\center
+%	\href{\urlTarantola}{
+%	\begin{overpic}[ scale = 0.5 ]
+%		{\pLocalGraphics measurements/polar-white-02}
+%		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+%	\end{overpic}}
+%\end{frame}
+%%
+%\begin{frame}\frametitle{Bounding Box: Polar Rectangle}
+%% nb: /Users/dantopa/Mathematica_files/nb/topics/books/tarantola/07/seismic/bounding-box-01.nb
+%\center
+%	\href{\urlTarantola}{
+%	\begin{overpic}[ scale = 0.5 ]
+%		{\pLocalGraphics measurements/polar-black-01}
+%		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+%	\end{overpic}}
+%\end{frame}
+%
+\begin{frame}\frametitle{Bounding Box: Polar Rectangle}
+% nb: /Users/dantopa/Mathematica_files/nb/topics/books/tarantola/07/seismic/bounding-box-01.nb
+\center
+	\href{\urlTarantola}{
+	\begin{overpic}[ scale = 0.5 ]
+		{\pLocalGraphics measurements/polar-black-01}
+		\put(90, 20)		{\colorbox{white}{$r=\normt{q-\bar{p}} \pm \delta r$}}
+		\put(90, 5)		{\colorbox{white}{$\theta=\arctan \paren{\tfrac{q_{y}}{q_{x}}} \pm \delta \theta$}}
+	\end{overpic}}
+\end{frame}
+%
+\begin{frame}\frametitle{Bounding Box: Polar Rectangle}
+% nb: /Users/dantopa/Mathematica_files/nb/topics/books/tarantola/07/seismic/bounding-box-01.nb
+\center
+	\href{\urlTarantola}{
+	\begin{overpic}[ scale = 0.5 ]
+		{\pLocalGraphics measurements/polar-black-zoom}
+		%\put(0, 90)		{\colorbox{white}{$r=\normt{q-\bar{p}} \pm \delta r$}}
+		%\put(0, 80)		{\colorbox{white}{$\theta=\arctan \tfrac{q_{y}}{q_{x}} \pm \delta \theta$}}
+		\put(90, 15)	{\colorbox{white}{$\delta r = 0.3$}}
+		\put(90, 3)		{\colorbox{white}{$\delta \theta = \pi/20$}}
+	\end{overpic}}
+\end{frame}
+%
+\begin{frame}\frametitle{Characterization of the Result}
+% nb: /Users/dantopa/Mathematica_files/nb/topics/books/tarantola/07/seismic/bounding-box-01.nb
+\center
+	\href{\urlTarantola}{
+	\begin{overpic}[ scale = 0.5 ]
+		{\pLocalGraphics measurements/polar-black-zoom}
+		%\put(0, 90)		{\colorbox{white}{$r=\normt{q-\bar{p}} \pm \delta r$}}
+		%\put(0, 80)		{\colorbox{white}{$\theta=\arctan \tfrac{q_{y}}{q_{x}} \pm \delta \theta$}}
+		%\put(90, 20)	{\colorbox{white}{$\delta r = 0.3$}}
+		%\put(90, 5)		{\colorbox{white}{$\delta \theta = \pi/20$}}
+	\end{overpic}}
+	\ \\
+	\footnotesize{
+	\begin{quotation}
+	``The crescent-shape of the region of significant probability density \bl{cannot be described using a few numbers} (mean values, variances, covariances, ...)'' \cite[Fig. 7.1]{tarantola2005inverse}
+	\end{quotation}
+	}
+\end{frame}
+
+
+%\begin{frame}\frametitle{Hexagonal Array: Standard Noise}
+%\center
+%	%\href{}{
+%	\begin{overpic}[ scale = 0.55 ]
+%		{\pLocalGraphics measurements/hex-std-gdh-1000000}
+%		\put(30, 70)	{\colorbox{white}{$\sigma = 0.1$}}
+%	\end{overpic}
+%\end{frame}
+%
+%\begin{frame}\frametitle{Hexagonal Array: High Noise}
+%\center
+%	%\href{}{
+%	\begin{overpic}[ scale = 0.55 ]
+%		{\pLocalGraphics measurements/hex-high-gdh-1000000}
+%		\put(30, 70)	{\colorbox{white}{$\sigma = 0.2$}}
+%	\end{overpic}
+%\end{frame}
+%
+%\begin{frame}\frametitle{Hexagonal Array: Low Noise}
+%\center
+%	%\href{}{
+%	\begin{overpic}[ scale = 0.55 ]
+%		{\pLocalGraphics measurements/hex-low-gdh-1000000}
+%		\put(30, 70)	{\colorbox{white}{$\sigma = 0.05$}}
+%	\end{overpic}
+%\end{frame}
+
+%%   %%   %%   %%   %%   %%   %%   %%   %%
+%%   %%   %%   %%   %%   %%   %%   %%   %%
+	\input{\pSections "ssec-grid"}
+	\input{\pSections "ssec-array-hex"}
+	\input{\pSections "ssec-line-perpendicular"}
+	\input{\pSections "ssec-line-parallel"}
+	
+\endinput  %  ==  ==  ==  ==  ==  ==  ==  ==  ==
+
+\begin{frame}\frametitle{Hexagonal Array: Parallel}
+\center
+	\begin{overpic}[ scale = 0.55 ]
+		{\pLocalGraphics inverse/line-parallel-low-bands}
+		%\put(30, 70)	{\colorbox{white}{$\sigma = 0.05$}}
+	\end{overpic}
+\end{frame}
+%
+
+\begin{frame}\frametitle{Hexagonal Array: Parallel}
+% nb: /Users/dantopa/Mathematica_files/nb/topics/books/tarantola/07/seismic/sensor-arrays-01p1-std.nb	
+\begin{table}[htp]
+%\caption{default}
+\begin{center}
+	\begin{tabular}{ccc}
+		%
+		% low & standard & high \\
+		%
+		\begin{overpic}[ scale = 0.325 ] {\pLocalGraphics inverse/line-parallel-low-gdh-1000000} \end{overpic} &
+		%
+		\begin{overpic}[ scale = 0.325 ] {\pLocalGraphics inverse/line-parallel-std-gdh-1000000} \end{overpic} &
+		%
+		\begin{overpic}[ scale = 0.325 ] {\pLocalGraphics inverse/line-parallel-high-gdh-1000000} \end{overpic} 
+		%
+	\end{tabular}
+\end{center}
+%\label{tab:label}
+\end{table}%
+\end{frame}
+
+%%   %%   %%   %%   %%   %%   %%   %%   %%
+%%   %%   %%   %%   %%   %%   %%   %%   %%
+
+%%   %%   %%   %%   %%   %%   %%   %%   %%
+%%   %%   %%   %%   %%   %%   %%   %%   %%
+\begin{frame}\frametitle{Linear Array: Parallel}
+\center
+	\begin{overpic}[ scale = 0.55 ]
+		{\pLocalGraphics inverse/line-parallel-low-bands}
+		%\put(30, 70)	{\colorbox{white}{$\sigma = 0.05$}}
+	\end{overpic}
+\end{frame}
+%
+
+\begin{frame}\frametitle{Linear Array: Parallel}
+% nb: /Users/dantopa/Mathematica_files/nb/topics/books/tarantola/07/seismic/sensor-arrays-01p1-std.nb	
+\begin{table}[htp]
+%\caption{default}
+\begin{center}
+	\begin{tabular}{ccc}
+		%
+		% low & standard & high \\
+		%
+		\begin{overpic}[ scale = 0.325 ] {\pLocalGraphics inverse/line-parallel-low-gdh-1000000} \end{overpic} &
+		%
+		\begin{overpic}[ scale = 0.325 ] {\pLocalGraphics inverse/line-parallel-std-gdh-1000000} \end{overpic} &
+		%
+		\begin{overpic}[ scale = 0.325 ] {\pLocalGraphics inverse/line-parallel-high-gdh-1000000} \end{overpic} 
+		%
+	\end{tabular}
+\end{center}
+%\label{tab:label}
+\end{table}%
+\end{frame}
+%
+%%   %%   %%   %%   %%   %%   %%   %%   %%
+%%   %%   %%   %%   %%   %%   %%   %%   %%
+%
+%%   %%   %%   %%   %%   %%   %%   %%   %%
+%%   %%   %%   %%   %%   %%   %%   %%   %%
+\begin{frame}\frametitle{Hexagonal Array}
+\center
+	\begin{overpic}[ scale = 0.55 ]
+		{\pLocalGraphics inverse/hex-bands-high.pdf}
+		%\put(30, 70)	{\colorbox{white}{$\sigma = 0.05$}}
+	\end{overpic}
+\end{frame}
+%
+\begin{frame}\frametitle{Hexagonal Array}
+% nb: /Users/dantopa/Mathematica_files/nb/topics/books/tarantola/07/seismic/sensor-arrays-01p1-std.nb	
+\begin{table}[htp]
+%\caption{default}
+\begin{center}
+	\begin{tabular}{ccc}
+		%
+		% low & standard & high \\
+		%
+		\begin{overpic}[ scale = 0.325 ] {\pLocalGraphics inverse/hex-gdh-low-1000000} \end{overpic} &
+		%
+		\begin{overpic}[ scale = 0.325 ] {\pLocalGraphics inverse/hex-gdh-std-1000000} \end{overpic} &
+		%
+		\begin{overpic}[ scale = 0.325 ] {\pLocalGraphics inverse/hex-gdh-high-1000000} \end{overpic} 
+		%
+	\end{tabular}
+\end{center}
+%\label{tab:label}
+\end{table}%
+\end{frame}
+
+%%   %%   %%   %%   %%   %%   %%   %%   %%
+\subsection{Linearization}
+%
+\begin{frame}\frametitle{Linear System}
+\begin{table}[htp]
+%\caption{default}
+\begin{center}
+	\begin{tabular}{ccc}
+		%
+		grid & line $\bot$ & hexagon \\
+		%
+		\begin{overpic}[ scale = 0.325 ] {\pLocalGraphics inverse/tarantola-nonlinear-linear-high-1000000} \end{overpic} &
+		%
+		\begin{overpic}[ scale = 0.325 ] {\pLocalGraphics inverse/line-perp-std-nonlinear-linear-0100000} \end{overpic} &
+		%
+		\begin{overpic}[ scale = 0.325 ] {\pLocalGraphics inverse/hex-low-nonlinear-linear-1000000} \end{overpic} 
+		%
+	\end{tabular}
+\end{center}
+%\label{tab:label}
+\end{table}%
+\end{frame}
+%
+\begin{frame}\frametitle{Linear System}
+\begin{equation}
+\begin{array}{ccccc}
+		%
+	\paren{q_{x} - p_{1_{x}}}^{2} &+& \paren{q_{y} - p_{1_{y}}}^{2} &=& d_{1}^{2} \\[5pt]
+		%
+	\paren{q_{x} - p_{2_{x}}}^{2} &+& \paren{q_{y} - p_{2_{y}}}^{2} &=& d_{2}^{2} \\[5pt]
+		%
+	\paren{q_{x} - p_{3_{x}}}^{2} &+& \paren{q_{y} - p_{3_{y}}}^{2} &=& d_{3}^{2} \\[5pt]
+		%
+	\paren{q_{x} - p_{4_{x}}}^{2} &+& \paren{q_{y} - p_{4_{y}}}^{2} &=& d_{4}^{2} \\[5pt]
+		%
+	\paren{q_{x} - p_{5_{x}}}^{2} &+& \paren{q_{y} - p_{5_{y}}}^{2} &=& d_{5}^{2} \\[5pt]
+		%
+	\paren{q_{x} - p_{6_{x}}}^{2} &+& \paren{q_{y} - p_{6_{y}}}^{2} &=& d_{6}^{2} \\
+		%
+\end{array}
+\label{eq:linear-system}
+\end{equation}
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Geometry}
+\begin{equation}
+	\normts{\mathbf{q} - \mathbf{p}_{k}} = d_{k}^{2}
+\label{eq:model}
+\end{equation}
+\end{frame}
+%
+
+%
+\begin{frame}\frametitle{Problem: Quadratic Fit Parameters}
+	%
+	$$\rd{q_{x}}^{2} + \rd{q_{y}}^{2} +  p_{1_{x}}^{2} + p_{1_{y}}^{2} - 2 q_{x}p_{1_{x}} - 2 q_{y}p_{1_{y}} = d_{1}^{2} $$
+	%
+	$$\rd{q_{x}}^{2} + \rd{q_{y}}^{2} +  p_{2_{x}}^{2} + p_{2_{y}}^{2} - 2 q_{x}p_{2_{x}} - 2 q_{y}p_{2_{y}} = d_{2}^{2} $$
+	%
+	\pause
+	$$ p_{1_{x}}^{2} + p_{1_{y}}^{2} - \paren{p_{2_{x}}^{2} + p_{2_{y}}^{2}} - d_{1}^{2} + d_{2}^{2} = 2 \paren{p_{1_{x}} - p_{2_{x}}} q_{x} + 2 \paren{p_{1_{y}} - p_{2_{y}}} q_{y}  $$
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Linear System}
+\begin{equation}
+\begin{array}{cccc}
+		%
+	\mathbf{A} & \mathbf{q} &=& b \\[10pt]
+		
+	\mat{c}{\bp{1}-\bp{2} \\ \vdots \\ \bp{1}-\bp{m} \\ \bp{2}-\bp{3} \\ \vdots \\ \bp{2} - \bp{m} \\ \bp{3} - \bp{4} \\ \vdots\\ \bp{m-1}-\bp{m}}
+		%
+	& \mat{c}{q_{x} \\ q_{y}} &= &
+		%
+	\mat{c}{d_{1} - d_{2} \\ \vdots \\ d_{1} - d_{m} \\ d_{2} - d_{3} \\ \vdots  \\ d_{2} - d_{m} \\ d_{3} - d_{4} \\ \vdots \\ d_{m-1} - d_{m} }
+		%
+\end{array}
+\label{eq:linear system}
+\end{equation}
+\end{frame}
+%
+
+\begin{frame}\frametitle{Linearization}
+\center
+	%\href{}{
+	\begin{overpic}[ scale = 0.55 ]
+		{\pLocalGraphics measurements/hex-std-nonlinear-linear-1000000}
+		\put(30, 70)	{\colorbox{white}{$\sigma = 0.05$}}
+	\end{overpic}
+\end{frame}
+%
+\endinput  %  ==  ==  ==  ==  ==  ==  ==  ==  ==

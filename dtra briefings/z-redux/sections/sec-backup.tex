@@ -1,0 +1,35 @@
+% \input{\pSections "sec-redux"}
+
+\section{Backup}
+
+%%    %%    %%    %%    %%    %%    %%    %%    %%    %%
+\subsection{Linear Algebra}
+%
+\begin{frame}\frametitle{The Normal Equations in Theory}
+	%
+Proof: Outline
+\begin{table}[htp]
+%\caption{default}
+\begin{center}
+\begin{tabular}{lll}
+		%
+	$1$ & $t^{2}= \normts{\A{}\xls - b}$ & definition \\[5pt]
+	$2$ & $\A{}x_{N} - \A{}x_{N}$ & propitious zero \\[5pt]
+	$3$ & $t^{2}= \normts{\A{}\xls \mg{+ \A{}x_{N} - \A{}x_{N}} - b}$ & restatement of 1 \\[5pt]
+	$4$ & $t^{2} \rd{\le} \normts{A{}x_{N} - b} + \normts{\A{}\paren{\xls -x_{N}}}$ & triangle inequality \\[5pt]
+	$5$ & $...$ & \bl{Miracle}\\[5pt]
+	$6$ & $t^{2} \bl{=} \normts{A{}x_{N} - b} + \normts{\A{}\paren{\xls -x_{N}}}$ & target (Pythagoras)\\[5pt]
+	$7$ & $t^{2} = t^{2} + \normts{\A{}\paren{\xls -x_{N}}}$ & evaluation\\[5pt]
+	$8$ & $\normts{\A{}\paren{\xls -x_{N}}} = 0$ & conclusion\\
+		%
+\end{tabular}
+\end{center}
+%\label{default}
+\end{table}%
+	%
+\end{frame}
+
+%%    %%    %%    %%    %%    %%    %%    %%    %%    %%
+\subsection{Recent Work}
+
+\endinput  %  ==  ==  ==  ==  ==  ==  ==  ==  ==

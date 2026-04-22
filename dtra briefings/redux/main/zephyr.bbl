@@ -1,0 +1,252 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{aouad2021beirut}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=e3ae388ed88e1b5e5351d75be6e075a7}{%
+           family={Aouad},
+           familyi={A\bibinitperiod},
+           given={CJ},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b545c2814783d5391fb50afda89fd6e7}{%
+           family={Chemissany},
+           familyi={C\bibinitperiod},
+           given={W},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f4788f0c5ed263be27e992472b854867}{%
+           family={Mazzali},
+           familyi={M\bibinitperiod},
+           given={P},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bba46bf53eda98ce397622e825efdd76}{%
+           family={Temsah},
+           familyi={T\bibinitperiod},
+           given={Y},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=098c83e2d9928b5a6164a609b87d759c}{%
+           family={Jahami},
+           familyi={J\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{5ef81f278c2a2966374d9708ab2ee182}
+      \strng{fullhash}{54ac77591fac556898aab9c5f26eced6}
+      \strng{bibnamehash}{5ef81f278c2a2966374d9708ab2ee182}
+      \strng{authorbibnamehash}{5ef81f278c2a2966374d9708ab2ee182}
+      \strng{authornamehash}{5ef81f278c2a2966374d9708ab2ee182}
+      \strng{authorfullhash}{54ac77591fac556898aab9c5f26eced6}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Shock Waves}
+      \field{number}{8}
+      \field{title}{Beirut explosion: TNT equivalence from the fireball evolution in the first 170 milliseconds}
+      \field{volume}{31}
+      \field{year}{2021}
+      \field{pages}{813\bibrangedash 827}
+      \range{pages}{15}
+      \verb{urlraw}
+      \verb https://link.springer.com/article/10.1007/s00193-021-01031-9
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/article/10.1007/s00193-021-01031-9
+      \endverb
+    \endentry
+    \entry{deakin2011gi}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0faa9a0cf05253bae66193b2f9b6cdae}{%
+           family={Deakin},
+           familyi={D\bibinitperiod},
+           given={Michael\bibnamedelima AB},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{0faa9a0cf05253bae66193b2f9b6cdae}
+      \strng{fullhash}{0faa9a0cf05253bae66193b2f9b6cdae}
+      \strng{bibnamehash}{0faa9a0cf05253bae66193b2f9b6cdae}
+      \strng{authorbibnamehash}{0faa9a0cf05253bae66193b2f9b6cdae}
+      \strng{authornamehash}{0faa9a0cf05253bae66193b2f9b6cdae}
+      \strng{authorfullhash}{0faa9a0cf05253bae66193b2f9b6cdae}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Mathematical Education in Science and Technology}
+      \field{number}{8}
+      \field{title}{GI Taylor and the Trinity test}
+      \field{volume}{42}
+      \field{year}{2011}
+      \field{pages}{1069\bibrangedash 1079}
+      \range{pages}{11}
+    \endentry
+    \entry{diaz2021explosion}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2774b89a5c5430ba3d6daceaa5f3f0ae}{%
+           family={Díaz},
+           familyi={D\bibinitperiod},
+           given={Jorge\bibnamedelima S},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{2774b89a5c5430ba3d6daceaa5f3f0ae}
+      \strng{fullhash}{2774b89a5c5430ba3d6daceaa5f3f0ae}
+      \strng{bibnamehash}{2774b89a5c5430ba3d6daceaa5f3f0ae}
+      \strng{authorbibnamehash}{2774b89a5c5430ba3d6daceaa5f3f0ae}
+      \strng{authornamehash}{2774b89a5c5430ba3d6daceaa5f3f0ae}
+      \strng{authorfullhash}{2774b89a5c5430ba3d6daceaa5f3f0ae}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{European Journal of Physics}
+      \field{number}{3}
+      \field{title}{Explosion analysis from images: Trinity and Beirut}
+      \field{volume}{42}
+      \field{year}{2021}
+      \field{pages}{035803}
+      \range{pages}{1}
+      \verb{urlraw}
+      \verb https://iopscience.iop.org/article/10.1088/1361-6404/abe131
+      \endverb
+      \verb{url}
+      \verb https://iopscience.iop.org/article/10.1088/1361-6404/abe131
+      \endverb
+    \endentry
+    \entry{sedov2018similarity}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=860967e76deae837345e4697a39079e7}{%
+           family={Sedov},
+           familyi={S\bibinitperiod},
+           given={Leonid\bibnamedelima Ivanovich},
+           giveni={L\bibinitperiod\bibinitdelim I\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {CRC press}%
+      }
+      \strng{namehash}{860967e76deae837345e4697a39079e7}
+      \strng{fullhash}{860967e76deae837345e4697a39079e7}
+      \strng{bibnamehash}{860967e76deae837345e4697a39079e7}
+      \strng{authorbibnamehash}{860967e76deae837345e4697a39079e7}
+      \strng{authornamehash}{860967e76deae837345e4697a39079e7}
+      \strng{authorfullhash}{860967e76deae837345e4697a39079e7}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Similarity and dimensional methods in mechanics}
+      \field{year}{1993}
+    \endentry
+    \entry{taylor1950formationI}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=afcf5e4a27132f07402e4fc8ca150a6e}{%
+           family={Taylor},
+           familyi={T\bibinitperiod},
+           given={Geoffrey\bibnamedelima Ingram},
+           giveni={G\bibinitperiod\bibinitdelim I\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {The Royal Society London}%
+      }
+      \strng{namehash}{afcf5e4a27132f07402e4fc8ca150a6e}
+      \strng{fullhash}{afcf5e4a27132f07402e4fc8ca150a6e}
+      \strng{bibnamehash}{afcf5e4a27132f07402e4fc8ca150a6e}
+      \strng{authorbibnamehash}{afcf5e4a27132f07402e4fc8ca150a6e}
+      \strng{authornamehash}{afcf5e4a27132f07402e4fc8ca150a6e}
+      \strng{authorfullhash}{afcf5e4a27132f07402e4fc8ca150a6e}
+      \field{extraname}{1}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the Royal Society of London. Series A. Mathematical and Physical Sciences}
+      \field{number}{1065}
+      \field{title}{The Formation of a Blast Wave by a Very Intense Explosion I. Theoretical discussion}
+      \field{volume}{201}
+      \field{year}{1950}
+      \field{pages}{159\bibrangedash 174}
+      \range{pages}{16}
+    \endentry
+    \entry{taylor1950formationII}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=afcf5e4a27132f07402e4fc8ca150a6e}{%
+           family={Taylor},
+           familyi={T\bibinitperiod},
+           given={Geoffrey\bibnamedelima Ingram},
+           giveni={G\bibinitperiod\bibinitdelim I\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {The Royal Society London}%
+      }
+      \strng{namehash}{afcf5e4a27132f07402e4fc8ca150a6e}
+      \strng{fullhash}{afcf5e4a27132f07402e4fc8ca150a6e}
+      \strng{bibnamehash}{afcf5e4a27132f07402e4fc8ca150a6e}
+      \strng{authorbibnamehash}{afcf5e4a27132f07402e4fc8ca150a6e}
+      \strng{authornamehash}{afcf5e4a27132f07402e4fc8ca150a6e}
+      \strng{authorfullhash}{afcf5e4a27132f07402e4fc8ca150a6e}
+      \field{extraname}{2}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the Royal Society of London. Series A. Mathematical and Physical Sciences}
+      \field{number}{1065}
+      \field{title}{The Formation of a Blast Wave by a Very Intense Explosion II. The Atomic Explosion of 1945}
+      \field{volume}{201}
+      \field{year}{1950}
+      \field{pages}{175\bibrangedash 186}
+      \range{pages}{12}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

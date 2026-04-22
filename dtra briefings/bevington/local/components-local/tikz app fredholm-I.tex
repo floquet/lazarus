@@ -1,0 +1,16 @@
+% \input{\pathtikz "tikz app fredholm-I"}
+\renewcommand{\data}[0]			{3/1.41421}
+%
+\begin{tikzpicture}
+	\perps{1/4}
+	\draw[line width=1.25pt,blue,->,>=stealth]		(-0.1,0) -- (\mylambda,0)	node[right]{$\brnga{}$};
+	\draw[line width=1.25pt,red, ->,>=stealth]		(0,-0.1) -- (0,\mylambda)	node[above]{$\rnlla{*}$};
+%	\draw[line width=1.25pt,blue,->,>=stealth]	(-0.1,0) -- (\mylambda,0)	node[right]{$\brnga{}$};
+%	\draw[line width=1.25pt,red, ->,>=stealth]	(0,-0.1) -- (0,\mylambda)	node[above]{$\rnlla{*}$};
+	\draw[line width=1.45pt,black,-stealth]	(0,0) -- (\data,0)	node[above,black]{$\boldsymbol{b}$};
+	\draw[line width=1.45pt,   blue,   -stealth]		(0,0) -- (\data,0)		node[below]{$\datarange$};
+	%\node[below] at (\data,0)	{$\datarange$};
+\end{tikzpicture} 
+%
+%
+\endinput  %  ==  ==  ==  ==  ==  ==  ==  ==  ==

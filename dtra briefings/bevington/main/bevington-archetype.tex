@@ -1,0 +1,97 @@
+% https://tex.stackexchange.com/questions/1423/is-there-a-nice-way-to-compile-a-beamer-presentation-without-the-pauses
+%\documentclass[handout]{beamer}
+% typeset: Pdftex
+\documentclass[]{beamer}
+%\usepackage{movie15}
+% point to content libraries
+\newcommand{\pGlobal}			{../../../global/}
+\newcommand{\pGlobalSetup}		{\pGlobal setup-global/}	
+
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\usepgfplotslibrary{fillbetween}
+
+% load LaTeX packages and personal macros
+% https://tex.stackexchange.com/questions/7602/how-to-add-a-gif-file-to-my-latex-file
+\input{\pGlobalSetup setup-global}
+\input{\pLocalSetup setup-local}
+
+\title
+[Linear Regression 101: Bevington Archetype]
+{Linear Regression 101:\\
+Bevington Archetype}
+
+% \author[DISTRIBUTION STATEMENT B. Distribution authorized to \\U.S. Government agencies only: critical technology]\autho{\Topa}
+\author[\dtriacFooter]{\Topa \\ \TopaEmail}
+\institute{\dtriac} 
+\medskip
+
+\date{\today}
+%\date{2018-08-31}
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+	%\distA
+\end{frame}
+
+%\begin{frame}
+%\frametitle{Linear Regression: Heat Flow}
+%\begin{figure}[hbp]
+%	\centering
+%	%\includegraphics[ width = 4in ]{\patheps bar} 
+%	\includegraphics[ width = 4in ]{\pLocalGraphics beving-temperature-bar-color} 
+%	\caption[Measuring the temperature of a bar.]{Compute the temperature as a function of position.}
+%\label{fig:measuring the temperature of a bar}
+%\end{figure}
+%\end{frame}
+
+\begin{frame}
+\frametitle{Linear Regression: Heat Flow}
+\begin{center}
+		\begin{overpic}[ scale = 0.75 ]
+			{\pLocalGraphics beving-temperature-bar-color}
+			%\put(45,-5){$x,$ \textnormal{cm}}
+			\put(3,37){\textbf{ice}}
+			\put(88,37){\textbf{steam}}
+			\put(-7,-10){Compute the temperature of the bar as a function of position.}
+		\end{overpic}
+\end{center}
+\end{frame}
+
+\begin{frame}\frametitle{Overview}
+	\tableofcontents[hideallsubsections]
+\end{frame}
+
+
+% main sections
+\input{\pSections "sec problem"}
+\input{\pSections "sec model"}
+\input{\pSections "sec solution"}
+\input{\pSections "sec result"}
+\input{\pSections "sec discussion"}
+%\input{\pSections "sec tinker"}
+
+
+\begin{frame}
+	\titlepage
+\end{frame}
+
+\end{document}
+
+%\tiny
+%\scriptsize
+%\footnotesize
+%\small
+%\normalsize
+%\large
+%\Large
+%\LARGE
+%\huge
+%\Huge
+
+%\, thin space (normally 1/6 of a quad);
+%\> medium space (normally 2/9 of a quad);
+%\; thick space (normally 5/18 of a quad);
+%\! negative thin space (normally 1/6 of a quad).

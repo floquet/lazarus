@@ -1,0 +1,154 @@
+% typeset: Pdftex
+% Afterwards compile with pdflatex > bibtex > pdflatex > pdflatex.
+% in TeXShop preferences, change edit from bibtex to biber
+% https://tex.stackexchange.com/questions/144407/no-items-shown-bibliography-beamer?rq=1
+
+% https://tex.stackexchange.com/questions/1423/is-there-a-nice-way-to-compile-a-beamer-presentation-without-the-pauses
+%\documentclass[handout]{beamer}
+
+%! LaTeX Error: File `/Volumes/repos/bitbucket/strange/shared/collection/lib-colors.tex' not found.
+% edit 
+% nursery-slide-decks/beamer/dtra/global/setup-global
+
+\documentclass[]{beamer}
+% point to content libraries
+\newcommand{\pGlobal}			{../../../global/}
+\newcommand{\pGlobalSetup}		{\pGlobal setup-global/}	
+
+% load LaTeX packages and personal macros
+\input{\pGlobalSetup setup-global-beamer}
+\input{\pLocalSetup setup-local}
+
+\setbeamertemplate{bibliography item}{\insertbiblabel}
+\usepackage[style = numeric]{biblatex}
+%\usepackage[square,numbers]{natbib}
+%\setcitestyle{numbers}
+%\bibliography{\pSections em-gauge.bib}
+%\usepackage{auto-pst-pdf}
+%\usepackage{pst-solides3d}
+\bibliography{\pSections redux.bib}
+
+\title
+[Reproducing Taylor's Fireball Analysis]
+{Reproducing Taylor's Fireball Analysis}
+
+\author[Film Working Group Meeting: DTRIAC 2024]{\Topa \\ \TopaEmail}
+\institute{\dtriac} 
+\medskip
+
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+	%\distA
+\end{frame}
+
+%
+\begin{frame}\frametitle{Fireball Photos To Physics}
+\begin{table}[htp]
+%\caption{default}
+\begin{center}
+	\begin{tabular}{cc}
+	\href{http://homepage.physics.uiowa.edu/~ghowes/teach/phys7729/docs/Taylor50b.pdf\#page=13}{
+	\begin{overpic}[ scale = 0.25 ]
+		{\pLocalGraphics taylor/taylor-image}
+		%\put(30, 10)	{\colorbox{white}{ $R = S(\gamma) t^{\tfrac{2}{5}} E^{\tfrac{1}{5}} \rho_{0}^{-\tfrac{1}{5}} $ }}
+		%\put(33, 30)	{\colorbox{white!10}{ $R = S(\gamma) \sqrt[5]{\frac{E t^{2}}{\rho} } $ }}
+		\put(43, 4)		{ \color{white}{$100 $ \textrm{m}} }
+		\pause
+		\put(33, 30)	{ \bl{$R = S(\gamma) \sqrt[5]{\frac{E t^{2}}{\rho_{0}} } $} }
+	\end{overpic}}
+	\end{tabular}
+\end{center}
+%\label{tab:label}
+\end{table}%
+\end{frame}
+%
+\begin{frame}\frametitle{Fireball Photos To Physics}
+\begin{table}[htp]
+%\caption{default}
+\begin{center}
+	\begin{tabular}{cc}
+	\href{http://homepage.physics.uiowa.edu/~ghowes/teach/phys7729/docs/Taylor50b.pdf\#page=13}{
+	\begin{overpic}[ scale = 0.25 ]
+		{\pLocalGraphics taylor/taylor-image}
+		%\put(30, 10)	{\colorbox{white}{ $R = S(\gamma) t^{\tfrac{2}{5}} E^{\tfrac{1}{5}} \rho_{0}^{-\tfrac{1}{5}} $ }}
+		%\put(33, 30)	{\colorbox{white!10}{ $R = S(\gamma) \sqrt[5]{\frac{E t^{2}}{\rho} } $ }}
+		\put(43, 4)		{ \color{white}{$100 $ \textrm{m}} }
+		\put(33, 30)	{ \bl{$R = S(\gamma) \sqrt[5]{\frac{\rd{E} t^{2}}{\rho_{0}} } $} }
+	\end{overpic}}
+	\end{tabular}
+\end{center}
+%\label{tab:label}
+\end{table}%
+\end{frame}
+
+\begin{frame}\frametitle{Overview}
+	\tableofcontents[hideallsubsections]
+\end{frame}
+
+% main sections
+	\input{\pSections "sec-background"}
+	\input{\pSections "sec-linear-least-squares"}
+	\input{\pSections "sec-nonlinear-least-squares"}
+	%\input{\pSections "sec-redux"}
+	\input{\pSections "sec-backup"}
+
+\section{Bibliography}
+\subsection{References}
+\begin{frame}[t,allowframebreaks]
+\frametitle{Bibliography}
+\nocite{*}
+\printbibliography[heading=none]
+\end{frame}
+
+\end{document}
+
+%\tiny
+%\scriptsize
+%\footnotesize
+%\small
+%\normalsize
+%\large
+%\Large
+%\LARGE
+%\huge
+%\Huge
+
+%\, thin space (normally 1/6 of a quad);
+%\> medium space (normally 2/9 of a quad);
+%\; thick space (normally 5/18 of a quad);
+%\! negative thin space (normally 1/6 of a quad).
+
+\begin{frame}\frametitle{Frame Title}
+\begin{enumerate}
+	\item 
+	\item 
+	\item 
+\end{enumerate}
+\end{frame}
+
+\begin{frame}\frametitle{Frame Title}
+\center
+	\href{url}{
+	\begin{overpic}[ scale = 1.0 ]
+	{\pLocalGraphics graphic-file}
+		%\put(-7,-10){Auxiliary text.}
+	\end{overpic}}
+\end{frame}
+
+\begin{frame}\frametitle{Frame Title}
+\begin{table}[htp]
+%\caption{default}
+\begin{center}
+	\begin{tabular}{cc}
+		 %
+		 %
+		 %
+	\end{tabular}
+\end{center}
+%\label{tab:label}
+\end{table}%
+\end{frame}

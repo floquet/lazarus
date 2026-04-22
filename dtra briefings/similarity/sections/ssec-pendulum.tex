@@ -1,0 +1,298 @@
+% \input{\pSections "ssec-pendulum"}
+
+%%    %%    %%    %%    %%    %%    %%    %%    %%    %%
+\subsection{The Pendulum}
+
+\begin{frame}\frametitle{\href{https://pubs.aip.org/physicstoday}{Physics Today}}
+\center
+	%\href{https://pubs.aip.org/physicstoday/article-abstract/64/9/42/413713/Dynamic-similarity-the-dimensionless}{
+	\href{run:../local/articles-similarity/dynamic-similarity.pdf}{
+	\begin{overpic}[ scale = 0.45 ]
+		{\pLocalGraphics pt-dynamic-similarity}
+		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+	\end{overpic}}
+	\ \\[10pt]
+	\cite{bolster2011dynamic}
+\end{frame}
+
+%
+\begin{frame}\frametitle{\href{https://scienceworld.wolfram.com/physics/BuckinghamsPiTheorem.html}{Buckingham's Pi Theory}}
+	%
+\center
+\href{https://en.wikipedia.org/wiki/Buckingham_\%CF\%80_theorem}{
+Physical laws are \bl{independent} of the form of the \bl{units}
+}
+	%
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Dimensional Analysis and the \yl{Pi Theorem}}
+\center
+	%\href{https://www-sciencedirect-com.libproxy.unm.edu/science/article/pii/0024379582902294}{
+	\href{https://www.sciencedirect.com/science/article/pii/0024379582902294}{
+	\begin{overpic}[ scale = 0.75 ]
+		{\pLocalGraphics curtis-pi-03}
+		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+	\end{overpic}}
+	\ \\
+	\cite{curtis1982dimensional}
+\end{frame}
+%
+\begin{frame}\frametitle{Dimensional Analysis and the \yl{Pi Theorem}}
+\center
+	\emph{The \bl{most fundamental result} in dimensional analysis\\ is the \bl{pi theorem}.}\\[20pt]
+	\pause
+	\emph{One of the \bl{most famous} examples of dimensional reasoning\\ was the derivation, by \bl{G. I. Taylor}, of the formula}
+		%
+\begin{equation}
+	r= t^{2/5}\paren{\frac{E}{\rho_{0}}}^{1/5} f(\gamma)
+\label{eq:curtis-example}
+\end{equation}
+		%
+\end{frame}
+%
+\begin{frame}\frametitle{\pititle}
+\center 
+Assumption: $\exists$ physical law of the form 
+\begin{equation}
+	g(t, T, \rho_{0}, E, \gamma) = 0
+\label{eq:curtis-Assumption}
+\end{equation}
+\end{frame}
+%
+\begin{frame}\frametitle{\pititle}
+\center 
+Two dimensionless quantities
+\href{https://pdf.sciencedirectassets.com/271586/1-s2.0-S0024379500X02728/1-s2.0-0024379582902294/main.pdf\#page=2}{
+\begin{equation}
+	\Pi_{1} = \gamma, \quad \Pi_{2} = \frac{r^{5}\rho_{0}} {t^{2} E}
+\label{eq:pi}
+\end{equation}
+}
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Dimensional Analysis and the Pi Theorem}
+	\begin{definition}[Physical Law]
+		A physical law  $f( Q_{i}, . . . , Q_{m}) = 0$ relates dimensional quantities $Q_{i}, . . . , Q_{m}$. 
+	\end{definition}
+\end{frame}
+%
+\begin{frame}\frametitle{Dimensional Analysis and the Pi Theorem}
+	\input{\pLocalTheorems "thm-pi"}
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Similarity}
+\begin{enumerate}
+	\item Nuclear Explosions (\cite{taylor1950formationI, taylor1950formationII})
+	\item Astrophysics (\cite{ostriker1988astrophysical})
+	\item Laser driven (\cite{edwards2001investigation})
+	\item Plasma (\cite{moore2005tailored})
+	\item Granular (\cite{boudet2013unstable, boudet2009blast})
+\end{enumerate}
+\end{frame}
+%
+
+\begin{frame}\frametitle{\href{https://www.genealogy.math.ndsu.nodak.edu/id.php?id=102065}{Sedov}'s Formal Development }
+\center
+	\href{https://www.taylorfrancis.com/books/mono/10.1201/9780203739730/similarity-dimensional-methods-mechanics-sedov}{
+	\begin{overpic}[ scale = 0.35 ]
+		{\pLocalGraphics sedov-toc}
+		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+	\end{overpic}}
+\end{frame}
+
+%%    %%    %%    %%    %%    %%    %%    %%    %%    %%
+%\subsection{Taylor's Papers}
+%
+%%    %%    %%    %%    %%    %%    %%    %%    %%    %%
+%\subsection{Similarity and dimensional methods in mechanics}
+\begin{frame}\frametitle{Equations of Motion}
+\center
+	\href{https://archive.org/details/sedov-similarity-and-dimensional-methods-in-mechanics}{
+	\begin{overpic}[ scale = 0.35 ]
+		{\pLocalGraphics sedov-148}
+		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+	\end{overpic}}
+	\ \\
+	\cite{sedov2018similarity}
+\end{frame}
+%
+\begin{frame}\frametitle{Units: Familiar Quantities}
+\begin{enumerate}
+	\item velocity
+	\item momentum
+	\item kinetic energy
+	\item potential energy (gravitational)
+	\item force
+	\item pressure
+	\item density (volumetric)
+\end{enumerate}
+\end{frame}
+%
+\begin{frame}\frametitle{Units: Familiar Quantities}
+\begin{table}[htp]
+%\caption{default}
+\begin{center}
+	\begin{tabular}{lll}
+			%
+		velocity & $v$ & $L T^{-1}$ \\[5pt]
+			%
+		momentum & $p = mv$ & $M L T^{-1}$ \\[5pt]
+			%
+		kinetic energy & $K=\tfrac{1}{2} m v^{2}$ & $M L^{2} T^{-2}$ \\[5pt]
+			%
+		potential energy & $U = mgh$ & $M L^{2} T^{-2}$ \\[5pt]
+			%
+		force & $F = ma$ & $M L T^{-2}$ \\[5pt]
+			%
+		pressure & $P = F / A$ & $M T^{-2}$ \\[5pt]
+			%
+		density & $\delta$ & $M L^{3}$ \\[5pt]
+			%
+	\end{tabular}
+\end{center}
+\label{tab:units}
+\end{table}%
+\end{frame}
+
+%
+\begin{frame}\frametitle{Input Parameters with Dimension}
+\begin{enumerate}
+	\item $E$, energy
+	\item $\rho_{0}$, air pressure
+\end{enumerate}
+\end{frame}
+%
+%
+\begin{frame}\frametitle{\href{https://en.wikipedia.org/wiki/Rankine\%E2\%80\%93Hugoniot_conditions}{Rankine-Hugoniot} Jump Conditions}
+\center
+	Connects physical states across shock front
+\end{frame}
+%
+\begin{frame}\frametitle{\href{https://en.wikipedia.org/wiki/Rankine\%E2\%80\%93Hugoniot_conditions}{Rankine-Hugoniot} Jump Conditions}
+% https://physics.stackexchange.com/questions/611651/why-does-entropy-jump-across-a-shockwave
+\center
+	Conservation Laws:\\[20pt]
+\begin{table}[htp]
+%\caption{default}
+\begin{center}
+\begin{tabular}{lrcl}
+	\bl{mass} & $\rho_{1} u_{1}$ & $=$ & $\rho_{2} u_{2}$\\[10pt]
+	\bl{momentum} & $\rho_{1} u_{1}^{2} + p_{1}$ & $=$ & $\rho_{2} u_{2}^{2} + p_{2}$\\[10pt]
+	\bl{energy} & $h_{1} + \tfrac{1}{2} u_{1}^{2}$ & $=$ & $h_{2} + \tfrac{1}{2} u_{2}^{2}$
+\end{tabular}
+\end{center}
+\label{tab:conserved}
+\end{table}%
+\ \\
+\pause
+Not conserved: \rd{\href{https://physics.stackexchange.com/questions/611651/why-does-entropy-jump-across-a-shockwave}{Entropy}}
+\end{frame}
+%
+%
+\begin{frame}\frametitle{\href{https://en.wikipedia.org/wiki/Rankine\%E2\%80\%93Hugoniot_conditions}{Rankine-Hugoniot} Jump Conditions}
+% https://physics.stackexchange.com/questions/611651/why-does-entropy-jump-across-a-shockwave
+\center
+	Conservation Laws:\\[20pt]
+\begin{table}[htp]
+%\caption{default}
+\begin{center}
+\begin{tabular}{lrclcrcl}
+	mass & \mg{$\rho_{1} u_{1}$} & \mg{$=$} & \mg{$\rho_{2} u_{2}$} & $\Rightarrow$ & $u_{k}$ & $=$ & $\frac{m} {\rho_{k}}$\\[10pt]
+	mom. & \mg{$\rho_{1} u_{1}^{2} + p_{1}$} & \mg{$=$} & \mg{$\rho_{2} u_{2}^{2} + p_{2}$} & $\Rightarrow$ & $p_{2} - p_{1}$ & $=$ & $m \paren{u_{1} - u_{2}}$\\[10pt]
+	energy & \mg{$h_{1} + \tfrac{1}{2} u_{1}^{2}$} & \mg{$=$} & \mg{$h_{2} + \tfrac{1}{2} u_{2}^{2}$} & $\Rightarrow$  & $h_{2} - h_{1}$ & $=$ & $\tfrac{1}{2} \paren{u_{1}^{2} - u_{2}^{2}}$
+\end{tabular}
+\end{center}
+\label{tab:conserved-units}
+\end{table}%
+\end{frame}
+%
+\begin{frame}\frametitle{\href{https://en.wikipedia.org/wiki/Rankine\%E2\%80\%93Hugoniot_conditions}{Rankine-Hugoniot} Jump Conditions}
+\center
+	Implications:
+\begin{equation}
+	-m^{2} = \frac{p_{2} - p_{1}} { 1 / \rho_{2} - 1 / \rho_{1} }
+\label{eq:Michelson–Rayleigh}
+\end{equation}
+%
+\begin{equation}
+	h_{2} - h_{1} = \frac{1}{2} \displaystyle\paren{ 1 / \rho_{2} - 1 / \rho_{1} } \paren{p_{2} - p_{1}}
+\label{eq:enthalpy}
+\end{equation}
+\end{frame}
+
+%\section{Jump Conditions}
+\begin{frame}\frametitle{Jump Conditions: Physical Properties}
+\begin{table}[htp]
+\caption{default}
+\begin{center}
+\begin{tabular}{lcll}
+	$u_{l}$ && $u_{r}$ & density\\
+	$\rho_{l}$ && $\rho_{r}$ & velocity\\
+	$T_{l}$ && $T_{r}$ & pressure\\
+\end{tabular}
+\end{center}
+\label{tab:}
+\end{table}%
+\end{frame}
+
+%\section{Shock Hydrodynamics}
+%\begin{frame}\frametitle{Shock Hydrodynamics}
+%\center
+%	\href{http://homepage.physics.uiowa.edu/~ghowes/teach/phys7729/docs/Taylor50a.pdf}{
+%	\begin{overpic}[ scale = 0.5 ]
+%		{\pLocalGraphics ss/taylor-01}
+%		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+%	\end{overpic}}
+%	\cite[LANL]{bethe1944shock}
+%\end{frame}
+
+\begin{frame}\frametitle{Physical Properties}
+\begin{table}[htp]
+\caption{default}
+\begin{center}
+\begin{tabular}{lcll}
+	$u_{l}$ && $u_{r}$ & density\\
+	$\rho_{l}$ && $\rho_{r}$ & velocity\\
+	$T_{l}$ && $T_{r}$ & pressure\\
+\end{tabular}
+\end{center} 
+\label{default}
+\end{table}%
+\end{frame}
+
+\begin{frame}\frametitle{Assumptions, Simplifications}
+\begin{enumerate}
+	\item point explosion
+	\item infinitesimal time
+	\item high energy explosion
+	\item infinitely strong shock
+	\item 
+\end{enumerate}
+\end{frame}
+
+\begin{frame}\frametitle{Assumptions, Simplifications}
+\begin{enumerate}
+	\item spherically symmetric blast wave
+	\item point source
+	\item infinitesimal time
+	\item infinitely strong shock
+	\item 
+\end{enumerate}
+\end{frame}
+
+%
+\begin{frame}\frametitle{Self-Similar Region}
+\begin{enumerate}
+	\item pressure behind shock wave dominates air pressure $\rho_{1} >> \rho_0$
+	\item point source
+	\item infinitesimal time
+	\item infinitely strong shock
+	\item 
+\end{enumerate}
+\end{frame}
+%
+
+\endinput  %  ==  ==  ==  ==  ==  ==  ==  ==  ==

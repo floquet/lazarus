@@ -1,0 +1,209 @@
+% \input{\pSections "sec-redux"}
+
+\section{Redux}
+
+%%    %%    %%    %%    %%    %%    %%    %%    %%    %%
+\subsection{Reproduction}
+
+\begin{frame}\frametitle{Comparing Data, Solution Curves}
+\center
+	%\href{}{
+	\begin{overpic}[ scale = 0.9 ]
+		{\pLocalGraphics mathematica/Taylor-redux-true}
+		\put(38, 51)	{\colorbox{white}{\rd{Original Fit}}}
+		\put(60, 40)	{\colorbox{white}{\bl{Least Squares}}}
+		\put(60, 35)	{\colorbox{white}{\bl{Minimization}}}
+		\put(50, -5)	{\small{\textrm{$t$, s}}}
+		\put(-6, 25)	{\small{\textrm{\rotatebox{90}{$R$, cm}}}}
+	\end{overpic}
+\end{frame}
+%
+\begin{frame}\frametitle{Seeing the Minimum: Solution Space}
+\center
+	%\href{}{
+	\begin{overpic}[ scale = 0.6 ]
+		{\pLocalGraphics mathematica/Taylor-contours-red}
+		\put(7, 87)		{\colorbox{white}{$\normt{r(a,b)} = \normt{a t^{b} - R}$}}
+		\put(-9, 46)	{\rotatebox{90}{\colorbox{white}{$b$}}}
+		\put(49, -5)	{\colorbox{white}{$a$}}
+		\put(100, 48)	{\colorbox{white}{\bl{$r_{LS} = 510$}}}
+		\put(100, 88)	{\colorbox{white}{\rd{$r =1456$}}}
+	\end{overpic}
+\end{frame}
+%
+\begin{frame}\frametitle{Seeing the \href{https://en.wikipedia.org/wiki/Errors_and_residuals}{Residual Error}}
+\center
+	%\href{}{
+	\begin{overpic}[ scale = 0.9 ]
+		{\pLocalGraphics mathematica/Taylor-residuals-both-A}
+		\put(-6, 25)	{\colorbox{white}{\rotatebox{90}{$error$}}}
+		\put(50, -5)	{\colorbox{white}{$t$}}
+	\end{overpic}
+\end{frame}
+\begin{frame}\frametitle{Seminal Papers}
+%\caption{default}
+\begin{table}[htp]
+\begin{center}
+	\begin{tabular}{l}
+		 %
+	\href{run:../local/articles-redux/Taylor50a.pdf}{
+	\begin{overpic}[ scale = 0.25 ]
+		{\pLocalGraphics taylor/taylor-01.pdf}
+		\href{\urlTaylora}{\put(85, 5)	{\colorbox{gray!20}{\cite{taylor1950formationI}}}}
+	\end{overpic}}  \\\hline
+		 %
+	\ \\
+	\href{run:../local/articles-redux/Taylor50b.pdf}{
+	\begin{overpic}[ scale = 0.25 ]
+		{\pLocalGraphics Taylor/taylor-02.pdf}
+		\href{\urlTaylorb}{\put(85, 5)	{\colorbox{gray!20}{\cite{taylor1950formationII}}}}
+	\end{overpic}} 
+		 %
+	\end{tabular}
+\end{center}
+\label{tab:taylor-splash}
+\end{table}
+\end{frame}
+%
+\begin{frame}\frametitle{Not \yl{Brook Taylor}}
+\begin{table}[htp]
+%\caption{default}
+\begin{center}
+\href{https://en.wikipedia.org/wiki/Brook_Taylor}{
+	\begin{tabular}{cc}
+		\includegraphics[ width = 1.25in ]{ \pLocalGraphics Taylor/brook-01} &
+		\includegraphics[ width = 1.19in ]{ \pLocalGraphics Taylor/brook-02} 
+	\end{tabular}
+}
+\end{center}
+%\label{tab:label}
+\end{table}
+\href{https://mathworld.wolfram.com/TaylorSeries.html}{
+\begin{equation*}
+	f(x) = f(a) + \frac{x-a}{1!}f' + \frac{(x-a)^{2}}{2!}f''+ \cdots +  \frac{(x-a)^{n}}{n!}f^{(n)} + \cdots
+%\label{eq:}
+\end{equation*}
+}
+\end{frame}
+%
+\begin{frame}\frametitle{Fireball Energy}
+\center
+	\href{\urlTaylora}{
+	\begin{overpic}[ scale = 0.25 ]
+		{\pLocalGraphics Taylor/Taylor-01.pdf}
+		\put(32, -10)	{\colorbox{white}{$\bl{R = S(\gamma) \sqrt[5]{\frac{E\, t^{2}}{\rho_{0}} }}$}}
+		\put(65, -20)	{\colorbox{gray!20}{\cite[p. 172]{taylor1950formationI}}}
+	\end{overpic}}
+\end{frame}
+%
+\begin{frame}\frametitle{Fireball Photos: Trinity}
+\center
+		%
+	\href{https://homepage.physics.uiowa.edu/~ghowes/teach/phys7729/docs/Taylor50b.pdf\#page=9}{
+	\begin{overpic}[ scale = 0.175 ]
+		{\pLocalGraphics taylor/p-photos-01}
+		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+	\end{overpic}} 
+		%
+	\href{https://homepage.physics.uiowa.edu/~ghowes/teach/phys7729/docs/Taylor50b.pdf\#page=2}{
+	\begin{overpic}[ scale = 0.385 ]
+		{\pLocalGraphics taylor/p-table-1}
+		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+	\end{overpic}}
+		%
+\end{frame}
+
+\begin{frame}\frametitle{\href{https://homepage.physics.uiowa.edu/~ghowes/teach/phys7729/docs/Taylor50b.pdf\#page=3}{Taylor's Original Figure 1}}
+\center
+	\href{https://homepage.physics.uiowa.edu/~ghowes/teach/phys7729/docs/Taylor50b.pdf\#page=3}{
+	\begin{overpic}[ scale = 0.425 ]
+		{\pLocalGraphics taylor/fig-01}
+		\pause
+		\put(40, 40)	{\colorbox{white}{Method of Choice: \bl{Least Squares}}}
+	\end{overpic}}
+\end{frame}
+
+%
+\begin{frame}\frametitle{Validity of Similarity Relationship}
+\center
+	\href{https://homepage.physics.uiowa.edu/~ghowes/teach/phys7729/docs/Taylor50b.pdf\#page=3}{
+	\begin{overpic}[ scale = 0.5 ]
+		{\pLocalGraphics taylor/Taylor-basic}
+		\put(-45, 105)	{\colorbox{white}{$\frac{5}{2}\log R(t) = (\bl{\solnb} \pm \bl{\errb})\log t + (\solna \pm \erra)$}}
+		\put(-15, 40)	{\rotatebox{90}{\colorbox{white}{$\frac{5}{2}\log R$}}}
+		\put(37, -8)	{\colorbox{white}{$\log t$}}
+	\end{overpic}}
+\end{frame}
+%
+\begin{frame}\frametitle{Least Squares Problem}
+	\huge{
+	\begin{equation}
+		(\bl{a}, \bl{b})_{LS}\equiv \argmin\limits_{(\bl{a},\bl{b})\in\mathbb{R}^{2}} \normt{\bl{a} t^{\bl{b}} - R}
+	\label{eq:solution definition}
+	\end{equation}
+	}
+\end{frame}
+
+\begin{frame}\frametitle{Solution Using \href{https://www.wolfram.com/mathematica/	}{Mathematica}}
+\center
+	\href{run:../local/articles-redux/2023-film-working-group.pdf}{
+	\begin{overpic}[ scale = 0.375 ]
+		{\pLocalGraphics mathematica/norm-min}
+		\pause
+		\put(55, 5)	{\colorbox{white}{$(\bl{a}, \bl{b})_{LS}\equiv \argmin\limits_{(\bl{a},\bl{b})\in\mathbb{R}^{2}} \normt{\bl{a} t^{\bl{b}} - R}$}}
+	\end{overpic}}
+\end{frame}
+
+
+\begin{frame}\frametitle{Numeric Alert}
+\center
+	%\href{}{
+	\begin{overpic}[ scale = 0.375 ]
+		{\pLocalGraphics mathematica/ouch}
+		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+	\end{overpic}
+\end{frame}
+
+%
+\begin{frame}\frametitle{Error Analysis}
+\begin{equation}
+	\sigma_{R} = b \sigma_{t} \frac{R}{t}
+\label{eq:error-powers}
+\end{equation}
+\end{frame}
+%
+
+%\begin{frame}\frametitle{Beirut Yield Estimates: Academia}
+%\begin{enumerate}
+%	\item \href{https://link-springer-com.libproxy.unm.edu/article/10.1007/s00193-021-01031-9}
+%		{\fullcite{aouad2021beirut}}
+%	\item \href{https://arxiv.org/pdf/2009.05674.pdf}
+%		{\fullcite{diaz2021explosion}}
+%	\item \href{https://aiche-onlinelibrary-wiley-com.libproxy.unm.edu/doi/epdf/10.1002/prs.12203}
+%		{\fullcite{pasman2020beirut}}
+%\end{enumerate}
+%\end{frame}
+%%    %%    %%    %%    %%    %%    %%    %%    %%    %%
+\subsection{Rudiments}
+
+%	\input{\pSections "slide-ftolathm"}
+
+\begin{frame}\frametitle{\lsq Untangles The Null Spaces}
+	%
+\begin{figure}[t]
+\centering
+	\begin{overpic}[ scale = 0.75 ]{\pLocalGraphics bev/colored-masks-02}
+			%
+	\end{overpic}
+\label{fig:Seeing the subspace decomposition}
+\caption{Vectors in \href{https://mathworld.wolfram.com/ColumnSpace.html}{\bl{range spaces} $\left( \brnga{} \right.$ or $\left. \brnga{*}\right)$} are colored in blue. Vectors in \href{https://mathworld.wolfram.com/NullSpace.html}{\rd{null spaces} $\paren{\rnlla{*} \text{ or } \rnlla{}}$} are colored in red. Amalgam vectors with components in both spaces are the traditional black.}
+\end{figure}
+	%
+\end{frame}
+
+	\input{\pSections "ssec-repro-classic"}
+	\input{\pSections "ssec-repro-non-linear"}	
+	\input{\pSections "ssec-repro-mcaninch"}
+
+
+\endinput  %  ==  ==  ==  ==  ==  ==  ==  ==  ==

@@ -1,0 +1,44 @@
+% \input{\pathsections "sec tinker"}
+
+\section{Tinker}
+
+\begin{frame}\frametitle{Data, Fit, Result, Residuals}
+\begin{center}
+		\begin{overpic}[ scale = 1.0 ]
+			{\pLocalGraphics bev-error-good-red}
+			\put(10, 55){$T_{LS}(x) = 4.81389 + 9.40833x $}
+			%\put(10, 50)	{\colorbox{white}{$\littleap = \bevSolnNumeric \pm \bevErrorNumeric$}}
+			%\put(10, 40)	{\colorbox{white}{$t^{2} \approx 317 $}}
+			\labelx
+			\labelT 
+		\end{overpic}  \\[20pt]
+\end{center}
+\end{frame}
+
+\begin{frame}\frametitle{Data, Fit, Result, Residuals}
+\begin{center}
+		\begin{overpic}[ scale = 1.0 ]
+			{\pLocalGraphics bev-error-good-red}
+			\put(10, 55){$T_{LS}(x) = (4.8 \pm 4.9 ) + (9.41 \pm 0.87 )x $}
+			%\put(10, 50)	{\colorbox{white}{$\littleap = \bevSolnNumeric \pm \bevErrorNumeric$}}
+			%\put(10, 40)	{\colorbox{white}{$t^{2} \approx 317 $}}
+			\labelx
+			\labelT 
+		\end{overpic}  \\[20pt]
+\end{center}
+\end{frame}
+%
+\begin{frame}\frametitle{Data, Fit, 1 $\sigma$ Error}
+\begin{center}
+	\begin{overpic}[ scale = 1.0 ]
+		{\pLocalGraphics bevington-data-soln-bands}
+		%\put(10, 50){$T_{LS}(x) = (4.8 \pm 4.9 ) + (9.41 \pm 0.87 )x $}
+		\put(7,45){\colorbox{white}{$T_{\bl{+}}(x)= \paren{a_{0} \bl{+} \sigma_{0}} + \paren{a_{1} \bl{+} \sigma_{1}} x$}}
+		\put(38,15){\colorbox{white}{$T_{\rd{-}}(x)= \paren{a_{0} \rd{-} \sigma_{0}} + \paren{a_{1} \rd{-} \sigma_{1}} x$}}
+		\labelx
+		\labelT
+	\end{overpic}  \\[20pt]
+\end{center}
+\end{frame}
+%
+\endinput  %  ==  ==  ==  ==  ==  ==  ==  ==  ==

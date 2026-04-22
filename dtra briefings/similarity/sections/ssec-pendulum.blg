@@ -1,0 +1,5 @@
+[0] Config.pm:304> INFO - This is Biber 2.14
+[0] Config.pm:307> INFO - Logfile is 'ssec-pendulum.blg'
+[63] biber-darwin:322> INFO - === Wed Feb 28, 2024, 21:40:44
+[205] Utils.pm:320> ERROR - Cannot find 'ssec-pendulum.bcf'!
+[206] Biber.pm:132> INFO - ERRORS: 1

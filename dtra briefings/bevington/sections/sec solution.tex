@@ -1,0 +1,424 @@
+% \input{\pathsections "sec solution"}
+
+\section{Solution}
+%
+%%  %%  %%  %%  %%
+\subsection{Posing Linear System}
+%\begin{frame}
+%\frametitle{Canonical Reference: Bevington, 2e}
+%$$ T(x) = a_{0} + a_{1} x$$
+%\begin{equation*}
+%\begin{array}{ccc}
+%		%
+%	a_{0} + a_{1} x_{1} &= &T_{1} \\
+%		%
+%	 &\vdots & \\
+%		%
+%	a_{0} + a_{1} x_{m} &= &T_{m} \\
+%		%
+%\end{array}
+%%\label{eq:}
+%\end{equation*}
+%\end{frame}
+%
+\begin{frame}\frametitle{Linear System}
+	%
+\begin{equation}
+	\begin{array}{ccccc cccc}
+			%
+		\A{} & a & = & T \\
+			%
+		\mat{cc}{\one & x} & \littlea & = & \mat{c}{T}\\
+			%
+		\pause
+			%
+		\bevA{} & \littlea & = & \bevy 
+			%
+	\end{array}
+\label{eq:bevington normal equations problem and solution}
+\end{equation}
+	%
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Linear System: Dramatis Personae}
+	%
+\begin{equation}
+	\begin{array}{cccc}
+			%
+		\A{} & a & = & T \\
+			%
+		\mat{cc}{\one & x} & \littlea & = & \mat{c}{T}\\
+			%
+	\end{array}
+\label{eq:Dramatis Personae}
+\end{equation}
+	%
+\begin{enumerate}
+	\item $\A{}\in\real{\by{9}{2}}_{2}$: design matrix-- mesh
+	\item $b\in\real{9}$: data vector
+	\item $a\in\real{2}$: solution vector
+\end{enumerate}
+	%
+\end{frame}
+%
+%
+\begin{frame}\frametitle{The Matrix as a Map}
+	%
+	The matrix $\A{}$ is a map from the \\ \bl{solution space} $\rd{\real{2}}$ to the \bl{measurement space} $\rd{\real{9}}$. \\ 
+	\pause
+	\ \\
+	We need the \rd{inverse map}.
+	%
+\end{frame}
+%
+%
+%
+\begin{frame}\frametitle{Notation: Inner Product}
+	%
+Given $x, y \in \cmplx{m}$
+	%
+\begin{equation}
+\begin{split}
+	\inner{x, y} = x^{*}y = x \cdot y 
+		&= \sum \bar{x}_{k}y_{k} \\
+		&= \int_{\Omega} \bar{x} y d\Omega
+\end{split}
+\end{equation}
+	%
+\end{frame}
+%
+\begin{frame}\frametitle{Normal Equations.}
+	%
+\begin{equation}
+	\begin{array}{ccccc cccc}
+			%
+		 \wx{*} & a & = & \A{*}T \\[10pt]
+			%
+		\bevWI & \littlea & = & \bevAsbI\\[20pt]
+			%
+		\bevW & \littlea & = & \mat{r}{ 466.7 \\ 2898 } \\
+			%
+	\end{array}
+\label{eq:bevington normal equations problem and solution}
+\end{equation}
+	%
+\end{frame}
+%
+%
+%%  %%  %%  %%  %%
+\subsection{Minimization}
+%\begin{frame}
+%\frametitle{Minimization Target: Merit Function}
+%\begin{figure}[t]
+%	\centering
+%	\begin{overpic}[ scale = 0.72 ]
+%		{\pLocalGraphics bevington-merit-gull}
+%			% 
+%		\footnotesize{
+%		\put(25,95){\colorbox{white}{$M(a) =  \bevMeritM{}$}}
+%		\put(10,5){\colorbox{white}{$a_{0}$, \textnormal{intercept}}}
+%		\put(75,15){\colorbox{white}{$a_{1}$, \textnormal{slope}}}
+%		%\put(75,15){$a_{1}$, slope}
+%		\put(45,51){\footnotesize{\colorbox{white}{\tiny{$500$}}}}
+%		\put(63,28){\footnotesize{\colorbox{white}{\tiny{$1000$}}}}
+%		\put(52,55){\footnotesize{\colorbox{white}{\tiny{$1500$}}}}
+%		}
+%			%
+%	\end{overpic}
+%\label{fig:bevington-merit-gull}
+%\end{figure}
+%\end{frame}
+%
+%
+\begin{frame}\frametitle{What Are We Minimizing?}
+	%
+\rd{Residual error} vector:
+\begin{equation}
+		%
+	\rd{r(\bk{a})} = \A{}a - T
+		%
+%\label{eq:}
+\end{equation}
+	%
+	\pause
+	%
+Minimize length of \rd{residual error} vector:
+\begin{equation}
+\begin{split}
+		%
+	M(a) &= \innerecho{\rd{r(\bk{a})}} \\
+		%
+		& = \normts{\A{}a - T} \\
+		%
+		& = \normts{a_{0} \one + a_{1} x - T} \\
+		%
+\end{split}
+%\label{eq:}
+\end{equation}
+	%
+	\pause
+	%
+\mg{Archaic (scalar) notation:
+\begin{equation*}
+		%
+	M(a) = \sum_{k=1}^{m} \paren{a_{0} + a_{1} x_{k} - T_{k}}^{2}
+		%
+%\label{eq:}
+\end{equation*}}
+\end{frame}
+%
+%
+\begin{frame}
+\frametitle{Minimization Target: Merit Function}
+\begin{figure}[t]
+	\centering
+	\begin{overpic}[ scale = 0.70 ]
+		{\pLocalGraphics bev-merit-3D-arrows-alt}
+			% 
+		\footnotesize{
+		\put(25,95){\colorbox{white}{$M(a) =  \bevMeritM{}$}}
+		\put(-12,40){\colorbox{white}{$M(a)$}}
+		\put(10,5){\colorbox{white}{$a_{0}$, \textnormal{intercept}}}
+		\put(75,15){\colorbox{white}{$a_{1}$, \textnormal{slope}}}
+		%\put(75,15){$a_{1}$, slope}
+		\put(45,51){\footnotesize{\colorbox{white}{\tiny{$500$}}}}
+		\put(63,28){\footnotesize{\colorbox{white}{\tiny{$1000$}}}}
+		\put(52,55){\footnotesize{\colorbox{white}{\tiny{$1500$}}}}
+		}
+			%
+	\end{overpic}
+\label{fig:bevington-merit-gull}
+\end{figure}
+\end{frame}
+%
+%
+%
+\begin{frame}\frametitle{Solution Space $\mathcal{R}\paren{\A{*}}$: Bullseye}
+	%
+\centering
+	\begin{overpic}[ scale = 0.55 ]{\pLocalGraphics bevington-merit-bullseye-A-simple}
+		%\put(25,102){$M(a) = \sum_{k=1}^{m}\paren{T_{k} - a_{0} - a_{1} x}^{2}$}
+		\put(6, 104){\colorbox{white}{$M(a) = \normts{a_{0}\one + a_{1} x - T}$ }}
+		\put(1000,90){\colorbox{white}{$\brnga{*}$}}
+			%
+		\bevingtonLabels{}
+		%\put(83, 7){\colorbox{white}{$\brnga{*}$ }}
+%			%
+		\put(17, 73.25) {\colorbox{white}{\footnotesize{{$r^{2} = 500$}}}}
+		\put(7, 62) {\colorbox{white}{\footnotesize{{$ 1000 $}}}}
+		\put(5, 52) {\colorbox{white}{\footnotesize{{$ 1500 $}}}}
+			%
+			%
+	\end{overpic}
+	%
+\end{frame}
+%
+%
+\begin{frame}
+\frametitle{hierophant}
+hi$\cdot$er$\cdot$o$\cdot$phant $\vert$ \textprimstress h\=\i (\textschwa)r\textschwa \textsecstress fant \\[20pt]
+a person, especially a priest in ancient Greece, who interprets sacred mysteries or esoteric principles.
+\end{frame}
+%
+\begin{frame}\frametitle{Solution Space $\mathcal{R}\paren{\A{*}}$: Bullseye}
+	%
+\centering
+	\begin{overpic}[ scale = 0.55 ]{\pLocalGraphics bevington-merit-bullseye-02}
+		%\put(25,102){$M(a) = \sum_{k=1}^{m}\paren{T_{k} - a_{0} - a_{1} x}^{2}$}
+		\put(6, 104){\colorbox{white}{$M(a) = \normts{a_{0}\one + a_{1} x - T}$ }}
+			%
+		\bevingtonLabels{}
+		%\put(83, 7){\colorbox{white}{$\brnga{*}$ }}
+			%
+		\put(61, 42) {\colorbox{white}{$1\sigma$}}
+		\put(72, 31) {\colorbox{white}{$2\sigma$}}
+		\put(83, 21) {\colorbox{white}{$3\sigma$}}
+			%
+	\end{overpic}
+	%
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Numeric Solution}
+	%
+\begin{equation}
+	\begin{array}{rll}
+		%
+		\sigma_{0} &= 4.8\mg{86206312183354} & \text{rounded to 4.9}, \\
+		a_{0}   &= 4.8\mg{13888888888889}  & \text{rounded to 4.8}; \\[5pt]
+		%
+		\sigma_{1} &= 0.86\mg{83016476563611} & \text{rounded to 0.87}, \\
+		a_{1}   &= 9.40\mg{8333333333333}  & \text{rounded to 9.41}.
+		%
+	\end{array}
+\end{equation}
+	%
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Numeric Solution}
+	%
+Numeric solution:
+\begin{equation*}
+\begin{split}
+		%
+	\bap &= \bl{\mat{c}{ a_{0} \\ a_{1} }_{p}} = \bevSolnNumeric \\
+		%
+	\bl{\sigma} &= \bl{\mat{c}{ \sigma_{0} \\ \sigma_{1} }_{p}} =\bevErrorNumeric
+		%
+\end{split}
+%\label{eq:}
+\end{equation*}
+	%
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Numeric Solution: Options}
+	%
+Either
+\begin{equation}
+		%
+	\bap = \bl{\mat{c}{ a_{0} \\ a_{1} }_{p}} \pm \bl{\mat{c}{ \sigma_{0} \\ \sigma_{1} }} = \bevSolnNumeric \pm \bevErrorNumeric 
+		%
+%\label{eq:}
+\end{equation}
+	%
+\ \\
+\pause
+Or
+\begin{equation}
+		%
+	\bap = \bl{\mat{c}{ a_{0} \pm \sigma_{0} \\ a_{1} \pm \sigma_{1} }_{p}} = \bevErrorCombo
+		%
+%\label{eq:}
+\end{equation}
+	%
+\end{frame}
+%
+\begin{frame}\frametitle{Bevington Table 6.1}
+	%
+\center
+	\includegraphics[ width = 2.0in ]{\pLocalGraphics bev-data-soln-x.png} \\
+	%
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Exact Solution}
+	%
+\begin{equation}
+	\bl{a_{p}} = \bl{ \bevSolnTI } 
+\label{eq:bevSolnC}
+\end{equation}
+	%
+\begin{equation}
+	\Delta = \bl{ \bevDetI } 
+\label{eq:bevdeterminant}
+\end{equation}
+%
+\end{frame}
+%
+\begin{frame}\frametitle{Exact Solution.}
+	%
+\begin{equation*}
+\begin{split}
+	\bl{a_{p}} &= \bl{ \bevSolnTI } \\
+		&= \bl{ \frac{1}{360} \mat{c}{1733 \\ 3387}} \approx \bl{\mat{l}{4.8 \\ 9.41}}
+\end{split}
+\end{equation*}
+\end{frame}
+
+%
+%%  %%  %%  %%  %%
+\subsection{Seeing the Solution}
+%
+\begin{frame}\frametitle{Resolution of Data Vector}
+	%
+\def\x{8.58953}
+\def\y{0.889744}
+%
+\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
+	\centering
+	%\begin{tikzpicture}[>=stealth]
+	\begin{tikzpicture}[>=latex]
+		\draw [very thick] [black] [->] (0, 0) -- (\x, \y);
+		\draw [very thick] [blue]  [->] (0, 0) -- (\x, 0);
+		\draw [very thick] [red]   [->] (\x,0) -- (\x, \y);
+			\node[above] at (\x / 2, 0.5) {$\normt{b}$};
+			\node[below] at (\x / 2,0) {$\normt{\datarange}$};
+			\node[right] at (\x, \y / 2) {$\normt{\datanull}$};
+	\perpsof{1/3}{\x}
+	\end{tikzpicture}
+\label{fig:bevington-sn}
+\end{figure}
+	%
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Signal to Noise}
+	%
+\def\x{8.58953}
+\def\y{0.889744}
+%
+\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
+	\centering
+	%\begin{tikzpicture}[>=stealth]
+	\begin{tikzpicture}[>=latex]
+		\draw [very thick] [black] [->] (0, 0) -- (\x, \y);
+		\draw [very thick] [blue]  [->] (0, 0) -- (\x, 0);
+		\draw [very thick] [red]   [->] (\x,0) -- (\x, \y);
+			\node[above] at (\x / 2, 0.5) {$\normt{b}$};
+			\node[below] at (\x / 2,0) {$\normt{\datarange}$};
+			\node[right] at (\x, \y / 2) {$\normt{\datanull}$};
+	\perpsof{1/3}{\x}
+	\end{tikzpicture}
+\label{fig:bevington-sn}
+\end{figure}
+	%
+\begin{equation}
+	\mathbb{S} = \frac{\normt{\datarange}}{\normt{\datanull}} = \frac{171.791}{17.795} \approx 9.65.
+\end{equation}
+	%
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Posed and Solved}
+	%
+Problem posed: $\A{} a = T$\\[20pt]
+	%
+Problem solved: $\A{} \bap = \bl{T_{\rnga{}}}$
+	%
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Resolving The Data Vector}
+	%
+\scriptsize{
+\begin{equation}
+	\begin{array}{cccccccc}
+		%
+	\A{} & \bl{\bap} & = & \phantom{\recip{360}}\bl{T_{\rnga{}}} & = & \phantom{\recip{360}}T & - & \phantom{\recip{360}}\rd{T_{\nlla{}}} \\
+		%
+	\bevA &
+	%\bl{\mat{cc}{a_{0} \\ a_{1}}_{LS}}
+	\bl{\bevSolnNumeric}
+		%
+	& = &
+		%
+	\recip{360}\bl{\mat{r}{5120 \\ 8507 \\ 11\,894 \\ 15\,281 \\ 18\,668 \\ 22\,055 \\ 25\,442 \\ 28\,829 \\ 32\,216}} & = &
+		%
+	\recip{360}\mat{r}{5616 \\ 6300 \\ 13\,176 \\ 15\,768 \\ 20\,952 \\ 22\,176 \\ 23\,112 \\ 25\,344 \\ 35\,568} & - &
+		%
+	\recip{360}\rd{\mat{r}{496 \\ -2207 \\ 1282 \\ 487 \\ 2284 \\ 121 \\ -2330 \\ -3485 \\ 3352}} \\
+		%
+	&&& \phantom{\recip{360}}171.791^{2}  & = & \phantom{\recip{360}} 172.710^{2}  & - & \phantom{\recip{360}} 17.795^{2}
+		%
+	\label{eq:bevington posed v solved}
+	\end{array}
+\end{equation}}
+	%
+\end{frame}
+%
+%
+%
+\endinput  %  ==  ==  ==  ==  ==  ==  ==  ==  ==

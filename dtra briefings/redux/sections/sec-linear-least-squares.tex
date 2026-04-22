@@ -1,0 +1,70 @@
+% \input{\pSections "sec-linear-least-squares"}
+
+\subsection{Solution}
+\begin{frame}\frametitle{Seeing the Minimum: Solution Space}
+\center
+	%\href{}{
+	\begin{overpic}[ scale = 0.6 ]
+		{\pLocalGraphics mathematica/Taylor-contours-red}
+		\put(7, 87)		{\colorbox{white}{$\normt{r(a,b)} = \normt{a t^{b} - R}$}}
+		\put(-9, 46)	{\rotatebox{90}{\colorbox{white}{$b$}}}
+		\put(49, -5)	{\colorbox{white}{$a$}}
+		\put(100, 48)	{\colorbox{white}{\bl{$r_{LS} = 510$}}}
+		\put(100, 88)	{\colorbox{white}{\rd{$r =1456$}}}
+	\end{overpic}
+\end{frame}
+%
+\begin{frame}\frametitle{Seeing the \href{https://en.wikipedia.org/wiki/Errors_and_residuals}{Residual Error}}
+\center
+	%\href{}{
+	\begin{overpic}[ scale = 0.9 ]
+		{\pLocalGraphics mathematica/Taylor-residuals-both-A}
+		\put(-6, 25)	{\colorbox{white}{\rotatebox{90}{$error$}}}
+		\put(50, -5)	{\colorbox{white}{$t$}}
+	\end{overpic}
+\end{frame}
+%
+\begin{frame}\frametitle{Least Squares Problem}
+	\huge{
+	\begin{equation}
+		(\bl{a}, \bl{b})_{LS}\equiv \argmin\limits_{(\bl{a},\bl{b})\in\mathbb{R}^{2}} \normt{\bl{a} t^{\bl{b}} - R}
+	\label{eq:solution definition}
+	\end{equation}
+	}
+\end{frame}
+
+\begin{frame}\frametitle{Validity of Similarity Relationship}
+\center
+	\href{https://homepage.physics.uiowa.edu/~ghowes/teach/phys7729/docs/Taylor50b.pdf\#page=3}{
+	\begin{overpic}[ scale = 0.5 ]
+		{\pLocalGraphics taylor/taylor-basic}
+		\put(-45, 105)	{\colorbox{white}{$\frac{5}{2}\log R(t) = (\bl{\solnb} \pm \bl{\errb})\log t + (\solna \pm \erra)$}}
+		\put(-15, 40)	{\rotatebox{90}{\colorbox{white}{$\frac{5}{2}\log R$}}}
+		\put(37, -8)	{\colorbox{white}{$\log t$}}
+	\end{overpic}}
+\end{frame}
+
+% nb: /Users/dantopa/Mathematica_files/nb/projects/least squares/fireball/taylor/Taylor-lr-01.nb
+\begin{frame}\frametitle{Finding $a_{0}$, $a_{1}$ }
+	%
+\begin{equation}
+	\begin{array}{cccc}
+			%
+		\A{} & a & = & T \\
+			%
+		\mat{cc}{\one & x} & \littlea & = & \mat{c}{T}\\
+			%
+	\end{array}
+\label{eq:Dramatis Personae}
+\end{equation}
+	%
+\begin{enumerate}
+	\item $\A{}\in\real{\by{9}{2}}_{2}$: design matrix-- mesh
+	\item $b\in\real{9}$: data vector
+	\item $a\in\real{2}$: solution vector
+\end{enumerate}
+	%
+\end{frame}
+
+
+\endinput  %  ==  ==  ==  ==  ==  ==  ==  ==  ==

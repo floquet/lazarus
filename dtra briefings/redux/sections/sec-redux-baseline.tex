@@ -1,0 +1,101 @@
+% \input{\pSections "sec-redux-baseline"}
+
+%%    %%    %%    %%    %%    %%    %%    %%    %%    %%
+\subsection{Baseline}
+
+\begin{frame}\frametitle{Seminal Papers}
+%\caption{default}
+\begin{table}[htp]
+\begin{center}
+	\begin{tabular}{l}
+		 %
+	\href{run:../local/articles-redux/Taylor50a.pdf}{
+	\begin{overpic}[ scale = 0.25 ]
+		{\pLocalGraphics taylor/taylor-01.pdf}
+		\href{\urlTaylora}{\put(85, 5)	{\colorbox{gray!20}{\cite{taylor1950formationI}}}}
+	\end{overpic}}  \\\hline
+		 %
+	\ \\
+	\href{run:../local/articles-redux/Taylor50b.pdf}{
+	\begin{overpic}[ scale = 0.25 ]
+		{\pLocalGraphics Taylor/taylor-02.pdf}
+		\href{\urlTaylorb}{\put(85, 5)	{\colorbox{gray!20}{\cite{taylor1950formationII}}}}
+	\end{overpic}} 
+		 %
+	\end{tabular}
+\end{center}
+\label{tab:taylor-splash}
+\end{table}
+\end{frame}
+%
+\begin{frame}\frametitle{Not \yl{Brook Taylor}}
+\begin{table}[htp]
+%\caption{default}
+\begin{center}
+\href{https://en.wikipedia.org/wiki/Brook_Taylor}{
+	\begin{tabular}{cc}
+		\includegraphics[ width = 1.25in ]{ \pLocalGraphics Taylor/brook-01} &
+		\includegraphics[ width = 1.19in ]{ \pLocalGraphics Taylor/brook-02} 
+	\end{tabular}
+}
+\end{center}
+%\label{tab:label}
+\end{table}
+\href{https://mathworld.wolfram.com/TaylorSeries.html}{
+\begin{equation*}
+	f(x) = f(a) + \frac{x-a}{1!}f' + \frac{(x-a)^{2}}{2!}f''+ \cdots +  \frac{(x-a)^{n}}{n!}f^{(n)} + \cdots
+%\label{eq:}
+\end{equation*}
+}
+\end{frame}
+%
+\begin{frame}\frametitle{Fireball Energy}
+\center
+	\href{\urlTaylora}{
+	\begin{overpic}[ scale = 0.25 ]
+		{\pLocalGraphics Taylor/Taylor-01.pdf}
+		\put(32, -10)	{\colorbox{white}{$\bl{R = S(\gamma) \sqrt[5]{\frac{E\, t^{2}}{\rho_{0}} }}$}}
+		\put(65, -20)	{\colorbox{gray!20}{\cite[p. 172]{taylor1950formationI}}}
+	\end{overpic}}
+\end{frame}
+%
+\begin{frame}\frametitle{Fireball Photos: Trinity}
+\center
+		%
+	\href{https://homepage.physics.uiowa.edu/~ghowes/teach/phys7729/docs/Taylor50b.pdf\#page=9}{
+	\begin{overpic}[ scale = 0.175 ]
+		{\pLocalGraphics taylor/p-photos-01}
+		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+	\end{overpic}} 
+		%
+	\href{https://homepage.physics.uiowa.edu/~ghowes/teach/phys7729/docs/Taylor50b.pdf\#page=2}{
+	\begin{overpic}[ scale = 0.385 ]
+		{\pLocalGraphics taylor/p-table-1}
+		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+	\end{overpic}}
+		%
+\end{frame}
+
+\begin{frame}\frametitle{\href{https://homepage.physics.uiowa.edu/~ghowes/teach/phys7729/docs/Taylor50b.pdf\#page=3}{Taylor's Original Figure 1}}
+\center
+	\href{https://homepage.physics.uiowa.edu/~ghowes/teach/phys7729/docs/Taylor50b.pdf\#page=3}{
+	\begin{overpic}[ scale = 0.425 ]
+		{\pLocalGraphics taylor/fig-01}
+		\pause
+		\put(40, 40)	{\colorbox{white}{Method of Choice: \bl{Least Squares}}}
+	\end{overpic}}
+\end{frame}
+
+%
+\begin{frame}\frametitle{Validity of Similarity Relationship}
+\center
+	\href{https://homepage.physics.uiowa.edu/~ghowes/teach/phys7729/docs/Taylor50b.pdf\#page=3}{
+	\begin{overpic}[ scale = 0.5 ]
+		{\pLocalGraphics taylor/Taylor-basic}
+		\put(-45, 105)	{\colorbox{white}{$\frac{5}{2}\log R(t) = (\bl{\solnb} \pm \bl{\errb})\log t + (\solna \pm \erra)$}}
+		\put(-15, 40)	{\rotatebox{90}{\colorbox{white}{$\frac{5}{2}\log R$}}}
+		\put(37, -8)	{\colorbox{white}{$\log t$}}
+	\end{overpic}}
+\end{frame}
+
+\endinput  %  ==  ==  ==  ==  ==  ==  ==  ==  ==

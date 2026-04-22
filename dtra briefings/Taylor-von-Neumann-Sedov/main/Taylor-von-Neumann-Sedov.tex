@@ -1,0 +1,286 @@
+% typeset: Pdftex
+% Afterwards compile with pdflatex > bibtex > pdflatex > pdflatex.
+% in TeXShop preferences, change edit from bibtex to biber
+% https://tex.stackexchange.com/questions/144407/no-items-shown-bibliography-beamer?rq=1
+
+% https://tex.stackexchange.com/questions/1423/is-there-a-nice-way-to-compile-a-beamer-presentation-without-the-pauses
+%\documentclass[handout]{beamer}
+
+%! LaTeX Error: File `/Volumes/repos/bitbucket/strange/shared/collection/lib-colors.tex' not found.
+% edit 
+% nursery-slide-decks/beamer/dtra/global/setup-global
+
+\documentclass[]{beamer}
+%\usepackage{cite}
+%\usepackage{animate}
+%\usepackage{xmpmulti}
+%\usepackage{biblatex}
+%\usepackage[backend=biber,style=ieee, citestyle=authoryear]{biblatex}
+%\usepackage[backend=biber,style=phys, citestyle=authoryear]{biblatex}
+%\bibliographystyle{amsalpha}
+
+% point to content libraries
+\newcommand{\pGlobal}			{../../../global/}
+\newcommand{\pGlobalSetup}		{\pGlobal setup-global/}	
+
+% load LaTeX packages and personal macros
+\input{\pGlobalSetup setup-global-beamer}
+\input{\pLocalSetup setup-local}
+% paths-global.tex to repoint repos
+\usepackage[russian,english]{babel} % bibliography
+%\usetikzlibrary{calc,patterns,angles,quotes} % pendulum
+%\usepackage{pst-eucl} % pendulum A
+%\usepackage{auto-pst-pdf}
+%\usepackage{physics}
+%\usepackage{siunitx}
+%\sisetup{detect-all} % to allow \pi in \SI
+%\usepackage{tikz,pgfplots}
+%\usepackage[outline]{contour} % glow around text
+%\usetikzlibrary{calc}
+%\usetikzlibrary{angles,quotes} % for pic
+%\usetikzlibrary{arrows.meta}
+%\tikzset{>=latex} % for LaTeX arrow head
+%\contourlength{1.2pt}
+%
+%\colorlet{xcol}{blue!70!black}
+%\colorlet{vcol}{green!60!black}
+%\colorlet{myred}{red!70!black}
+%\colorlet{myblue}{blue!70!black}
+%\colorlet{mygreen}{green!70!black}
+%\colorlet{mydarkred}{myred!70!black}
+%\colorlet{mydarkblue}{myblue!60!black}
+%\colorlet{mydarkgreen}{mygreen!60!black}
+%\colorlet{acol}{red!50!blue!80!black!80}
+%\tikzstyle{CM}=[red!40!black,fill=red!80!black!80]
+%\tikzstyle{xline}=[xcol,thick,smooth]
+%\tikzstyle{mass}=[line width=0.6,red!30!black,fill=red!40!black!10,rounded corners=1,
+%                  top color=red!40!black!20,bottom color=red!40!black!10,shading angle=20]
+%\tikzstyle{faded mass}=[dashed,line width=0.1,red!30!black!40,fill=red!40!black!10,rounded corners=1,
+%                        top color=red!40!black!10,bottom color=red!40!black!10,shading angle=20]
+%\tikzstyle{rope}=[brown!70!black,very thick,line cap=round]
+%\def\rope#1{ \draw[black,line width=1.4] #1; \draw[rope,line width=1.1] #1; }
+%\tikzstyle{force}=[->,myred,very thick,line cap=round]
+%\tikzstyle{velocity}=[->,vcol,very thick,line cap=round]
+%\tikzstyle{Fproj}=[force,myred!40]
+%\tikzstyle{myarr}=[-{Latex[length=3,width=2]},thin]
+%\def\tick#1#2{\draw[thick] (#1)++(#2:0.12) --++ (#2-180:0.24)}
+%\DeclareMathOperator{\sn}{sn}
+%\DeclareMathOperator{\cn}{cn}
+%\DeclareMathOperator{\dn}{dn}
+%\def\N{80} % number of samples in plots
+
+% https://tex.stackexchange.com/questions/55000/continuing-enumerate-counters-in-beamer
+%\newcounter{saveenumi}
+%\newcommand{\seti}{\setcounter{saveenumi}{\value{enumi}}}
+%\newcommand{\conti}{\setcounter{enumi}{\value{saveenumi}}}
+
+\setbeamertemplate{bibliography item}{\insertbiblabel}
+\usepackage[style = numeric]{biblatex}
+%\usepackage[square,numbers]{natbib}
+%\setcitestyle{numbers}
+%\bibliography{\pSections em-gauge.bib}
+\bibliography{\pSections tvns.bib}
+
+\title
+[\WikiTvNS s]
+{\WikiTvNS s}
+
+\author[\dtriacAlpha Tutorial]{\Topa \\ \TopaEmail}
+\institute{\dtriac} 
+\medskip
+
+\date{\today}
+%\date{2018-08-31}
+%\addbibresource{\pSections "test-bib.bib"}
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+	\distA
+\end{frame}
+
+%
+\begin{frame}\frametitle{Fireball Photos To Physics}
+\begin{table}[htp]
+%\caption{default}
+\begin{center}
+	\begin{tabular}{cc}
+	\href{http://homepage.physics.uiowa.edu/~ghowes/teach/phys7729/docs/Taylor50b.pdf\#page=13}{
+	\begin{overpic}[ scale = 0.25 ]
+		{\pLocalGraphics taylor/taylor-image}
+		%\put(30, 10)	{\colorbox{white}{ $R = S(\gamma) t^{\tfrac{2}{5}} E^{\tfrac{1}{5}} \rho_{0}^{-\tfrac{1}{5}} $ }}
+		%\put(33, 30)	{\colorbox{white!10}{ $R = S(\gamma) \sqrt[5]{\frac{E t^{2}}{\rho} } $ }}
+		\put(43, 4)		{ \color{white}{$100 $ \textrm{m}} }
+		\pause
+		\put(33, 30)	{ \bl{$R = S(\gamma) \sqrt[5]{\frac{E t^{2}}{\rho_{0}} } $} }
+	\end{overpic}}
+	\end{tabular}
+\end{center}
+%\label{tab:label}
+\end{table}%
+\end{frame}
+%
+
+\begin{frame}\frametitle{Overview}
+	\tableofcontents[hideallsubsections]
+\end{frame}
+
+% main sections
+	\input{\pSections "sec-theory"}
+	\input{\pSections "sec-numerics"}
+	\input{\pSections "sec-applications"}
+	\input{\pSections "sec-backup"}
+
+%\input{\pSections "sec Sedov"}
+%\input{\pSections "sec Rankine-Hugoniot"}
+%\input{\pSections "sec-shock-hydrodynamics"}
+%\input{\pSections "sec-splash"}
+
+\section{Bibliography}
+\subsection{References}
+\begin{frame}[t,allowframebreaks]
+\frametitle{Bibliography}
+\nocite{*}
+\printbibliography[heading=none]
+\end{frame}
+
+%%    %%    %%    %%    %%    %%    %%    %%    %%    %%
+\subsection{Librarian Magic}
+
+\begin{frame}\frametitle{\href{https://en.wikipedia.org/wiki/Seshat}{Can't Find Seminal Work}}
+\center
+	\href{https://www.pinterest.com/pin/740982944913914922/}{
+	\begin{overpic}[ scale = 0.3 ]
+		{\pLocalGraphics help}
+		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+	\end{overpic}}
+\end{frame}
+
+\begin{frame}\frametitle{\href{hhttps://www.britannica.com/topic/Seshat}{Seshat: Goddess of Writing, Wisdom, Knowledge}}
+\center
+	\href{https://www.pinterest.com/pin/740982944913914922/}{
+	\begin{overpic}[ scale = 0.225 ]
+		{\pLocalGraphics seshat}
+		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+	\end{overpic}}
+\end{frame}
+
+\begin{frame}\frametitle{Librarian Magic}
+\small{
+\begin{quotation}
+They don't have enough information; neither did I. At the time of publication, it was not in English. \mg{Science Direct} doesn't offer this journal as far back as you've requested, under the name you cited. At the time, the journal was known as ``\bl{Prikladnaya matematika i mekhanika}'' with print \mg{ISSN 0032-8235}. 
+\end{quotation}
+}
+\ 
+\\[10pt]
+\center
+\href{https://translate.google.com/?sl=en&tl=ru&text=Prikladnaya\%20matematika\%20i\%20mekhanika\&op=translate}{\mg{\foreignlanguage{Russian}{Прикладная математика и механика}}}
+\end{frame}
+%
+\begin{frame}\frametitle{Librarian Magic}
+\small{
+\begin{quotation}
+That should help your UNM librarians, because according to \mg{WorldCat}, they will still have to request it from another library. There are \bl{only 4 in the US and Canada} who hold the title for the year you want... \mg{OCLC} charges per request initiated, so they're not putting incomplete information to get that request rejected, and have to submit (and pay for) another request. 
+\end{quotation}
+}
+\end{frame}
+%
+
+\begin{frame}\frametitle{Librarian Magic\jumpLittle}
+\center
+	%\href{}{
+	\begin{overpic}[ scale = 0.225 ]
+		{\pLocalGraphics "JMM 1946 request"}
+		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+	\end{overpic}
+\end{frame}
+
+%%    %%    %%    %%    %%    %%    %%    %%    %%    %%
+\begin{frame}\frametitle{Librarian Magic}
+\small{
+\begin{quotation}
+If you are ok receiving it in the original Russian, let them know. Also, academic libraries tend to close between Christmas and New Year so you may want to hold off on the ILL, lest it time out. 
+\end{quotation}
+}
+\end{frame}
+%
+%
+\subsection{Physics of Shock Waves}
+\begin{frame}\frametitle{Physics of Shock Waves and \\High-Temperature Hydrodynamic Phenomena}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+% Left side: Insert your image here
+\includegraphics[ width = 0.65\textwidth ]{\pLocalGraphics physics-of-shock-waves-and-high-temperature-hydrodynamic-phenomena-18.jpeg}
+\end{column}
+%
+\begin{column}{0.5\textwidth}
+% Right side: Insert your text here
+\begin{itemize}
+	\item \href{https://store.doverpublications.com/0486420027.html}{Dover Publishing}
+	\item \href{https://apps.dtic.mil/sti/citations/AD0622356}{DTIC}
+	\item \href{https://archive.org/details/physicsofshoakwa0000zeld}{Internet Archive}
+	\item \href{https://www.abebooks.com/servlet/SearchResults?kn=Physics\%20of\%20Shock\%20Waves\%20and\%20High-Temperature\%20Hydrodynamic\%20Phenomena&sts=t&cm_sp=SearchF-_-topnav-_-Results&ds=20}{Abe Books}
+	\item \href{https://play.google.com/store/books/details/Ya_B_Zel_dovich_Physics_of_Shock_Waves_and_High_Te?id=PULCAgAAQBAJ}{Google Play}
+	\item \href{https://books.google.co.ck/books?id=PULCAgAAQBAJ&printsec=frontcover\#v=onepage&q&f=false}{Google Books}
+	%s\item {https://www.amazon.com/Physics-Shock-High-Temperature-Hydrodynamic-Phenomena-ebook/dp/B00A7INZG6/ref=sr\_1\_1?crid=YBS1TOTL69NZ&keywords=kindle+Physics+of+Shock+Waves+and+High-Temperature+Hydrodynamic+Phenomena&qid=1701844571&sprefix=kindle+physics+of+shock+waves+and+high-temperature+hydrodynamic+phenomena\%2Caps\%2C140&sr=8-1&asin=B00A7INZG6&revisionId=67ef8263&format=1&depth=1}{Kindle Store}
+\end{itemize}
+\ \\[15pt]
+(\cite{zel2002physics})
+\end{column}
+\end{columns}
+\end{frame}
+
+% info slide during questions
+\begin{frame}
+	\titlepage
+\end{frame}
+
+\end{document}
+
+%\tiny
+%\scriptsize
+%\footnotesize
+%\small
+%\normalsize
+%\large
+%\Large
+%\LARGE
+%\huge
+%\Huge
+
+%\, thin space (normally 1/6 of a quad);
+%\> medium space (normally 2/9 of a quad);
+%\; thick space (normally 5/18 of a quad);
+%\! negative thin space (normally 1/6 of a quad).
+
+\begin{frame}\frametitle{Frame Title}
+\begin{enumerate}
+	\item 
+	\item 
+	\item 
+\end{enumerate}
+\end{frame}
+
+\begin{frame}\frametitle{Frame Title}
+\center
+	\href{url}{
+	\begin{overpic}[ scale = 1.0 ]
+	{\pLocalGraphics graphic-file}
+		%\put(-7,-10){Auxiliary text.}
+	\end{overpic}}
+\end{frame}
+
+\begin{frame}\frametitle{Frame Title}
+\begin{table}[htp]
+%\caption{default}
+\begin{center}
+	\begin{tabular}{cc}
+		 %
+		 %
+		 %
+	\end{tabular}
+\end{center}
+%\label{tab:label}
+\end{table}%
+\end{frame}

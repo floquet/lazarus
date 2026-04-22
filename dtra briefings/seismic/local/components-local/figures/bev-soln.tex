@@ -1,0 +1,50 @@
+%	\input{\pLocalComponents figures/"bev-soln"}
+
+%%==============FILE INFO=============
+%% Prepared by: mabromuela88
+%% Marketplace: Fiverr
+%% Buyer: dantopa
+%% Order: #FO158991F601
+%% Project: Bevington Data
+%% Item: Bevington Data Graph (Revised)
+%%==================================
+%\documentclass[tikz,border=3mm]{standalone}
+
+%\usetikzlibrary{external}
+%
+%                                        -halt-on-error
+%                                       -interaction=batchmode 
+%                                        -jobname "\image" "\texsource"
+%                                        && pdftops -eps "\image.pdf"}}
+%\tikzexternalize[shell escape=-enable-write18]
+
+\center
+	\begin{tikzpicture}[ scale = 0.95 ]
+		\begin{axis}[
+			width=10cm,
+			height=7.5cm,
+			enlarge x limits=0.05,
+			enlarge y limits=0.05,
+			xlabel={$x$, \textbf{cm}},
+			ylabel={$T$, $^\circ$\textbf{C}},
+			xmin=-0.25,
+			xmax=10.25,
+			ymin=-5,
+			ymax=120,
+			xtick={0,2,4,6,8,10},
+			minor x tick num=3,
+			minor y tick num=3
+		]
+			\addplot[residuals] table {\loadedtable};
+			\addplot[no markers, thick, black] table [x=x_k,y=line] {\loadedtable};
+			\addplot[blue,domain=-0.25:10.25,name path=a]{9.7001+10.2766*x};
+			\addplot[red,domain=-0.25:10.25,name path=b]{-0.0723174+ 8.54003*x};
+			\addplot[gray!10] fill between [of = a and b];
+			\addplot[densely dashed,domain=-0.25:10.25,gray!50]{100};
+			\addplot[densely dashed,domain=-0.25:10.25,gray!50]{0};
+			\node at (3.5,90){\small $T_{\color{blue}+}(x)=(a_0\, {\color{blue}+} \, \sigma_0)+(a_1 \, {\color{blue}+} \, \sigma_1)x$};
+			\node at (6.5,20){\small $T_{\color{red}-}(x)=(a_0 \, {\color{red}-} \, \sigma_0)+(a_1\, {\color{red}-}\, \sigma_1)x$};
+			\filldraw[draw=white,fill=black] (axis cs:0,0) circle (2pt);
+			\filldraw[draw=white,fill=black] (axis cs:10,100) circle (2pt);
+		\end{axis}
+	\end{tikzpicture}

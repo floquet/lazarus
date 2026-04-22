@@ -1,0 +1,185 @@
+% \input{\pSections "ssec-doering-gibbon"}
+
+%%    %%    %%    %%    %%    %%    %%    %%    %%    %%
+\subsection{Hydon}
+
+\begin{frame}\frametitle{Symmetry Methods for Differential Equations}
+\center
+	\href{https://www.cambridge.org/core/books/symmetry-methods-for-differential-equations/805DEEB7D5D0D2040A3A8444B1C8A33E}{
+	\begin{overpic}[ scale = 0.25 ]
+		{\pLocalGraphics cvr-hydon}
+		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+	\end{overpic}}
+	\\[10pt]
+	\cite{hydon2000symmetry}
+\end{frame}
+
+%%    %%    %%    %%    %%    %%    %%    %%    %%    %%
+\subsection{Doering \& Gibbon}
+
+\begin{frame}\frametitle{Applied Analysis of the \ns\ Equations}
+\center
+	\href{https://www.cambridge.org/core/books/applied-analysis-of-the-navierstokes-equations/C413964F37F2EE606669FEB49C51A454}{
+	\begin{overpic}[ scale = 0.25 ]
+		{\pLocalGraphics cvr-doering-gibbon}
+		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+	\end{overpic}}
+	\\[10pt]
+	\cite{doering1995applied}
+\end{frame}
+
+%
+\begin{frame}\frametitle{Temporal Derivative}
+		%
+\begin{equation}
+	\paren{\tdt{\fxt}}_{\text{fixed }\bx} 
+		= \lim\limits_{\bl{\bdt} \to 0} \displaystyle\frac{f(\bx, t + \bl{\bdt}) - \fxt} {\bl{\bdt}}
+		\pause
+		= \pdt{\fxt}
+\label{eq:Temporal Derivative}
+\end{equation}
+% p. 2, (1.2.2)
+		%
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Go With The Flow}
+\center
+	\href{https://math.stackexchange.com/questions/3173298/poincaré-bendixson-theorem-and-limit-cyclefind-the-trapping-region}{
+	\begin{overpic}[ scale = 0.25 ]
+		{\pLocalGraphics "3173298 Poincare-Bendixson"}
+		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+	\end{overpic}}
+\end{frame}
+%
+\begin{frame}\frametitle{Convective Derivative: Definition}
+		%
+\begin{equation}
+	\paren{\tdt{f(\bx+ \mathbf{u}\bdt, t+\bdt)}}_{\text{stream }\mathbf{u}} = \lim\limits_{\bdt \to 0} \frac{f(\bx + \bu \bdt, t + \bdt) - \fxt} {\bdt}
+\label{eq:convective-definition}
+\end{equation}
+		%
+\end{frame}
+%
+\begin{frame}\frametitle{Convective Derivative: Definition}
+		%
+\begin{equation}
+	\paren{\tdt{f(\bx+ \mathbf{u}\bdt, t+\bdt)}}_{\text{stream }\mathbf{u}} 
+		= \lim\limits_{\bdt \to 0} \frac{f(\rd{\bx + \bu \bdt}, t + \bdt) - \fxt} {\bdt}
+\tag{\ref{eq:convective-definition}}
+\end{equation}
+		%
+\end{frame}
+%
+\begin{frame}\frametitle{Convective Derivative: Resolution}
+\center
+\mg{Method: Taylor Approximation Theorem}\\
+		%
+\begin{equation}
+\begin{split}
+	f(\bx+ \mathbf{u}\bdt, t+\bdt) 
+		&= f\paren{x_{1}, t + \bdt} + u_{1}\bdt \fxtd{1}{\tbdt} \\
+		&+ f\paren{x_{2}, t + \bdt} + u_{2}\bdt \fxtd{2}{\tbdt} \\
+		&+ f\paren{x_{3}, t + \bdt} + u_{3}\bdt \fxtd{3}{\tbdt} + \mathcal{O}\paren{\bdt^{2}}\\[15pt]
+		%\pause
+		&= f\paren{\bx, t + \bdt} + \bdt\, \bu \cdot \nabla f\paren{\bx, t + \bdt} + \mathcal{O}\paren{\bdt^{2}}
+\end{split}
+\label{eq:convective-definition-resolution}
+\end{equation}
+		%
+\end{frame}
+%
+\begin{frame}\frametitle{Convective Derivative: Resolution}
+\center
+%Method: Taylor Approximation Theorem\\
+		%
+\begin{equation}
+\begin{split}
+	\lim\limits_{\bdt \to 0} \frac{ f(\rd{\bx + \bu \bdt}, t + \bdt) } { \bdt }
+		&= \lim\limits_{\bdt \to 0} \frac{ f\paren{\bx, t + \bdt} } { \bdt } + \cancel{\bdt} \frac{ \rd{\bu \cdot \nabla} f\paren{\bx, t + \bdt} } { \cancel{\bdt} } \\[10pt]
+		&= \lim\limits_{\bdt \to 0} \frac{ f\paren{\bx, t + \bdt} } { \bdt } + \rd{\bu \cdot \nabla} f\paren{\bx,t}
+\end{split}
+\label{eq:convective-definition-resolution-term}
+\end{equation}
+		%
+\end{frame}
+%
+\begin{frame}\frametitle{Convective Derivative}
+		%
+\begin{equation}
+	\paren{\tdt{f(\bx+ \mathbf{u}\bdt, t+\bdt)}}_{\text{stream }\mathbf{u}} 
+		= \pdt{\fxt} + \bu \cdot \nabla \fxt
+\tag{\ref{eq:convective-definition}}
+\end{equation}
+		%
+\end{frame}
+%
+\begin{frame}\frametitle{\href{https://mathworld.wolfram.com/TotalDerivative.html}{Total Derivative}}
+\begin{equation}
+	\frac{D}{Dt} = \partial_{t} + \bl{v^{k}\partial_{k}} = \partial_{t} + \bl{\mathbf{v} \cdot \nabla}	
+\label{eq:total derivative}
+\end{equation}
+\ \\[20pt]
+a.k.a \href{https://mathworld.wolfram.com/ConvectiveDerivative.html}{convective derivative}, \href{https://en.wikipedia.org/wiki/Material_derivative}{material derivative}
+%
+\end{frame}
+%
+%
+\begin{frame}\frametitle{\href{https://en.wikipedia.org/wiki/Material_derivative}{Material Derivative} Also Know As...}
+\begin{enumerate}
+	\item \href{https://bookstore.ams.org/view?ProductCode=CLN/9}{\bl{advective} derivative} (\cite{majda2003introduction})
+	\item \bl{convective} derivative\footnote{\href{https://link.springer.com/book/10.1007/b97537}{Waves and compressible flow}, Ockendon, H. and Ockendon, J. R., Springer, 2004.} 
+	\item \href{https://www.google.com/books/edition/Transport_Phenomena/L5FnNlIaGfcC?hl=en}{derivative \bl{following the motion}} (\cite{bird2002transport})
+	\item \href{https://www.google.com/books/edition/Transport_Phenomena/L5FnNlIaGfcC?hl=en}{\bl{hydrodynamic} derivative} (\cite{bird2002transport})
+	\item \bl{Lagrangian} derivative\footnote{\href{https://link.springer.com/book/9781563962103}{Introduction to Physical Oceanography}, Mellor, G. L., Springer, 1996}
+	\seti
+\end{enumerate}
+\end{frame}
+%
+\begin{frame}\frametitle{\href{https://en.wikipedia.org/wiki/Material_derivative}{Material Derivative} Also Know As...}
+\begin{enumerate}
+	\conti
+	\item \href{}{\bl{particle} derivative} (\cite{stoker1992water})
+	\item \href{}{\bl{substantial} derivative} (\cite{bird2002transport})
+	\item \href{}{\bl{substantive} derivative} (\cite{granger1995fluid})
+	\item \href{}{\bl{Stokes} derivative} (\cite{granger1995fluid})
+	\item \href{}{\bl{total} derivative} (\cite{bird2002transport}, \cite{landau1959fluid})
+	\item \href{https://www.cambridge.org/core/books/gauge-field-theories/BFDECE4B2C0FE428C540232E36D39288}{\bl{gauge covariant} derivative} (\cite{pokorski2000gauge})
+\end{enumerate}
+\end{frame}
+%
+\begin{frame}\frametitle{Convective Derivative: Application}
+		%
+\href{https://mathworld.wolfram.com/ConvectiveDerivative.html}{
+\begin{equation}
+	\frac{D\bu}{Dt} = \pdt{\bu} + \paren{ \nabla \times \bu} \times \bu + \nabla \paren{ \frac{1}{2}\bu^{2} }	
+\label{eq:convective-definition-u}
+\end{equation}}
+		%
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Conservation: Mass}
+		%
+\begin{equation}
+	\pdt{}\bl{\delta M} = 0%
+\label{eq:conservation-mass}
+\end{equation}
+		%
+\end{frame}
+%
+\begin{frame}\frametitle{Rate of Change: Volume}
+		%
+\begin{equation}
+	\pdt{}\bl{\delta V} = \sum_{k=1}^{3} \tdt{\delta x_{\bl{k}}} \delta x_{\bl{k+1}} \delta x_{\bl{k+2}}%
+\label{eq:conservation-mass}
+\end{equation}
+		%
+\ \\[20pt]
+\center
+Using cyclical increments $k=1,2,3$
+\end{frame}
+%
+
+
+\endinput  %  ==  ==  ==  ==  ==  ==  ==  ==  ==

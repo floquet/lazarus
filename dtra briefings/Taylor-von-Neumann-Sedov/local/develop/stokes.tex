@@ -1,0 +1,63 @@
+% https://tex.stackexchange.com/questions/286653/illustrating-stokes-theorem-with-asymptote
+\documentclass[]{beamer}
+\begin{document}
+import graph3;
+size(6cm,0);
+settings.render = 4;
+currentprojection=orthographic(4, 1, 1);
+
+// COORDINATE SYSTEM
+label("$O$", (0, 0, 0), NW);
+Label Lx = Label("$x$", EndPoint, W);
+Label Ly = Label("$y$", EndPoint, S);
+Label Lz = Label("$z$", EndPoint, W);
+draw(Lx, O--2X, Arrow3(emissive(black)));
+draw(Ly, O--2Y, Arrow3(emissive(black)));
+draw(Lz, O--2Z, Arrow3(emissive(black)));
+
+// SURFACE
+triple S(pair uv) {
+  real x = cos(uv.x)*sin(uv.y);
+  real y = sin(uv.x)*sin(uv.y);
+  real z =           cos(uv.y);
+  return (x-(1-z**2-y**2), y-0.3*sin(z*pi), z);
+}
+
+// BOUNDARY
+triple dS(real u) {
+  return S((u, pi/2));
+}
+
+// TANGENT VECTORS
+real e = 0.001; // *this... is... infinitesimal!*
+triple U(pair t) { return (S((e,0)+t)-S(t))/e; }
+triple V(pair t) { return (S((0,e)+t)-S(t))/e; }
+
+// NORMAL VECTOR
+triple N(pair uv) {
+  return cross(U(uv),V(uv))/length(cross(U(uv),V(uv)));
+}
+
+// GRAPHICAL ELEMENTS
+
+surface s = surface(S, (0, 0), (2pi, pi/2), 64, 64, Spline);
+path3 ds = graph(dS, 0, 2pi);
+
+pair t = (-pi/8, pi/8);
+path3 n = S(t) -- shift(-N(t))*S(t);
+
+triple adj = (0,1.4,0.7);
+s = shift(adj)*s;
+ds = shift(adj)*ds;
+n = shift(adj)*n;
+
+label("$\Sigma$", shift(0,0,0.1)*shift(adj)*S((pi/2,pi/5)), NE);
+Label LdS = Label("$\partial\Sigma$", Relative(0.95), S);
+Label Ln = Label("$\mathbf n$", EndPoint, NW);
+
+draw(s, surfacepen=material(diffusepen=gray(0.6),emissivepen=gray(0.3),specularpen=gray(0.1)));
+draw(LdS, ds, Arrow3(emissive(black)));
+draw(shift(4*unit(currentprojection.camera))*ds, dashed);
+draw(Ln, n, Arrow3(emissive(black)));
+
+\end{document}

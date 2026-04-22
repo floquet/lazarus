@@ -1,0 +1,96 @@
+% \input{\pathcollection lib-A}
+
+% basic matrices
+%\newcommand{\A}[1]				{ \textbf{A}^{\mathrm{\!#1}} }  % pull in exponent
+%\newcommand{\A}[1]				{ \mathbf{A}^{^{\mathrm{\!#1}}} }  % pull in exponent
+%\newcommand{\A}[1]				{ \mathbf{A}^{\mathrm{\!#1}} }
+\newcommand{\A}[1]				{ \mathbf{A}^{\mathrm{#1}} }
+\newcommand{\As}[0]			{ \mathbf{A}^{\rm{*}} }
+\newcommand{\AsA}[0]			{ \mathbf{A}^{\rm{*}}\A{} }
+\newcommand{\AAs}[0]			{ \A{}\,\mathbf{A}^{\rm{*}} }
+\newcommand{\AtA}[0]			{ \mathbf{A}^{\rm{T}}\A{} }
+\newcommand{\AAt}[0]			{ \A{}\,\mathbf{A}^{\rm{T}} }
+\newcommand{\AAsx}[0]			{ \A{}\,\mathbf{A}^{\rm{*}}\,\xls }
+\newcommand{\pA}[1]			{ \paren{ \A{#1} } }
+\newcommand{\Ahat}[1]			{ \mathbf{\hat{A}}^{\mathrm{\!#1}} }
+\newcommand{\Aphat}[0]			{ \mathbf{\hat{A}}^{\sym} }
+\newcommand{\Atilde}[1]			{ \mathbf{\tilde{A}}^{\mathrm{\!#1}} }
+
+% inverses
+\newcommand{ \Ap }[0]			{ \A{\sym} }
+\newcommand{ \Ainv }[0]			{ \A{-1} }
+\newcommand{ \Ainvs }[0]			{ \A{-*} }
+\newcommand{ \AinvL }[0]			{ \A{-L} }
+\newcommand{ \AinvR }[0]		{ \A{-R} }
+\newcommand{ \Apcolumn }[0]		{ \frac{\A{*}}{\wx{*}} }
+\newcommand{ \Anormal }[0]		{ \inv{\wx{*}}\A{*} }
+\newcommand{ \Anormalt }[0]		{ \inv{\wx{T}}\A{T} }
+\newcommand{ \Aonormal }[0]		{ \A{*} \inv{\wy{*}} }
+\newcommand{ \alphaCore }[0]		{ \A{*} \WW{2} \! \A{} }
+\newcommand{ \factorAlpha }[0]	{ \inv{ \alphaCore } }
+\newcommand{ \AnormalW }[0]		{ \factorAlpha \! \A{*} \WW{2	} }
+\newcommand{ \Aother }[0]		{ \A{*}\inv{\wy{*}} }
+\newcommand{ \Apb }[0]			{ \Ap b }
+
+% projectors
+\newcommand{ \ApA }[0]			{ \Ap\A{} }
+\newcommand{ \AAp }[0]			{ \A{}\,\Ap }
+
+% matrix vector products
+\newcommand{ \Ax }[0]			{ \A{}\,x }
+\newcommand{ \Axp }[0]			{ \A{}\,\xp }
+\newcommand{ \Axls }[0]			{ \A{}\,\xls }
+\newcommand{ \Astar }[0]			{ \A{}\,\xstar }
+\newcommand{ \Aa }[0]			{ \A{}\,a }
+\newcommand{ \Aalpha }[0]		{ \A{}\,\alpha }
+\newcommand{ \Avphi }[0]			{ \A{}\,\varphi }
+\newcommand{ \Abvphi }[0]		{ \A{}\,\bl{\varphi }}
+
+% equalities
+\newcommand{ \Axeb }[0]			{ \Ax  = b }
+\newcommand{ \Axaeb }[0]		{ \Ax &= b }
+\newcommand{ \AaeT }[0]			{ \Aa  = T }
+\newcommand{ \AaaeT }[0]		{ \Aa &= T }
+
+% membership
+\newcommand{ \aicmm }[0]		{ \A{} \in \cmplxmm }
+\newcommand{ \aicmn }[0]		{ \A{} \in \cmplxmn }
+\newcommand{ \aicmnr }[0]		{ \A{} \in \cmplxmnr }
+\newcommand{ \aicmrr }[0]		{ \A{} \in \cmplxmrr }
+\newcommand{ \aicmmm }[0]		{ \A{} \in \cmplxmmm }
+\newcommand{ \aicmnm }[0]		{ \A{} \in \cmplxmnm }
+\newcommand{ \aicmnn }[0]		{ \A{} \in \cmplxmnn }
+
+\newcommand{ \airmn }[0]			{ \A{} \in \realmn }
+\newcommand{ \airmnr }[0]		{ \A{} \in \realmnr }
+\newcommand{ \airmmm }[0]		{ \A{} \in \realmmm }
+
+% product matrices
+\newcommand{ \wx }[1]			{ \A{#1}  \A{} }
+\newcommand{ \wy }[1]			{ \A{} \A{#1} }
+%\newcommand{ \wxi }[1]			{ \paren{\A{#1}  \A{}}^{-1} }
+\newcommand{ \wxi }[1]			{ \inv{ \A{#1}  \A{} } }
+\newcommand{ \wyi }[1]			{ \paren{\wy{#1}}^{-1} }
+\newcommand{ \wxx }[1]			{ \wx{#1}\,x }
+\newcommand{ \wv }[0]			{ \W{\mathbf{V}} }
+\newcommand{ \wu }[0]			{ \W{\mathbf{U}} }
+
+% product matrix equations
+\newcommand{ \wxe }[1]			{ \wv = \wx{#1} }
+\newcommand{ \wye }[1]			{ \wu = \wy{#1} }
+
+
+% SVD equations
+\newcommand{ \aesvd }[1]		{ \A{}  = \svd{ #1 } }
+\newcommand{ \aetsvd }[1]		{ \A{}  = \cur{}\, \ess{}\, \cvrs{ #1 } }
+\newcommand{ \aaesvd }[1]		{ \A{} &= \svd{ #1 } }
+
+% SVD transpose equations
+\newcommand{ \aesvdt }[1]		{ \A{ #1 }  = \svdt{ #1 } }
+\newcommand{ \aaesvdt }[1]		{ \A{ #1 } &= \svdt{ #1 } }
+
+% combos
+\newcommand{ \ax }[0]			{ \A{}\,\X{} }  % pull in 
+
+
+\endinput  %  ==  ==  ==  ==  ==  ==  ==  ==  ==

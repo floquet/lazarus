@@ -1,0 +1,37 @@
+% Tue Jun 11 21:46:48 MDT 2019
+%  L O C A L   C O P Y
+% fundamental theorem of linear algebra
+% range and null space
+\newcommand{ \atomrng }[0]		{ \mathcal{R} }
+\newcommand{ \atomnll }[0]		{ \mathcal{N} }
+
+\newcommand{ \rng }[1]			{ \atomrng \paren{ #1 } }
+\newcommand{ \nll }[1]			{ \atomnll \paren{ #1 } }
+
+\newcommand{ \rnga }[1]			{ \rng{ \A{ \bk{#1} } } }
+\newcommand{ \nlla }[1]			{ \nll{ \A{ \bk{#1} } } }
+
+\newcommand{ \bornga }[1]		{ \bl{ \overline{\rnga{ #1 }} } }
+\newcommand{ \brnga }[1]			{ \bl{ \rnga{ #1 } } }
+\newcommand{ \rnlla }[1]			{ \rd{ \nlla{ #1 } } }
+\newcommand{ \lrnlla }[1]			{ {\color{red!40}{ \nlla{ #1 }} } }
+\newcommand{ \gnlla }[1]			{ \mg{ \nll{ \A{ {#1} } } } }
+
+% decompositions
+\newcommand{ \decomprow }[1]	{ \rnga{ #1 }  \oplus \nlla{} }
+\newcommand{ \decompcol }[1]		{ \rnga{}      \oplus \nlla{ #1 } }
+
+\newcommand{ \cdecomprow }[1]	{ \brnga{ #1 } \oplus \rnlla{} }
+\newcommand{ \cdecompcol }[1]	{ \brnga{}     \oplus \rnlla{ #1 } }
+
+\newcommand{ \cnftolarow }[1]		{ \cmplxn = \decomprow{ #1 } }
+\newcommand{ \cmftolacol }[1]		{ \cmplxm = \decompcol{ #1 } }
+
+\newcommand{ \ccnftolarow }[1]	{ \cmplxn = \cdecomprow{ #1 } }
+\newcommand{ \ccmftolacol }[1]	{ \cmplxm = \cdecompcol{ #1 } }
+
+\newcommand{ \codecomprow }[1]	{ \bornga{ #1 } \oplus \rnlla{} }
+\newcommand{ \codecompcol }[1]	{ \bornga{} \oplus \rnlla{ #1 } }
+
+
+\endinput  %  ==  ==  ==  ==  ==  ==  ==  ==  ==

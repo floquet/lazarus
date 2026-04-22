@@ -1,0 +1,37 @@
+% \input{\pSections "sec-nonlinear-least-squares"}
+
+\section{Nonlinear Least Squares}
+
+%%    %%    %%    %%    %%    %%    %%    %%    %%    %%
+\subsection{Solution}
+
+\begin{frame}\frametitle{Solution Using \href{https://www.wolfram.com/mathematica/	}{Mathematica}}
+\center
+	\href{run:../local/articles-redux/2023-film-working-group.pdf}{
+	\begin{overpic}[ scale = 0.375 ]
+		{\pLocalGraphics mathematica/norm-min}
+		\pause
+		\put(55, 5)	{\colorbox{white}{$(\bl{a}, \bl{b})_{LS}\equiv \argmin\limits_{(\bl{a},\bl{b})\in\mathbb{R}^{2}} \normt{\bl{a} t^{\bl{b}} - R}$}}
+	\end{overpic}}
+\end{frame}
+
+
+\begin{frame}\frametitle{Numeric Alert}
+\center
+	%\href{}{
+	\begin{overpic}[ scale = 0.375 ]
+		{\pLocalGraphics mathematica/ouch}
+		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+	\end{overpic}
+\end{frame}
+
+%
+\begin{frame}\frametitle{Error Analysis}
+\begin{equation}
+	\sigma_{R} = b \sigma_{t} \frac{R}{t}
+\label{eq:error-powers}
+\end{equation}
+\end{frame}
+
+
+\endinput  %  ==  ==  ==  ==  ==  ==  ==  ==  ==

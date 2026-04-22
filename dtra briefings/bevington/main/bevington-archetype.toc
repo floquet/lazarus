@@ -1,0 +1,57 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {1}{Problem}{4}{0}{1}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {1}{1}{Bevington Archetype}{6}{0}{1}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {1}{2}{Least Squares Exemplar Problem}{11}{0}{1}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {1}{3}{Fundamental Theorem\ of Linear Algebra}{15}{0}{1}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {1}{4}{Least Squares Problem and Solution}{18}{0}{1}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {1}{5}{The Fredholm Alternative}{22}{0}{1}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {2}{Model}{28}{0}{2}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {2}{1}{Heat Flow in 1 Dimension}{30}{0}{2}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {2}{2}{\href {https://mathworld.wolfram.com/LaplacesEquation.html}{Laplace's Equation}}{34}{0}{2}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {2}{3}{Linear Model}{36}{0}{2}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {3}{Solution}{40}{0}{3}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {3}{1}{Posing Linear System}{40}{0}{3}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {3}{2}{Minimization}{47}{0}{3}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {3}{3}{Seeing the Solution}{61}{0}{3}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {4}{Result}{65}{0}{4}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {4}{1}{Seeing the Result}{65}{0}{4}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {4}{2}{Interpolation}{72}{0}{4}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {4}{3}{Convergence}{79}{0}{4}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {4}{4}{McAninch Challenge}{90}{0}{4}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {4}{5}{Perturbation Analysis}{99}{0}{4}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {5}{Backup}{111}{0}{5}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {5}{1}{The Best Fit May be Crap}{111}{0}{5}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {5}{2}{Why Least Squares?}{118}{0}{5}
+\defcounter {refsection}{0}\relax 
+\beamer@subsubsectionintoc {5}{2}{1}{Norms}{118}{0}{5}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {5}{3}{The Normal Equations}{125}{0}{5}
+\defcounter {refsection}{0}\relax 
+\beamer@subsubsectionintoc {5}{3}{1}{The Normal Equations in Theory}{130}{0}{5}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {5}{4}{Notation}{140}{0}{5}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {5}{5}{Bounding Errors}{144}{0}{5}

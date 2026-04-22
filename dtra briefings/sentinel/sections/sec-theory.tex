@@ -1,0 +1,733 @@
+% \input{\pSections "sec-theory"}
+
+\section{Theory}
+
+\input{\pSections "ssec-latter"}
+
+%%    %%    %%    %%    %%    %%    %%    %%    %%    %%
+\subsection{Big Picture}
+\begin{frame}\frametitle{Principals}
+\begin{table}[htp]
+%\caption{default}
+\begin{center}
+	\begin{tabular}{ccc}
+		 %
+	\href{https://en.wikipedia.org/wiki/G._I._Taylor}{
+	\begin{overpic}[ height = 1.5in ]
+		{\pLocalGraphics people/Taylor}
+		%\put(85, 5)	{\colorbox{white}{\cite{taylor1950formationI}}}
+	\end{overpic}} &
+		 %
+	\href{https://en.wikipedia.org/wiki/John_von_Neumann}{
+	\begin{overpic}[ height = 1.5in ]
+		{\pLocalGraphics people/vN}
+		%\put(85, 5)	{\colorbox{white}{\cite{taylor1950formationI}}}
+	\end{overpic}} &
+		 %
+	\href{https://en.wikipedia.org/wiki/Leonid_Sedov}{
+	\begin{overpic}[ height = 1.5in ]
+		{\pLocalGraphics people/Sedov}
+		%\put(85, 5)	{\colorbox{white}{\cite{taylor1950formationI}}}
+	\end{overpic}} \\
+		%
+		Taylor & \ \ von Neumann & Sedov \\
+		%
+		\pause
+		\mg{implosion instability} & \ \mg{explosive lensing} & \href{https://content.time.com/time/subscriber/article/0,33009,869245,00.html}{\mg{Sputnik?}}
+		%
+	\end{tabular}
+\end{center}
+\label{tab:mug-shots}
+\end{table}%
+\end{frame}
+
+%
+\begin{frame}\frametitle{Computing Energy From Photographs\jumpLittle}
+{\LARGE{
+\begin{equation}
+	\bl{R} = \bl{S(\gamma) \sqrt[5]{\frac{\rd{E}\, t^{2}}{\rho_{0}} }}
+\label{eq:one}
+\end{equation}
+}}
+\end{frame}
+
+%%    %%    %%    %%    %%    %%    %%    %%    %%    %%
+%\subsection{Literature Survey}%, Seminal Papers}
+\begin{frame}\frametitle{Seminal Papers}
+%\caption{default}
+\begin{table}[htp]
+\begin{center}
+	\begin{tabular}{l}
+		 %
+	\href{run:../local/articles/Taylor50a.pdf}{
+	\begin{overpic}[ scale = 0.25 ]
+		{\pLocalGraphics ss/taylor-01.pdf}
+		\href{\urlTaylora}{\put(85, 5)	{\colorbox{gray!20}{\cite{taylor1950formationI}}}}
+	\end{overpic}}  \\\hline
+		 %
+	\ \\
+	\href{run:../local/articles/Taylor50b.pdf}{
+	\begin{overpic}[ scale = 0.25 ]
+		{\pLocalGraphics ss/taylor-02.pdf}
+		\href{\urlTaylorb}{\put(85, 5)	{\colorbox{gray!20}{\cite{taylor1950formationII}}}}
+	\end{overpic}} 
+		 %
+	\end{tabular}
+\end{center}
+\label{tab:taylor-splash}
+\end{table}
+\end{frame}
+%
+\begin{frame}\frametitle{Not \yl{Brook Taylor}}
+\begin{table}[htp]
+%\caption{default}
+\begin{center}
+\href{https://en.wikipedia.org/wiki/Brook_Taylor}{
+	\begin{tabular}{cc}
+		\includegraphics[ width = 1.25in ]{ \pLocalGraphics Taylor/brook-01} &
+		\includegraphics[ width = 1.19in ]{ \pLocalGraphics Taylor/brook-02} 
+	\end{tabular}
+}
+\end{center}
+%\label{tab:label}
+\end{table}
+\href{https://mathworld.wolfram.com/TaylorSeries.html}{
+\begin{equation*}
+	f(x) = f(a) + \frac{x-a}{1!}f' + \frac{(x-a)^{2}}{2!}f''+ \cdots +  \frac{(x-a)^{n}}{n!}f^{(n)} + \cdots
+%\label{eq:}
+\end{equation*}
+}
+\end{frame}
+%
+\begin{frame}\frametitle{Fireball Energy}
+\center
+	\href{\urlTaylora}{
+	\begin{overpic}[ scale = 0.5 ]
+		{\pLocalGraphics Taylor/Taylor-01.pdf}
+		\put(32, -10)	{\colorbox{white}{$\bl{R = S(\gamma) \sqrt[5]{\frac{E\, t^{2}}{\rho_{0}} }}$}}
+		\put(65, -20)	{\colorbox{gray!20}{\cite[p. 172]{taylor1950formationI}}}
+	\end{overpic}}
+\end{frame}
+%
+\begin{frame}\frametitle{Fireball Photos: Trinity}
+\center
+		%
+	\href{https://homepage.physics.uiowa.edu/~ghowes/teach/phys7729/docs/Taylor50b.pdf\#page=9}{
+	\begin{overpic}[ scale = 0.175 ]
+		{\pLocalGraphics taylor/p-photos-01}
+		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+	\end{overpic}} 
+		%
+	\href{https://homepage.physics.uiowa.edu/~ghowes/teach/phys7729/docs/Taylor50b.pdf\#page=2}{
+	\begin{overpic}[ scale = 0.385 ]
+		{\pLocalGraphics taylor/p-table-1}
+		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+	\end{overpic}}
+		%
+\end{frame}
+
+\begin{frame}\frametitle{\href{https://homepage.physics.uiowa.edu/~ghowes/teach/phys7729/docs/Taylor50b.pdf\#page=3}{Taylor's Original Figure 1}}
+\center
+	\href{https://homepage.physics.uiowa.edu/~ghowes/teach/phys7729/docs/Taylor50b.pdf\#page=3}{
+	\begin{overpic}[ scale = 0.425 ]
+		{\pLocalGraphics taylor/fig-01}
+		\pause
+		\put(40, 40)	{\colorbox{white}{Method of Choice: \bl{Least Squares}}}
+	\end{overpic}}
+\end{frame}
+
+%
+\begin{frame}\frametitle{Validity of Similarity Relationship}
+\center
+	\href{https://homepage.physics.uiowa.edu/~ghowes/teach/phys7729/docs/Taylor50b.pdf\#page=3}{
+	\begin{overpic}[ scale = 0.5 ]
+		{\pLocalGraphics taylor/taylor-basic}
+		\put(-45, 105)	{\colorbox{white}{$\frac{5}{2}\log R(t) = (\bl{\solnb} \pm \bl{\errb})\log t + (\solna \pm \erra)$}}
+		\put(-15, 40)	{\rotatebox{90}{\colorbox{white}{$\frac{5}{2}\log R$}}}
+		\put(37, -8)	{\colorbox{white}{$\log t$}}
+	\end{overpic}}
+\end{frame}
+%\endinput  %  ==  ==  ==  ==  ==  ==  ==  ==  ==
+%
+\begin{frame}\frametitle{Taylor's Results For Trinity Explosion}
+\begin{table}[htp]
+%\caption{default}
+\begin{center}
+	\begin{tabular}{cc}
+		%
+		Yield & Fireball Rise\\[10pt]
+		%
+		$E=16.8\ Kt$ & $U=35.7\ m/s$ \\[15pt]
+		\pause
+		%
+	\href{https://homepage.physics.uiowa.edu/~ghowes/teach/phys7729/docs/Taylor50b.pdf\#page=6}{
+	\begin{overpic}[ scale = 0.3 ]
+		{\pLocalGraphics taylor/p-table-3}
+		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+	\end{overpic}}  
+		&
+	\raisebox{0.35cm}{\href{https://homepage.physics.uiowa.edu/~ghowes/teach/phys7729/docs/Taylor50b.pdf\#page=15}{
+	\begin{overpic}[ scale = 0.35 ]
+		{\pLocalGraphics taylor/p-eq-32}
+		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+	\end{overpic}}}
+		%
+	\end{tabular}
+\end{center}
+%\label{tab:label}
+\end{table}
+\end{frame}
+%
+\begin{frame}\frametitle{\href{https://archive.org/details/sedov-similarity-and-dimensional-methods-in-mechanics}{Sedov's Book}}
+\center
+	\href{https://www.taylorfrancis.com/books/mono/10.1201/9780203739730/similarity-dimensional-methods-mechanics-sedov}{
+	\begin{overpic}[ scale = 0.2 ]
+		{\pLocalGraphics ss/sedov}
+		%\put(85, 5)	{\colorbox{white}{\cite{bethe1944shock}}}
+	\end{overpic}}
+	\ \\[10pt]
+	\cite{sedov2018similarity}
+\end{frame}
+
+\begin{frame}\frametitle{Los Alamos: \href{https://www.osti.gov/servlets/purl/4434914}{Shock Hydrodynamics and Blast Wave}}
+\center
+	\href{run:../local/articles/shock-hydrodynamics-and-blast-waves.pdf}{
+	\begin{overpic}[ scale = 0.45 ]
+		{\pLocalGraphics ss/bethe-01}
+		%\put(85, 5)	{\colorbox{white}{\cite{bethe1944shock}}}
+	\end{overpic}}
+	\ \\[10pt]
+	\href{https://www.osti.gov/servlets/purl/4434914}{\cite{bethe1944shock}}
+\end{frame}
+%
+\begin{frame}\frametitle{Los Alamos \href{https://www.osti.gov/servlets/purl/4326276}{Blast Wave}}
+\center
+	\href{run:../articles/local/blast-wave.pdf}{
+	\begin{overpic}[ scale = 0.25 ]
+		{\pLocalGraphics ss/bethe-02}
+		%\put(85, 15)	{\colorbox{white}{\cite{bethe1947blast}}}
+	\end{overpic}}
+	\ \\[10pt]
+	\href{https://www.osti.gov/biblio/4326276}{\cite{bethe1947blast}}
+\end{frame}
+%
+\begin{frame}\frametitle{\href{https://pubs.aip.org/aip/jap}{Journal of Applied Physics}}
+\center
+	\href{run:../local/articles/calculation-hydro-shocks.pdf}{
+	\begin{overpic}[ scale = 0.3 ]
+		{\pLocalGraphics ss/princeton-01}
+		%\put(85, 5)	{\colorbox{white}{\cite{bethe1944shock}}}
+	\end{overpic}}
+	\ \\[10pt]
+	\href{https://doi.org/10.1063/1.1699639}{\cite{vonneumann1950method}}
+\end{frame}
+%\subsection{RAND}
+%
+\begin{frame}\frametitle{\href{https://pubs.aip.org/aip/jap}{Journal of Applied Physics}}
+\center
+	\href{run:../local/article/spherical-blast-waves.pdf}{
+	\begin{overpic}[ scale = 0.25 ]
+		{\pLocalGraphics ss/brode-01}
+		%\put(85, 5)	{\colorbox{white}{\cite{bethe1944shock}}}
+	\end{overpic}}
+	\ \\[10pt]
+	\href{https://doi.org/10.1063/1.1722085}{\cite{brode1955numerical}}
+\end{frame}
+%
+\begin{frame}\frametitle{\href{https://pubs.aip.org/aip/pof}{Physics of Fluids}}
+\center
+	\href{run:../local/articles/blast-spherical.pdf}{
+	\begin{overpic}[ scale = 0.25 ]
+		{\pLocalGraphics ss/brode-fluids}
+		%\put(85, 5)	{\colorbox{white}{\cite{bethe1944shock}}}
+	\end{overpic}}
+	\ \\[10pt]
+	\href{https://doi.org/10.1063/1.1705911}{\cite{brode1959blast}}
+\end{frame}
+%
+%\begin{frame}\frametitle{\href{https://pubs.aip.org/aip/jap}{Journal of Applied Physics}}
+%\center
+%	\href{https://pubs.aip.org/aip/jap/article-abstract/19/7/670/159040/The-Attenuation-of-Spherical-Shock-Waves-in-Air}{
+%	\begin{overpic}[ scale = 0.4 ]
+%		{\pLocalGraphics ss/princeton}
+%		%\put(85, 5)	{\colorbox{white}{\cite{bethe1944shock}}}
+%	\end{overpic}}
+%	\ \\[10pt]
+%	\cite{stoner1948attenuation}
+%\end{frame}
+%Journal of Applied Physics
+%
+\begin{frame}\frametitle{Los Alamos Technical Report}
+\center
+	\href{https://cococubed.com/papers/kamm_2000.pdf}{
+	\begin{overpic}[ scale = 0.45 ]
+		{\pLocalGraphics kamm/kamm}
+		%\put(85, 15)	{\colorbox{white}{\cite{bethe1947blast}}}
+	\end{overpic}}
+	\ \\[10pt]
+	\cite{kamm2000evaluation}
+\end{frame}
+
+\begin{frame}\frametitle{Wiki: \WikiTvNS s}
+\center
+	%\href{run:../local/articles/blast-spherical.pdf}{
+	%\href{run:../local/articles/Taylor–von-Neumann–Sedov-blast-wave-Wikipedia.pdf}{
+	\href{run:../local/articles/Taylor.pdf}{
+	\begin{overpic}[ scale = 0.25 ]
+		{\pLocalGraphics wiki/splash}
+		%\put(85, 5)	{\colorbox{white}{\cite{bethe1944shock}}}
+	\end{overpic}}
+	\ \\[10pt]
+	\href{https://upload.wikimedia.org/wikipedia/commons/c/c1/TNS_blast_wave.pdf}{
+	\begin{overpic}[ scale = 0.325 ]
+		{\pLocalGraphics plots/TNS_blast_wave}
+		%\put(85, 5)	{\colorbox{white}{\cite{bethe1944shock}}}
+	\end{overpic}}
+\end{frame}
+
+%
+\begin{frame}\frametitle{\href{https://apps.dtic.mil/sti/pdfs/ADB178624.pdf\#page=2}{Guide to Atmospheric Tests}\jumpLittle}
+\center
+	\href{run:../local/articles/ADB178624.pdf}{
+	\begin{overpic}[ scale = 0.4 ]
+		{\pLocalGraphics ss/guide-atmos-test}
+		%\put(85, 5)	{\colorbox{white}{\cite{bethe1944shock}}}
+	\end{overpic}}
+	\ \\[5pt]
+	\href{https://apps.dtic.mil/sti/pdfs/ADB178624.pdf}{\colorbox{gray!10}{\cite{jackson1993guide}}}
+\end{frame}
+%
+
+%\begin{frame}\frametitle{Taylor's Result Updated}
+%\center
+%	\href{https://homepage.physics.uiowa.edu/~ghowes/teach/phys7729/docs/Taylor50b.pdf\#page=2}{
+%	\begin{overpic}[ scale = 0.55 ]
+%		{\pLocalGraphics taylor/fit-result}
+%		\put(32, -10)	{\colorbox{white}{\bl{$R(t=1\,s) = 583\,m$}}}
+%		\pause
+%		\put(20, 35)	{\colorbox{white}{$y = m x + b \quad \Rightarrow \quad y-mx = b$}}
+%	\end{overpic}}
+%\end{frame}
+
+%%	\bl{y(x)} &= (\solnb \pm \errb)\bl{x} + (\solna \pm \erra) \\[10pt]
+%	\bl{\tfrac{5}{2} \log R} &= (\solnb \pm \errb) \bl{\log t} + (\solna \pm \erra)
+%\begin{frame}\frametitle{Connecting Fit Parameters}
+%Faux linearization:
+%\end{frame}
+
+%%    %%    %%    %%    %%    %%    %%    %%    %%    %%
+\subsection{Similarity}
+%
+\begin{frame}\frametitle{Pendulum}
+	%\input{\pLocalFigures "fig-pendulumB"}
+\end{frame}
+%
+%%    %%    %%    %%    %%    %%    %%    %%    %%    %%
+\subsection{Navier-Stokes Equations}
+
+\begin{frame}\frametitle{Dimensionless Solution Parameters}
+\href{\urlTaylora\#page=2}{
+\bl{pressure}, \\
+\begin{equation}
+	y = \frac{p}{p_{0}} = R^{-3} f_{1}
+%\label{eq:}
+\end{equation}
+\bl{density}, \\
+\begin{equation}
+	\bl{\psi} = \frac{\rho}{\rho_{0}}
+%\label{eq:}
+\end{equation}
+\bl{velocity}, \\
+\begin{equation}
+	u = R^{-3} \phi_{1}
+%\label{eq:}
+\end{equation}
+}
+\end{frame}
+
+\begin{frame}\frametitle{Dimensionless Solution Parameters: \yl{Initial Values}}
+At $\eta =1$, 
+\ \\
+\href{\urlTaylora\#page=4}{
+\begin{align}
+%
+	\psi&= \frac{\gpo} {\gmo} \mg{\ =  6}, \\[10pt]
+%
+	f &= \frac{2 \gamma} {\gpo} \mg{\ = \frac{7}{6}}, \\[10pt]
+%
+	\phi &= \frac{2} {\gpo} \mg{\  =\frac{5}{6}} 
+%
+\end{align}}
+% eqns 15a, 16a, 17a
+\end{frame}
+
+\begin{frame}\frametitle{Dimensionless Solution Parameters: \yl{Derivatives}}
+\href{\urlTaylora\#page=6}{
+\begin{align}
+%
+	f' &= \frac{ (\gamma +6) \eta  \phi -4 \gamma  \phi ^2-6 \eta ^2} {2 \eta  \psi  (\eta -\phi )^2-2 f \eta } f\psi , \\[10pt]
+%
+	\phi' &= \frac{2 \bl{f'}-3 \gamma  \psi  \phi }{2 \gamma   \psi \paren{\eta - \phi) }}, \\[10pt]
+%
+	\psi' &= \frac{ \left(\frac{2 \phi }{\eta }+ \bl{\phi'} \right)}{\eta -\phi }\psi 
+%
+\end{align}}
+\end{frame}
+
+
+\begin{frame}\frametitle{Dimensionless Solution Parameters: Plots}
+\center
+	\href{\urlTaylorb\#page=5}{
+	\begin{overpic}[ scale = 0.75 ]
+		{\pLocalGraphics taylor/Taylora-tab01}
+		\put(48, -5)	{\colorbox{white}{$\eta$}}
+		\put(85, 48)	{\colorbox{white}{$f$}}
+		\put(68, 48)	{\colorbox{white}{$\rd{\psi}$}}
+		\put(50, 34)	{\colorbox{white}{$\bl{\phi}$}}
+	\end{overpic}}
+\end{frame}
+
+%
+\begin{frame}\frametitle{\WikiEFE}
+\center
+The \bl{Universe} is an \bl{Ideal Gas}
+\end{frame}
+%
+%
+\begin{frame}\frametitle{\WikiEFE}
+% Yang, 10.1.54
+\href{https://mathworld.wolfram.com/EinsteinFieldEquations.html}{
+\begin{equation}
+G_{\mu\nu} = - \kappa T_{\mu\nu}
+\label{eq:einstein-equations}
+\end{equation}
+}
+\end{frame}
+
+%
+\begin{frame}\frametitle{\href{https://mathworld.wolfram.com/TotalDerivative.html}{Total Derivative}}
+\begin{equation}
+	\frac{D}{Dt} = \partial_{t} + \bl{v^{k}\partial_{k}} = \partial_{t} + \bl{\mathbf{v} \cdot \nabla}	
+\label{eq:total derivative}
+\end{equation}
+\ \\[20pt]
+a.k.a \href{https://en.wikipedia.org/wiki/Material_derivative}{Material derivative}, \href{https://mathworld.wolfram.com/ConvectiveDerivative.html}{convective derivative}
+%
+\end{frame}
+%
+\begin{frame}\frametitle{Go With The Flow}
+\center
+	\href{https://math.stackexchange.com/questions/3173298/poincaré-bendixson-theorem-and-limit-cyclefind-the-trapping-region}{
+	\begin{overpic}[ scale = 0.25 ]
+		{\pLocalGraphics flow/"3173298 Poincare-Bendixson"}
+		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+	\end{overpic}}
+\end{frame}
+%
+%\begin{frame}\frametitle{Also Know As...}
+%\begin{itemize}
+%	\item \href{https://bookstore.ams.org/view?ProductCode=CLN/9}{\bl{advective} derivative} (\cite{majda2003introduction})
+%	\item \href{https://link.springer.com/book/10.1007/b97537}{\bl{convective} derivative} (\cite{Ockendon_Ockendon_2004})
+%	\item \href{https://www.google.com/books/edition/Transport_Phenomena/L5FnNlIaGfcC?hl=en}{derivative \bl{following the motion}} (\cite{bird2002transport})
+%	\item \href{https://www.google.com/books/edition/Transport_Phenomena/L5FnNlIaGfcC?hl=en}{\bl{hydrodynamic} derivative}(\cite{bird2002transport})
+%	\item \bl{Lagrangian} derivative\footnote{\href{https://www.amazon.com/Introduction-Physical-Oceanography-George-Mellor/dp/1563962101}{Introduction to Physical Oceanography}}
+%	\item \href{}{\bl{particle} derivative}
+%	\item \href{}{\bl{substantial} derivative}
+%	\item \href{}{\bl{substantive} derivative}
+%	\item \href{}{\bl{Stokes} derivative}
+%	\item \href{https://www.cambridge.org/core/books/gauge-field-theories/BFDECE4B2C0FE428C540232E36D39288}{\bl{Gauge covariant} derivative} (\cite{pokorski2000gauge})
+%\end{itemize}
+%\end{frame}
+%
+%\begin{frame}\frametitle{\href{https://en.wikipedia.org/wiki/Material_derivative}{Material Derivative} Also Know As...}
+%\begin{enumerate}
+%	\item \href{https://bookstore.ams.org/view?ProductCode=CLN/9}{\bl{advective} derivative} (\cite{majda2003introduction})
+%	\item \bl{convective} derivative\footnote{\href{https://link.springer.com/book/10.1007/b97537}{Waves and compressible flow}, Ockendon, H. and Ockendon, J. R., Springer, 2004.} 
+%	\item \href{https://www.google.com/books/edition/Transport_Phenomena/L5FnNlIaGfcC?hl=en}{derivative \bl{following the motion}} (\cite{bird2002transport})
+%	\item \href{https://www.google.com/books/edition/Transport_Phenomena/L5FnNlIaGfcC?hl=en}{\bl{hydrodynamic} derivative} (\cite{bird2002transport})
+%	\item \bl{Lagrangian} derivative\footnote{\href{https://link.springer.com/book/9781563962103}{Introduction to Physical Oceanography}, Mellor, G. L., Springer, 1996}
+%	\item \href{}{\bl{particle} derivative} (\cite{stoker1992water})
+%	\item \href{}{\bl{substantial} derivative} (\cite{bird2002transport})
+%	\item \href{}{\bl{substantive} derivative} (\cite{granger1995fluid})
+%	\item \href{}{\bl{Stokes} derivative} (\cite{granger1995fluid})
+%	\item \href{}{\bl{total} derivative} (\cite{bird2002transport}, \cite{landau1959fluid})
+%	\item \href{https://www.cambridge.org/core/books/gauge-field-theories/BFDECE4B2C0FE428C540232E36D39288}{\bl{gauge covariant} derivative} (\cite{pokorski2000gauge})
+%\end{enumerate}
+%\end{frame}
+%
+\begin{frame}\frametitle{\href{https://en.wikipedia.org/wiki/Material_derivative}{Material Derivative} Also Know As...}
+\begin{enumerate}
+	\item \href{https://bookstore.ams.org/view?ProductCode=CLN/9}{\bl{advective} derivative} (\cite{majda2003introduction})
+	\item \bl{convective} derivative\footnote{\href{https://link.springer.com/book/10.1007/b97537}{Waves and compressible flow}, Ockendon, H. and Ockendon, J. R., Springer, 2004.} 
+	\item \href{https://www.google.com/books/edition/Transport_Phenomena/L5FnNlIaGfcC?hl=en}{derivative \bl{following the motion}} (\cite{bird2002transport})
+	\item \href{https://www.google.com/books/edition/Transport_Phenomena/L5FnNlIaGfcC?hl=en}{\bl{hydrodynamic} derivative} (\cite{bird2002transport})
+	\item \bl{Lagrangian} derivative\footnote{\href{https://link.springer.com/book/9781563962103}{Introduction to Physical Oceanography}, Mellor, G. L., Springer, 1996}
+	\seti
+\end{enumerate}
+\end{frame}
+%
+\begin{frame}\frametitle{\href{https://en.wikipedia.org/wiki/Material_derivative}{Material Derivative} Also Know As...}
+\begin{enumerate}
+	\conti
+	\item \href{}{\bl{particle} derivative} (\cite{stoker1992water})
+	\item \href{}{\bl{substantial} derivative} (\cite{bird2002transport})
+	\item \href{}{\bl{substantive} derivative} (\cite{granger1995fluid})
+	\item \href{}{\bl{Stokes} derivative} (\cite{granger1995fluid})
+	\item \href{}{\bl{total} derivative} (\cite{bird2002transport}, \cite{landau1959fluid})
+	\item \href{https://www.cambridge.org/core/books/gauge-field-theories/BFDECE4B2C0FE428C540232E36D39288}{\bl{gauge covariant} derivative} (\cite{pokorski2000gauge})
+\end{enumerate}
+\end{frame}
+%
+%
+%%    %%    %%    %%    %%    %%    %%    %%    %%    %%
+\subsection{Similarity and dimensional methods}
+
+\begin{frame}\frametitle{\href{https://pubs.aip.org/physicstoday}{Physics Today}}
+\center
+	%\href{https://pubs.aip.org/physicstoday/article-abstract/64/9/42/413713/Dynamic-similarity-the-dimensionless}{
+	\href{run:../local/articles/dynamic-similarity.pdf}{
+	\begin{overpic}[ scale = 0.45 ]
+		{\pLocalGraphics pt-dynamic-similarity}
+		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+	\end{overpic}}
+	\ \\[10pt]
+	\cite{bolster2011dynamic}
+\end{frame}
+
+%
+\begin{frame}\frametitle{\href{https://scienceworld.wolfram.com/physics/BuckinghamsPiTheorem.html}{Buckingham's Pi Theory}}
+	%
+\center
+Physical laws are \bl{independent} of the form of the \bl{units}
+	%
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Similarity}
+\begin{enumerate}
+	\item Nuclear Explosions (\cite{taylor1950formationI, taylor1950formationI})
+	\item Astrophysics (\cite{ostriker1988astrophysical})
+	\item Laser driven (\cite{edwards2001investigation})
+	\item Plasma (\cite{moore2005tailored})
+	\item Granular (\cite{boudet2013unstable, boudet2009blast})
+\end{enumerate}
+\end{frame}
+%
+
+\begin{frame}\frametitle{\href{https://www.genealogy.math.ndsu.nodak.edu/id.php?id=102065}{Sedov}'s Formal Development }
+\center
+	\href{https://www.taylorfrancis.com/books/mono/10.1201/9780203739730/similarity-dimensional-methods-mechanics-sedov}{
+	\begin{overpic}[ scale = 0.35 ]
+		{\pLocalGraphics sedov-toc}
+		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+	\end{overpic}}
+\end{frame}
+
+%%    %%    %%    %%    %%    %%    %%    %%    %%    %%
+%\subsection{Taylor's Papers}
+%
+%%    %%    %%    %%    %%    %%    %%    %%    %%    %%
+%\subsection{Similarity and dimensional methods in mechanics}
+\begin{frame}\frametitle{Equations of Motion}
+\center
+	\href{https://archive.org/details/sedov-similarity-and-dimensional-methods-in-mechanics}{
+	\begin{overpic}[ scale = 0.35 ]
+		{\pLocalGraphics sedov-148}
+		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+	\end{overpic}}
+	\ \\
+	\cite{sedov2018similarity}
+\end{frame}
+%
+\begin{frame}\frametitle{Units: Familiar Quantities}
+\begin{enumerate}
+	\item velocity
+	\item momentum
+	\item kinetic energy
+	\item potential energy (gravitational)
+	\item force
+	\item pressure
+	\item density (volumetric)
+\end{enumerate}
+\end{frame}
+%
+\begin{frame}\frametitle{Units: Familiar Quantities}
+\begin{table}[htp]
+%\caption{default}
+\begin{center}
+	\begin{tabular}{lll}
+			%
+		velocity & $v$ & $L T^{-1}$ \\[5pt]
+			%
+		momentum & $p = mv$ & $M L T^{-1}$ \\[5pt]
+			%
+		kinetic energy & $K=\tfrac{1}{2} m v^{2}$ & $M L^{2} T^{-2}$ \\[5pt]
+			%
+		potential energy & $U = mgh$ & $M L^{2} T^{-2}$ \\[5pt]
+			%
+		force & $F = ma$ & $M L T^{-2}$ \\[5pt]
+			%
+		pressure & $P = F / A$ & $M T^{-2}$ \\[5pt]
+			%
+		density & $\delta$ & $M L^{3}$ \\[5pt]
+			%
+	\end{tabular}
+\end{center}
+\label{tab:units}
+\end{table}%
+\end{frame}
+
+%
+\begin{frame}\frametitle{Input Parameters with Dimension}
+\begin{enumerate}
+	\item $E$, energy
+	\item $\rho_{0}$, air pressure
+\end{enumerate}
+\end{frame}
+%
+%
+\begin{frame}\frametitle{\href{https://en.wikipedia.org/wiki/Rankine\%E2\%80\%93Hugoniot_conditions}{Rankine-Hugoniot} Jump Conditions}
+\center
+	Connects physical states across shock front
+\end{frame}
+%
+\begin{frame}\frametitle{\href{https://en.wikipedia.org/wiki/Rankine\%E2\%80\%93Hugoniot_conditions}{Rankine-Hugoniot} Jump Conditions}
+% https://physics.stackexchange.com/questions/611651/why-does-entropy-jump-across-a-shockwave
+\center
+	Conservation Laws:\\[20pt]
+\begin{table}[htp]
+%\caption{default}
+\begin{center}
+\begin{tabular}{lrcl}
+	\bl{mass} & $\rho_{1} u_{1}$ & $=$ & $\rho_{2} u_{2}$\\[10pt]
+	\bl{momentum} & $\rho_{1} u_{1}^{2} + p_{1}$ & $=$ & $\rho_{2} u_{2}^{2} + p_{2}$\\[10pt]
+	\bl{energy} & $h_{1} + \tfrac{1}{2} u_{1}^{2}$ & $=$ & $h_{2} + \tfrac{1}{2} u_{2}^{2}$
+\end{tabular}
+\end{center}
+\label{tab:conserved}
+\end{table}%
+\ \\
+\pause
+Not conserved: \rd{\href{https://physics.stackexchange.com/questions/611651/why-does-entropy-jump-across-a-shockwave}{Entropy}}
+\end{frame}
+%
+%
+\begin{frame}\frametitle{\href{https://en.wikipedia.org/wiki/Rankine\%E2\%80\%93Hugoniot_conditions}{Rankine-Hugoniot} Jump Conditions}
+% https://physics.stackexchange.com/questions/611651/why-does-entropy-jump-across-a-shockwave
+\center
+	Conservation Laws:\\[20pt]
+\begin{table}[htp]
+%\caption{default}
+\begin{center}
+\begin{tabular}{lrclcrcl}
+	mass & \mg{$\rho_{1} u_{1}$} & \mg{$=$} & \mg{$\rho_{2} u_{2}$} & $\Rightarrow$ & $u_{k}$ & $=$ & $\frac{m} {\rho_{k}}$\\[10pt]
+	mom. & \mg{$\rho_{1} u_{1}^{2} + p_{1}$} & \mg{$=$} & \mg{$\rho_{2} u_{2}^{2} + p_{2}$} & $\Rightarrow$ & $p_{2} - p_{1}$ & $=$ & $m \paren{u_{1} - u_{2}}$\\[10pt]
+	energy & \mg{$h_{1} + \tfrac{1}{2} u_{1}^{2}$} & \mg{$=$} & \mg{$h_{2} + \tfrac{1}{2} u_{2}^{2}$} & $\Rightarrow$  & $h_{2} - h_{1}$ & $=$ & $\tfrac{1}{2} \paren{u_{1}^{2} - u_{2}^{2}}$
+\end{tabular}
+\end{center}
+\label{tab:conserved}
+\end{table}%
+\end{frame}
+%
+\begin{frame}\frametitle{\href{https://en.wikipedia.org/wiki/Rankine\%E2\%80\%93Hugoniot_conditions}{Rankine-Hugoniot} Jump Conditions}
+\center
+	Implications:
+\begin{equation}
+	-m^{2} = \frac{p_{2} - p_{1}} { 1 / \rho_{2} - 1 / \rho_{1} }
+\label{eq:Michelson–Rayleigh}
+\end{equation}
+%
+\begin{equation}
+	h_{2} - h_{1} = \frac{1}{2} \displaystyle\paren{ 1 / \rho_{2} - 1 / \rho_{1} } \paren{p_{2} - p_{1}}
+\label{eq:enthalpy}
+\end{equation}
+\end{frame}
+
+%\section{Jump Conditions}
+\begin{frame}\frametitle{Jump Conditions: Physical Properties}
+\begin{table}[htp]
+\caption{default}
+\begin{center}
+\begin{tabular}{lcll}
+	$u_{l}$ && $u_{r}$ & density\\
+	$\rho_{l}$ && $\rho_{r}$ & velocity\\
+	$T_{l}$ && $T_{r}$ & pressure\\
+\end{tabular}
+\end{center}
+\label{tab:}
+\end{table}%
+\end{frame}
+
+%\section{Shock Hydrodynamics}
+%\begin{frame}\frametitle{Shock Hydrodynamics}
+%\center
+%	\href{http://homepage.physics.uiowa.edu/~ghowes/teach/phys7729/docs/Taylor50a.pdf}{
+%	\begin{overpic}[ scale = 0.5 ]
+%		{\pLocalGraphics ss/taylor-01}
+%		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+%	\end{overpic}}
+%	\cite[LANL]{bethe1944shock}
+%\end{frame}
+
+\begin{frame}\frametitle{Physical Properties}
+\begin{table}[htp]
+\caption{default}
+\begin{center}
+\begin{tabular}{lcll}
+	$u_{l}$ && $u_{r}$ & density\\
+	$\rho_{l}$ && $\rho_{r}$ & velocity\\
+	$T_{l}$ && $T_{r}$ & pressure\\
+\end{tabular}
+\end{center} 
+\label{default}
+\end{table}%
+\end{frame}
+
+\begin{frame}\frametitle{Assumptions, Simplifications}
+\begin{enumerate}
+	\item point explosion
+	\item infinitesimal time
+	\item high energy explosion
+	\item infinitely strong shock
+	\item 
+\end{enumerate}
+\end{frame}
+
+\begin{frame}\frametitle{Assumptions, Simplifications}
+\begin{enumerate}
+	\item spherically symmetric blast wave
+	\item point source
+	\item infinitesimal time
+	\item infinitely strong shock
+	\item 
+\end{enumerate}
+\end{frame}
+
+%
+\begin{frame}\frametitle{Self-Similar Region}
+\begin{enumerate}
+	\item pressure behind shock wave dominates air pressure $\rho_{1} >> \rho_0$
+	\item point source
+	\item infinitesimal time
+	\item infinitely strong shock
+	\item 
+\end{enumerate}
+\end{frame}
+%
+
+
+\endinput  %  ==  ==  ==  ==  ==  ==  ==  ==  ==
+``''
+Buckingham's Pi theorem, also known as the Buckingham π theorem, is a fundamental principle in dimensional analysis and fluid mechanics. It provides a method for determining the relationship between physical quantities in terms of their dimensions. The theorem is particularly useful when dealing with complex physical systems where multiple variables are involved.
+
+The theorem states that if there is a physical relationship between 'n' variables involving 'm' fundamental dimensions (such as length, mass, time, etc.), then the relationship can be expressed in terms of 'n - m' dimensionless groups. These dimensionless groups are formed by combining the original variables in a way that eliminates the dimensions.
+
+Now, let's discuss the connection between Buckingham's Pi theorem and self-similarity.
+
+Self-similarity is a property of certain objects or systems where the structure at a small scale is similar to the structure at a larger scale. In the context of fluid dynamics, self-similarity often arises in the study of turbulent flows and fractals. The idea is that certain statistical properties of the flow remain consistent across different scales.
+
+Buckingham's Pi theorem is related to self-similarity in the sense that it helps identify and express dimensionless groups that capture the essential characteristics of a system, which may include self-similar behavior. When analyzing a self-similar system, dimensional analysis can help reveal dimensionless groups that remain constant across different scales.
+
+For example, in the study of turbulent flows, the Reynolds number (Re) is a dimensionless quantity that characterizes the flow. The Reynolds number is formed using variables such as fluid velocity, characteristic length, and viscosity. In a self-similar turbulent flow, the Reynolds number may remain constant even as the scale of observation changes.
+
+In summary, Buckingham's Pi theorem is a \href{https://mathworld.wolfram.com/Power.html}{Power} ful tool for identifying dimensionless groups in physical relationships, and these dimensionless groups can be crucial in understanding and expressing self-similar behavior in certain systems, such as turbulent flows.

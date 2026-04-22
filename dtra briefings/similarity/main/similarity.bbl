@@ -1,0 +1,737 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{bird2002transport}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fc1f659d2129d66fb02f7b8ba55cbaa7}{%
+           family={Bird},
+           familyi={B\bibinitperiod},
+           given={R\bibnamedelima Byron},
+           giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{fc1f659d2129d66fb02f7b8ba55cbaa7}
+      \strng{fullhash}{fc1f659d2129d66fb02f7b8ba55cbaa7}
+      \strng{bibnamehash}{fc1f659d2129d66fb02f7b8ba55cbaa7}
+      \strng{authorbibnamehash}{fc1f659d2129d66fb02f7b8ba55cbaa7}
+      \strng{authornamehash}{fc1f659d2129d66fb02f7b8ba55cbaa7}
+      \strng{authorfullhash}{fc1f659d2129d66fb02f7b8ba55cbaa7}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Appl. Mech. Rev.}
+      \field{number}{1}
+      \field{title}{Transport phenomena}
+      \field{volume}{55}
+      \field{year}{2002}
+      \field{pages}{R1\bibrangedash R4}
+      \range{pages}{-1}
+    \endentry
+    \entry{bolster2011dynamic}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=85b1176dd3a06e6602180bbd2ed7b6d5}{%
+           family={Bolster},
+           familyi={B\bibinitperiod},
+           given={Diogo},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=957f411b5e7ea75685a6ac370f4ef5bf}{%
+           family={Hershberger},
+           familyi={H\bibinitperiod},
+           given={Robert\bibnamedelima E},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3140455cc9f7cee66642d556e95e19ae}{%
+           family={Donnelly},
+           familyi={D\bibinitperiod},
+           given={Russell\bibnamedelima J},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {AIP Publishing}%
+      }
+      \strng{namehash}{3ad84b23546dd18386f9f1f3cdfd18e7}
+      \strng{fullhash}{3ad84b23546dd18386f9f1f3cdfd18e7}
+      \strng{bibnamehash}{3ad84b23546dd18386f9f1f3cdfd18e7}
+      \strng{authorbibnamehash}{3ad84b23546dd18386f9f1f3cdfd18e7}
+      \strng{authornamehash}{3ad84b23546dd18386f9f1f3cdfd18e7}
+      \strng{authorfullhash}{3ad84b23546dd18386f9f1f3cdfd18e7}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physics Today}
+      \field{number}{9}
+      \field{title}{Dynamic similarity, the dimensionless science}
+      \field{volume}{64}
+      \field{year}{2011}
+      \field{pages}{42\bibrangedash 47}
+      \range{pages}{6}
+    \endentry
+    \entry{boudet2009blast}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=6cebe212fba15997d695153050b0f9af}{%
+           family={Boudet},
+           familyi={B\bibinitperiod},
+           given={Jean-Fran{ç}ois},
+           giveni={J\bibinithyphendelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7df821ff85f4cbbe7e58b499cd4c22a4}{%
+           family={Cassagne},
+           familyi={C\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=265826ff2e4e680e27b41c12473874d3}{%
+           family={Kellay},
+           familyi={K\bibinitperiod},
+           given={Hamid},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{aa5f6b0bdf1271b568df1af28739d646}
+      \strng{fullhash}{aa5f6b0bdf1271b568df1af28739d646}
+      \strng{bibnamehash}{aa5f6b0bdf1271b568df1af28739d646}
+      \strng{authorbibnamehash}{aa5f6b0bdf1271b568df1af28739d646}
+      \strng{authornamehash}{aa5f6b0bdf1271b568df1af28739d646}
+      \strng{authorfullhash}{aa5f6b0bdf1271b568df1af28739d646}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical review letters}
+      \field{number}{22}
+      \field{title}{Blast shocks in quasi-two-dimensional supersonic granular flows}
+      \field{volume}{103}
+      \field{year}{2009}
+      \field{pages}{224501}
+      \range{pages}{1}
+    \endentry
+    \entry{boudet2013unstable}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=6cebe212fba15997d695153050b0f9af}{%
+           family={Boudet},
+           familyi={B\bibinitperiod},
+           given={Jean-Fran{ç}ois},
+           giveni={J\bibinithyphendelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=265826ff2e4e680e27b41c12473874d3}{%
+           family={Kellay},
+           familyi={K\bibinitperiod},
+           given={Hamid},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{8c18c3d00e5408c782afe374861e3938}
+      \strng{fullhash}{8c18c3d00e5408c782afe374861e3938}
+      \strng{bibnamehash}{8c18c3d00e5408c782afe374861e3938}
+      \strng{authorbibnamehash}{8c18c3d00e5408c782afe374861e3938}
+      \strng{authornamehash}{8c18c3d00e5408c782afe374861e3938}
+      \strng{authorfullhash}{8c18c3d00e5408c782afe374861e3938}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review E}
+      \field{number}{5}
+      \field{title}{Unstable blast shocks in dilute granular flows}
+      \field{volume}{87}
+      \field{year}{2013}
+      \field{pages}{052202}
+      \range{pages}{1}
+    \endentry
+    \entry{curtis1982dimensional}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=6f7abd281d17e61262ac2308009201d4}{%
+           family={Curtis},
+           familyi={C\bibinitperiod},
+           given={WD},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b68a7baf9043281acaf1af93b83ca454}{%
+           family={Logan},
+           familyi={L\bibinitperiod},
+           given={J\bibnamedelima David},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6d8d2d4d5336977e14abc3fa50a7a212}{%
+           family={Parker},
+           familyi={P\bibinitperiod},
+           given={WA},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{b4dabb6eee8513848a4bf12c5562d85a}
+      \strng{fullhash}{b4dabb6eee8513848a4bf12c5562d85a}
+      \strng{bibnamehash}{b4dabb6eee8513848a4bf12c5562d85a}
+      \strng{authorbibnamehash}{b4dabb6eee8513848a4bf12c5562d85a}
+      \strng{authornamehash}{b4dabb6eee8513848a4bf12c5562d85a}
+      \strng{authorfullhash}{b4dabb6eee8513848a4bf12c5562d85a}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Linear Algebra and its Applications}
+      \field{title}{Dimensional analysis and the pi theorem}
+      \field{volume}{47}
+      \field{year}{1982}
+      \field{pages}{117\bibrangedash 126}
+      \range{pages}{10}
+    \endentry
+    \entry{doering1995applied}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=8ee0d802b17b26a835736b332658f910}{%
+           family={Doering},
+           familyi={D\bibinitperiod},
+           given={Charles\bibnamedelima R},
+           giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e5387dd1364563a6183280b72323126a}{%
+           family={Gibbon},
+           familyi={G\bibinitperiod},
+           given={John\bibnamedelima D},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge university press}%
+      }
+      \strng{namehash}{1c891fbfb14a5b28afa6bd0cc4456963}
+      \strng{fullhash}{1c891fbfb14a5b28afa6bd0cc4456963}
+      \strng{bibnamehash}{1c891fbfb14a5b28afa6bd0cc4456963}
+      \strng{authorbibnamehash}{1c891fbfb14a5b28afa6bd0cc4456963}
+      \strng{authornamehash}{1c891fbfb14a5b28afa6bd0cc4456963}
+      \strng{authorfullhash}{1c891fbfb14a5b28afa6bd0cc4456963}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{12}
+      \field{title}{Applied analysis of the Navier-Stokes equations}
+      \field{year}{1995}
+    \endentry
+    \entry{edwards2001investigation}{article}{}
+      \name{author}{10}{}{%
+        {{un=0,uniquepart=base,hash=8a4ab6b1c5a217e428518cdaa772ffb1}{%
+           family={Edwards},
+           familyi={E\bibinitperiod},
+           given={MJ},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aec2af4dd0f14295e97f7644320e6389}{%
+           family={MacKinnon},
+           familyi={M\bibinitperiod},
+           given={AJ},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=325b45946b1acd371989483f9dd57675}{%
+           family={Zweiback},
+           familyi={Z\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=38725283bc8d293dc05ddec687bb9dde}{%
+           family={Shigemori},
+           familyi={S\bibinitperiod},
+           given={K},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ae5cabd306e5cce8a156fb768678c87c}{%
+           family={Ryutov},
+           familyi={R\bibinitperiod},
+           given={D},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f4170ebc0a3015d2dcd94e6a448c28f9}{%
+           family={Rubenchik},
+           familyi={R\bibinitperiod},
+           given={AM},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=addd9e9720ed931fe6da7df76cde2e8d}{%
+           family={Keilty},
+           familyi={K\bibinitperiod},
+           given={KA},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=77f7d243e49b675f9a522da436dd09e2}{%
+           family={Liang},
+           familyi={L\bibinitperiod},
+           given={E},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=30b9641403774707c953e0368340c8de}{%
+           family={Remington},
+           familyi={R\bibinitperiod},
+           given={BA},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b4ddaa97c7c6e04db9bc54fee703ea94}{%
+           family={Ditmire},
+           familyi={D\bibinitperiod},
+           given={Todd},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{1ceab8d47580d98d997f402fb878bd7c}
+      \strng{fullhash}{00aa861cec44fb78e7ff9491cdc02604}
+      \strng{bibnamehash}{1ceab8d47580d98d997f402fb878bd7c}
+      \strng{authorbibnamehash}{1ceab8d47580d98d997f402fb878bd7c}
+      \strng{authornamehash}{1ceab8d47580d98d997f402fb878bd7c}
+      \strng{authorfullhash}{00aa861cec44fb78e7ff9491cdc02604}
+      \field{sortinit}{E}
+      \field{sortinithash}{c554bd1a0b76ea92b9f105fe36d9c7b0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review Letters}
+      \field{number}{8}
+      \field{title}{Investigation of ultrafast laser-driven radiative blast waves}
+      \field{volume}{87}
+      \field{year}{2001}
+      \field{pages}{085004}
+      \range{pages}{1}
+    \endentry
+    \entry{granger1995fluid}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=41ad2e7184f7928efc0b1e09b6bb36a0}{%
+           family={Granger},
+           familyi={G\bibinitperiod},
+           given={Robert\bibnamedelima Alan},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Courier Corporation}%
+      }
+      \strng{namehash}{41ad2e7184f7928efc0b1e09b6bb36a0}
+      \strng{fullhash}{41ad2e7184f7928efc0b1e09b6bb36a0}
+      \strng{bibnamehash}{41ad2e7184f7928efc0b1e09b6bb36a0}
+      \strng{authorbibnamehash}{41ad2e7184f7928efc0b1e09b6bb36a0}
+      \strng{authornamehash}{41ad2e7184f7928efc0b1e09b6bb36a0}
+      \strng{authorfullhash}{41ad2e7184f7928efc0b1e09b6bb36a0}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Fluid mechanics}
+      \field{year}{1995}
+    \endentry
+    \entry{hydon2000symmetry}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=bdbd9fdf144f44eda3b205b4e5488d15}{%
+           family={Hydon},
+           familyi={H\bibinitperiod},
+           given={Peter\bibnamedelima Ellsworth},
+           giveni={P\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{bdbd9fdf144f44eda3b205b4e5488d15}
+      \strng{fullhash}{bdbd9fdf144f44eda3b205b4e5488d15}
+      \strng{bibnamehash}{bdbd9fdf144f44eda3b205b4e5488d15}
+      \strng{authorbibnamehash}{bdbd9fdf144f44eda3b205b4e5488d15}
+      \strng{authornamehash}{bdbd9fdf144f44eda3b205b4e5488d15}
+      \strng{authorfullhash}{bdbd9fdf144f44eda3b205b4e5488d15}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{22}
+      \field{title}{Symmetry methods for differential equations: a beginner's guide}
+      \field{year}{2000}
+    \endentry
+    \entry{korobeuinikov1976problems}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7713fe5ac8ba2f560fdfba75fb4ecccd}{%
+           family={Korobeĭnikov},
+           familyi={K\bibinitperiod},
+           given={Viktor\bibnamedelima Pavlovich},
+           giveni={V\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Mathematical Society}%
+      }
+      \strng{namehash}{7713fe5ac8ba2f560fdfba75fb4ecccd}
+      \strng{fullhash}{7713fe5ac8ba2f560fdfba75fb4ecccd}
+      \strng{bibnamehash}{7713fe5ac8ba2f560fdfba75fb4ecccd}
+      \strng{authorbibnamehash}{7713fe5ac8ba2f560fdfba75fb4ecccd}
+      \strng{authornamehash}{7713fe5ac8ba2f560fdfba75fb4ecccd}
+      \strng{authorfullhash}{7713fe5ac8ba2f560fdfba75fb4ecccd}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{119}
+      \field{title}{Problems in the theory of point explosion in gases}
+      \field{year}{1976}
+    \endentry
+    \entry{landau1959fluid}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=469dd4876a46a4f9ce5668d17dce5b81}{%
+           family={Landau},
+           familyi={L\bibinitperiod},
+           given={Lev\bibnamedelima D},
+           giveni={L\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{469dd4876a46a4f9ce5668d17dce5b81}
+      \strng{fullhash}{469dd4876a46a4f9ce5668d17dce5b81}
+      \strng{bibnamehash}{469dd4876a46a4f9ce5668d17dce5b81}
+      \strng{authorbibnamehash}{469dd4876a46a4f9ce5668d17dce5b81}
+      \strng{authornamehash}{469dd4876a46a4f9ce5668d17dce5b81}
+      \strng{authorfullhash}{469dd4876a46a4f9ce5668d17dce5b81}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Addison-Wesley Publishing Co.}
+      \field{title}{Fluid mechanics, course of theoretical physics, vol. 6}
+      \field{year}{1959}
+    \endentry
+    \entry{majda2003introduction}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b04b72d54d9970038738e4ee39443568}{%
+           family={Majda},
+           familyi={M\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Mathematical Soc.}%
+      }
+      \strng{namehash}{b04b72d54d9970038738e4ee39443568}
+      \strng{fullhash}{b04b72d54d9970038738e4ee39443568}
+      \strng{bibnamehash}{b04b72d54d9970038738e4ee39443568}
+      \strng{authorbibnamehash}{b04b72d54d9970038738e4ee39443568}
+      \strng{authornamehash}{b04b72d54d9970038738e4ee39443568}
+      \strng{authorfullhash}{b04b72d54d9970038738e4ee39443568}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Introduction to PDEs and Waves for the Atmosphere and Ocean}
+      \field{volume}{9}
+      \field{year}{2003}
+    \endentry
+    \entry{moore2005tailored}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=1297cfce382088c01899e4d17da5fa24}{%
+           family={Moore},
+           familyi={M\bibinitperiod},
+           given={Alastair\bibnamedelima S},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d2764b6c03990845f388f66bccedca69}{%
+           family={Symes},
+           familyi={S\bibinitperiod},
+           given={Daniel\bibnamedelima R},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b22264bf56622b3f8236eef327d0699c}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Roland\bibnamedelima A},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {AIP Publishing}%
+      }
+      \strng{namehash}{4629fca29b36511e7a951c798c36f6a3}
+      \strng{fullhash}{4629fca29b36511e7a951c798c36f6a3}
+      \strng{bibnamehash}{4629fca29b36511e7a951c798c36f6a3}
+      \strng{authorbibnamehash}{4629fca29b36511e7a951c798c36f6a3}
+      \strng{authornamehash}{4629fca29b36511e7a951c798c36f6a3}
+      \strng{authorfullhash}{4629fca29b36511e7a951c798c36f6a3}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physics of plasmas}
+      \field{number}{5}
+      \field{title}{Tailored blast wave formation: Developing experiments pertinent to laboratory astrophysics}
+      \field{volume}{12}
+      \field{year}{2005}
+    \endentry
+    \entry{ostriker1988astrophysical}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=1416386e235e4f40011dd2ee02e5b2f5}{%
+           family={Ostriker},
+           familyi={O\bibinitperiod},
+           given={Jeremiah\bibnamedelima P},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=77cb6d7fee046380d5ffaeb92da76ede}{%
+           family={McKee},
+           familyi={M\bibinitperiod},
+           given={Christopher\bibnamedelima F},
+           giveni={C\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{7d6f3a21a145165985124a60a573b8ed}
+      \strng{fullhash}{7d6f3a21a145165985124a60a573b8ed}
+      \strng{bibnamehash}{7d6f3a21a145165985124a60a573b8ed}
+      \strng{authorbibnamehash}{7d6f3a21a145165985124a60a573b8ed}
+      \strng{authornamehash}{7d6f3a21a145165985124a60a573b8ed}
+      \strng{authorfullhash}{7d6f3a21a145165985124a60a573b8ed}
+      \field{sortinit}{O}
+      \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Reviews of Modern Physics}
+      \field{number}{1}
+      \field{title}{Astrophysical blastwaves}
+      \field{volume}{60}
+      \field{year}{1988}
+      \field{pages}{1}
+      \range{pages}{1}
+    \endentry
+    \entry{ovsjannikov1962group}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=adea76e48568fd70782f5db0b8650f89}{%
+           family={Ovsjannikov},
+           familyi={O\bibinitperiod},
+           given={Lev\bibnamedelima V},
+           giveni={L\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Siberian Section of the Academy of Science of USSR}%
+      }
+      \strng{namehash}{adea76e48568fd70782f5db0b8650f89}
+      \strng{fullhash}{adea76e48568fd70782f5db0b8650f89}
+      \strng{bibnamehash}{adea76e48568fd70782f5db0b8650f89}
+      \strng{authorbibnamehash}{adea76e48568fd70782f5db0b8650f89}
+      \strng{authornamehash}{adea76e48568fd70782f5db0b8650f89}
+      \strng{authorfullhash}{adea76e48568fd70782f5db0b8650f89}
+      \field{sortinit}{O}
+      \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Group properties of differential equations}
+      \field{year}{1962}
+    \endentry
+    \entry{pokorski2000gauge}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=18ff8d0f4db4a7172199cfa05e0aad33}{%
+           family={Pokorski},
+           familyi={P\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{18ff8d0f4db4a7172199cfa05e0aad33}
+      \strng{fullhash}{18ff8d0f4db4a7172199cfa05e0aad33}
+      \strng{bibnamehash}{18ff8d0f4db4a7172199cfa05e0aad33}
+      \strng{authorbibnamehash}{18ff8d0f4db4a7172199cfa05e0aad33}
+      \strng{authornamehash}{18ff8d0f4db4a7172199cfa05e0aad33}
+      \strng{authorfullhash}{18ff8d0f4db4a7172199cfa05e0aad33}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Gauge field theories}
+      \field{volume}{136}
+      \field{year}{2000}
+    \endentry
+    \entry{sedov2018similarity}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=860967e76deae837345e4697a39079e7}{%
+           family={Sedov},
+           familyi={S\bibinitperiod},
+           given={Leonid\bibnamedelima Ivanovich},
+           giveni={L\bibinitperiod\bibinitdelim I\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {CRC press}%
+      }
+      \strng{namehash}{860967e76deae837345e4697a39079e7}
+      \strng{fullhash}{860967e76deae837345e4697a39079e7}
+      \strng{bibnamehash}{860967e76deae837345e4697a39079e7}
+      \strng{authorbibnamehash}{860967e76deae837345e4697a39079e7}
+      \strng{authornamehash}{860967e76deae837345e4697a39079e7}
+      \strng{authorfullhash}{860967e76deae837345e4697a39079e7}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Similarity and dimensional methods in mechanics}
+      \field{year}{1993}
+    \endentry
+    \entry{stoker1992water}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f406fdc20243e31bac693999131eac71}{%
+           family={Stoker},
+           familyi={S\bibinitperiod},
+           given={James\bibnamedelima Johnston},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons}%
+      }
+      \strng{namehash}{f406fdc20243e31bac693999131eac71}
+      \strng{fullhash}{f406fdc20243e31bac693999131eac71}
+      \strng{bibnamehash}{f406fdc20243e31bac693999131eac71}
+      \strng{authorbibnamehash}{f406fdc20243e31bac693999131eac71}
+      \strng{authornamehash}{f406fdc20243e31bac693999131eac71}
+      \strng{authorfullhash}{f406fdc20243e31bac693999131eac71}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Water waves: The mathematical theory with applications}
+      \field{volume}{36}
+      \field{year}{1992}
+    \endentry
+    \entry{taylor1950formationI}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=afcf5e4a27132f07402e4fc8ca150a6e}{%
+           family={Taylor},
+           familyi={T\bibinitperiod},
+           given={Geoffrey\bibnamedelima Ingram},
+           giveni={G\bibinitperiod\bibinitdelim I\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {The Royal Society London}%
+      }
+      \strng{namehash}{afcf5e4a27132f07402e4fc8ca150a6e}
+      \strng{fullhash}{afcf5e4a27132f07402e4fc8ca150a6e}
+      \strng{bibnamehash}{afcf5e4a27132f07402e4fc8ca150a6e}
+      \strng{authorbibnamehash}{afcf5e4a27132f07402e4fc8ca150a6e}
+      \strng{authornamehash}{afcf5e4a27132f07402e4fc8ca150a6e}
+      \strng{authorfullhash}{afcf5e4a27132f07402e4fc8ca150a6e}
+      \field{extraname}{1}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the Royal Society of London. Series A. Mathematical and Physical Sciences}
+      \field{number}{1065}
+      \field{title}{The Formation of a Blast Wave by a Very Intense Explosion I. Theoretical discussion}
+      \field{volume}{201}
+      \field{year}{1950}
+      \field{pages}{159\bibrangedash 174}
+      \range{pages}{16}
+    \endentry
+    \entry{taylor1950formationII}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=afcf5e4a27132f07402e4fc8ca150a6e}{%
+           family={Taylor},
+           familyi={T\bibinitperiod},
+           given={Geoffrey\bibnamedelima Ingram},
+           giveni={G\bibinitperiod\bibinitdelim I\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {The Royal Society London}%
+      }
+      \strng{namehash}{afcf5e4a27132f07402e4fc8ca150a6e}
+      \strng{fullhash}{afcf5e4a27132f07402e4fc8ca150a6e}
+      \strng{bibnamehash}{afcf5e4a27132f07402e4fc8ca150a6e}
+      \strng{authorbibnamehash}{afcf5e4a27132f07402e4fc8ca150a6e}
+      \strng{authornamehash}{afcf5e4a27132f07402e4fc8ca150a6e}
+      \strng{authorfullhash}{afcf5e4a27132f07402e4fc8ca150a6e}
+      \field{extraname}{2}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the Royal Society of London. Series A. Mathematical and Physical Sciences}
+      \field{number}{1065}
+      \field{title}{The Formation of a Blast Wave by a Very Intense Explosion II. The Atomic Explosion of 1945}
+      \field{volume}{201}
+      \field{year}{1950}
+      \field{pages}{175\bibrangedash 186}
+      \range{pages}{12}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

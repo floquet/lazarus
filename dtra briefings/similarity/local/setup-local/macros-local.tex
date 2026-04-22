@@ -1,0 +1,30 @@
+% called from setup-local
+% \input{\pLocalSetup macros-local}
+
+% shorthand
+\newcommand{\dt}[0]					{\delta t} 
+\newcommand{\bdt}[0]					{\bl{\dt}} 
+\newcommand{\tbdt}[0]					{t + \bl{\dt}} 
+\newcommand{\bu}[0]					{\mathbf{u}} 
+\newcommand{\bx}[0]					{\mathbf{x}} 
+\newcommand{\fxt}[0]					{f(\mathbf{x}, t)} 
+\newcommand{\fxtd}[2]					{f_{#1} \paren{\mathbf{x}, #2}} 
+\newcommand{\pititle}[0]					{Dimensional Analysis and the \yl{Pi Theorem}}
+
+\newcommand{\yl}[1]						{\color{yellow}{#1}}
+
+% total derivatives
+\newcommand{\td}[2]					{ \frac{ d #1 } { d #2 } }
+\newcommand{\tdtwo}[2]					{ \frac{ d^{2} #1 } { d #2^{2} } }
+\newcommand{\tdt}[1]					{ \td{ #1 } { t } }
+\newcommand{\tdx}[1]					{ \td{ #1 } { x } }
+% partial derivatives
+\newcommand{\pd}[2]					{ \frac{ \partial #1 } { \partial #2 } }
+\newcommand{\pdt}[1]					{ \pd{ #1 }{t} }
+\newcommand{\pdx}[1]					{ \pd{ #1 }{x} }
+
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+\endinput  %  ==  ==  ==  ==  ==  ==  ==  ==  ==
+
+\newcommand{  }[0]					{  }

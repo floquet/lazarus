@@ -1,0 +1,152 @@
+% \input{\pSections "sec-numerics"}
+%
+\newcounter{algorithmCounter}
+
+\section{Numerics}
+
+%%    %%    %%    %%    %%    %%    %%    %%    %%    %%
+\subsection{Taylor Process}
+%
+\begin{frame}\frametitle{Taylor's Method}
+	%
+	%
+\end{frame}
+%
+
+
+%%    %%    %%    %%    %%    %%    %%    %%    %%    %%
+\subsection{Sedov Process}
+% https://tex.stackexchange.com/questions/1669/resuming-a-list
+\begin{frame}\frametitle{Numeric Solution of Sedov Equation I}
+\begin{enumerate}
+	\item Compute \bl{$V_{2}$}, similarity shock position \eqref{eq:v2}
+	\item Compute \bl{$V^{*}$}, similarity singular point \eqref{eq:vstar}
+	\item Kinetic energy integral \rd{$I_{1}$} \eqref{eq:j1}
+	\item Specific energy integral \rd{$I_{2}$} \eqref{eq:j2}
+	\setcounter{algorithmCounter}{\value{enumi}}
+%	\item At each time step
+%	\begin{enumerate}
+%		\item Shock position $r_{2}$
+%		\item Shock speed $U$
+%		\item Pre-shock density $\rho_{1}$
+%		\item Post-shock state $v_{2}$
+%		\item Post-shock state for $0 \le r < r_{2}$
+%		\begin{enumerate}
+%			\item $r=r_{2} \lambda(V)$
+%			\item $v =v_{2} f(V)$
+%			\item $\rho = \rho_{2} g(V)$
+%			\item $p = p_{2} h(V)$
+%		\end{enumerate}
+%	\end{enumerate}
+%		\item Identify brackets for $\tilde{r}$, find $\tilde{V}$
+\end{enumerate}
+\end{frame}
+%
+\begin{frame}\frametitle{Numeric Solution of Sedov Equation II}
+\begin{enumerate}
+\setcounter{enumi}{\value{algorithmCounter}}
+%	\item Compute \bl{$V_{2}$}, similarity shock position \eqref{eq:v2}
+%	\item Compute \bl{$V^{*}$}, similarity singular point \eqref{eq:vstar}
+%	\item Numerically integrate \rd{$J_{1}$} \eqref{eq:j1}
+%	\item Numerically integrate \rd{$J_{2}$} \eqref{eq:j2}
+%	\setcounter{nameOfYourChoice}{\value{enumi}}
+	\item At each time step
+	\begin{enumerate}
+		\item Shock position $r_{2}$
+		\item Shock speed $U$
+		\item Pre-shock density $\rho_{1}$
+		\item Post-shock state $v_{2}$
+		\item Post-shock state for $0 \le r < r_{2}$
+		\begin{enumerate}
+			\item $r=r_{2} \lambda(V)$
+			\item $v =v_{2} f(V)$
+			\item $\rho = \rho_{2} g(V)$
+			\item $p = p_{2} h(V)$
+		\end{enumerate}
+	\end{enumerate}
+		\item Identify brackets for $\tilde{r}$, find $\tilde{V}$
+\end{enumerate}
+\end{frame}
+%
+%%    %%    %%    %%    %%    %%    %%    %%    %%    %%
+\subsection{Development of Sedov Solution}
+%
+\begin{frame}\frametitle{\href{https://en.wikipedia.org/wiki/Compressible\_flow}{Compressible Hydrodynamics}: Equations}
+% sedum p. 148, IV-1.3
+\begin{equation}
+\begin{array}{rcl}
+	\pdt{v} + v \pd{v}{r} + \frac{1}{\rho}\pd{t}{r} &=& 0, \\[10pt]
+	\pdt{\rho} + \pd{\rho v}{r} + (v-1) \frac{\rho v}{r} &=& 0, \\[10pt]
+	\pdt{}\sfrac + v \pd{}{r} \sfrac &=& 0.
+\label{eq:s1.3}
+\end{array}
+\end{equation}
+\end{frame}
+%
+\begin{frame}\frametitle{\href{https://en.wikipedia.org/wiki/Compressible\_flow}{Compressible Hydrodynamics}: Equations}
+\begin{align}
+	\rho_{t} + v \rho_{r} \frac{\rho}{r^{j-1}} \paren{r^{j-1} v}_{r} &= 0 \\
+	v_{t} + v v_{r} + \frac{1}{\rho} p_{r} &= 0 \\
+	\paren{ \frac{p}{\rho^{\gamma}} }_{t} + u \paren{ \frac{p}{\rho^{\gamma}} }_{r} &= 0 \\
+	\paren{ \gamma - 1} e &= \frac{p}{\rho}
+\end{align}
+\end{frame}
+%
+\begin{frame}\frametitle{\href{https://en.wikipedia.org/wiki/Compressible\_flow}{Compressible Hydrodynamics}: Variables}
+\begin{table}[htp]
+%\caption{default}
+\begin{center}
+	\begin{tabular}{ll}
+		$p$ & pressure \\
+		$\rho$ & density \\
+		$v$ & velocity \\
+		$\gamma$ & constant adiabatic exponent \\
+		$e$ & specific internal energy 
+	\end{tabular}
+\end{center}
+%\label{tab:label}
+\end{table}%
+\end{frame}
+%
+\begin{frame}\frametitle{Post shock state}
+\center
+\begin{equation}
+\begin{array}{rl}
+	v_{2} &= \displaystyle\frac{2}{\gamma + 1} U \\[15pt]
+	\rho_{2} &= \displaystyle\frac{\gamma + 1}{\gamma - 1}\rho_{1} \\[15pt]
+	p_{2} &= \displaystyle\frac{2}{\gamma + 1} \rho_{1} U^{2}
+\end{array}
+\label{eq:post-shock}
+\end{equation}
+\end{frame}
+%
+\begin{frame}\frametitle{$V^{*}$, $V_{2}$}
+\center
+Post-shock state:
+\begin{equation}
+	V_{2} = \frac{4}{\paren{j+2-\omega}{\gamma+1}}	
+\label{eq:v2}
+\end{equation}
+\ \\[20pt]
+Singular point:
+\begin{equation}
+	V^{*} = \frac{2}{\paren{ \gamma - 1 }j+2}	
+\label{eq:vstar}
+\end{equation}
+\end{frame}
+%
+\begin{frame}\frametitle{$J_{1}$, $J_{2}$}
+\center
+\begin{equation}
+	J_{1} = \int_{\lambda_{min}}^{1} d\lambda\, \lambda^{j+1-\omega}R V^{2}	
+\label{eq:j1}
+\end{equation}
+\ \\
+\begin{equation}
+	J_{2} = \int_{\lambda_{min}}^{1} d\lambda\, \lambda^{j+1-\omega} P	
+\label{eq:j2}
+\end{equation}
+\end{frame}
+
+%
+\endinput  %  ==  ==  ==  ==  ==  ==  ==  ==  ==

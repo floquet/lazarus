@@ -1,0 +1,107 @@
+% called from setup-local
+% \input{\pLocalSetup macros-local}
+
+\newcommand{\urlTaylora}[0]			{http://homepage.physics.uiowa.edu/~ghowes/teach/phys7729/docs/Taylor50a.pdf}
+\newcommand{\urlTaylorb}[0]			{http://homepage.physics.uiowa.edu/~ghowes/teach/phys7729/docs/Taylor50b.pdf}
+
+\newcommand{\urlWikiTvNS}[0]		{https://en.wikipedia.org/wiki/Taylor\%E2\%80\%93von_Neumann\%E2\%80\%93Sedov_blast_wave}
+\newcommand{\urlWikiTvNSSS}[0]		{\urlWikiTvNS\#Self-similar_solution}
+\newcommand{\urlWikiTvNSAss}[0]		{\urlWikiTvNS\#Asymptotic_behavior_near_the_central_region}
+\newcommand{\WikiTvNS}[0]			{\href{\urlWikiTvNS}{Taylor--von Neumann--Sedov Blast Wave}}
+
+\newcommand{\urlMinpack}[0]			{https://people.sc.fsu.edu/~jburkardt/f77_src/minpack/minpack.html}
+
+\newcommand{ \urlWikiEFE }[0]		{ https://en.wikipedia.org/wiki/Einstein_field_equations }
+\newcommand{\WikiEFE}[0]			{\href{\urlWikiEFE}{Einstein Field Equations}}
+
+\newcommand{\bpe}[0]				{\href{https://en.wikipedia.org/wiki/2020_Beirut_explosion}{Beirut Port Explosion}}
+
+\newcommand{\curl}[1]				{\nabla \times #1}
+\newcommand{\pdt}[1]				{ \pd{ #1 }{t} }
+\newcommand{\pd}[2]				{ \frac{ \partial #1 } { \partial #2 } }
+\newcommand{\sfrac}[0]				{ \paren{\displaystyle\tfrac{p}{\rho^{\gamma}}} }
+\newcommand{\normt}[1]				{\left\lVert #1 \right\rVert_{2}}
+\newcommand{\normts}[1]				{\left\lVert #1 \right\rVert_{2}^{2}}
+\newcommand{\A}[1]					{\mathbf{A}^{\mathrm{\!#1}}}
+\newcommand{ \xls }[0]				{ x_{LS} }		% full set of minimizers
+\newcommand{ \brnga }[1]				{ \bl{ \rnga{ #1 } } }
+\newcommand{ \rnga }[1]				{ \rng{ \A{ \bk{#1} } } }
+\newcommand{ \rng }[1]				{ \atomrng \! \paren{ #1 } }
+\newcommand{ \atomrng }[0]			{ \mathcal{R} }
+\newcommand{ \rnlla }[1]				{ \rd{ \nlla{ #1 } } }
+\newcommand{ \nlla }[1]				{ \nll{ \A{ \bk{#1} } } }
+\newcommand{ \nll }[1]				{ \atomnll \! \paren{ #1 } }
+\newcommand{ \atomnll }[0]			{ \mathcal{N} }
+\newcommand{ \lsq }[0]				{ Least Squares }
+\newcommand{\seqinputs}[2]			{\lst{#1_{k}, #2_{k}}_{k=1}^{m}}
+\newcommand{\ftolathm}[0]			{\href{https://mathworld.wolfram.com/FundamentalTheoremofLinearAlgebra.html}{\ftola}}
+\newcommand{\mapsfrom}			{\mathrel{\reflectbox{\ensuremath{\mapsto}}}}
+\newcommand{ \bornga }[1]			{ \bl{ \overline{\rnga{ #1 }} } }
+\newcommand{ \codecomprow }[1]		{ \bornga{#1} \oplus \rnlla{} }
+\newcommand{ \codecompcol }[1]		{ \bornga{ } \oplus \rnlla{#1} }
+\newcommand{\bevMeritM}[0]			{ \normts{\A{}\, a - T} }
+\newcommand{\one}[0]				{ \mathbf{1} }
+\newcommand{\bevingtonLabels}[0]		{\put(50, -3) {$a_{0}$} \put(-5, 51) {$a_{1}$}}
+
+\def \ft{Fundamental Theorem}
+\def \ftola{\ft \ of Linear Algebra}
+
+\newcommand{\mfortran}[0]			{\href{https://www.manning.com/books/modern-fortran}{\bl{Modern Fortran}}}
+\newcommand{\julia}[0]				{\href{https://julialang.org/}{\bl{Julia}}}
+\newcommand{\mathematica}[0]		{\href{https://www.wolfram.com/mathematica/}{\bl{Mathematica}}}
+\newcommand{\octave}[0]				{\href{https://www.gnu.org/software/octave/}{\bl{Octave}}}
+\newcommand{\python}[0]				{\href{https://www.python.org/}{\bl{Python}}}
+
+\newcommand{\perps}[1]				{\draw [line width=0.8pt, black!40] (#1, 0)--(#1, #1); \draw [line width=0.8pt, black!40] (0, #1)--(#1, #1);}
+
+\newcommand{\mat}[2]				{\left[\begin{array} {#1}#2 \end{array}\right]}
+\newcommand{\gpo}[0]				{\gamma + 1}
+\newcommand{\gmo}[0]				{\gamma - 1}
+
+% nb: /Users/dantopa/Mathematica_files/nb/projects/dtra/TvNS/taylor/paper-1-03.nb
+% {11.9418, 1.01456}
+% {0.0510325, 0.0188861}
+\newcommand{ \solna }[0]					{ 11.942 }
+\newcommand{ \solnb }[0]					{ 1.015 }
+\newcommand{ \erra }[0]					{ 0.051 }
+\newcommand{ \errb }[0]					{ 0.019 }
+\newcommand{ \reala }[0]					{ 54474 }
+\newcommand{ \realb }[0]					{ 0.3883 }
+
+\newcommand{ \yl }[1]					{{\color{yellow} {#1}}}
+\newcommand{ \blk }[1]					{{\color{black} {#1}}}
+
+%% Videos
+\newcommand{\urlYoutubeBPE}[0]			{https://www.youtube.com/watch?v=rlvnsecLRmM}
+\newcommand{\urlYoutubeForensic}[0]		{https://www.youtube.com/watch?v=-mQ60wNgKrQ}
+
+%% Authors
+%\newcommand{ \pasman }[0]				{ \href{https://scholar.google.com/citations\?user=SCZU__cAAAAJ&hl=en&oi=sra}{Pasman }
+%
+\newcommand{ \aouad }[0]				{\href{https://scholar.google.com/citations?user=SzG9MckAAAAJ&hl=en&oi=sra}{Aouad}}
+\newcommand{ \diaz }[0]					{\href{https://scholar.google.com/citations?user=i-IWCGAAAAAJ&hl=en&oi=sra}{D\'iaz}}
+\newcommand{ \deakin }[0]				{\href{https://scholar.google.com/scholar?hl=en&as_sdt=0\%2C32&q=Michael+A.B.+Deakin&btnG=}{Deakin}}
+\newcommand{ \pasman }[0]				{\href{https://scholar.google.com/citations?user=SCZU__cAAAAJ&hl=en&oi=sra}{Pasman}}
+\newcommand{ \rigby }[0]					{\href{https://scholar.google.com/citations?user=qhQzsuQAAAAJ&hl=en&oi=sra}{Rigby}}
+\newcommand{ \stennett }[0]				{\href{https://orcid.org/0000-0002-6424-2549}{Stennett}}
+\newcommand{ \valsamos }[0]				{\href{https://scholar.google.com/citations?user=WiDpYcsAAAAJ&hl=en&oi=sra}{Valsamos}}
+\newcommand{ \farch }[0]					{\href{https://forensic-architecture.org/}{Forensic Architecture}}
+\newcommand{ \bevington }[0] 				{\href{https://www.google.com/books/edition/Data_Reduction_and_Error_Analysis_for_th/999QAAAAMAAJ?hl=en}{Bevington}}
+
+%% Articles
+\newcommand{ \urlAouad }[0]				{https://link.springer.com/article/10.1007/s00193-021-01031-9}
+\newcommand{ \urlDiaz }[0]				{https://iopscience.iop.org/article/10.1088/1361-6404/abe131}
+\newcommand{ \urlDiazX }[0]				{https://arxiv.org/pdf/2009.05674&ved=2ahUKEwijiLml7YfwAhXIi1wKHa14B1MQFjARegQICBAC&usg=AOvVaw1za4CqG33-AY-PPtkdyMRI}
+\newcommand{ \urlPasman }[0]				{https://aiche.onlinelibrary.wiley.com/doi/abs/10.1002/prs.12203}
+\newcommand{ \urlRigby }[0]				{https://link.springer.com/article/10.1007/s00193-020-00970-z}
+\newcommand{ \urlStennett }[0]				{https://onlinelibrary.wiley.com/doi/10.1002/prep.202000227}
+\newcommand{ \urlValsamos }[0]			{https://www.sciencedirect.com/science/article/pii/S0925753521000357}
+\newcommand{ \urlFAGitHub }[0]			{https://github.com/forensic-architecture/models}
+\newcommand{ \urlFAWeb }[0]				{https://forensic-architecture.org/}
+\newcommand{ \urlWSMR }[0]				{https://wsmrmuseum.com/2023/05/25/misty-castle-high-explosive-nuclear-effects-simulations-at-white-sands-missile-range/}
+
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+\endinput  %  ==  ==  ==  ==  ==  ==  ==  ==  ==
+
+\newcommand{  }[0]					{  }

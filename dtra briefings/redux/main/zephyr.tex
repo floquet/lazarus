@@ -1,0 +1,432 @@
+% typeset: Pdftex
+% Afterwards compile with pdflatex > bibtex > pdflatex > pdflatex.
+% in TeXShop preferences, change edit from bibtex to biber
+% https://tex.stackexchange.com/questions/144407/no-items-shown-bibliography-beamer?rq=1
+
+% https://tex.stackexchange.com/questions/1423/is-there-a-nice-way-to-compile-a-beamer-presentation-without-the-pauses
+%\documentclass[handout]{beamer}
+
+%! LaTeX Error: File `/Volumes/repos/bitbucket/strange/shared/collection/lib-colors.tex' not found.
+% edit 
+% nursery-slide-decks/beamer/dtra/global/setup-global
+
+\documentclass[]{beamer}
+% point to content libraries
+\newcommand{\pGlobal}			{../../../global/}
+\newcommand{\pGlobalSetup}		{\pGlobal setup-global/}	
+
+% load LaTeX packages and personal macros
+\input{\pGlobalSetup setup-global-beamer}
+\input{\pLocalSetup setup-local}
+
+\setbeamertemplate{bibliography item}{\insertbiblabel}
+\usepackage[style = numeric]{biblatex}
+%\usepackage[square,numbers]{natbib}
+%\setcitestyle{numbers}
+%\bibliography{\pSections em-gauge.bib}
+%\usepackage{auto-pst-pdf}
+%\usepackage{pst-solides3d}
+\bibliography{\pSections redux.bib}
+
+\title
+[Taylor's Fireball Analysis]
+{Taylor's Fireball Analysis\\Reproducing Numerical Results}
+
+\author[\dtriacAlpha NIAC Tech Staff]{\Topa \\ \TopaEmail}
+\institute{\dtriac} 
+\medskip
+
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+	%\distA
+\end{frame}
+%
+\begin{frame}\frametitle{Search for Similarity}
+\begin{table}[htp]
+%\caption{default}
+\begin{center}
+	\begin{tabular}{cc}
+	\href{http://homepage.physics.uiowa.edu/~ghowes/teach/phys7729/docs/Taylor50b.pdf\#page=13}{
+	\begin{overpic}[ scale = 0.25 ]
+		{\pLocalGraphics taylor/taylor-image}
+		%\put(30, 10)	{\colorbox{white}{ $R = S(\gamma) t^{\tfrac{2}{5}} E^{\tfrac{1}{5}} \rho_{0}^{-\tfrac{1}{5}} $ }}
+		%\put(33, 30)	{\colorbox{white!10}{ $R = S(\gamma) \sqrt[5]{\frac{E t^{2}}{\rho} } $ }}
+		\put(43, 4)		{ \color{white}{$100 $ \textrm{m}} }
+		\put(33, 30)	{ \bl{$R = S(\gamma) \sqrt[5]{\frac{E t^{2}}{\rho_{0}} } $} }
+	\end{overpic}}
+	\end{tabular}
+\end{center}
+%\label{tab:label}
+\end{table}%
+\end{frame}
+
+%
+\begin{frame}\frametitle{Photometric Yield Determination}
+\begin{table}[htp]
+%\caption{default}
+\begin{center}
+	\begin{tabular}{cc}
+	\href{http://homepage.physics.uiowa.edu/~ghowes/teach/phys7729/docs/Taylor50b.pdf\#page=13}{
+	\begin{overpic}[ scale = 0.25 ]
+		{\pLocalGraphics taylor/taylor-image}
+		%\put(30, 10)	{\colorbox{white}{ $R = S(\gamma) t^{\tfrac{2}{5}} E^{\tfrac{1}{5}} \rho_{0}^{-\tfrac{1}{5}} $ }}
+		%\put(33, 30)	{\colorbox{white!10}{ $R = S(\gamma) \sqrt[5]{\frac{E t^{2}}{\rho} } $ }}
+		\put(43, 4)		{ \color{white}{$100 $ \textrm{m}} }
+		\put(33, 30)	{ \bl{$R = S(\gamma) \sqrt[5]{\frac{E t^{2}}{\rho_{0}} } $} }
+	\end{overpic}}
+	\end{tabular}
+\end{center}
+%\label{tab:label}
+\end{table}%
+\end{frame}
+
+\begin{frame}\frametitle{Overview}
+	\tableofcontents[hideallsubsections]
+\end{frame}
+%
+%   %   %   %   %   %   %   %   %   %   %   %   %   %   %
+\section{Photometric Yield Determination}
+\begin{frame}\frametitle{Trinity Test}
+\begin{table}[htp]
+%\caption{default}
+\begin{center}
+	\begin{tabular}{cc}
+	\href{http://homepage.physics.uiowa.edu/~ghowes/teach/phys7729/docs/Taylor50b.pdf\#page=13}{
+	\begin{overpic}[ scale = 0.25 ]
+		{\pLocalGraphics taylor/taylor-image}
+		%\put(30, 10)	{\colorbox{white}{ $R = S(\gamma) t^{\tfrac{2}{5}} E^{\tfrac{1}{5}} \rho_{0}^{-\tfrac{1}{5}} $ }}
+		%\put(33, 30)	{\colorbox{white!10}{ $R = S(\gamma) \sqrt[5]{\frac{E t^{2}}{\rho} } $ }}
+		\put(43, 4)		{ \color{white}{$100 $ \textrm{m}} }
+		\put(33, 30)	{ \bl{$R = S(\gamma) \sqrt[5]{\frac{\rd{E} t^{2}}{\rho_{0}} } $} }
+	\end{overpic}}
+	\end{tabular}
+\end{center}
+\label{tab:R}
+\end{table}%
+\end{frame}
+
+%
+\begin{frame}\frametitle{Trinity Test}
+\begin{table}[htp]
+%\caption{default}
+\begin{center}
+	\begin{tabular}{cc}
+	\href{http://homepage.physics.uiowa.edu/~ghowes/teach/phys7729/docs/Taylor50b.pdf\#page=13}{
+	\begin{overpic}[ scale = 0.25 ]
+		{\pLocalGraphics taylor/taylor-image}
+		%\put(30, 10)	{\colorbox{white}{ $R = S(\gamma) t^{\tfrac{2}{5}} E^{\tfrac{1}{5}} \rho_{0}^{-\tfrac{1}{5}} $ }}
+		%\put(33, 30)	{\colorbox{white!10}{ $R = S(\gamma) \sqrt[5]{\frac{E t^{2}}{\rho} } $ }}
+		\put(43, 4)		{ \color{white}{$100 $ \textrm{m}} }
+		\put(33, 30)	{ \bl{$\rd{E} = \bl{\rho_{0} \cdot L \cdot R^{5}t^{-2}}$} }
+	\end{overpic}}
+	\end{tabular}
+\end{center}
+\label{tab:E}
+\end{table}%
+\end{frame}
+%
+
+
+%   %   %   %   %   %   %   %   %   %   %   %   %   %   %
+%\section{Scattered Results}
+\begin{frame}\frametitle{Taylor's Method: Yield in Kilotons}
+\center
+	\href{https://www.osti.gov/opennet/manhattan-project-history/publications/DOENuclearTests.pdf\#page=25}{
+	\begin{overpic}[ scale = 1.0 ]
+		{\pLocalGraphics niac/yield-line-fine}
+		\put(33, 20)	{\colorbox{white}{$E = \rho_{0} \cdot  L \cdot R^{5}t^{-2}$}}
+	\end{overpic}}
+	%\ \\
+	%\fullcite{united2000united}
+\end{frame}
+
+
+\begin{frame}\frametitle{Numeric Details}
+\center
+	%\href{}{
+	\begin{overpic}[ scale = 0.45 ]
+		{\pLocalGraphics niac/topa-tbl-01}
+		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+	\end{overpic}
+\end{frame}
+
+
+\begin{frame}\frametitle{Taylor Solution}
+\center
+	%\href{}{
+	\begin{overpic}[ scale = 0.5 ]
+		{\pLocalGraphics niac/theorem}
+		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+	\end{overpic}
+\end{frame}
+
+\begin{frame}\frametitle{Proof\jumpBig}
+\center
+	%\href{}{
+	\begin{overpic}[ scale = 0.5 ]
+		{\pLocalGraphics niac/proof}
+		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+	\end{overpic}
+\end{frame}
+
+%   %   %   %   %   %   %   %   %   %   %   %   %   %   %
+\section{Power Law}
+%
+\begin{frame}\frametitle{Power Law is Nonlinear}
+		%
+\begin{equation}
+	R = S(\gamma) \sqrt[5]{\frac{E t^{2}}{\rho_{0}} }
+\label{eq:Taylor}
+\end{equation}
+		%
+	$$ \Downarrow $$
+		%
+\begin{equation}
+	R(t) = a t^{\tfrac{2}{5}}
+\label{eq:power-law}
+\end{equation}
+		%
+		%
+	$$ \Downarrow $$
+		%
+\begin{equation}
+	R(t) = a t^{b}
+\label{eq:power-law-b}
+\end{equation}
+		%
+\end{frame}
+%
+%
+\begin{frame}\frametitle{Solution Curves}
+\center
+	%\href{}{
+	\begin{overpic}[ scale = 1.0 ]
+		{\pLocalGraphics mathematica/Taylor-redux-true}
+		\put(33, 50)	{\colorbox{white}{Taylor solution}}
+		\put(60, 40)	{\colorbox{white}{nonlinear solution}}
+	\end{overpic}
+\end{frame}
+%
+\begin{frame}\frametitle{Comparing Solutions}
+\center
+	%\href{}{
+	\begin{overpic}[ scale = 0.65 ]
+		{\pLocalGraphics mathematica/nonlinear-contour-zoom}
+		\put(7, 87)	{\colorbox{white}{$\normt{at^{b} - R}$}}
+		\put(49, -5)			{\colorbox{white}{$a$}}
+		\put(-7, 48)			{\colorbox{white}{$b$}}
+	\end{overpic}
+\end{frame}
+%
+%\begin{frame}\frametitle{Mathematica Solution}
+%\center
+%	%\href{}{
+%	\begin{overpic}[ scale = 0.4 ]
+%		{\pLocalGraphics mathematica/mm-screen-02}
+%		%\put(50, 50)	{\colorbox{white}{$a+b$}}
+%	\end{overpic}
+%\end{frame}
+%
+\begin{frame}\frametitle{Solution Using \href{https://www.wolfram.com/mathematica/	}{Mathematica}}
+\center
+	\href{run:../local/articles-redux/2023-film-working-group.pdf}{
+	\begin{overpic}[ scale = 0.375 ]
+		{\pLocalGraphics mathematica/norm-min}
+		\put(55, 5)	{\colorbox{white}{$(\bl{a}, \bl{b})_{LS}\equiv \argmin\limits_{(\bl{a},\bl{b})\in\mathbb{R}^{2}} \normt{\bl{a} t^{\bl{b}} - R}$}}
+	\end{overpic}}
+\end{frame}
+%
+\begin{frame}\frametitle{Individual Points or Aggregation\jumpBig}
+\begin{figure}[htbp]
+\begin{center}
+		\vspace{0.45cm}
+		\begin{overpic}[ scale = 0.55 ]
+		{\pLocalGraphics mathematica/redux-yield}
+		\put(8, 102)	{\colorbox{white}{$E_{LS} = \overline{E} = 16.7 \pm 3.2 Kt$}}
+		\put(-12, 34)	{\rotatebox{90}{\colorbox{white}{Yield, Kt}}}
+		\put(35, -9)	{\colorbox{white}{$\log_{10} t$}}
+		\end{overpic}
+		\vspace{0.35cm}
+%\caption{Point measurements and yield using the updated parameters. The thick line represents the least squares value of $\cxi = 6.42205\expo{23}$ erg.}
+\label{fig:fit-yield}
+\end{center}
+\end{figure}
+\end{frame}
+%
+%   %   %   %   %   %   %   %   %   %   %   %   %   %   %
+\section{Stack Overflow}
+\begin{frame}\frametitle{\href{https://math.stackexchange.com/questions/670654/least-squares-solution-for-y-axb-after-logarithmic-transformation/2241027\#2241027}{
+Full Example Online}}
+\center
+	%\href{https://math.stackexchange.com/questions/670654/least-squares-solution-for-y-axb-after-logarithmic-transformation/2241027\#2241027}{
+	\href{run:../local/articles/Mathematics-Stack-Exchange.pdf}{
+	\begin{overpic}[ scale = 0.325 ]
+		{\pLocalGraphics mse}
+	\end{overpic}}
+\end{frame}
+%
+
+%
+\begin{frame}\frametitle{Further Examples\jumpBig}
+\begin{itemize}
+	\item \href{https://math.stackexchange.com/questions/1488747/least-square-approximation-for-exponential-functions/2163333\#2163333}{Least Square Approximation for Exponential Functions}
+	\item \href{https://math.stackexchange.com/questions/1934347/substitution-yielding-linear-function-for-least-squares-fitting/2170544\#2170544}{Substitution yielding linear function for least squares fitting}
+	\item \href{https://math.stackexchange.com/questions/699071/using-least-squares-method-to-determine-unknown-variables/2204288\#2204288}{Using Least Squares method to determine unknown variables}
+\end{itemize}
+\end{frame}
+%\begin{frame}\frametitle{Similarity Implies \href{https://mathworld.wolfram.com/Power.html}{Power}  Law Model}
+%\huge{
+%\begin{equation}
+%	\bl{R} = \bl{S(\gamma) \sqrt[5]{\frac{\rd{E}\, t^{2}}{\rho_{0}} }}
+%\tag{\ref{eq:one}}
+%\end{equation}
+%}
+%\end{frame}
+%%
+%\begin{frame}\frametitle{Similarity Implies \href{https://mathworld.wolfram.com/Power.html}{Power} Law Model}
+%\huge{
+%\begin{equation*}
+%	R = \mg{S(\gamma)} \sqrt[5]{\frac{\mg{E}\, t^{2}}{\mg{\rho_{0}}} } \quad \Rightarrow \quad
+%	R = \bl{a} t^{\bl{b}} 
+%\end{equation*}
+%}
+%\end{frame}
+%%
+%\begin{frame}\frametitle{Similarity Implies \href{https://mathworld.wolfram.com/Power.html}{\yl{Power}}  \yl{Law} Model}
+%% Taylor's premise
+%\huge{
+%\begin{equation}
+%	R(\bl{a}, \bl{b},t) = \bl{a} t^\bl{b}
+%\label{eq:model}
+%\end{equation}
+%}
+%\end{frame}
+%%
+%\begin{frame}\frametitle{Least Squares \rd{Definition}}
+%\huge{
+%\begin{equation}
+%	r(a, b) = \bl{a} t^{\bl{b}} - R
+%\label{eq:residual}
+%\end{equation}
+%\pause
+%\begin{equation}
+%	(\bl{a}, \bl{b})_{LS} \rd{\, \equiv \,} \argmin_{(\bl{a},\bl{b})\in\mathbb{R}^{2}} \normt{\bl{a} t^{\bl{b}} - R}
+%\label{eq:merit}
+%\end{equation}
+%}
+%\end{frame}
+%%
+%\begin{frame}\frametitle{Solution Using \href{https://www.wolfram.com/mathematica/	}{Mathematica}}
+%\center
+%	%\href{}{
+%	\begin{overpic}[ scale = 0.375 ]
+%		{\pLocalGraphics Taylor/mm-screen-02}
+%		%\put(35, 52)	{\colorbox{white}{\rd{Faux Linearization}}}
+%	\end{overpic}
+%\end{frame}
+%%
+%\begin{frame}\frametitle{Comparing Solution Points}
+%\center
+%	%\href{}{
+%	\begin{overpic}[ scale = 0.6 ]
+%		{\pLocalGraphics Taylor/Taylor-redux-both}
+%		\put(7, 87)		{\colorbox{white}{$\normt{r(a,b)} = \normt{a t^{b} - R}$}}
+%		\put(-9, 46)	{\rotatebox{90}{\colorbox{white}{$b$}}}
+%		\put(49, -5)	{\colorbox{white}{$a$}}
+%	\end{overpic}
+%\end{frame}
+%%
+%\begin{frame}\frametitle{Comparing Solution Points}
+%\center
+%	%\href{}{
+%	\begin{overpic}[ scale = 0.6 ]
+%		{\pLocalGraphics Taylor/Taylor-redux-both}
+%		\put(7, 87)		{\colorbox{white}{$r(a,b) = \normt{a t^{b} - R}$}}
+%		\put(-9, 46)	{\rotatebox{90}{\colorbox{white}{$b$}}}
+%		\put(49, -5)	{\colorbox{white}{$a$}}
+%		\put(100, 47)	{\colorbox{white}{\bl{$r = 510$}}}
+%		\put(100, 88)	{\colorbox{white}{\rd{$r =1456$}}}
+%	\end{overpic}
+%\end{frame}
+% main sections
+%	\input{\pSections "sec-background"}
+%	\input{\pSections "sec-linear-least-squares"}
+%	\input{\pSections "sec-nonlinear-least-squares"}
+%	%\input{\pSections "sec-redux"}
+%	\input{\pSections "sec-backup"}
+
+%   %   %   %   %   %   %   %   %   %   %   %   %   %   %
+\section{Bibliography}
+%\subsection{References}
+\begin{frame}[t,allowframebreaks]
+\frametitle{Bibliography}
+\begin{enumerate}
+	\item \fullcite{taylor1950formationI}
+	\item \fullcite{taylor1950formationII}
+	\item \fullcite{sedov2018similarity}
+%\end{enumerate}
+%\end{frame}
+%
+%\begin{frame}[t,allowframebreaks]
+%\frametitle{Bibliography}
+%\begin{enumerate}
+	\item \fullcite{deakin2011gi}
+	\item \fullcite{diaz2021explosion}
+	\item \fullcite{aouad2021beirut}
+\end{enumerate}
+\end{frame}
+%\nocite{*}
+%\printbibliography[heading=none]
+
+\end{document}
+
+%\tiny
+%\scriptsize
+%\footnotesize
+%\small
+%\normalsize
+%\large
+%\Large
+%\LARGE
+%\huge
+%\Huge
+
+%\, thin space (normally 1/6 of a quad);
+%\> medium space (normally 2/9 of a quad);
+%\; thick space (normally 5/18 of a quad);
+%\! negative thin space (normally 1/6 of a quad).
+
+\begin{frame}\frametitle{Frame Title}
+\begin{enumerate}
+	\item 
+	\item 
+	\item 
+\end{enumerate}
+\end{frame}
+
+\begin{frame}\frametitle{Frame Title}
+\center
+	\href{url}{
+	\begin{overpic}[ scale = 1.0 ]
+	{\pLocalGraphics graphic-file}
+		%\put(-7,-10){Auxiliary text.}
+	\end{overpic}}
+\end{frame}
+
+\begin{frame}\frametitle{Frame Title}
+\begin{table}[htp]
+%\caption{default}
+\begin{center}
+	\begin{tabular}{cc}
+		 %
+		 %
+		 %
+	\end{tabular}
+\end{center}
+%\label{tab:label}
+\end{table}%
+\end{frame}
