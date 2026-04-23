@@ -1,0 +1,342 @@
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {1}{1}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {0}{0}{2}{2/3}{}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {2}{3}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {0}{0}{3}{4/4}{}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {4}{4}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@sectionpages {1}{4}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {1}{4}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\sectionentry {1}{Problem Statement}{5}{Problem Statement}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {5}{4}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{1}{1}{5}{Taylor Fit Redux}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@sectionpages {5}{4}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {5}{4}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\sectionentry {2}{Theory}{5}{Theory}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {5}{4}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{2}{1}{5}{Why $2-$Norm?}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@sectionpages {5}{4}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {5}{4}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\sectionentry {3}{Solutions}{5}{Solutions}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {5}{4}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{3}{1}{5}{Geometric Solution}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {5}{4}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{3}{2}{5}{Cauchy-Schwarz}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {5}{4}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{3}{3}{5}{Calculus}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {5}{4}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{3}{4}{5}{SVD}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@sectionpages {5}{4}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {5}{4}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\sectionentry {4}{Staging}{5}{Staging}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {5}{4}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{4}{1}{5}{Images}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {5}{4}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{4}{2}{5}{Topics}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {4}{2}{1}{5/5}{Topics}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {5}{5}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {4}{2}{2}{6/6}{Topics}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {6}{6}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {5}{6}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{4}{3}{7}{Librarian Magic: Finding Sedov's Paper}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {4}{3}{1}{7/7}{Librarian Magic: Finding Sedov's Paper}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {7}{7}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {4}{3}{2}{8/8}{Librarian Magic: Finding Sedov's Paper}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {8}{8}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {4}{3}{3}{9/9}{Librarian Magic: Finding Sedov's Paper}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {9}{9}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {4}{3}{4}{10/10}{Librarian Magic: Finding Sedov's Paper}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {10}{10}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@sectionpages {5}{10}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {7}{10}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\sectionentry {5}{Backup}{11}{Backup}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {11}{10}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{5}{1}{11}{Taylor in Real Life}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {11}{10}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{5}{2}{11}{Similarity}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {5}{2}{1}{11/11}{Similarity}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {11}{11}}
+\headcommand {\gdef \insertmainframenumber {10}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {11}{11}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{5}{3}{12}{Calculus}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {12}{11}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{5}{4}{12}{SVD}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\partentry {Appendix}{1}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@partpages {1}{11}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@sectionpages {11}{11}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {12}{11}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@appendixpages {12}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@sectionpages {12}{11}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {12}{11}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {12}{11}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {1}{6}{1}{12}{References: Similarity}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {12}{11}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {1}{6}{2}{12}{References: Blast Wave}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {12}{11}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {1}{6}{3}{12}{References}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {12}{11}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {1}{6}{4}{12}{Physics of Shock Waves}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{4}{1}{12/12}{Physics of Shock Waves}{1}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {12}{12}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{4}{2}{13/13}{Physics of Shock Waves}{1}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {13}{13}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{4}{2}{13/14}{Physics of Shock Waves}{1}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {13}{14}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{4}{2}{13/15}{Physics of Shock Waves}{1}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {13}{15}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{4}{2}{13/16}{Physics of Shock Waves}{1}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {13}{16}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{4}{2}{13/17}{Physics of Shock Waves}{1}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {13}{17}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{4}{2}{13/18}{Physics of Shock Waves}{1}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {13}{18}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{4}{2}{13/19}{Physics of Shock Waves}{1}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {13}{19}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{4}{2}{13/20}{Physics of Shock Waves}{1}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {13}{20}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{4}{2}{13/21}{Physics of Shock Waves}{1}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {13}{21}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{4}{2}{13/22}{Physics of Shock Waves}{1}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {13}{22}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{4}{2}{13/23}{Physics of Shock Waves}{1}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {13}{23}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{4}{2}{13/24}{Physics of Shock Waves}{1}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {13}{24}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{4}{2}{13/25}{Physics of Shock Waves}{1}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {13}{25}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{4}{2}{13/26}{Physics of Shock Waves}{1}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {13}{26}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{4}{2}{13/27}{Physics of Shock Waves}{1}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {13}{27}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{4}{2}{13/28}{Physics of Shock Waves}{1}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {13}{28}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{4}{2}{13/29}{Physics of Shock Waves}{1}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {13}{29}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{4}{2}{13/30}{Physics of Shock Waves}{1}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {13}{30}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{4}{2}{13/31}{Physics of Shock Waves}{1}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {13}{31}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{4}{2}{13/32}{Physics of Shock Waves}{1}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {13}{32}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{4}{2}{13/33}{Physics of Shock Waves}{1}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {13}{33}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{4}{2}{13/34}{Physics of Shock Waves}{1}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {13}{34}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{4}{2}{13/35}{Physics of Shock Waves}{1}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {13}{35}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{4}{2}{13/36}{Physics of Shock Waves}{1}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {13}{36}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{4}{2}{13/37}{Physics of Shock Waves}{1}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {13}{37}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{4}{2}{13/38}{Physics of Shock Waves}{1}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {13}{38}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{4}{2}{13/39}{Physics of Shock Waves}{1}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {13}{39}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{4}{2}{13/40}{Physics of Shock Waves}{1}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {13}{40}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{4}{2}{13/41}{Physics of Shock Waves}{1}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {13}{41}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{4}{2}{13/42}{Physics of Shock Waves}{1}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {13}{42}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{4}{2}{13/43}{Physics of Shock Waves}{1}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {13}{43}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{4}{2}{13/44}{Physics of Shock Waves}{1}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {13}{44}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{4}{2}{13/45}{Physics of Shock Waves}{1}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {13}{45}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{4}{2}{13/46}{Physics of Shock Waves}{1}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {13}{46}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{4}{2}{13/47}{Physics of Shock Waves}{1}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {13}{47}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{4}{2}{13/48}{Physics of Shock Waves}{1}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {13}{48}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{4}{2}{13/49}{Physics of Shock Waves}{1}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {13}{49}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{4}{2}{13/50}{Physics of Shock Waves}{1}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {13}{50}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{4}{2}{13/51}{Physics of Shock Waves}{1}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {13}{51}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{4}{2}{13/52}{Physics of Shock Waves}{1}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {13}{52}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{4}{2}{13/53}{Physics of Shock Waves}{1}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {13}{53}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{4}{2}{13/54}{Physics of Shock Waves}{1}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {13}{54}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{4}{2}{13/55}{Physics of Shock Waves}{1}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {13}{55}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{4}{2}{13/56}{Physics of Shock Waves}{1}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {13}{56}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{4}{3}{57/57}{Physics of Shock Waves}{1}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {57}{57}}
+\headcommand {\beamer@partpages {12}{57}}
+\headcommand {\beamer@subsectionpages {12}{57}}
+\headcommand {\beamer@sectionpages {12}{57}}
+\headcommand {\beamer@documentpages {57}}
+\headcommand {\gdef \inserttotalframenumber {56}}

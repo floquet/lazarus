@@ -1,5 +1,0 @@
-[0] Config.pm:304> INFO - This is Biber 2.14
-[0] Config.pm:307> INFO - Logfile is 'sec-redux.blg'
-[70] biber-darwin:322> INFO - === Sat Dec 30, 2023, 14:20:10
-[217] Utils.pm:320> ERROR - Cannot find 'sec-redux.bcf'!
-[217] Biber.pm:132> INFO - ERRORS: 1
